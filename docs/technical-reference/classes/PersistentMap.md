@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / PersistentMap
+PersistentMap
 
 # Class: PersistentMap<K, V\>
 
@@ -8,14 +8,14 @@ It implements a map -- a persistent unordered map.
 To create a map
 
 ```ts
-let map = new PersistentMap<string, string>("m")  // choose a unique prefix per account
+let map = new PersistentMap<string, string>("m"); // choose a unique prefix per account
 ```
 
 To use the map
 
 ```ts
-map.set(key, value)
-map.get(key)
+map.set(key, value);
+map.get(key);
 ```
 
 IMPORTANT NOTES:
@@ -23,37 +23,37 @@ IMPORTANT NOTES:
 (1) The Map doesn't store keys, so if you need to retrieve them, include keys in the values.
 
 (2) Since all data stored on the blockchain is kept in a single key-value store under the contract account,
-you must always use a *unique storage prefix* for different collections to avoid data collision.
+you must always use a _unique storage prefix_ for different collections to avoid data collision.
 
 ## Type parameters
 
-| Name | Description |
-| :------ | :------ |
-| `K` | The generic type parameter `K` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
-| `V` | The generic type parameter `V` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
+| Name | Description                                                                                                          |
+| :--- | :------------------------------------------------------------------------------------------------------------------- |
+| `K`  | The generic type parameter `K` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
+| `V`  | The generic type parameter `V` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](PersistentMap.md#constructor)
+-   [constructor](PersistentMap.md#constructor)
 
 ### Properties
 
-- [\_elementPrefix](PersistentMap.md#_elementprefix)
-- [\_size](PersistentMap.md#_size)
+-   [\_elementPrefix](PersistentMap.md#_elementprefix)
+-   [\_size](PersistentMap.md#_size)
 
 ### Methods
 
-- [\_decreaseSize](PersistentMap.md#_decreasesize)
-- [\_increaseSize](PersistentMap.md#_increasesize)
-- [\_key](PersistentMap.md#_key)
-- [contains](PersistentMap.md#contains)
-- [delete](PersistentMap.md#delete)
-- [get](PersistentMap.md#get)
-- [getSome](PersistentMap.md#getsome)
-- [set](PersistentMap.md#set)
-- [size](PersistentMap.md#size)
+-   [\_decreaseSize](PersistentMap.md#_decreasesize)
+-   [\_increaseSize](PersistentMap.md#_increasesize)
+-   [\_key](PersistentMap.md#_key)
+-   [contains](PersistentMap.md#contains)
+-   [delete](PersistentMap.md#delete)
+-   [get](PersistentMap.md#get)
+-   [getSome](PersistentMap.md#getsome)
+-   [set](PersistentMap.md#set)
+-   [size](PersistentMap.md#size)
 
 ## Constructors
 
@@ -67,20 +67,20 @@ Always use a unique storage prefix for different collections.
 Example
 
 ```ts
-let map = new PersistentMap<string, string>("m") // note the prefix must be unique (per NEAR account)
+let map = new PersistentMap<string, string>("m"); // note the prefix must be unique (per NEAR account)
 ```
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `K` |
-| `V` |
+| :--- |
+| `K`  |
+| `V`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                                |
+| :------- | :------- | :----------------------------------------- |
 | `prefix` | `string` | A prefix to use for every key of this map. |
 
 #### Defined in
@@ -97,7 +97,7 @@ let map = new PersistentMap<string, string>("m") // note the prefix must be uniq
 
 [assembly/libraries/PersistentMap.ts:45](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L45)
 
-___
+---
 
 ### \_size
 
@@ -111,7 +111,7 @@ ___
 
 ### \_decreaseSize
 
-▸ **_decreaseSize**(): `void`
+▸ **\_decreaseSize**(): `void`
 
 Decreases the internal map size counter
 
@@ -123,19 +123,19 @@ Decreases the internal map size counter
 
 [assembly/libraries/PersistentMap.ts:137](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L137)
 
-___
+---
 
 ### \_increaseSize
 
-▸ **_increaseSize**(`key`): `void`
+▸ **\_increaseSize**(`key`): `void`
 
 Increases the internal map size counter
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `K` | Key to remove. |
+| Name  | Type | Description    |
+| :---- | :--- | :------------- |
+| `key` | `K`  | Key to remove. |
 
 #### Returns
 
@@ -145,17 +145,17 @@ Increases the internal map size counter
 
 [assembly/libraries/PersistentMap.ts:128](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L128)
 
-___
+---
 
 ### \_key
 
-▸ `Private` **_key**(`key`): `StaticArray`<`u8`\>
+▸ `Private` **\_key**(`key`): `StaticArray`<`u8`\>
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `K` | Search key. |
+| Name  | Type | Description |
+| :---- | :--- | :---------- |
+| `key` | `K`  | Search key. |
 
 #### Returns
 
@@ -167,7 +167,7 @@ An internal string key for a given key of type K.
 
 [assembly/libraries/PersistentMap.ts:68](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L68)
 
-___
+---
 
 ### contains
 
@@ -176,18 +176,18 @@ ___
 Checks whether the map contains a given key
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.contains("hello")      // false
-map.set("hello", "world")
-map.contains("hello")      // true
+map.contains("hello"); // false
+map.set("hello", "world");
+map.contains("hello"); // true
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `K` | Key to check. |
+| Name  | Type | Description   |
+| :---- | :--- | :------------ |
+| `key` | `K`  | Key to check. |
 
 #### Returns
 
@@ -199,7 +199,7 @@ True if the given key present in the map.
 
 [assembly/libraries/PersistentMap.ts:87](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L87)
 
-___
+---
 
 ### delete
 
@@ -208,19 +208,19 @@ ___
 Removes the given key and related value from the map
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
-map.delete("hello")
+map.set("hello", "world");
+map.delete("hello");
 ```
 
 Removes value and the key from the map.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `K` | Key to remove. |
+| Name  | Type | Description    |
+| :---- | :--- | :------------- |
+| `key` | `K`  | Key to remove. |
 
 #### Returns
 
@@ -230,7 +230,7 @@ Removes value and the key from the map.
 
 [assembly/libraries/PersistentMap.ts:119](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L119)
 
-___
+---
 
 ### get
 
@@ -239,22 +239,22 @@ ___
 Retrieves the related value for a given key, or uses the `defaultValue` if not key is found
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
-let found = map.get("hello")
-let notFound = map.get("goodbye", "cruel world")
+map.set("hello", "world");
+let found = map.get("hello");
+let notFound = map.get("goodbye", "cruel world");
 
-assert(found == "world")
-assert(notFound == "cruel world")
+assert(found == "world");
+assert(notFound == "cruel world");
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `K` | Key of the element. |
-| `defaultValue` | `V` | The default value if the key is not present. |
+| Name           | Type | Description                                  |
+| :------------- | :--- | :------------------------------------------- |
+| `key`          | `K`  | Key of the element.                          |
+| `defaultValue` | `V`  | The default value if the key is not present. |
 
 #### Returns
 
@@ -266,7 +266,7 @@ Value for the given key or the default value.
 
 [assembly/libraries/PersistentMap.ts:161](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L161)
 
-___
+---
 
 ### getSome
 
@@ -275,21 +275,21 @@ ___
 Retrieves a related value for a given key or fails assertion with "key not found"
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
-let result = map.getSome("hello")
+map.set("hello", "world");
+let result = map.getSome("hello");
 // map.getSome("goodbye")  // will throw with failed assertion
 
-assert(result == "world")
+assert(result == "world");
 ```
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `key` | `K` | `undefined` | Key of the element. |
-| `msg` | `string` | `"key not found"` | - |
+| Name  | Type     | Default value     | Description         |
+| :---- | :------- | :---------------- | :------------------ |
+| `key` | `K`      | `undefined`       | Key of the element. |
+| `msg` | `string` | `"key not found"` | -                   |
 
 #### Returns
 
@@ -301,26 +301,26 @@ Value for the given key or the default value.
 
 [assembly/libraries/PersistentMap.ts:210](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L210)
 
-___
+---
 
 ### set
 
 ▸ **set**(`key`, `value`): `void`
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
+map.set("hello", "world");
 ```
 
 Sets the new value for the given key.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `K` | Key of the element. |
-| `value` | `V` | The new value of the element. |
+| Name    | Type | Description                   |
+| :------ | :--- | :---------------------------- |
+| `key`   | `K`  | Key of the element.           |
+| `value` | `V`  | The new value of the element. |
 
 #### Returns
 
@@ -330,7 +330,7 @@ Sets the new value for the given key.
 
 [assembly/libraries/PersistentMap.ts:248](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/PersistentMap.ts#L248)
 
-___
+---
 
 ### size
 
@@ -341,9 +341,9 @@ Returns the map size
 **`Example`**
 
 ```ts
-let map = new PersistentMap<string, string> ("m")
+let map = new PersistentMap<string, string>("m");
 
-map.size()
+map.size();
 ```
 
 #### Returns

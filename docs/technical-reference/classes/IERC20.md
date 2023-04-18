@@ -1,49 +1,49 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / IERC20
+IERC20
 
 # Class: IERC20
 
 ## Hierarchy
 
-- `TokenWrapper`
+-   `TokenWrapper`
 
-  ↳ **`IERC20`**
+    ↳ **`IERC20`**
 
-  ↳↳ [`IWMAS`](IWMAS.md)
+    ↳↳ [`IWMAS`](IWMAS.md)
 
 ## Implements
 
-- `Serializable`
+-   `Serializable`
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](IERC20.md#constructor)
+-   [constructor](IERC20.md#constructor)
 
 ### Properties
 
-- [\_origin](IERC20.md#_origin)
+-   [\_origin](IERC20.md#_origin)
 
 ### Methods
 
-- [allowance](IERC20.md#allowance)
-- [balanceOf](IERC20.md#balanceof)
-- [burn](IERC20.md#burn)
-- [decreaseAllowance](IERC20.md#decreaseallowance)
-- [deserialize](IERC20.md#deserialize)
-- [equals](IERC20.md#equals)
-- [increaseAllowance](IERC20.md#increaseallowance)
-- [init](IERC20.md#init)
-- [mint](IERC20.md#mint)
-- [name](IERC20.md#name)
-- [notEqual](IERC20.md#notequal)
-- [received](IERC20.md#received)
-- [serialize](IERC20.md#serialize)
-- [symbol](IERC20.md#symbol)
-- [totalSupply](IERC20.md#totalsupply)
-- [transfer](IERC20.md#transfer)
-- [transferFrom](IERC20.md#transferfrom)
-- [version](IERC20.md#version)
+-   [allowance](IERC20.md#allowance)
+-   [balanceOf](IERC20.md#balanceof)
+-   [burn](IERC20.md#burn)
+-   [decreaseAllowance](IERC20.md#decreaseallowance)
+-   [deserialize](IERC20.md#deserialize)
+-   [equals](IERC20.md#equals)
+-   [increaseAllowance](IERC20.md#increaseallowance)
+-   [init](IERC20.md#init)
+-   [mint](IERC20.md#mint)
+-   [name](IERC20.md#name)
+-   [notEqual](IERC20.md#notequal)
+-   [received](IERC20.md#received)
+-   [serialize](IERC20.md#serialize)
+-   [symbol](IERC20.md#symbol)
+-   [totalSupply](IERC20.md#totalsupply)
+-   [transfer](IERC20.md#transfer)
+-   [transferFrom](IERC20.md#transferfrom)
+-   [version](IERC20.md#version)
 
 ## Constructors
 
@@ -53,8 +53,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `origin` | `Address` |
 
 #### Overrides
@@ -89,9 +89,9 @@ Returns the allowance set on the owner's account for the spender.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `ownerAccount` | `Address` |
+| Name             | Type      |
+| :--------------- | :-------- |
+| `ownerAccount`   | `Address` |
 | `spenderAccount` | `Address` |
 
 #### Returns
@@ -106,7 +106,7 @@ TokenWrapper.allowance
 
 [assembly/interfaces/TokenWrapper.ts:93](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L93)
 
-___
+---
 
 ### balanceOf
 
@@ -116,8 +116,8 @@ Returns the balance of an account.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `account` | `Address` |
 
 #### Returns
@@ -132,7 +132,7 @@ TokenWrapper.balanceOf
 
 [assembly/interfaces/TokenWrapper.ts:73](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L73)
 
-___
+---
 
 ### burn
 
@@ -142,8 +142,8 @@ Burn nbTokens on the caller address
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type  |
+| :--------- | :---- |
 | `nbTokens` | `u64` |
 
 #### Returns
@@ -158,7 +158,7 @@ TokenWrapper.burn
 
 [assembly/interfaces/TokenWrapper.ts:155](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L155)
 
-___
+---
 
 ### decreaseAllowance
 
@@ -171,10 +171,10 @@ This function can only be called by the owner.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type      |
+| :--------------- | :-------- |
 | `spenderAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens`       | `u64`     |
 
 #### Returns
 
@@ -188,7 +188,7 @@ TokenWrapper.decreaseAllowance
 
 [assembly/interfaces/TokenWrapper.ts:119](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L119)
 
-___
+---
 
 ### deserialize
 
@@ -196,10 +196,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -213,7 +213,7 @@ Serializable.deserialize
 
 [assembly/interfaces/IERC20.ts:33](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IERC20.ts#L33)
 
-___
+---
 
 ### equals
 
@@ -221,8 +221,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                  |
+| :------ | :-------------------- |
 | `other` | [`IERC20`](IERC20.md) |
 
 #### Returns
@@ -233,7 +233,7 @@ ___
 
 [assembly/interfaces/IERC20.ts:43](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IERC20.ts#L43)
 
-___
+---
 
 ### increaseAllowance
 
@@ -246,10 +246,10 @@ This function can only be called by the owner.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type      |
+| :--------------- | :-------- |
 | `spenderAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens`       | `u64`     |
 
 #### Returns
 
@@ -263,7 +263,7 @@ TokenWrapper.increaseAllowance
 
 [assembly/interfaces/TokenWrapper.ts:106](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L106)
 
-___
+---
 
 ### init
 
@@ -271,12 +271,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `symbol` | `string` |
-| `decimals` | `u8` |
-| `supply` | `u64` |
+| Name       | Type     |
+| :--------- | :------- |
+| `name`     | `string` |
+| `symbol`   | `string` |
+| `decimals` | `u8`     |
+| `supply`   | `u64`    |
 
 #### Returns
 
@@ -286,7 +286,7 @@ ___
 
 [assembly/interfaces/IERC20.ts:10](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IERC20.ts#L10)
 
-___
+---
 
 ### mint
 
@@ -296,10 +296,10 @@ Mint an amount of nbTokens tokens from to the toAccount address .
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type      |
+| :---------- | :-------- |
 | `toAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens`  | `u64`     |
 
 #### Returns
 
@@ -313,7 +313,7 @@ TokenWrapper.mint
 
 [assembly/interfaces/TokenWrapper.ts:146](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L146)
 
-___
+---
 
 ### name
 
@@ -335,7 +335,7 @@ TokenWrapper.name
 
 [assembly/interfaces/TokenWrapper.ts:45](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L45)
 
-___
+---
 
 ### notEqual
 
@@ -343,8 +343,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                  |
+| :------ | :-------------------- |
 | `other` | [`IERC20`](IERC20.md) |
 
 #### Returns
@@ -355,7 +355,7 @@ ___
 
 [assembly/interfaces/IERC20.ts:39](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IERC20.ts#L39)
 
-___
+---
 
 ### received
 
@@ -365,22 +365,22 @@ Returns the amount of token received by the pair
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type  | Description                |
+| :-------- | :---- | :------------------------- |
 | `reserve` | `u64` | The total reserve of token |
-| `fees` | `u64` | The total fees of token |
+| `fees`    | `u64` | The total fees of token    |
 
 #### Returns
 
 `u64`
 
-- The amount received by the pair
+-   The amount received by the pair
 
 #### Defined in
 
 [assembly/interfaces/IERC20.ts:23](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IERC20.ts#L23)
 
-___
+---
 
 ### serialize
 
@@ -398,7 +398,7 @@ Serializable.serialize
 
 [assembly/interfaces/IERC20.ts:29](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IERC20.ts#L29)
 
-___
+---
 
 ### symbol
 
@@ -420,7 +420,7 @@ TokenWrapper.symbol
 
 [assembly/interfaces/TokenWrapper.ts:53](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L53)
 
-___
+---
 
 ### totalSupply
 
@@ -444,7 +444,7 @@ TokenWrapper.totalSupply
 
 [assembly/interfaces/TokenWrapper.ts:64](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L64)
 
-___
+---
 
 ### transfer
 
@@ -454,10 +454,10 @@ Transfers tokens from the caller's account to the recipient's account.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type      |
+| :---------- | :-------- |
 | `toAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens`  | `u64`     |
 
 #### Returns
 
@@ -471,7 +471,7 @@ TokenWrapper.transfer
 
 [assembly/interfaces/TokenWrapper.ts:83](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L83)
 
-___
+---
 
 ### transferFrom
 
@@ -482,16 +482,17 @@ the recipient's account using the spender's allowance.
 
 This function can only be called by the spender.
 This function is atomic:
-- both allowance and transfer are executed if possible;
-- or if allowance or transfer is not possible, both are discarded.
+
+-   both allowance and transfer are executed if possible;
+-   or if allowance or transfer is not possible, both are discarded.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `ownerAccount` | `Address` |
+| Name               | Type      |
+| :----------------- | :-------- |
+| `ownerAccount`     | `Address` |
 | `recipientAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens`         | `u64`     |
 
 #### Returns
 
@@ -505,7 +506,7 @@ TokenWrapper.transferFrom
 
 [assembly/interfaces/TokenWrapper.ts:136](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/TokenWrapper.ts#L136)
 
-___
+---
 
 ### version
 

@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / IQuoter
+IQuoter
 
 # Class: IQuoter
 
@@ -6,19 +6,19 @@
 
 ### Constructors
 
-- [constructor](IQuoter.md#constructor)
+-   [constructor](IQuoter.md#constructor)
 
 ### Properties
 
-- [\_origin](IQuoter.md#_origin)
+-   [\_origin](IQuoter.md#_origin)
 
 ### Methods
 
-- [factory](IQuoter.md#factory)
-- [findBestPathFromAmountIn](IQuoter.md#findbestpathfromamountin)
-- [findBestPathFromAmountOut](IQuoter.md#findbestpathfromamountout)
-- [init](IQuoter.md#init)
-- [router](IQuoter.md#router)
+-   [factory](IQuoter.md#factory)
+-   [findBestPathFromAmountIn](IQuoter.md#findbestpathfromamountin)
+-   [findBestPathFromAmountOut](IQuoter.md#findbestpathfromamountout)
+-   [init](IQuoter.md#init)
+-   [router](IQuoter.md#router)
 
 ## Constructors
 
@@ -28,8 +28,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_origin` | `Address` |
 
 #### Defined in
@@ -60,7 +60,7 @@
 
 [assembly/interfaces/IQuoter.ts:33](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IQuoter.ts#L33)
 
-___
+---
 
 ### findBestPathFromAmountIn
 
@@ -68,10 +68,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `route` | `Address`[] |
-| `amountIn` | `u64` |
+| Name       | Type        |
+| :--------- | :---------- |
+| `route`    | `Address`[] |
+| `amountIn` | `u64`       |
 
 #### Returns
 
@@ -81,7 +81,7 @@ ___
 
 [assembly/interfaces/IQuoter.ts:16](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IQuoter.ts#L16)
 
-___
+---
 
 ### findBestPathFromAmountOut
 
@@ -89,10 +89,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `route` | `Address`[] |
-| `amountOut` | `u64` |
+| Name        | Type        |
+| :---------- | :---------- |
+| `route`     | `Address`[] |
+| `amountOut` | `u64`       |
 
 #### Returns
 
@@ -102,7 +102,7 @@ ___
 
 [assembly/interfaces/IQuoter.ts:22](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IQuoter.ts#L22)
 
-___
+---
 
 ### init
 
@@ -110,9 +110,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `router` | `Address` |
+| Name      | Type      |
+| :-------- | :-------- |
+| `router`  | `Address` |
 | `factory` | `Address` |
 
 #### Returns
@@ -123,7 +123,7 @@ ___
 
 [assembly/interfaces/IQuoter.ts:11](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IQuoter.ts#L11)
 
-___
+---
 
 ### router
 

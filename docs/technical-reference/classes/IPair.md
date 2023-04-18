@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / IPair
+IPair
 
 # Class: IPair
 
@@ -6,39 +6,39 @@
 
 ### Constructors
 
-- [constructor](IPair.md#constructor)
+-   [constructor](IPair.md#constructor)
 
 ### Properties
 
-- [\_origin](IPair.md#_origin)
+-   [\_origin](IPair.md#_origin)
 
 ### Methods
 
-- [balanceOf](IPair.md#balanceof)
-- [balanceOfBatch](IPair.md#balanceofbatch)
-- [burn](IPair.md#burn)
-- [collectFees](IPair.md#collectfees)
-- [feeParameters](IPair.md#feeparameters)
-- [findFirstNonEmptyBinId](IPair.md#findfirstnonemptybinid)
-- [forceDecay](IPair.md#forcedecay)
-- [getBin](IPair.md#getbin)
-- [getFactory](IPair.md#getfactory)
-- [getPairInformation](IPair.md#getpairinformation)
-- [getTokenX](IPair.md#gettokenx)
-- [getTokenY](IPair.md#gettokeny)
-- [getUserBins](IPair.md#getuserbins)
-- [init](IPair.md#init)
-- [isApprovedForAll](IPair.md#isapprovedforall)
-- [mint](IPair.md#mint)
-- [name](IPair.md#name)
-- [pendingFees](IPair.md#pendingfees)
-- [safeBatchTransferFrom](IPair.md#safebatchtransferfrom)
-- [safeTransferFrom](IPair.md#safetransferfrom)
-- [setApprovalForAll](IPair.md#setapprovalforall)
-- [setFeesParameters](IPair.md#setfeesparameters)
-- [swap](IPair.md#swap)
-- [symbol](IPair.md#symbol)
-- [totalSupply](IPair.md#totalsupply)
+-   [balanceOf](IPair.md#balanceof)
+-   [balanceOfBatch](IPair.md#balanceofbatch)
+-   [burn](IPair.md#burn)
+-   [collectFees](IPair.md#collectfees)
+-   [feeParameters](IPair.md#feeparameters)
+-   [findFirstNonEmptyBinId](IPair.md#findfirstnonemptybinid)
+-   [forceDecay](IPair.md#forcedecay)
+-   [getBin](IPair.md#getbin)
+-   [getFactory](IPair.md#getfactory)
+-   [getPairInformation](IPair.md#getpairinformation)
+-   [getTokenX](IPair.md#gettokenx)
+-   [getTokenY](IPair.md#gettokeny)
+-   [getUserBins](IPair.md#getuserbins)
+-   [init](IPair.md#init)
+-   [isApprovedForAll](IPair.md#isapprovedforall)
+-   [mint](IPair.md#mint)
+-   [name](IPair.md#name)
+-   [pendingFees](IPair.md#pendingfees)
+-   [safeBatchTransferFrom](IPair.md#safebatchtransferfrom)
+-   [safeTransferFrom](IPair.md#safetransferfrom)
+-   [setApprovalForAll](IPair.md#setapprovalforall)
+-   [setFeesParameters](IPair.md#setfeesparameters)
+-   [swap](IPair.md#swap)
+-   [symbol](IPair.md#symbol)
+-   [totalSupply](IPair.md#totalsupply)
 
 ## Constructors
 
@@ -50,8 +50,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                    |
+| :--- | :-------- | :----------------------------- |
 | `at` | `Address` | Address of the smart contract. |
 
 #### Defined in
@@ -76,10 +76,10 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type      |
+| :--------- | :-------- |
 | `_account` | `Address` |
-| `_id` | `u64` |
+| `_id`      | `u64`     |
 
 #### Returns
 
@@ -89,7 +89,7 @@ Wraps a smart contract exposing standard token FFI.
 
 [assembly/interfaces/IPair.ts:148](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L148)
 
-___
+---
 
 ### balanceOfBatch
 
@@ -97,10 +97,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type        |
+| :---------- | :---------- |
 | `_accounts` | `Address`[] |
-| `_ids` | `u64`[] |
+| `_ids`      | `u64`[]     |
 
 #### Returns
 
@@ -110,7 +110,7 @@ ___
 
 [assembly/interfaces/IPair.ts:153](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L153)
 
-___
+---
 
 ### burn
 
@@ -118,11 +118,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_ids` | `u64`[] |
-| `_amounts` | `u64`[] |
-| `_to` | `Address` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_ids`     | `u64`[]   |
+| `_amounts` | `u64`[]   |
+| `_to`      | `Address` |
 
 #### Returns
 
@@ -132,7 +132,7 @@ ___
 
 [assembly/interfaces/IPair.ts:91](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L91)
 
-___
+---
 
 ### collectFees
 
@@ -140,10 +140,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `account` | `Address` |
-| `ids` | `u64`[] |
+| `ids`     | `u64`[]   |
 
 #### Returns
 
@@ -153,7 +153,7 @@ ___
 
 [assembly/interfaces/IPair.ts:183](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L183)
 
-___
+---
 
 ### feeParameters
 
@@ -167,7 +167,7 @@ ___
 
 [assembly/interfaces/IPair.ts:39](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L39)
 
-___
+---
 
 ### findFirstNonEmptyBinId
 
@@ -175,9 +175,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `u32` |
+| Name         | Type   |
+| :----------- | :----- |
+| `id`         | `u32`  |
 | `sentTokenY` | `bool` |
 
 #### Returns
@@ -188,7 +188,7 @@ ___
 
 [assembly/interfaces/IPair.ts:115](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L115)
 
-___
+---
 
 ### forceDecay
 
@@ -202,7 +202,7 @@ ___
 
 [assembly/interfaces/IPair.ts:129](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L129)
 
-___
+---
 
 ### getBin
 
@@ -210,8 +210,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `_id` | `u32` |
 
 #### Returns
@@ -222,7 +222,7 @@ ___
 
 [assembly/interfaces/IPair.ts:44](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L44)
 
-___
+---
 
 ### getFactory
 
@@ -236,7 +236,7 @@ ___
 
 [assembly/interfaces/IPair.ts:120](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L120)
 
-___
+---
 
 ### getPairInformation
 
@@ -250,7 +250,7 @@ ___
 
 [assembly/interfaces/IPair.ts:105](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L105)
 
-___
+---
 
 ### getTokenX
 
@@ -264,7 +264,7 @@ ___
 
 [assembly/interfaces/IPair.ts:97](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L97)
 
-___
+---
 
 ### getTokenY
 
@@ -278,7 +278,7 @@ ___
 
 [assembly/interfaces/IPair.ts:101](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L101)
 
-___
+---
 
 ### getUserBins
 
@@ -286,8 +286,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `account` | `Address` |
 
 #### Returns
@@ -298,7 +298,7 @@ ___
 
 [assembly/interfaces/IPair.ts:110](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L110)
 
-___
+---
 
 ### init
 
@@ -308,13 +308,13 @@ Calls the constructor
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `factory` | `Address` |
-| `tokenX` | `Address` |
-| `tokenY` | `Address` |
-| `activeId` | `u32` |
-| `fp` | [`FeeParameters`](FeeParameters.md) |
+| Name       | Type                                |
+| :--------- | :---------------------------------- |
+| `factory`  | `Address`                           |
+| `tokenX`   | `Address`                           |
+| `tokenY`   | `Address`                           |
+| `activeId` | `u32`                               |
+| `fp`       | [`FeeParameters`](FeeParameters.md) |
 
 #### Returns
 
@@ -324,7 +324,7 @@ Calls the constructor
 
 [assembly/interfaces/IPair.ts:34](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L34)
 
-___
+---
 
 ### isApprovedForAll
 
@@ -332,9 +332,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_owner` | `Address` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_owner`   | `Address` |
 | `_spender` | `Address` |
 
 #### Returns
@@ -345,7 +345,7 @@ ___
 
 [assembly/interfaces/IPair.ts:159](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L159)
 
-___
+---
 
 ### mint
 
@@ -360,12 +360,12 @@ Any excess amount of token will be sent to the `to` address. The lengths of the 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_ids` | `u64`[] | The ids of the bins where the liquidity will be added. It will mint LB tokens for each of these bins. |
-| `_distributionX` | `u64`[] | The percentage of token X to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
-| `_distributionY` | `u64`[] | The percentage of token Y to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
-| `_to` | `Address` | The address that will receive the LB tokens and the excess amount of tokens. |
+| Name             | Type      | Description                                                                                                |
+| :--------------- | :-------- | :--------------------------------------------------------------------------------------------------------- |
+| `_ids`           | `u64`[]   | The ids of the bins where the liquidity will be added. It will mint LB tokens for each of these bins.      |
+| `_distributionX` | `u64`[]   | The percentage of token X to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
+| `_distributionY` | `u64`[]   | The percentage of token Y to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
+| `_to`            | `Address` | The address that will receive the LB tokens and the excess amount of tokens.                               |
 
 #### Returns
 
@@ -375,7 +375,7 @@ Any excess amount of token will be sent to the `to` address. The lengths of the 
 
 [assembly/interfaces/IPair.ts:81](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L81)
 
-___
+---
 
 ### name
 
@@ -389,7 +389,7 @@ ___
 
 [assembly/interfaces/IPair.ts:133](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L133)
 
-___
+---
 
 ### pendingFees
 
@@ -397,10 +397,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `account` | `Address` |
-| `ids` | `u64`[] |
+| `ids`     | `u64`[]   |
 
 #### Returns
 
@@ -410,7 +410,7 @@ ___
 
 [assembly/interfaces/IPair.ts:177](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L177)
 
-___
+---
 
 ### safeBatchTransferFrom
 
@@ -418,12 +418,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_from` | `Address` |
-| `_to` | `Address` |
-| `_ids` | `u64`[] |
-| `_amounts` | `u64`[] |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_from`    | `Address` |
+| `_to`      | `Address` |
+| `_ids`     | `u64`[]   |
+| `_amounts` | `u64`[]   |
 
 #### Returns
 
@@ -433,7 +433,7 @@ ___
 
 [assembly/interfaces/IPair.ts:172](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L172)
 
-___
+---
 
 ### safeTransferFrom
 
@@ -441,12 +441,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_from` | `Address` |
-| `_to` | `Address` |
-| `_id` | `u64` |
-| `amount` | `u64` |
+| Name     | Type      |
+| :------- | :-------- |
+| `_from`  | `Address` |
+| `_to`    | `Address` |
+| `_id`    | `u64`     |
+| `amount` | `u64`     |
 
 #### Returns
 
@@ -456,7 +456,7 @@ ___
 
 [assembly/interfaces/IPair.ts:168](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L168)
 
-___
+---
 
 ### setApprovalForAll
 
@@ -464,10 +464,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_approved` | `bool` |
-| `_sender` | `Address` |
+| Name        | Type      |
+| :---------- | :-------- |
+| `_approved` | `bool`    |
+| `_sender`   | `Address` |
 
 #### Returns
 
@@ -477,7 +477,7 @@ ___
 
 [assembly/interfaces/IPair.ts:164](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L164)
 
-___
+---
 
 ### setFeesParameters
 
@@ -485,8 +485,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                                |
+| :--- | :---------------------------------- |
 | `fp` | [`FeeParameters`](FeeParameters.md) |
 
 #### Returns
@@ -497,7 +497,7 @@ ___
 
 [assembly/interfaces/IPair.ts:124](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L124)
 
-___
+---
 
 ### swap
 
@@ -512,10 +512,10 @@ that will also perform safety checks.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `swapForY` | `bool` | Whether you've swapping token X for token Y (true) or token Y for token X (false) |
-| `to` | `Address` | The address to send the tokens to |
+| Name       | Type      | Description                                                                       |
+| :--------- | :-------- | :-------------------------------------------------------------------------------- |
+| `swapForY` | `bool`    | Whether you've swapping token X for token Y (true) or token Y for token X (false) |
+| `to`       | `Address` | The address to send the tokens to                                                 |
 
 #### Returns
 
@@ -525,7 +525,7 @@ that will also perform safety checks.
 
 [assembly/interfaces/IPair.ts:61](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L61)
 
-___
+---
 
 ### symbol
 
@@ -539,7 +539,7 @@ ___
 
 [assembly/interfaces/IPair.ts:138](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L138)
 
-___
+---
 
 ### totalSupply
 
@@ -547,8 +547,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `_id` | `u64` |
 
 #### Returns

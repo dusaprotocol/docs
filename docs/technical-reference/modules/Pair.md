@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / Pair
+Pair
 
 # Namespace: Pair
 

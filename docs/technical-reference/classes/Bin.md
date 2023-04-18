@@ -1,30 +1,30 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / Bin
+Bin
 
 # Class: Bin
 
 ## Implements
 
-- `Serializable`
+-   `Serializable`
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Bin.md#constructor)
+-   [constructor](Bin.md#constructor)
 
 ### Properties
 
-- [accTokenXPerShare](Bin.md#acctokenxpershare)
-- [accTokenYPerShare](Bin.md#acctokenypershare)
-- [reserveX](Bin.md#reservex)
-- [reserveY](Bin.md#reservey)
+-   [accTokenXPerShare](Bin.md#acctokenxpershare)
+-   [accTokenYPerShare](Bin.md#acctokenypershare)
+-   [reserveX](Bin.md#reservex)
+-   [reserveY](Bin.md#reservey)
 
 ### Methods
 
-- [deserialize](Bin.md#deserialize)
-- [serialize](Bin.md#serialize)
-- [updateFees](Bin.md#updatefees)
-- [updateReserves](Bin.md#updatereserves)
+-   [deserialize](Bin.md#deserialize)
+-   [serialize](Bin.md#serialize)
+-   [updateFees](Bin.md#updatefees)
+-   [updateReserves](Bin.md#updatereserves)
 
 ## Constructors
 
@@ -34,12 +34,12 @@
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `reserveX` | `u64` | `0` |
-| `reserveY` | `u64` | `0` |
-| `accTokenXPerShare` | `u64` | `0` |
-| `accTokenYPerShare` | `u64` | `0` |
+| Name                | Type  | Default value |
+| :------------------ | :---- | :------------ |
+| `reserveX`          | `u64` | `0`           |
+| `reserveY`          | `u64` | `0`           |
+| `accTokenXPerShare` | `u64` | `0`           |
+| `accTokenYPerShare` | `u64` | `0`           |
 
 #### Defined in
 
@@ -55,7 +55,7 @@
 
 [assembly/structs/Bin.ts:10](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Bin.ts#L10)
 
-___
+---
 
 ### accTokenYPerShare
 
@@ -65,7 +65,7 @@ ___
 
 [assembly/structs/Bin.ts:11](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Bin.ts#L11)
 
-___
+---
 
 ### reserveX
 
@@ -75,7 +75,7 @@ ___
 
 [assembly/structs/Bin.ts:8](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Bin.ts#L8)
 
-___
+---
 
 ### reserveY
 
@@ -93,10 +93,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -110,7 +110,7 @@ Serializable.deserialize
 
 [assembly/structs/Bin.ts:72](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Bin.ts#L72)
 
-___
+---
 
 ### serialize
 
@@ -128,7 +128,7 @@ Serializable.serialize
 
 [assembly/structs/Bin.ts:63](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Bin.ts#L63)
 
-___
+---
 
 ### updateFees
 
@@ -138,12 +138,12 @@ Update the fees of the pair and accumulated token per share of the bin
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pairFees` | [`FeesDistribution`](FeesDistribution.md) | The current fees of the pair information |
-| `fees` | [`FeesDistribution`](FeesDistribution.md) | The fees amounts added to the pairFees |
-| `swapForY` | `bool` | whether the token sent was Y (true) or X (false) |
-| `totalSupply` | `u64` | The total supply of the token id |
+| Name          | Type                                      | Description                                      |
+| :------------ | :---------------------------------------- | :----------------------------------------------- |
+| `pairFees`    | [`FeesDistribution`](FeesDistribution.md) | The current fees of the pair information         |
+| `fees`        | [`FeesDistribution`](FeesDistribution.md) | The fees amounts added to the pairFees           |
+| `swapForY`    | `bool`                                    | whether the token sent was Y (true) or X (false) |
+| `totalSupply` | `u64`                                     | The total supply of the token id                 |
 
 #### Returns
 
@@ -153,7 +153,7 @@ Update the fees of the pair and accumulated token per share of the bin
 
 [assembly/structs/Bin.ts:22](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Bin.ts#L22)
 
-___
+---
 
 ### updateReserves
 
@@ -163,12 +163,12 @@ Update reserves
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pair` | [`PairInformation`](PairInformation.md) | The pair information |
-| `swapForY` | `bool` | whether the token sent was Y (true) or X (false) |
-| `amountInToBin` | `u64` | The amount of token that is added to the bin without fees |
-| `amountOutOfBin` | `u64` | The amount of token that is removed from the bin |
+| Name             | Type                                    | Description                                               |
+| :--------------- | :-------------------------------------- | :-------------------------------------------------------- |
+| `pair`           | [`PairInformation`](PairInformation.md) | The pair information                                      |
+| `swapForY`       | `bool`                                  | whether the token sent was Y (true) or X (false)          |
+| `amountInToBin`  | `u64`                                   | The amount of token that is added to the bin without fees |
+| `amountOutOfBin` | `u64`                                   | The amount of token that is removed from the bin          |
 
 #### Returns
 

@@ -1,37 +1,37 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / MintInfo
+MintInfo
 
 # Class: MintInfo
 
 ## Implements
 
-- `Serializable`
+-   `Serializable`
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](MintInfo.md#constructor)
+-   [constructor](MintInfo.md#constructor)
 
 ### Properties
 
-- [activeFeeX](MintInfo.md#activefeex)
-- [activeFeeY](MintInfo.md#activefeey)
-- [amountX](MintInfo.md#amountx)
-- [amountXAddedToPair](MintInfo.md#amountxaddedtopair)
-- [amountXIn](MintInfo.md#amountxin)
-- [amountY](MintInfo.md#amounty)
-- [amountYAddedToPair](MintInfo.md#amountyaddedtopair)
-- [amountYIn](MintInfo.md#amountyin)
-- [distributionX](MintInfo.md#distributionx)
-- [distributionY](MintInfo.md#distributiony)
-- [id](MintInfo.md#id)
-- [totalDistributionX](MintInfo.md#totaldistributionx)
-- [totalDistributionY](MintInfo.md#totaldistributiony)
+-   [activeFeeX](MintInfo.md#activefeex)
+-   [activeFeeY](MintInfo.md#activefeey)
+-   [amountX](MintInfo.md#amountx)
+-   [amountXAddedToPair](MintInfo.md#amountxaddedtopair)
+-   [amountXIn](MintInfo.md#amountxin)
+-   [amountY](MintInfo.md#amounty)
+-   [amountYAddedToPair](MintInfo.md#amountyaddedtopair)
+-   [amountYIn](MintInfo.md#amountyin)
+-   [distributionX](MintInfo.md#distributionx)
+-   [distributionY](MintInfo.md#distributiony)
+-   [id](MintInfo.md#id)
+-   [totalDistributionX](MintInfo.md#totaldistributionx)
+-   [totalDistributionY](MintInfo.md#totaldistributiony)
 
 ### Methods
 
-- [deserialize](MintInfo.md#deserialize)
-- [serialize](MintInfo.md#serialize)
+-   [deserialize](MintInfo.md#deserialize)
+-   [serialize](MintInfo.md#serialize)
 
 ## Constructors
 
@@ -41,21 +41,21 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `amountXIn` | `u64` | `0` | The amount of token X sent |
-| `amountYIn` | `u64` | `0` | The amount of token Y sent |
-| `amountXAddedToPair` | `u64` | `0` | The amount of token X that have been actually added to the pair |
-| `amountYAddedToPair` | `u64` | `0` | The amount of token Y that have been actually added to the pair |
-| `activeFeeX` | `u64` | `0` | Fees X currently generated |
-| `activeFeeY` | `u64` | `0` | Fees Y currently generated |
-| `totalDistributionX` | `u64` | `0` | Total distribution of token X. Should be 1e9 (100%) or 0 (0%) |
-| `totalDistributionY` | `u64` | `0` | Total distribution of token Y. Should be 1e9 (100%) or 0 (0%) |
-| `id` | `u64` | `0` | Id of the current working bin when looping on the distribution array |
-| `amountX` | `u64` | `0` | The amount of token X deposited in the current bin |
-| `amountY` | `u64` | `0` | The amount of token Y deposited in the current bin |
-| `distributionX` | `u64` | `0` | Distribution of token X for the current working bin |
-| `distributionY` | `u64` | `0` | Distribution of token Y for the current working bin |
+| Name                 | Type  | Default value | Description                                                          |
+| :------------------- | :---- | :------------ | :------------------------------------------------------------------- |
+| `amountXIn`          | `u64` | `0`           | The amount of token X sent                                           |
+| `amountYIn`          | `u64` | `0`           | The amount of token Y sent                                           |
+| `amountXAddedToPair` | `u64` | `0`           | The amount of token X that have been actually added to the pair      |
+| `amountYAddedToPair` | `u64` | `0`           | The amount of token Y that have been actually added to the pair      |
+| `activeFeeX`         | `u64` | `0`           | Fees X currently generated                                           |
+| `activeFeeY`         | `u64` | `0`           | Fees Y currently generated                                           |
+| `totalDistributionX` | `u64` | `0`           | Total distribution of token X. Should be 1e9 (100%) or 0 (0%)        |
+| `totalDistributionY` | `u64` | `0`           | Total distribution of token Y. Should be 1e9 (100%) or 0 (0%)        |
+| `id`                 | `u64` | `0`           | Id of the current working bin when looping on the distribution array |
+| `amountX`            | `u64` | `0`           | The amount of token X deposited in the current bin                   |
+| `amountY`            | `u64` | `0`           | The amount of token Y deposited in the current bin                   |
+| `distributionX`      | `u64` | `0`           | Distribution of token X for the current working bin                  |
+| `distributionY`      | `u64` | `0`           | Distribution of token Y for the current working bin                  |
 
 #### Defined in
 
@@ -73,7 +73,7 @@ Fees X currently generated
 
 [assembly/structs/MintInfo.ts:26](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L26)
 
-___
+---
 
 ### activeFeeY
 
@@ -85,7 +85,7 @@ Fees Y currently generated
 
 [assembly/structs/MintInfo.ts:27](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L27)
 
-___
+---
 
 ### amountX
 
@@ -97,7 +97,7 @@ The amount of token X deposited in the current bin
 
 [assembly/structs/MintInfo.ts:31](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L31)
 
-___
+---
 
 ### amountXAddedToPair
 
@@ -109,7 +109,7 @@ The amount of token X that have been actually added to the pair
 
 [assembly/structs/MintInfo.ts:24](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L24)
 
-___
+---
 
 ### amountXIn
 
@@ -121,7 +121,7 @@ The amount of token X sent
 
 [assembly/structs/MintInfo.ts:22](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L22)
 
-___
+---
 
 ### amountY
 
@@ -133,7 +133,7 @@ The amount of token Y deposited in the current bin
 
 [assembly/structs/MintInfo.ts:32](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L32)
 
-___
+---
 
 ### amountYAddedToPair
 
@@ -145,7 +145,7 @@ The amount of token Y that have been actually added to the pair
 
 [assembly/structs/MintInfo.ts:25](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L25)
 
-___
+---
 
 ### amountYIn
 
@@ -157,7 +157,7 @@ The amount of token Y sent
 
 [assembly/structs/MintInfo.ts:23](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L23)
 
-___
+---
 
 ### distributionX
 
@@ -169,7 +169,7 @@ Distribution of token X for the current working bin
 
 [assembly/structs/MintInfo.ts:33](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L33)
 
-___
+---
 
 ### distributionY
 
@@ -181,7 +181,7 @@ Distribution of token Y for the current working bin
 
 [assembly/structs/MintInfo.ts:34](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L34)
 
-___
+---
 
 ### id
 
@@ -193,7 +193,7 @@ Id of the current working bin when looping on the distribution array
 
 [assembly/structs/MintInfo.ts:30](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L30)
 
-___
+---
 
 ### totalDistributionX
 
@@ -205,7 +205,7 @@ Total distribution of token X. Should be 1e9 (100%) or 0 (0%)
 
 [assembly/structs/MintInfo.ts:28](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L28)
 
-___
+---
 
 ### totalDistributionY
 
@@ -225,10 +225,10 @@ Total distribution of token Y. Should be 1e9 (100%) or 0 (0%)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -242,7 +242,7 @@ Serializable.deserialize
 
 [assembly/structs/MintInfo.ts:59](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/MintInfo.ts#L59)
 
-___
+---
 
 ### serialize
 

@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / MintReturn
+MintReturn
 
 # Class: MintReturn
 
@@ -6,13 +6,13 @@
 
 ### Constructors
 
-- [constructor](MintReturn.md#constructor)
+-   [constructor](MintReturn.md#constructor)
 
 ### Properties
 
-- [amountXAdded](MintReturn.md#amountxadded)
-- [amountYAdded](MintReturn.md#amountyadded)
-- [liquidityMinted](MintReturn.md#liquidityminted)
+-   [amountXAdded](MintReturn.md#amountxadded)
+-   [amountYAdded](MintReturn.md#amountyadded)
+-   [liquidityMinted](MintReturn.md#liquidityminted)
 
 ## Constructors
 
@@ -22,10 +22,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `amountXAdded` | `u64` |
-| `amountYAdded` | `u64` |
+| Name              | Type    |
+| :---------------- | :------ |
+| `amountXAdded`    | `u64`   |
+| `amountYAdded`    | `u64`   |
 | `liquidityMinted` | `u64`[] |
 
 #### Defined in
@@ -42,7 +42,7 @@
 
 [assembly/interfaces/IPair.ts:11](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L11)
 
-___
+---
 
 ### amountYAdded
 
@@ -52,7 +52,7 @@ ___
 
 [assembly/interfaces/IPair.ts:11](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L11)
 
-___
+---
 
 ### liquidityMinted
 

@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / GetFeesReturn
+GetFeesReturn
 
 # Class: GetFeesReturn
 
@@ -6,12 +6,12 @@
 
 ### Constructors
 
-- [constructor](GetFeesReturn.md#constructor)
+-   [constructor](GetFeesReturn.md#constructor)
 
 ### Properties
 
-- [amountX](GetFeesReturn.md#amountx)
-- [amountY](GetFeesReturn.md#amounty)
+-   [amountX](GetFeesReturn.md#amountx)
+-   [amountY](GetFeesReturn.md#amounty)
 
 ## Constructors
 
@@ -21,8 +21,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type  |
+| :-------- | :---- |
 | `amountX` | `u64` |
 | `amountY` | `u64` |
 
@@ -40,7 +40,7 @@
 
 [assembly/interfaces/IPair.ts:8](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L8)
 
-___
+---
 
 ### amountY
 

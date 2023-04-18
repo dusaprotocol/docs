@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / GetIdsFromAboveReturn
+GetIdsFromAboveReturn
 
 # Class: GetIdsFromAboveReturn
 
@@ -6,12 +6,12 @@
 
 ### Constructors
 
-- [constructor](GetIdsFromAboveReturn.md#constructor)
+-   [constructor](GetIdsFromAboveReturn.md#constructor)
 
 ### Properties
 
-- [branchId](GetIdsFromAboveReturn.md#branchid)
-- [leafId](GetIdsFromAboveReturn.md#leafid)
+-   [branchId](GetIdsFromAboveReturn.md#branchid)
+-   [leafId](GetIdsFromAboveReturn.md#leafid)
 
 ## Constructors
 
@@ -21,10 +21,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type  |
+| :--------- | :---- |
 | `branchId` | `u32` |
-| `leafId` | `u32` |
+| `leafId`   | `u32` |
 
 #### Defined in
 
@@ -40,7 +40,7 @@
 
 [assembly/libraries/TreeHelper.ts:6](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/TreeHelper.ts#L6)
 
-___
+---
 
 ### leafId
 

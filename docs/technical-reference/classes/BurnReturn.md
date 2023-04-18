@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / BurnReturn
+BurnReturn
 
 # Class: BurnReturn
 
@@ -6,12 +6,12 @@
 
 ### Constructors
 
-- [constructor](BurnReturn.md#constructor)
+-   [constructor](BurnReturn.md#constructor)
 
 ### Properties
 
-- [amountX](BurnReturn.md#amountx)
-- [amountY](BurnReturn.md#amounty)
+-   [amountX](BurnReturn.md#amountx)
+-   [amountY](BurnReturn.md#amounty)
 
 ## Constructors
 
@@ -21,8 +21,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type  |
+| :-------- | :---- |
 | `amountX` | `u64` |
 | `amountY` | `u64` |
 
@@ -40,7 +40,7 @@
 
 [assembly/interfaces/IPair.ts:14](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IPair.ts#L14)
 
-___
+---
 
 ### amountY
 

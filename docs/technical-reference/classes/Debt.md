@@ -1,26 +1,26 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / Debt
+Debt
 
 # Class: Debt
 
 ## Implements
 
-- `Serializable`
+-   `Serializable`
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Debt.md#constructor)
+-   [constructor](Debt.md#constructor)
 
 ### Properties
 
-- [debtX](Debt.md#debtx)
-- [debtY](Debt.md#debty)
+-   [debtX](Debt.md#debtx)
+-   [debtY](Debt.md#debty)
 
 ### Methods
 
-- [deserialize](Debt.md#deserialize)
-- [serialize](Debt.md#serialize)
+-   [deserialize](Debt.md#deserialize)
+-   [serialize](Debt.md#serialize)
 
 ## Constructors
 
@@ -30,10 +30,10 @@
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `debtX` | `u64` | `0` |
-| `debtY` | `u64` | `0` |
+| Name    | Type  | Default value |
+| :------ | :---- | :------------ |
+| `debtX` | `u64` | `0`           |
+| `debtY` | `u64` | `0`           |
 
 #### Defined in
 
@@ -49,7 +49,7 @@
 
 [assembly/structs/Debt.ts:4](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Debt.ts#L4)
 
-___
+---
 
 ### debtY
 
@@ -67,10 +67,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -84,7 +84,7 @@ Serializable.deserialize
 
 [assembly/structs/Debt.ts:10](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/Debt.ts#L10)
 
-___
+---
 
 ### serialize
 

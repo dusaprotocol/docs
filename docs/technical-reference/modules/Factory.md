@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / Factory
+Factory
 
 # Namespace: Factory
 
@@ -6,23 +6,23 @@
 
 ### Functions
 
-- [addQuoteAsset](Factory.md#addquoteasset)
-- [constructor](Factory.md#constructor)
-- [createLBPair](Factory.md#createlbpair)
-- [forceDecay](Factory.md#forcedecay)
-- [getAllBinSteps](Factory.md#getallbinsteps)
-- [getAvailableLBPairBinSteps](Factory.md#getavailablelbpairbinsteps)
-- [getLBPairInformation](Factory.md#getlbpairinformation)
-- [removePreset](Factory.md#removepreset)
-- [removeQuoteAsset](Factory.md#removequoteasset)
-- [setFactoryLockedState](Factory.md#setfactorylockedstate)
-- [setFeeRecipient](Factory.md#setfeerecipient)
-- [setFeesParametersOnPair](Factory.md#setfeesparametersonpair)
-- [setFlashLoanFee](Factory.md#setflashloanfee)
-- [setLBPairIgnored](Factory.md#setlbpairignored)
-- [setLBPairInformation](Factory.md#setlbpairinformation)
-- [setPreset](Factory.md#setpreset)
-- [transferOwnership](Factory.md#transferownership)
+-   [addQuoteAsset](Factory.md#addquoteasset)
+-   [constructor](Factory.md#constructor)
+-   [createLBPair](Factory.md#createlbpair)
+-   [forceDecay](Factory.md#forcedecay)
+-   [getAllBinSteps](Factory.md#getallbinsteps)
+-   [getAvailableLBPairBinSteps](Factory.md#getavailablelbpairbinsteps)
+-   [getLBPairInformation](Factory.md#getlbpairinformation)
+-   [removePreset](Factory.md#removepreset)
+-   [removeQuoteAsset](Factory.md#removequoteasset)
+-   [setFactoryLockedState](Factory.md#setfactorylockedstate)
+-   [setFeeRecipient](Factory.md#setfeerecipient)
+-   [setFeesParametersOnPair](Factory.md#setfeesparametersonpair)
+-   [setFlashLoanFee](Factory.md#setflashloanfee)
+-   [setLBPairIgnored](Factory.md#setlbpairignored)
+-   [setLBPairInformation](Factory.md#setlbpairinformation)
+-   [setPreset](Factory.md#setpreset)
+-   [transferOwnership](Factory.md#transferownership)
 
 ## Functions
 
@@ -32,8 +32,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -44,7 +44,7 @@
 
 [assembly/contracts/Factory.ts:413](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L413)
 
-___
+---
 
 ### constructor
 
@@ -52,8 +52,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -64,18 +64,18 @@ ___
 
 [assembly/contracts/Factory.ts:34](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L34)
 
-___
+---
 
 ### createLBPair
 
 ▸ **createLBPair**(`bs`): `StaticArray`<`u8`\>
 
-Create a liquidity bin LBPair for _tokenX and _tokenY
+Create a liquidity bin LBPair for \_tokenX and \_tokenY
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -88,7 +88,7 @@ The address of the newly created LBPair
 
 [assembly/contracts/Factory.ts:156](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L156)
 
-___
+---
 
 ### forceDecay
 
@@ -96,8 +96,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -108,7 +108,7 @@ ___
 
 [assembly/contracts/Factory.ts:447](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L447)
 
-___
+---
 
 ### getAllBinSteps
 
@@ -116,9 +116,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_` | `StaticArray`<`u8`\> |
+| Name | Type                 |
+| :--- | :------------------- |
+| `_`  | `StaticArray`<`u8`\> |
 
 #### Returns
 
@@ -128,7 +128,7 @@ ___
 
 [assembly/contracts/Factory.ts:89](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L89)
 
-___
+---
 
 ### getAvailableLBPairBinSteps
 
@@ -136,8 +136,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -148,7 +148,7 @@ ___
 
 [assembly/contracts/Factory.ts:104](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L104)
 
-___
+---
 
 ### getLBPairInformation
 
@@ -156,8 +156,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -168,7 +168,7 @@ ___
 
 [assembly/contracts/Factory.ts:66](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L66)
 
-___
+---
 
 ### removePreset
 
@@ -178,8 +178,8 @@ Remove the preset linked to a binStep
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -190,7 +190,7 @@ Remove the preset linked to a binStep
 
 [assembly/contracts/Factory.ts:314](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L314)
 
-___
+---
 
 ### removeQuoteAsset
 
@@ -198,8 +198,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -210,7 +210,7 @@ ___
 
 [assembly/contracts/Factory.ts:426](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L426)
 
-___
+---
 
 ### setFactoryLockedState
 
@@ -218,8 +218,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -230,7 +230,7 @@ ___
 
 [assembly/contracts/Factory.ts:401](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L401)
 
-___
+---
 
 ### setFeeRecipient
 
@@ -238,8 +238,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -250,7 +250,7 @@ ___
 
 [assembly/contracts/Factory.ts:381](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L381)
 
-___
+---
 
 ### setFeesParametersOnPair
 
@@ -258,8 +258,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -270,7 +270,7 @@ ___
 
 [assembly/contracts/Factory.ts:328](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L328)
 
-___
+---
 
 ### setFlashLoanFee
 
@@ -278,8 +278,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -290,7 +290,7 @@ ___
 
 [assembly/contracts/Factory.ts:388](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L388)
 
-___
+---
 
 ### setLBPairIgnored
 
@@ -300,8 +300,8 @@ Function to set whether the pair is ignored or not for routing, it will make the
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -312,7 +312,7 @@ Function to set whether the pair is ignored or not for routing, it will make the
 
 [assembly/contracts/Factory.ts:228](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L228)
 
-___
+---
 
 ### setLBPairInformation
 
@@ -320,8 +320,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -332,7 +332,7 @@ ___
 
 [assembly/contracts/Factory.ts:127](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L127)
 
-___
+---
 
 ### setPreset
 
@@ -342,8 +342,8 @@ Sets the preset parameters of a bin step
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -354,7 +354,7 @@ Sets the preset parameters of a bin step
 
 [assembly/contracts/Factory.ts:260](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Factory.ts#L260)
 
-___
+---
 
 ### transferOwnership
 
@@ -362,8 +362,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns

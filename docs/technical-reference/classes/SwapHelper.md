@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / SwapHelper
+SwapHelper
 
 # Class: SwapHelper
 
@@ -6,11 +6,11 @@
 
 ### Constructors
 
-- [constructor](SwapHelper.md#constructor)
+-   [constructor](SwapHelper.md#constructor)
 
 ### Methods
 
-- [getAmounts](SwapHelper.md#getamounts)
+-   [getAmounts](SwapHelper.md#getamounts)
 
 ## Constructors
 
@@ -26,13 +26,13 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_bin` | [`Bin`](Bin.md) |
-| `_fp` | [`FeeParameters`](FeeParameters.md) |
-| `_activeId` | `u64` |
-| `_swapForY` | `bool` |
-| `_amountIn` | `u64` |
+| Name        | Type                                |
+| :---------- | :---------------------------------- |
+| `_bin`      | [`Bin`](Bin.md)                     |
+| `_fp`       | [`FeeParameters`](FeeParameters.md) |
+| `_activeId` | `u64`                               |
+| `_swapForY` | `bool`                              |
+| `_amountIn` | `u64`                               |
 
 #### Returns
 

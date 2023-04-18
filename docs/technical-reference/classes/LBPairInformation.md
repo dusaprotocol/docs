@@ -1,28 +1,28 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / LBPairInformation
+LBPairInformation
 
 # Class: LBPairInformation
 
 ## Implements
 
-- `Serializable`
+-   `Serializable`
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](LBPairInformation.md#constructor)
+-   [constructor](LBPairInformation.md#constructor)
 
 ### Properties
 
-- [binStep](LBPairInformation.md#binstep)
-- [createdByOwner](LBPairInformation.md#createdbyowner)
-- [ignoredForRouting](LBPairInformation.md#ignoredforrouting)
-- [pair](LBPairInformation.md#pair)
+-   [binStep](LBPairInformation.md#binstep)
+-   [createdByOwner](LBPairInformation.md#createdbyowner)
+-   [ignoredForRouting](LBPairInformation.md#ignoredforrouting)
+-   [pair](LBPairInformation.md#pair)
 
 ### Methods
 
-- [deserialize](LBPairInformation.md#deserialize)
-- [serialize](LBPairInformation.md#serialize)
+-   [deserialize](LBPairInformation.md#deserialize)
+-   [serialize](LBPairInformation.md#serialize)
 
 ## Constructors
 
@@ -32,12 +32,12 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `binStep` | `u32` | `0` | The bin step of the LBPair |
-| `pair` | [`IPair`](IPair.md) | `undefined` | The address of the LBPair |
-| `createdByOwner` | `bool` | `false` | Whether the LBPair was created by the owner or the factory |
-| `ignoredForRouting` | `bool` | `false` | Whether the LBPair is ignored for routing or not. An ignored pair will not be explored during routes finding |
+| Name                | Type                | Default value | Description                                                                                                  |
+| :------------------ | :------------------ | :------------ | :----------------------------------------------------------------------------------------------------------- |
+| `binStep`           | `u32`               | `0`           | The bin step of the LBPair                                                                                   |
+| `pair`              | [`IPair`](IPair.md) | `undefined`   | The address of the LBPair                                                                                    |
+| `createdByOwner`    | `bool`              | `false`       | Whether the LBPair was created by the owner or the factory                                                   |
+| `ignoredForRouting` | `bool`              | `false`       | Whether the LBPair is ignored for routing or not. An ignored pair will not be explored during routes finding |
 
 #### Defined in
 
@@ -55,7 +55,7 @@ The bin step of the LBPair
 
 [assembly/structs/LBPairInformation.ts:14](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/LBPairInformation.ts#L14)
 
-___
+---
 
 ### createdByOwner
 
@@ -67,7 +67,7 @@ Whether the LBPair was created by the owner or the factory
 
 [assembly/structs/LBPairInformation.ts:16](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/LBPairInformation.ts#L16)
 
-___
+---
 
 ### ignoredForRouting
 
@@ -79,7 +79,7 @@ Whether the LBPair is ignored for routing or not. An ignored pair will not be ex
 
 [assembly/structs/LBPairInformation.ts:17](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/LBPairInformation.ts#L17)
 
-___
+---
 
 ### pair
 
@@ -99,10 +99,10 @@ The address of the LBPair
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -116,7 +116,7 @@ Serializable.deserialize
 
 [assembly/structs/LBPairInformation.ts:33](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/LBPairInformation.ts#L33)
 
-___
+---
 
 ### serialize
 

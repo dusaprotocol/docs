@@ -1,45 +1,45 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / FeeParameters
+FeeParameters
 
 # Class: FeeParameters
 
 ## Implements
 
-- `Serializable`
+-   `Serializable`
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](FeeParameters.md#constructor)
+-   [constructor](FeeParameters.md#constructor)
 
 ### Properties
 
-- [baseFactor](FeeParameters.md#basefactor)
-- [binStep](FeeParameters.md#binstep)
-- [decayPeriod](FeeParameters.md#decayperiod)
-- [filterPeriod](FeeParameters.md#filterperiod)
-- [indexRef](FeeParameters.md#indexref)
-- [maxVolatilityAccumulated](FeeParameters.md#maxvolatilityaccumulated)
-- [protocolShare](FeeParameters.md#protocolshare)
-- [reductionFactor](FeeParameters.md#reductionfactor)
-- [time](FeeParameters.md#time)
-- [variableFeeControl](FeeParameters.md#variablefeecontrol)
-- [volatilityAccumulated](FeeParameters.md#volatilityaccumulated)
-- [volatilityReference](FeeParameters.md#volatilityreference)
+-   [baseFactor](FeeParameters.md#basefactor)
+-   [binStep](FeeParameters.md#binstep)
+-   [decayPeriod](FeeParameters.md#decayperiod)
+-   [filterPeriod](FeeParameters.md#filterperiod)
+-   [indexRef](FeeParameters.md#indexref)
+-   [maxVolatilityAccumulated](FeeParameters.md#maxvolatilityaccumulated)
+-   [protocolShare](FeeParameters.md#protocolshare)
+-   [reductionFactor](FeeParameters.md#reductionfactor)
+-   [time](FeeParameters.md#time)
+-   [variableFeeControl](FeeParameters.md#variablefeecontrol)
+-   [volatilityAccumulated](FeeParameters.md#volatilityaccumulated)
+-   [volatilityReference](FeeParameters.md#volatilityreference)
 
 ### Methods
 
-- [deserialize](FeeParameters.md#deserialize)
-- [getBaseFee](FeeParameters.md#getbasefee)
-- [getFeeAmount](FeeParameters.md#getfeeamount)
-- [getFeeAmountDistribution](FeeParameters.md#getfeeamountdistribution)
-- [getFeeAmountForC](FeeParameters.md#getfeeamountforc)
-- [getFeeAmountFrom](FeeParameters.md#getfeeamountfrom)
-- [getTotalFee](FeeParameters.md#gettotalfee)
-- [getVariableFee](FeeParameters.md#getvariablefee)
-- [serialize](FeeParameters.md#serialize)
-- [updateVariableFeeParameters](FeeParameters.md#updatevariablefeeparameters)
-- [updateVolatilityAccumulated](FeeParameters.md#updatevolatilityaccumulated)
+-   [deserialize](FeeParameters.md#deserialize)
+-   [getBaseFee](FeeParameters.md#getbasefee)
+-   [getFeeAmount](FeeParameters.md#getfeeamount)
+-   [getFeeAmountDistribution](FeeParameters.md#getfeeamountdistribution)
+-   [getFeeAmountForC](FeeParameters.md#getfeeamountforc)
+-   [getFeeAmountFrom](FeeParameters.md#getfeeamountfrom)
+-   [getTotalFee](FeeParameters.md#gettotalfee)
+-   [getVariableFee](FeeParameters.md#getvariablefee)
+-   [serialize](FeeParameters.md#serialize)
+-   [updateVariableFeeParameters](FeeParameters.md#updatevariablefeeparameters)
+-   [updateVolatilityAccumulated](FeeParameters.md#updatevolatilityaccumulated)
 
 ## Constructors
 
@@ -49,20 +49,20 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `binStep` | `u32` | `0` | The bin step |
-| `baseFactor` | `u32` | `0` | The base factor |
-| `filterPeriod` | `u32` | `0` | The filter period, where the fees stays constant |
-| `decayPeriod` | `u32` | `0` | The decay period, where the fees are halved |
-| `reductionFactor` | `u32` | `0` | The reduction factor, used to calculate the reduction of the accumulator |
-| `variableFeeControl` | `u32` | `0` | The variable fee control, used to control the variable fee, can be 0 to disable them |
-| `protocolShare` | `u32` | `0` | The share of fees sent to protocol |
-| `maxVolatilityAccumulated` | `u32` | `0` | The max value of volatility accumulated |
-| `volatilityAccumulated` | `u32` | `0` | The value of volatility accumulated |
-| `volatilityReference` | `u32` | `0` | The value of volatility reference |
-| `indexRef` | `u32` | `0` | The index reference |
-| `time` | `u64` | `undefined` | The last time the accumulator was called |
+| Name                       | Type  | Default value | Description                                                                          |
+| :------------------------- | :---- | :------------ | :----------------------------------------------------------------------------------- |
+| `binStep`                  | `u32` | `0`           | The bin step                                                                         |
+| `baseFactor`               | `u32` | `0`           | The base factor                                                                      |
+| `filterPeriod`             | `u32` | `0`           | The filter period, where the fees stays constant                                     |
+| `decayPeriod`              | `u32` | `0`           | The decay period, where the fees are halved                                          |
+| `reductionFactor`          | `u32` | `0`           | The reduction factor, used to calculate the reduction of the accumulator             |
+| `variableFeeControl`       | `u32` | `0`           | The variable fee control, used to control the variable fee, can be 0 to disable them |
+| `protocolShare`            | `u32` | `0`           | The share of fees sent to protocol                                                   |
+| `maxVolatilityAccumulated` | `u32` | `0`           | The max value of volatility accumulated                                              |
+| `volatilityAccumulated`    | `u32` | `0`           | The value of volatility accumulated                                                  |
+| `volatilityReference`      | `u32` | `0`           | The value of volatility reference                                                    |
+| `indexRef`                 | `u32` | `0`           | The index reference                                                                  |
+| `time`                     | `u64` | `undefined`   | The last time the accumulator was called                                             |
 
 #### Defined in
 
@@ -80,7 +80,7 @@ The base factor
 
 [assembly/structs/FeeParameters.ts:25](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L25)
 
-___
+---
 
 ### binStep
 
@@ -92,7 +92,7 @@ The bin step
 
 [assembly/structs/FeeParameters.ts:24](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L24)
 
-___
+---
 
 ### decayPeriod
 
@@ -104,7 +104,7 @@ The decay period, where the fees are halved
 
 [assembly/structs/FeeParameters.ts:27](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L27)
 
-___
+---
 
 ### filterPeriod
 
@@ -116,7 +116,7 @@ The filter period, where the fees stays constant
 
 [assembly/structs/FeeParameters.ts:26](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L26)
 
-___
+---
 
 ### indexRef
 
@@ -128,7 +128,7 @@ The index reference
 
 [assembly/structs/FeeParameters.ts:34](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L34)
 
-___
+---
 
 ### maxVolatilityAccumulated
 
@@ -140,7 +140,7 @@ The max value of volatility accumulated
 
 [assembly/structs/FeeParameters.ts:31](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L31)
 
-___
+---
 
 ### protocolShare
 
@@ -152,7 +152,7 @@ The share of fees sent to protocol
 
 [assembly/structs/FeeParameters.ts:30](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L30)
 
-___
+---
 
 ### reductionFactor
 
@@ -164,7 +164,7 @@ The reduction factor, used to calculate the reduction of the accumulator
 
 [assembly/structs/FeeParameters.ts:28](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L28)
 
-___
+---
 
 ### time
 
@@ -176,7 +176,7 @@ The last time the accumulator was called
 
 [assembly/structs/FeeParameters.ts:35](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L35)
 
-___
+---
 
 ### variableFeeControl
 
@@ -188,7 +188,7 @@ The variable fee control, used to control the variable fee, can be 0 to disable 
 
 [assembly/structs/FeeParameters.ts:29](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L29)
 
-___
+---
 
 ### volatilityAccumulated
 
@@ -200,7 +200,7 @@ The value of volatility accumulated
 
 [assembly/structs/FeeParameters.ts:32](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L32)
 
-___
+---
 
 ### volatilityReference
 
@@ -220,10 +220,10 @@ The value of volatility reference
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -237,7 +237,7 @@ Serializable.deserialize
 
 [assembly/structs/FeeParameters.ts:158](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L158)
 
-___
+---
 
 ### getBaseFee
 
@@ -251,7 +251,7 @@ ___
 
 [assembly/structs/FeeParameters.ts:84](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L84)
 
-___
+---
 
 ### getFeeAmount
 
@@ -259,8 +259,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type  |
+| :-------- | :---- |
 | `_amount` | `u64` |
 
 #### Returns
@@ -271,7 +271,7 @@ ___
 
 [assembly/structs/FeeParameters.ts:52](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L52)
 
-___
+---
 
 ### getFeeAmountDistribution
 
@@ -281,8 +281,8 @@ Return the fees distribution added to an amount
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type  | Description    |
+| :------ | :---- | :------------- |
 | `_fees` | `u64` | The fee amount |
 
 #### Returns
@@ -293,7 +293,7 @@ Return the fees distribution added to an amount
 
 [assembly/structs/FeeParameters.ts:44](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L44)
 
-___
+---
 
 ### getFeeAmountForC
 
@@ -301,8 +301,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type   |
+| :---------------- | :----- |
 | `_amountWithFees` | `u128` |
 
 #### Returns
@@ -313,7 +313,7 @@ ___
 
 [assembly/structs/FeeParameters.ts:65](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L65)
 
-___
+---
 
 ### getFeeAmountFrom
 
@@ -321,8 +321,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type  |
+| :---------------- | :---- |
 | `_amountWithFees` | `u64` |
 
 #### Returns
@@ -333,7 +333,7 @@ ___
 
 [assembly/structs/FeeParameters.ts:61](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L61)
 
-___
+---
 
 ### getTotalFee
 
@@ -347,7 +347,7 @@ ___
 
 [assembly/structs/FeeParameters.ts:79](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L79)
 
-___
+---
 
 ### getVariableFee
 
@@ -361,7 +361,7 @@ ___
 
 [assembly/structs/FeeParameters.ts:88](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L88)
 
-___
+---
 
 ### serialize
 
@@ -379,7 +379,7 @@ Serializable.serialize
 
 [assembly/structs/FeeParameters.ts:141](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L141)
 
-___
+---
 
 ### updateVariableFeeParameters
 
@@ -389,8 +389,8 @@ Update the value of the volatility accumulated
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type  | Description           |
+| :---------- | :---- | :-------------------- |
 | `_activeId` | `u64` | The current active id |
 
 #### Returns
@@ -401,7 +401,7 @@ Update the value of the volatility accumulated
 
 [assembly/structs/FeeParameters.ts:104](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeeParameters.ts#L104)
 
-___
+---
 
 ### updateVolatilityAccumulated
 
@@ -411,8 +411,8 @@ Update the volatility accumulated
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type  | Description           |
+| :---------- | :---- | :-------------------- |
 | `_activeId` | `u64` | The current active id |
 
 #### Returns

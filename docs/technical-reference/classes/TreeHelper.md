@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / TreeHelper
+TreeHelper
 
 # Class: TreeHelper
 
@@ -6,15 +6,15 @@
 
 ### Constructors
 
-- [constructor](TreeHelper.md#constructor)
+-   [constructor](TreeHelper.md#constructor)
 
 ### Methods
 
-- [\_getBottomId](TreeHelper.md#_getbottomid)
-- [\_getIdsFromAbove](TreeHelper.md#_getidsfromabove)
-- [addToTree](TreeHelper.md#addtotree)
-- [findFirstBin](TreeHelper.md#findfirstbin)
-- [removeFromTree](TreeHelper.md#removefromtree)
+-   [\_getBottomId](TreeHelper.md#_getbottomid)
+-   [\_getIdsFromAbove](TreeHelper.md#_getidsfromabove)
+-   [addToTree](TreeHelper.md#addtotree)
+-   [findFirstBin](TreeHelper.md#findfirstbin)
+-   [removeFromTree](TreeHelper.md#removefromtree)
 
 ## Constructors
 
@@ -26,16 +26,16 @@
 
 ### \_getBottomId
 
-▸ `Static` **_getBottomId**(`_branchId`, `_leafId`): `u32`
+▸ `Static` **\_getBottomId**(`_branchId`, `_leafId`): `u32`
 
 Private pure function to return the bottom id
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type  | Description   |
+| :---------- | :---- | :------------ |
 | `_branchId` | `u32` | The branch id |
-| `_leafId` | `u32` | The leaf id |
+| `_leafId`   | `u32` | The leaf id   |
 
 #### Returns
 
@@ -47,18 +47,18 @@ The bottom branchId
 
 [assembly/libraries/TreeHelper.ts:30](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/TreeHelper.ts#L30)
 
-___
+---
 
 ### \_getIdsFromAbove
 
-▸ `Static` **_getIdsFromAbove**(`_id`): [`GetIdsFromAboveReturn`](GetIdsFromAboveReturn.md)
+▸ `Static` **\_getIdsFromAbove**(`_id`): [`GetIdsFromAboveReturn`](GetIdsFromAboveReturn.md)
 
 Private pure function to return the ids from above
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type  | Description    |
+| :---- | :---- | :------------- |
 | `_id` | `u32` | The current id |
 
 #### Returns
@@ -73,7 +73,7 @@ The leaf id from above
 
 [assembly/libraries/TreeHelper.ts:20](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/TreeHelper.ts#L20)
 
-___
+---
 
 ### addToTree
 
@@ -81,8 +81,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `_id` | `u64` |
 
 #### Returns
@@ -93,7 +93,7 @@ ___
 
 [assembly/libraries/TreeHelper.ts:36](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/TreeHelper.ts#L36)
 
-___
+---
 
 ### findFirstBin
 
@@ -103,9 +103,9 @@ Returns the first id that is non zero, corresponding to a bin with liquidity in 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_binId` | `u32` | the binId to start searching |
+| Name         | Type   | Description                                                                           |
+| :----------- | :----- | :------------------------------------------------------------------------------------ |
+| `_binId`     | `u32`  | the binId to start searching                                                          |
 | `_rightSide` | `bool` | Whether we're searching in the right side of the tree (true) or the left side (false) |
 
 #### Returns
@@ -118,7 +118,7 @@ The closest non zero bit
 
 [assembly/libraries/TreeHelper.ts:78](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/TreeHelper.ts#L78)
 
-___
+---
 
 ### removeFromTree
 
@@ -126,8 +126,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `_id` | `u64` |
 
 #### Returns

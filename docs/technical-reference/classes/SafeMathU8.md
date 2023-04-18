@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / SafeMathU8
+SafeMathU8
 
 # Class: SafeMathU8
 
@@ -6,12 +6,12 @@
 
 ### Constructors
 
-- [constructor](SafeMathU8.md#constructor)
+-   [constructor](SafeMathU8.md#constructor)
 
 ### Methods
 
-- [add](SafeMathU8.md#add)
-- [sub](SafeMathU8.md#sub)
+-   [add](SafeMathU8.md#add)
+-   [sub](SafeMathU8.md#sub)
 
 ## Constructors
 
@@ -28,9 +28,9 @@
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `u8` |
-| `b` | `u8` |
+| :--- | :--- |
+| `a`  | `u8` |
+| `b`  | `u8` |
 
 #### Returns
 
@@ -43,7 +43,7 @@ reverting on overflow.
 
 [assembly/libraries/SafeMath.ts:83](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/SafeMath.ts#L83)
 
-___
+---
 
 ### sub
 
@@ -52,9 +52,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `u8` |
-| `b` | `u8` |
+| :--- | :--- |
+| `a`  | `u8` |
+| `b`  | `u8` |
 
 #### Returns
 

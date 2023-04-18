@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / Router
+Router
 
 # Namespace: Router
 
@@ -6,22 +6,22 @@
 
 ### Functions
 
-- [addLiquidity](Router.md#addliquidity)
-- [addLiquidityMAS](Router.md#addliquiditymas)
-- [constructor](Router.md#constructor)
-- [createLBPair](Router.md#createlbpair)
-- [getSwapIn](Router.md#getswapin)
-- [getSwapOut](Router.md#getswapout)
-- [removeLiquidity](Router.md#removeliquidity)
-- [removeLiquidityMAS](Router.md#removeliquiditymas)
-- [swapExactMASForTokens](Router.md#swapexactmasfortokens)
-- [swapExactTokensForMAS](Router.md#swapexacttokensformas)
-- [swapExactTokensForTokens](Router.md#swapexacttokensfortokens)
-- [swapMASForExactTokens](Router.md#swapmasforexacttokens)
-- [swapTokensForExactMAS](Router.md#swaptokensforexactmas)
-- [swapTokensForExactTokens](Router.md#swaptokensforexacttokens)
-- [sweep](Router.md#sweep)
-- [sweepLBToken](Router.md#sweeplbtoken)
+-   [addLiquidity](Router.md#addliquidity)
+-   [addLiquidityMAS](Router.md#addliquiditymas)
+-   [constructor](Router.md#constructor)
+-   [createLBPair](Router.md#createlbpair)
+-   [getSwapIn](Router.md#getswapin)
+-   [getSwapOut](Router.md#getswapout)
+-   [removeLiquidity](Router.md#removeliquidity)
+-   [removeLiquidityMAS](Router.md#removeliquiditymas)
+-   [swapExactMASForTokens](Router.md#swapexactmasfortokens)
+-   [swapExactTokensForMAS](Router.md#swapexacttokensformas)
+-   [swapExactTokensForTokens](Router.md#swapexacttokensfortokens)
+-   [swapMASForExactTokens](Router.md#swapmasforexacttokens)
+-   [swapTokensForExactMAS](Router.md#swaptokensforexactmas)
+-   [swapTokensForExactTokens](Router.md#swaptokensforexacttokens)
+-   [sweep](Router.md#sweep)
+-   [sweepLBToken](Router.md#sweeplbtoken)
 
 ## Functions
 
@@ -34,8 +34,8 @@ This function is compliant with fee on transfer tokens
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -46,7 +46,7 @@ This function is compliant with fee on transfer tokens
 
 [assembly/contracts/Router.ts:72](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L72)
 
-___
+---
 
 ### addLiquidityMAS
 
@@ -57,8 +57,8 @@ This function is compliant with fee on transfer tokens
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -69,7 +69,7 @@ This function is compliant with fee on transfer tokens
 
 [assembly/contracts/Router.ts:94](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L94)
 
-___
+---
 
 ### constructor
 
@@ -77,8 +77,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -89,31 +89,31 @@ ___
 
 [assembly/contracts/Router.ts:20](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L20)
 
-___
+---
 
 ### createLBPair
 
 ▸ **createLBPair**(`bs`): `StaticArray`<`u8`\>
 
-Create a liquidity bin LBPair for _tokenX and _tokenY using the factory
+Create a liquidity bin LBPair for \_tokenX and \_tokenY using the factory
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
 
 `StaticArray`<`u8`\>
 
-- Byte string
+-   Byte string
 
 #### Defined in
 
 [assembly/contracts/Router.ts:44](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L44)
 
-___
+---
 
 ### getSwapIn
 
@@ -121,8 +121,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -133,7 +133,7 @@ ___
 
 [assembly/contracts/Router.ts:609](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L609)
 
-___
+---
 
 ### getSwapOut
 
@@ -141,8 +141,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -153,7 +153,7 @@ ___
 
 [assembly/contracts/Router.ts:666](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L666)
 
-___
+---
 
 ### removeLiquidity
 
@@ -164,8 +164,8 @@ This function is compliant with fee on transfer tokens
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -176,7 +176,7 @@ This function is compliant with fee on transfer tokens
 
 [assembly/contracts/Router.ts:124](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L124)
 
-___
+---
 
 ### removeLiquidityMAS
 
@@ -187,8 +187,8 @@ This function is compliant with fee on transfer tokens
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -199,7 +199,7 @@ This function is compliant with fee on transfer tokens
 
 [assembly/contracts/Router.ts:161](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L161)
 
-___
+---
 
 ### swapExactMASForTokens
 
@@ -209,8 +209,8 @@ Swaps exact MAS for tokens while performing safety checks
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -221,7 +221,7 @@ Swaps exact MAS for tokens while performing safety checks
 
 [assembly/contracts/Router.ts:260](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L260)
 
-___
+---
 
 ### swapExactTokensForMAS
 
@@ -231,8 +231,8 @@ Swaps exact tokens for MAS while performing safety checks
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -243,7 +243,7 @@ Swaps exact tokens for MAS while performing safety checks
 
 [assembly/contracts/Router.ts:227](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L227)
 
-___
+---
 
 ### swapExactTokensForTokens
 
@@ -253,8 +253,8 @@ Swap tokens while performing safety checks
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -265,7 +265,7 @@ Swap tokens while performing safety checks
 
 [assembly/contracts/Router.ts:200](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L200)
 
-___
+---
 
 ### swapMASForExactTokens
 
@@ -275,8 +275,8 @@ Swaps MAS for exact tokens while performing safety checks
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -287,7 +287,7 @@ Swaps MAS for exact tokens while performing safety checks
 
 [assembly/contracts/Router.ts:356](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L356)
 
-___
+---
 
 ### swapTokensForExactMAS
 
@@ -297,8 +297,8 @@ Swaps tokens for exact MAS while performing safety checks
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -309,7 +309,7 @@ Swaps tokens for exact MAS while performing safety checks
 
 [assembly/contracts/Router.ts:320](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L320)
 
-___
+---
 
 ### swapTokensForExactTokens
 
@@ -319,8 +319,8 @@ Swaps tokens for exact tokens while performing safety checks
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -331,7 +331,7 @@ Swaps tokens for exact tokens while performing safety checks
 
 [assembly/contracts/Router.ts:290](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L290)
 
-___
+---
 
 ### sweep
 
@@ -339,8 +339,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -351,7 +351,7 @@ ___
 
 [assembly/contracts/Router.ts:397](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Router.ts#L397)
 
-___
+---
 
 ### sweepLBToken
 
@@ -359,8 +359,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns

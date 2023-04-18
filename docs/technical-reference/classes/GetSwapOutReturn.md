@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / GetSwapOutReturn
+GetSwapOutReturn
 
 # Class: GetSwapOutReturn
 
@@ -6,12 +6,12 @@
 
 ### Constructors
 
-- [constructor](GetSwapOutReturn.md#constructor)
+-   [constructor](GetSwapOutReturn.md#constructor)
 
 ### Properties
 
-- [amountOut](GetSwapOutReturn.md#amountout)
-- [feesIn](GetSwapOutReturn.md#feesin)
+-   [amountOut](GetSwapOutReturn.md#amountout)
+-   [feesIn](GetSwapOutReturn.md#feesin)
 
 ## Constructors
 
@@ -21,10 +21,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type  |
+| :---------- | :---- |
 | `amountOut` | `u64` |
-| `feesIn` | `u64` |
+| `feesIn`    | `u64` |
 
 #### Defined in
 
@@ -40,7 +40,7 @@
 
 [assembly/interfaces/IRouter.ts:13](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IRouter.ts#L13)
 
-___
+---
 
 ### feesIn
 

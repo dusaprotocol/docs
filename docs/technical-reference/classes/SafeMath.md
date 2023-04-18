@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / SafeMath
+SafeMath
 
 # Class: SafeMath
 
@@ -6,15 +6,15 @@
 
 ### Constructors
 
-- [constructor](SafeMath.md#constructor)
+-   [constructor](SafeMath.md#constructor)
 
 ### Methods
 
-- [add](SafeMath.md#add)
-- [div](SafeMath.md#div)
-- [mod](SafeMath.md#mod)
-- [mul](SafeMath.md#mul)
-- [sub](SafeMath.md#sub)
+-   [add](SafeMath.md#add)
+-   [div](SafeMath.md#div)
+-   [mod](SafeMath.md#mod)
+-   [mul](SafeMath.md#mul)
+-   [sub](SafeMath.md#sub)
 
 ## Constructors
 
@@ -30,10 +30,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u64` |
-| `b` | `u64` |
+| Name | Type  |
+| :--- | :---- |
+| `a`  | `u64` |
+| `b`  | `u64` |
 
 #### Returns
 
@@ -46,7 +46,7 @@ reverting on overflow.
 
 [assembly/libraries/SafeMath.ts:9](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/SafeMath.ts#L9)
 
-___
+---
 
 ### div
 
@@ -54,10 +54,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u64` |
-| `b` | `u64` |
+| Name | Type  |
+| :--- | :---- |
+| `a`  | `u64` |
+| `b`  | `u64` |
 
 #### Returns
 
@@ -70,7 +70,7 @@ division by zero. The result is rounded towards zero.
 
 [assembly/libraries/SafeMath.ts:55](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/SafeMath.ts#L55)
 
-___
+---
 
 ### mod
 
@@ -78,10 +78,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u64` |
-| `b` | `u64` |
+| Name | Type  |
+| :--- | :---- |
+| `a`  | `u64` |
+| `b`  | `u64` |
 
 #### Returns
 
@@ -94,7 +94,7 @@ Reverts with custom message when dividing by zero.
 
 [assembly/libraries/SafeMath.ts:69](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/SafeMath.ts#L69)
 
-___
+---
 
 ### mul
 
@@ -102,10 +102,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u64` |
-| `b` | `u64` |
+| Name | Type  |
+| :--- | :---- |
+| `a`  | `u64` |
+| `b`  | `u64` |
 
 #### Returns
 
@@ -118,7 +118,7 @@ overflow.
 
 [assembly/libraries/SafeMath.ts:37](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/libraries/SafeMath.ts#L37)
 
-___
+---
 
 ### sub
 
@@ -126,10 +126,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u64` |
-| `b` | `u64` |
+| Name | Type  |
+| :--- | :---- |
+| `a`  | `u64` |
+| `b`  | `u64` |
 
 #### Returns
 

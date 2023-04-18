@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / Quoter
+Quoter
 
 # Namespace: Quoter
 
@@ -6,9 +6,9 @@
 
 ### Functions
 
-- [constructor](Quoter.md#constructor)
-- [findBestPathFromAmountIn](Quoter.md#findbestpathfromamountin)
-- [findBestPathFromAmountOut](Quoter.md#findbestpathfromamountout)
+-   [constructor](Quoter.md#constructor)
+-   [findBestPathFromAmountIn](Quoter.md#findbestpathfromamountin)
+-   [findBestPathFromAmountOut](Quoter.md#findbestpathfromamountout)
 
 ## Functions
 
@@ -18,8 +18,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -30,7 +30,7 @@
 
 [assembly/contracts/Quoter.ts:13](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Quoter.ts#L13)
 
-___
+---
 
 ### findBestPathFromAmountIn
 
@@ -38,8 +38,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -50,7 +50,7 @@ ___
 
 [assembly/contracts/Quoter.ts:27](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/contracts/Quoter.ts#L27)
 
-___
+---
 
 ### findBestPathFromAmountOut
 
@@ -58,8 +58,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns

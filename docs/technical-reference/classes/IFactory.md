@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / IFactory
+IFactory
 
 # Class: IFactory
 
@@ -6,22 +6,22 @@
 
 ### Constructors
 
-- [constructor](IFactory.md#constructor)
+-   [constructor](IFactory.md#constructor)
 
 ### Properties
 
-- [\_origin](IFactory.md#_origin)
+-   [\_origin](IFactory.md#_origin)
 
 ### Methods
 
-- [addQuoteAsset](IFactory.md#addquoteasset)
-- [createLBPair](IFactory.md#createlbpair)
-- [getAllLBPairs](IFactory.md#getalllbpairs)
-- [getAvailableLBPairBinSteps](IFactory.md#getavailablelbpairbinsteps)
-- [getLBPairInformation](IFactory.md#getlbpairinformation)
-- [getOwner](IFactory.md#getowner)
-- [init](IFactory.md#init)
-- [setPreset](IFactory.md#setpreset)
+-   [addQuoteAsset](IFactory.md#addquoteasset)
+-   [createLBPair](IFactory.md#createlbpair)
+-   [getAllLBPairs](IFactory.md#getalllbpairs)
+-   [getAvailableLBPairBinSteps](IFactory.md#getavailablelbpairbinsteps)
+-   [getLBPairInformation](IFactory.md#getlbpairinformation)
+-   [getOwner](IFactory.md#getowner)
+-   [init](IFactory.md#init)
+-   [setPreset](IFactory.md#setpreset)
 
 ## Constructors
 
@@ -33,8 +33,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                    |
+| :--- | :-------- | :----------------------------- |
 | `at` | `Address` | Address of the smart contract. |
 
 #### Defined in
@@ -59,8 +59,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `_asset` | `Address` |
 
 #### Returns
@@ -71,7 +71,7 @@ Wraps a smart contract exposing standard token FFI.
 
 [assembly/interfaces/IFactory.ts:85](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IFactory.ts#L85)
 
-___
+---
 
 ### createLBPair
 
@@ -79,12 +79,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_activeId` | `u32` |
-| `_binStep` | `u32` |
+| Name        | Type      |
+| :---------- | :-------- |
+| `_tokenA`   | `Address` |
+| `_tokenB`   | `Address` |
+| `_activeId` | `u32`     |
+| `_binStep`  | `u32`     |
 
 #### Returns
 
@@ -94,7 +94,7 @@ ___
 
 [assembly/interfaces/IFactory.ts:57](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IFactory.ts#L57)
 
-___
+---
 
 ### getAllLBPairs
 
@@ -102,8 +102,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_tokenX` | `Address` |
 | `_tokenY` | `Address` |
 
@@ -115,7 +115,7 @@ ___
 
 [assembly/interfaces/IFactory.ts:36](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IFactory.ts#L36)
 
-___
+---
 
 ### getAvailableLBPairBinSteps
 
@@ -123,8 +123,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_tokenA` | `Address` |
 | `_tokenB` | `Address` |
 
@@ -136,7 +136,7 @@ ___
 
 [assembly/interfaces/IFactory.ts:90](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IFactory.ts#L90)
 
-___
+---
 
 ### getLBPairInformation
 
@@ -144,11 +144,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_binStep` | `u64` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_tokenA`  | `Address` |
+| `_tokenB`  | `Address` |
+| `_binStep` | `u64`     |
 
 #### Returns
 
@@ -158,7 +158,7 @@ ___
 
 [assembly/interfaces/IFactory.ts:30](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IFactory.ts#L30)
 
-___
+---
 
 ### getOwner
 
@@ -172,7 +172,7 @@ ___
 
 [assembly/interfaces/IFactory.ts:96](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IFactory.ts#L96)
 
-___
+---
 
 ### init
 
@@ -182,10 +182,10 @@ Initialize the factory. This function must be called before any other function.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `_feeRecipient` | `Address` | `undefined` | The address of the fee recipient |
-| `_flashLoanFee` | `u64` | `0` | The value of the fee for flash loan |
+| Name            | Type      | Default value | Description                         |
+| :-------------- | :-------- | :------------ | :---------------------------------- |
+| `_feeRecipient` | `Address` | `undefined`   | The address of the fee recipient    |
+| `_flashLoanFee` | `u64`     | `0`           | The value of the fee for flash loan |
 
 #### Returns
 
@@ -195,7 +195,7 @@ Initialize the factory. This function must be called before any other function.
 
 [assembly/interfaces/IFactory.ts:25](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/interfaces/IFactory.ts#L25)
 
-___
+---
 
 ### setPreset
 
@@ -203,15 +203,15 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_binStep` | `u32` |
-| `_baseFactor` | `u32` |
-| `_filterPeriod` | `u32` |
-| `_decayPeriod` | `u32` |
-| `_reductionFactor` | `u32` |
-| `_variableFeeControl` | `u32` |
-| `_protocolShare` | `u32` |
+| Name                        | Type  |
+| :-------------------------- | :---- |
+| `_binStep`                  | `u32` |
+| `_baseFactor`               | `u32` |
+| `_filterPeriod`             | `u32` |
+| `_decayPeriod`              | `u32` |
+| `_reductionFactor`          | `u32` |
+| `_variableFeeControl`       | `u32` |
+| `_protocolShare`            | `u32` |
 | `_maxVolatilityAccumulated` | `u32` |
 
 #### Returns

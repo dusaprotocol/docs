@@ -1,27 +1,27 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / FeesDistribution
+FeesDistribution
 
 # Class: FeesDistribution
 
 ## Implements
 
-- `Serializable`
+-   `Serializable`
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](FeesDistribution.md#constructor)
+-   [constructor](FeesDistribution.md#constructor)
 
 ### Properties
 
-- [protocol](FeesDistribution.md#protocol)
-- [total](FeesDistribution.md#total)
+-   [protocol](FeesDistribution.md#protocol)
+-   [total](FeesDistribution.md#total)
 
 ### Methods
 
-- [deserialize](FeesDistribution.md#deserialize)
-- [getTokenPerShare](FeesDistribution.md#gettokenpershare)
-- [serialize](FeesDistribution.md#serialize)
+-   [deserialize](FeesDistribution.md#deserialize)
+-   [getTokenPerShare](FeesDistribution.md#gettokenpershare)
+-   [serialize](FeesDistribution.md#serialize)
 
 ## Constructors
 
@@ -31,10 +31,10 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `total` | `u64` | `0` | The total amount of fees |
-| `protocol` | `u64` | `0` | The amount of fees reserved for protocol |
+| Name       | Type  | Default value | Description                              |
+| :--------- | :---- | :------------ | :--------------------------------------- |
+| `total`    | `u64` | `0`           | The total amount of fees                 |
+| `protocol` | `u64` | `0`           | The amount of fees reserved for protocol |
 
 #### Defined in
 
@@ -52,7 +52,7 @@ The amount of fees reserved for protocol
 
 [assembly/structs/FeesDistribution.ts:10](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeesDistribution.ts#L10)
 
-___
+---
 
 ### total
 
@@ -72,10 +72,10 @@ The total amount of fees
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -89,7 +89,7 @@ Serializable.deserialize
 
 [assembly/structs/FeesDistribution.ts:34](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeesDistribution.ts#L34)
 
-___
+---
 
 ### getTokenPerShare
 
@@ -99,8 +99,8 @@ Calculate the tokenPerShare when fees are added
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type  | Description                        |
+| :------------ | :---- | :--------------------------------- |
 | `totalSupply` | `u64` | the total supply of a specific bin |
 
 #### Returns
@@ -111,7 +111,7 @@ Calculate the tokenPerShare when fees are added
 
 [assembly/structs/FeesDistribution.ts:17](https://github.com/dusaprotocol/v2.1/blob/b07cbb8/assembly/structs/FeesDistribution.ts#L17)
 
-___
+---
 
 ### serialize
 

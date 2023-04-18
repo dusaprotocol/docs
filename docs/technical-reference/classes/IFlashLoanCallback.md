@@ -1,4 +1,4 @@
-[@dusalabs/core](../README.md) / [Exports](../modules.md) / IFlashLoanCallback
+IFlashLoanCallback
 
 # Class: IFlashLoanCallback
 
@@ -6,15 +6,15 @@
 
 ### Constructors
 
-- [constructor](IFlashLoanCallback.md#constructor)
+-   [constructor](IFlashLoanCallback.md#constructor)
 
 ### Properties
 
-- [\_origin](IFlashLoanCallback.md#_origin)
+-   [\_origin](IFlashLoanCallback.md#_origin)
 
 ### Methods
 
-- [flashLoanCallback](IFlashLoanCallback.md#flashloancallback)
+-   [flashLoanCallback](IFlashLoanCallback.md#flashloancallback)
 
 ## Constructors
 
@@ -26,8 +26,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                    |
+| :--- | :-------- | :----------------------------- |
 | `at` | `Address` | Address of the smart contract. |
 
 #### Defined in
@@ -52,12 +52,12 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `token` | [`IERC20`](IERC20.md) |
-| `amount` | `u64` |
-| `fee` | `u64` |
+| Name     | Type                  |
+| :------- | :-------------------- |
+| `sender` | `Address`             |
+| `token`  | [`IERC20`](IERC20.md) |
+| `amount` | `u64`                 |
+| `fee`    | `u64`                 |
 
 #### Returns
 
