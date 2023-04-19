@@ -15,11 +15,6 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "dusaprotocol", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
-
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
@@ -63,7 +58,7 @@ const config = {
         },
         items: [
           {
-            href: "https://github.com/dusaprotocol/docs",
+            href: "https://github.com/dusaprotocol",
             label: "GitHub",
             position: "right",
           },
