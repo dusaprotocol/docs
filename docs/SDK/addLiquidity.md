@@ -5,7 +5,7 @@ sidebar_label: Adding Liquidity
 
 # Adding Liquidity
 
-This guide shows how to add liquidity into a LBPair using the SDKs and Ethers.js. In this example, we will be adding 20 USDC and 20 USDC.e into a LBPair of USDC/USDC.e/2bps
+This guide shows how to add liquidity into a LBPair using the SDK and massa-web3. In this example, we will be adding 20 USDC and 5 USDC.e into a LBPair of USDC/USDC.e/2bps
 
 ## 1. Required imports and constants for this guide
 
@@ -160,7 +160,7 @@ const addLiquidityInput = {
   deadline 
 }
 ```
-For additional details about the parameters, refer to this [link](/versioned_docs/version-V2.1/guides/add-remove-liquidity.md#liquidity-parameters). 
+For additional details about the parameters, refer to this [link](/). 
 
 
 ## 6. Execute addLiquidity contract call

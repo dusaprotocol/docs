@@ -5,7 +5,7 @@ sidebar_label: Making a Trade
 
 # Making a Trade 
 
-This guide demonstrates how to execute a swap. In this example, we will be swapping 20 USDC for AVAX.
+This guide demonstrates how to execute a swap. In this example, we will be swapping 20 USDC for WETH.
 
 ## 1. Required imports for this guide
 ```js

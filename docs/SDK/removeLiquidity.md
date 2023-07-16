@@ -78,7 +78,7 @@ const activeBinId = lbPairData.activeId.toNumber()
 
 ### Liquidity positions 
 
-Use the [subgraph](/versioned_docs/version-V2.1/subgraphs.md#avalanche) to fetch your positions (Only applicable to `V2` pairs). You need all the `binId`s where you have liquidity and the amount of `liquidity` in each bin. Below is an example of a GraphQL query to the subgraph's `LiquidityPositions` entity.
+Use the [subgraph](/) to fetch your positions (Only applicable to `V2` pairs). You need all the `binId`s where you have liquidity and the amount of `liquidity` in each bin. Below is an example of a GraphQL query to the subgraph's `LiquidityPositions` entity.
 ```graphql
 
 {
@@ -235,7 +235,7 @@ const removeLiquidityParams = [
 ]
 ```
 
-Note that `removeLiquidityParams` will look different for the `removeLiquidityAVAX` method. Please refer to this [link](/versioned_docs/version-V2.1/guides/add-remove-liquidity.md#removing-liquidity) for specific details.
+Note that `removeLiquidityParams` will look different for the `removeLiquidityAVAX` method. Please refer to this [link](/) for specific details.
 
 ## 6. Execute removeLiquidity contract call
 ```js
