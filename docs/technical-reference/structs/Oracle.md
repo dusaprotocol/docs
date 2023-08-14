@@ -68,7 +68,7 @@ let map = new PersistentMap<string, string>("m") // note the prefix must be uniq
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[constructor](PersistentMap.md#constructor)
+[PersistentMap](../libraries/PersistentMap.md).[constructor](../libraries/PersistentMap.md#constructor)
 
 #### Defined in
 
@@ -88,7 +88,7 @@ Decreases the internal map size counter
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[_decreaseSize](PersistentMap.md#_decreasesize)
+[PersistentMap](../libraries/PersistentMap.md).[_decreaseSize](../libraries/PersistentMap.md#_decreasesize)
 
 #### Defined in
 
@@ -114,7 +114,7 @@ Increases the internal map size counter
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[_increaseSize](PersistentMap.md#_increasesize)
+[PersistentMap](../libraries/PersistentMap.md).[_increaseSize](../libraries/PersistentMap.md#_increasesize)
 
 #### Defined in
 
@@ -193,7 +193,7 @@ True if the given key present in the map.
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[contains](PersistentMap.md#contains)
+[PersistentMap](../libraries/PersistentMap.md).[contains](../libraries/PersistentMap.md#contains)
 
 #### Defined in
 
@@ -228,7 +228,7 @@ Removes value and the key from the map.
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[delete](PersistentMap.md#delete)
+[PersistentMap](../libraries/PersistentMap.md).[delete](../libraries/PersistentMap.md#delete)
 
 #### Defined in
 
@@ -268,7 +268,7 @@ Value for the given key or the default value.
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[get](PersistentMap.md#get)
+[PersistentMap](../libraries/PersistentMap.md).[get](../libraries/PersistentMap.md#get)
 
 #### Defined in
 
@@ -329,7 +329,7 @@ Value for the given key or the default value.
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[getSome](PersistentMap.md#getsome)
+[PersistentMap](../libraries/PersistentMap.md).[getSome](../libraries/PersistentMap.md#getsome)
 
 #### Defined in
 
@@ -382,7 +382,7 @@ Sets the new value for the given key.
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[set](PersistentMap.md#set)
+[PersistentMap](../libraries/PersistentMap.md).[set](../libraries/PersistentMap.md#set)
 
 #### Defined in
 
@@ -412,7 +412,7 @@ the map size
 
 #### Inherited from
 
-[PersistentMap](PersistentMap.md).[size](PersistentMap.md#size)
+[PersistentMap](../libraries/PersistentMap.md).[size](../libraries/PersistentMap.md#size)
 
 #### Defined in
 

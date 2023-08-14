@@ -28,8 +28,8 @@
 
 | Name | Type |
 | :------ | :------ |
-| `_bin` | [`Bin`](Bin.md) |
-| `_fp` | [`FeeParameters`](FeeParameters.md) |
+| `_bin` | [`Bin`](../structs/Bin.md) |
+| `_fp` | [`FeeParameters`](../structs/FeeParameters.md) |
 | `_activeId` | `u64` |
 | `_swapForY` | `bool` |
 | `_amountIn` | `u64` |
@@ -52,7 +52,7 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `_pair` | [`IPair`](IPair.md) | `undefined` |
+| `_pair` | [`IPair`](../interfaces/_category_.jsonIPair.md) | `undefined` |
 | `_amountOut` | `u64` | `undefined` |
 | `_swapForY` | `bool` | `undefined` |
 | `isQuote` | `bool` | `false` |
@@ -75,7 +75,7 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `_pair` | [`IPair`](IPair.md) | `undefined` |
+| `_pair` | [`IPair`](../interfaces/_category_.jsonIPair.md) | `undefined` |
 | `_amountIn` | `u64` | `undefined` |
 | `_swapForY` | `bool` | `undefined` |
 | `isQuote` | `bool` | `false` |

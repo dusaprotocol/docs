@@ -159,11 +159,11 @@ ___
 
 ### feeParameters
 
-▸ **feeParameters**(): [`FeeParameters`](FeeParameters.md)
+▸ **feeParameters**(): [`FeeParameters`](../structs/FeeParameters.md)
 
 #### Returns
 
-[`FeeParameters`](FeeParameters.md)
+[`FeeParameters`](../structs/FeeParameters.md)
 
 #### Defined in
 
@@ -230,7 +230,7 @@ ___
 
 ### getBin
 
-▸ **getBin**(`_id`): [`Bin`](Bin.md)
+▸ **getBin**(`_id`): [`Bin`](../structs/Bin.md)
 
 #### Parameters
 
@@ -240,7 +240,7 @@ ___
 
 #### Returns
 
-[`Bin`](Bin.md)
+[`Bin`](../structs/Bin.md)
 
 #### Defined in
 
@@ -264,11 +264,11 @@ ___
 
 ### getOracleParameters
 
-▸ **getOracleParameters**(): [`OracleParameters`](OracleParameters.md)
+▸ **getOracleParameters**(): [`OracleParameters`](../structs/OracleParameters.md)
 
 #### Returns
 
-[`OracleParameters`](OracleParameters.md)
+[`OracleParameters`](../structs/OracleParameters.md)
 
 #### Defined in
 
@@ -298,11 +298,11 @@ ___
 
 ### getPairInformation
 
-▸ **getPairInformation**(): [`PairInformation`](PairInformation.md)
+▸ **getPairInformation**(): [`PairInformation`](../structs/PairInformation.md)
 
 #### Returns
 
-[`PairInformation`](PairInformation.md)
+[`PairInformation`](../structs/PairInformation.md)
 
 #### Defined in
 
@@ -565,7 +565,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `fp` | [`FeeParameters`](FeeParameters.md) |
+| `fp` | [`FeeParameters`](../structs/FeeParameters.md) |
 
 #### Returns
 
