@@ -68,7 +68,7 @@ This function is compliant with fee on transfer tokens
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `liquidityParameters` | [`LiquidityParameters`](LiquidityParameters.md) | The liquidity parameters |
+| `liquidityParameters` | [`LiquidityParameters`](../structs/LiquidityParameters.md) | The liquidity parameters |
 
 #### Returns
 
@@ -91,7 +91,7 @@ This function is compliant with fee on transfer tokens
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `liquidityParameters` | [`LiquidityParameters`](LiquidityParameters.md) | The liquidity parameters |
+| `liquidityParameters` | [`LiquidityParameters`](../structs/LiquidityParameters.md) | The liquidity parameters |
 | `amount` | `u64` | The amount of MAS to deposit |
 
 #### Returns

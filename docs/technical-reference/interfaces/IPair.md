@@ -392,7 +392,7 @@ Calls the constructor
 | `tokenX` | `Address` |
 | `tokenY` | `Address` |
 | `activeId` | `u32` |
-| `preset` | [`Preset`](Preset.md) |
+| `preset` | [`Preset`](../structs/Preset.md) |
 
 #### Returns
 

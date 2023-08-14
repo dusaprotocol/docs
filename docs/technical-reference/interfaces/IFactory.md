@@ -96,7 +96,7 @@ ___
 
 ### getAllLBPairs
 
-▸ **getAllLBPairs**(`_tokenX`, `_tokenY`): [`LBPairInformation`](LBPairInformation.md)[]
+▸ **getAllLBPairs**(`_tokenX`, `_tokenY`): [`LBPairInformation`](../structs/LBPairInformation.md)[]
 
 #### Parameters
 
@@ -107,7 +107,7 @@ ___
 
 #### Returns
 
-[`LBPairInformation`](LBPairInformation.md)[]
+[`LBPairInformation`](../structs/LBPairInformation.md)[]
 
 #### Defined in
 
@@ -138,7 +138,7 @@ ___
 
 ### getLBPairInformation
 
-▸ **getLBPairInformation**(`_tokenA`, `_tokenB`, `_binStep`): [`LBPairInformation`](LBPairInformation.md)
+▸ **getLBPairInformation**(`_tokenA`, `_tokenB`, `_binStep`): [`LBPairInformation`](../structs/LBPairInformation.md)
 
 #### Parameters
 
@@ -150,7 +150,7 @@ ___
 
 #### Returns
 
-[`LBPairInformation`](LBPairInformation.md)
+[`LBPairInformation`](../structs/LBPairInformation.md)
 
 #### Defined in
 

@@ -52,7 +52,7 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `_pair` | [`IPair`](../interfaces/_category_.jsonIPair.md) | `undefined` |
+| `_pair` | [`IPair`](../interfaces/IPair.md) | `undefined` |
 | `_amountOut` | `u64` | `undefined` |
 | `_swapForY` | `bool` | `undefined` |
 | `isQuote` | `bool` | `false` |
@@ -75,7 +75,7 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `_pair` | [`IPair`](../interfaces/_category_.jsonIPair.md) | `undefined` |
+| `_pair` | [`IPair`](../interfaces/IPair.md) | `undefined` |
 | `_amountIn` | `u64` | `undefined` |
 | `_swapForY` | `bool` | `undefined` |
 | `isQuote` | `bool` | `false` |
