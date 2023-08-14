@@ -4,28 +4,28 @@
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-| Factory  | `AS1PZbuWxJRjhqUuBqYUnfwrqRkcFxJYWAHzN3aZdSD83VSGXLHX` |
-|  Router  | `AS1cDjE8z237eeB6rpJzVBydgZbArN2J9u12RK8x8eWqJB3KErm3` |
-|  Quoter  | `AS1SejRiE25713uVGoNuYU5oDVhXCJDtgpf7QsP98weteBVTJ3eR` |
+| Factory  | `AS12PKQQxUtvbUmKvXaiFC1xjbAyQkABenoxLk1LrGEakjiZJcneT` |
+|  Router  | `AS12HLXHZFixwTZDvuYUfdaZi6Uo54Qkks3ifmiqMhrSiLdNLAaF4` |
+|  Quoter  | `AS12jpqNB3a5cz1U9xY9Yc1RSoVdFk5LdKwiTz8BmUCEtgG49AXhj` |
 
 ## Tokens
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-|   WMAS   | `AS1vtFdHHbPeNr4fT1ifxWrNZ71B39VLXXMwEFRD4eB3SuZinn4J` |
-|   USDC   | `AS1CVGAW3xC2usEm8XK1DjTeypnZJ14o65uPDh6hKAAa2T2yGRZC` |
-|   WETH   | `AS1Gn49SeScNp9Z6D88TZd7crwwnWjZFcRJaXA8W9JAhgE9m14pJ` |
+|   WMAS   | `AS18vveYFkSuGUKfC4R2NLwxP91yUaLqNNNbUeGicTVq6fvLo4VF` |
+|   USDC   | `AS127XuJBNCJrQafhVy8cWPfxSb4PV7GFueYgAEYCEPJy3ePjMNb8` |
+|   WETH   | `AS12WuZMkAEeDGczFtHYDSnwJvmXwrUWtWo4GgKYUaR2zWv3X6RHG` |
 
 ## Autonomous Liquidity
 
 | Pool |                   Vault                    |                  Strategy                    |
 | :------: | :------------------------------------------: | :------------------------------------------: |
-| WMAS/USDC  | `AS127fZPZssgAKpM38L2Sb8ykscw4VoZ9VRmDcbDv1SiZrFERqJJ1` | `AS12jdVLAnUQHdQ7gRmdvSM3vHta2e7Ar83NWWrbArVzwQshQTYGk` |
-| WETH/USDC  | `AS12B5q9KfaAUQf4nd9iwFEVPG1qZRq5PrQmebC3Vk8bTiHg4dcDH` | `AS12Hnh3k1rhP2hohXVHanujioBCCAYVZFAVBkLbV87gLvqoB8U9i` |
-| WMAS/WETH  | `AS1LcE22a743iSvKhNj9X6qsZhzLgFyn4GoAmYLCSZvCo5n3H8Yv` | `AS12nC66AXSAHuv88gctRixq4TojUiqWXj99xvtEnKwRMU4tML6AZ` |
+| WMAS/USDC  | `AS12ai3VgbvUMCYRXqpcszr51Qe5VP67BFU2bcaGZ6Gq34SaFma2g` | `AS126QbSHZhQKtgW4S5Jh3XhCahWNp3KQgUCbrPDDwNHsXepxp31Z` |
+| WETH/USDC  | `AS1VTGyQSSFLxaLbNaw8ohtUoWvbA6x3JwdNL92VnyAWL86RYvUG` | `AS1ENEcX8iS9VcBh97Jf5ZFFfG4ijPZJmjndAWxbFiCCsH2VVs92` |
+| WMAS/WETH  | `AS12fGiuJvxYSreQEUmqMqykFUfBnR8nPcyNYto1zpEBYaWEWL1Gs` | `AS12YpQwrHXeWPDfWK3nJrC4ojZxk52fUAVxpKqxCy6c559jccXLd` |
 
 ## Periphery
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-| DCA  | `AS12Z9vnG7kwQRi93uGnT1JaJxE74ZkWpFVkymBVwarYq5CVkoFXr` |
+| DCA  | `AS1oTF4hfaHSy44uT2GMXnjNZpZmpwydg9HKfXniJsYUyrdAU9Z` |
