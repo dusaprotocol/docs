@@ -14,7 +14,7 @@ This guide endeavors to show examples of how builders can use the SDK, together 
 Run the following command to add the required dependencies to your project:
 
 ```shell
-npm install @dusalabs/sdk # or yarn add @dusalabs/sdk
+npm install @dusalabs/sdk @massalabs/massa-web3
 ```
 
 
