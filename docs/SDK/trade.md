@@ -33,8 +33,7 @@ import {
 ## 2. Declare required constants
 ```ts
 const BUILDNET_URL = 'https://buildnet.massa.net/api/v2'
-const privateKey = process.env.PRIVATE_KEY
-if (!privateKey) throw new Error('Missing PRIVATE_KEY in .env file')
+const privateKey = "{WALLET_PRIVATE_KEY}"
 const account = await WalletClient.getAccountFromSecretKey(privateKey)
 if (!account.address) throw new Error('Missing address in account')
 const client = await ClientFactory.createCustomClient(
@@ -153,8 +152,8 @@ console.log(`Fee: ${feeAmountIn.toSignificant(6)} ${feeAmountIn.token.symbol}`)
 const userSlippageTolerance = new Percent(BigInt(50), BigInt(10000)) // 0.5%
 
 // set deadline for the transaction
-const currenTimeInSec =  Math.floor((new Date().getTime()) / 1000)
-const deadline = currenTimeInSec + 3600 // 1 hour
+const currenTimeInMs = new Date().getTime()
+const deadline = currenTimeInMs + 3_600_000 // 1 hour
 
 // set swap options
 const swapOptions = {
@@ -176,4 +175,22 @@ const router = new IRouter(LB_ROUTER_ADDRESS[chainId], client)
 // execute swap
 const txId = await router[params.methodName](params)
 console.log('txId', txId)
+
+// await transaction confirmation and log output events
+const status = await client
+    .smartContracts()
+    .awaitRequiredOperationStatus(txId, EOperationStatus.FINAL)
+if (status !== EOperationStatus.FINAL)
+    throw new Error("Transaction failed")
+await client
+    .smartContracts()
+    .getFilteredScOutputEvents({
+        emitter_address: null,
+        start: null,
+        end: null,
+        original_caller_address: null,
+        is_final: null,
+        original_operation_id: txId,
+    })
+    .then((r) => r.forEach((e) => console.log(e.data)))
 ```
