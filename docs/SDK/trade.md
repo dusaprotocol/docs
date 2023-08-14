@@ -128,7 +128,7 @@ const trades = await TradeV2.getTradesExactIn(
   outputToken,
   isMasIn,
   isMasOut, 
-  provider,
+  client,
   chainId
 ) 
 
