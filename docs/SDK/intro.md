@@ -31,4 +31,4 @@ SDK uses Github to track issues and feature requests. Please open an issue if yo
 
 | Repo | Github URL |  NPM URL |
 | :-------: | :----: | :----: |
-| V2 | https://github.com/dusaprotocol/sdk |  https://www.npmjs.com/package/@dusalabs/sdk |
+| V1 | https://github.com/dusaprotocol/sdk |  https://www.npmjs.com/package/@dusalabs/sdk |

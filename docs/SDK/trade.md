@@ -165,11 +165,7 @@ const swapOptions = {
 }
 
 // generate swap method and parameters for contract call
-const {
-  methodName, // e.g. swapExactTokensForMAS,
-  args,       // e.g.[amountIn, amountOut, binSteps, path, to, deadline]
-  value       // e.g. 0x0
-} = bestTrade.swapCallParameters(swapOptions)
+const params = bestTrade.swapCallParameters(swapOptions)
 
 ```
 ## 8. Execute trade using massa-web3
