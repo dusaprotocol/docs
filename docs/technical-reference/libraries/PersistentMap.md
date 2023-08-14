@@ -1,4 +1,4 @@
-# PersistentMap<K, V\>
+# PersistentMap
 
 This class is one of several convenience collections built on top of the `Storage` class
 It implements a map -- a persistent unordered map.
@@ -29,12 +29,6 @@ you must always use a *unique storage prefix* for different collections to avoid
 | :------ | :------ |
 | `K` | The generic type parameter `K` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
 | `V` | The generic type parameter `V` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
-
-## Hierarchy
-
-- **`PersistentMap`**
-
-  ↳ [`Oracle`](Oracle.md)
 
 ## Table of contents
 
