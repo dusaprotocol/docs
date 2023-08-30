@@ -29,6 +29,6 @@ SDK implements 4 main classes: `PairV2`, `RouteV2`, `TradeV2`, and `Bin`. Specif
 ## Github
 SDK uses Github to track issues and feature requests. Please open an issue if you have found a bug or have new feature requests. We also welcome contributions from the open source community. Open a pull request with a detailed explanation and the team will gladly review your contribution.
 
-| Repo | Github URL |  NPM URL |
-| :-------: | :----: | :----: |
-| V1 | https://github.com/dusaprotocol/sdk |  https://www.npmjs.com/package/@dusalabs/sdk |
+| Github URL |  NPM URL |
+| :----: | :----: |
+| https://github.com/dusaprotocol/sdk |  https://www.npmjs.com/package/@dusalabs/sdk |

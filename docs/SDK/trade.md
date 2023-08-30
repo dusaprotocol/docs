@@ -19,6 +19,8 @@ import {
   Token,
   TokenAmount,
   TradeV2,
+  USDC as _USDC,
+  WETH as _WETH,
   WMAS as _WMAS,
   parseUnits
 } from '@dusalabs/sdk'
@@ -33,6 +35,7 @@ import {
 ## 2. Declare required constants
 ```ts
 const BUILDNET_URL = 'https://buildnet.massa.net/api/v2'
+const CHAIN_ID = ChainId.BUILDNET
 const privateKey = "{WALLET_PRIVATE_KEY}"
 const account = await WalletClient.getAccountFromSecretKey(privateKey)
 if (!account.address) throw new Error('Missing address in account')
@@ -49,21 +52,9 @@ Note that in your project, you most likely will not hardcode the private key at 
 
 ```ts
 // initialize tokens
-const WMAS = _WMAS[ChainId.BUILDNET]
-const USDC = new Token(
-  ChainId.BUILDNET,
-  'AS127XuJBNCJrQafhVy8cWPfxSb4PV7GFueYgAEYCEPJy3ePjMNb8',
-  9,
-  'USDC',
-  'USD Coin'
-)
-const WETH = new Token(
-  ChainId.BUILDNET,
-  'AS12WuZMkAEeDGczFtHYDSnwJvmXwrUWtWo4GgKYUaR2zWv3X6RHG',
-  9,
-  'WETH',
-  'Wrapped Ether'
-)
+const WMAS = _WMAS[CHAIN_ID]
+const USDC = _USDC[CHAIN_ID]
+const WETH = _WETH[CHAIN_ID]
 
 // declare bases used to generate trade routes
 const BASES = [WMAS, USDC, WETH] 
@@ -120,7 +111,6 @@ const isMasIn = false // set to 'true' if swapping from MAS; otherwise, 'false'
 const isMasOut = true // set to 'true' if swapping to MAS; otherwise, 'false'
 
 // generates all possible TradeV2 instances
-const chainId = ChainId.BUILDNET
 const trades = await TradeV2.getTradesExactIn(
   allRoutes,
   amountIn,
@@ -128,7 +118,7 @@ const trades = await TradeV2.getTradesExactIn(
   isMasIn,
   isMasOut, 
   client,
-  chainId
+  CHAIN_ID
 ) 
 
 // chooses the best trade 
