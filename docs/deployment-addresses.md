@@ -1,31 +1,29 @@
 # Deployment Addresses
 
+Smart contracts listed below are deployed on the **Buildnet**
+
 ## Core
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-| Factory  | `AS1pLmABmGWUTBoaMPwThauUy75PQi8WW29zVYMHbU54ep1o9Hbf` |
-|  Router  | `AS12ZhJYEffSWWyp7XvCoEMKFBnbXw5uwp6S3cY2xbEr76W3VL3Dk` |
-|  Quoter  | `AS12i1UxxszrS56np9TQwig1ySGRR6CmePzGysVynXcjGAiw1HPAc` |
+| Factory  | `AS1ArnVaCCEQDQzof6yofyitEUKMVWMzyGjhdKutMVwjazQe5Zvq` |
+|  Router  | `AS1wqJc1dsBgFFghGW3Dc1MPYxA7DtzaVpYahXDFzk2E4vStZ6Bu` |
+|  Quoter  | `AS12A8px835db3xegXgLWVUzxyGr1xpwt4rzEBP1TZU4atEU3Cr8a` |
 
 ## Tokens
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-|   WMAS   | `AS1JKtvk4HDkxoL8XSCF4XFtzXdWsVty7zVu4yjbWAjS58tP9KzJ` |
-|   USDC   | `AS1fznHuwLZSbADxaRY1HNfA7hgqHQrNkf2F12vZP2xrwNzAW7W9` |
-|   WETH   | `AS1SVGodhgXdRXrjrPURBRk3ay4sHLgYWzDC3PXAjvTxjzraLaQ8` |
+|   WMAS   | `AS12Emra1SrLsFgYdFRQXBjsksWummAs8zG14iFytS73bZBjbVY5v` |
+|   USDC   | `AS1sKBEGsqtm8vQhQzi7KJ4YhyaKTSkhJrLkRc7mQtPqme3VcFHm` |
+|   USDT   | `AS1217cAveD2H5rkuytUoiMEL1sg8BXwp966daPRoaoxmV8zv7Bdv` |
+|   WETH   | `AS12erzaq5BHooLLsuZ9MKiDJXWcMnpBBoUe78an7L3Cbaz1orgAv` |
+|   WBTC   | `AS186NRhT6itQ8LuCS7a8n6xQYiXrqDcaaoeiYpTSUsJWKEMgTEw` |
 
 ## Periphery
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-|   DCA    | `AS12DEdQKeA1ynJhvv4Zt9o3wgdeNENDAAtrfq61yy1ST3uBNHqET` |
-
-## Autonomous Liquidity
-
-| Contract |                   Pool                    |                   Vault                    |                  Strategy                    |
-| :------: | :------------------------------------------: | :------------------------------------------: | :------------------------------------------: |
-| WMAS/USDC  | `AS12HL4mrTApyxAdsLAPdxVTyi2aVSQ7LZjpENR1txuTBdCYmuAXQ` | `AS1gHRmVe7Wz4T3oTqL73GsUDNmqPddwgdhYQz5hrRLDB194Pdne` | `AS12CDG4vwV8xsbzixXJHNjT2E3kLXjnATLXfCxVv64gehARoL4m1` |
-| WETH/USDC  | `AS1nr4a1UxBUyhkjBfCs5ff9D8BWWyyaBBJQHJQexd5H3SS7unyU` | `AS12C7FrmxiMwaGEDETix43kDyPjQRBmsEgw6eV3gBQSbLnSE6Fdk` | `AS1XpvhHpUhqM6XpJjcpsVLyT2d2BwstYse4wWryvMnrYfrr6JC9` |
-| WMAS/WETH  | `AS1aYVCWcM1vYBL47EQUcWv19FkLQfZBVsQvk9wdndQXT7dFm6Rv ` | `AS1ezf11mrpEfTD1j7trN5KyWBF6mKNBmpAwyvcYw7z7yF2tp4u1` | `AS1BQWM5dyxaE8HncYTfMhy568Mzwao6BLR3pr9HkviTpo1Le68q` |
+|   DCA    | `AS1DnT2YWu7kJSwjV1PT6EnE5qvckuksAA8QsEPT31Vxt1eft7BT` |
+|   LimitOrder    | `AS133ddicgJfPx5zfKaPRLmQgkoWDndMjpVhGm2U1iKW1T6RSZxE` |
+|   Multicall    | `AS1yphCWi7gychZWYPpqrKDiGb6ZacRoji8YYMLHtQ2TSuuQFqLC` |
