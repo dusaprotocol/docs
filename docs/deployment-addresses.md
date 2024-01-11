@@ -6,9 +6,9 @@ Smart contracts listed below are deployed on the **Buildnet**
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-| Factory  | `AS1ArnVaCCEQDQzof6yofyitEUKMVWMzyGjhdKutMVwjazQe5Zvq` |
-|  Router  | `AS1wqJc1dsBgFFghGW3Dc1MPYxA7DtzaVpYahXDFzk2E4vStZ6Bu` |
-|  Quoter  | `AS12A8px835db3xegXgLWVUzxyGr1xpwt4rzEBP1TZU4atEU3Cr8a` |
+| Factory  | `AS12o8B3xPdY7a9ZbedwxRStLQAiDqp531LR7fChwqhkhfR3rurCB` |
+|  Router  | `AS1qCXCY5AF7SpZUk2bwiHneYb5MLVgeWEiRs8BxorYArLWMavZ` |
+|  Quoter  | `AS12kpx6rSt36HpqipqSSNVQmw7WXZyC3GjLATNenoyoMYX1bP4XV` |
 
 ## Tokens
 
@@ -24,6 +24,7 @@ Smart contracts listed below are deployed on the **Buildnet**
 
 | Contract |                   Address                    |
 | :------: | :------------------------------------------: |
-|   DCA    | `AS1DnT2YWu7kJSwjV1PT6EnE5qvckuksAA8QsEPT31Vxt1eft7BT` |
-|   LimitOrder    | `AS133ddicgJfPx5zfKaPRLmQgkoWDndMjpVhGm2U1iKW1T6RSZxE` |
+|   DCA    | `AS12p2d3K3gGp6dXw1A1ZusPxUr9MzbLZqKZjrQ6Z8FWsnAH9F8Lv` |
+|   LimitOrder    | `AS12bWaEB6jHXxX8SUrvXpb5xzFSSigSK9rV9BCpHffJyqozQwrTq` |
+|   Vault    | `AS12s7eFNQWXzCkU4NF4VBHsEBJEbnCBohdpu2DZbwXpRKeLPEstd` |
 |   Multicall    | `AS1yphCWi7gychZWYPpqrKDiGb6ZacRoji8YYMLHtQ2TSuuQFqLC` |
