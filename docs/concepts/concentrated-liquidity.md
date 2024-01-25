@@ -7,7 +7,7 @@ sidebar_label: Concentrated Liquidity
 
 ## Introduction
 
-Liquidity in classic AMM (Joe V1/Uniswap V2) is distributed uniformly in the entire price range from 0 to infinity.
+Liquidity in classic AMM (Uniswap V2) is distributed uniformly in the entire price range from 0 to infinity.
 
 We can improve capital efficiency, especially for certain pairs where you can expect trades to occur within a tight range. Take USDC/USDT for example, where most trading happens between $0.99 and $1.01. In this case, liquidity outside of this range is largely untouched and would be better off used elsewhere.
 
