@@ -93,7 +93,7 @@ ___
 
 ▸ **createLBPair**(`bs`): `StaticArray`<`u8`\>
 
-Create a liquidity bin LBPair for _tokenX and _tokenY using the factory
+Create a liquidity book Pair for _tokenX and _tokenY using the factory
 
 #### Parameters
 

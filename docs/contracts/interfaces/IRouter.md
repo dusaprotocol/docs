@@ -108,7 +108,7 @@ ___
 
 ▸ **createLBPair**(`tokenX`, `tokenY`, `activeId`, `binStep`): `Address`
 
-Create a liquidity bin LBPair for _tokenX and _tokenY using the factory
+Create a liquidity book Pair for _tokenX and _tokenY using the factory
 
 #### Parameters
 
@@ -123,7 +123,7 @@ Create a liquidity bin LBPair for _tokenX and _tokenY using the factory
 
 `Address`
 
-- The address of the newly created LBPair
+- The address of the newly created Pair
 
 #### Defined in
 
@@ -211,7 +211,7 @@ This function is compliant with fee on transfer tokens
 | :------ | :------ | :------ |
 | `tokenX` | `Address` | The address of token X |
 | `tokenY` | `Address` | The address of token Y |
-| `binStep` | `u32` | The bin step of the LBPair |
+| `binStep` | `u32` | The bin step of the Pair |
 | `amountXMin` | `u64` | The min amount to receive of token X |
 | `amountYMin` | `u64` | The min amount to receive of token Y |
 | `ids` | `u64`[] | The list of ids to burn |
@@ -241,7 +241,7 @@ This function is compliant with fee on transfer tokens
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `token` | `Address` | The address of token |
-| `binStep` | `u32` | The bin step of the LBPair |
+| `binStep` | `u32` | The bin step of the Pair |
 | `amountTokenMin` | `u64` | The min amount to receive of token |
 | `amountMasMin` | `u64` | The min amount to receive of MAS |
 | `ids` | `u64`[] | The list of ids to burn |

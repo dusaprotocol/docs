@@ -32,10 +32,10 @@
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `binStep` | `u32` | `0` | The bin step of the LBPair |
-| `pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | The address of the LBPair |
-| `createdByOwner` | `bool` | `false` | Whether the LBPair was created by the owner or the factory |
-| `ignoredForRouting` | `bool` | `false` | Whether the LBPair is ignored for routing or not. An ignored pair will not be explored during routes finding |
+| `binStep` | `u32` | `0` | The bin step of the Pair |
+| `pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | The address of the Pair |
+| `createdByOwner` | `bool` | `false` | Whether the Pair was created by the owner or the factory |
+| `ignoredForRouting` | `bool` | `false` | Whether the Pair is ignored for routing or not. An ignored pair will not be explored during routes finding |
 
 #### Defined in
 
@@ -47,7 +47,7 @@
 
 • **binStep**: `u32` = `0`
 
-The bin step of the LBPair
+The bin step of the Pair
 
 #### Defined in
 
@@ -59,7 +59,7 @@ ___
 
 • **createdByOwner**: `bool` = `false`
 
-Whether the LBPair was created by the owner or the factory
+Whether the Pair was created by the owner or the factory
 
 #### Defined in
 
@@ -71,7 +71,7 @@ ___
 
 • **ignoredForRouting**: `bool` = `false`
 
-Whether the LBPair is ignored for routing or not. An ignored pair will not be explored during routes finding
+Whether the Pair is ignored for routing or not. An ignored pair will not be explored during routes finding
 
 #### Defined in
 
@@ -83,7 +83,7 @@ ___
 
 • **pair**: [`IPair`](../interfaces/IPair.md)
 
-The address of the LBPair
+The address of the Pair
 
 #### Defined in
 
