@@ -10,7 +10,7 @@ sidebar_label: Bin Liquidity
 Liquidity in each bin is guided by the constant sum price invariant, $P \cdot x + y = L$, where $x$ is the quantity of asset $X$, $y$ is the quantity of asset $Y$, $L$ is the amount of liquidity in the bin and $P$ is the price defined by $P = \frac{\Delta y}{\Delta x}$. This is more easily visualised by the graph below:
 
 <p align="center">
-  <img src="../../static/img/price.png" alt="Price curve of constant sum formula" width="400px" />
+  <img src="/img/price.png" alt="Price curve of constant sum formula" width="400px" />
 </p>
 
 ## Bin Composition
@@ -42,7 +42,7 @@ Another notable difference is that the constant sum curve intercepts both the $x
 In fact, in any given market, there can only be **one** bin that contains reserves of both $X$ and $Y$ - this is the **active price bin**. All bins to the right of the active bin will contain only $X$ and all bins to the left will only contain $Y$.
 
 <p align="center">
-  <img src="../../static/img/active_bin.png" alt="Chart showing bin compositions" width="400px" />
+  <img src="/img/active_bin.png" alt="Chart showing bin compositions" width="400px" />
 </p>
 
 A simple way to think of this is to imagine the MAS/USDC pool. Let asset $Y$ be USDC and asset $X$ be MAS. Price $P$ is defined by amount of USDC per MAS. Let the active bin be $1 MAS; all bins to the left contain only USDC and all bins to the right contain only MAS. If there is a lot of buying of MAS, then the active bin will move to the right once reserves of MAS is depleted from the $1 bin.
@@ -50,7 +50,7 @@ A simple way to think of this is to imagine the MAS/USDC pool. Let asset $Y$ be 
 The way LB aggregates liquidity is also different to Uniswap V3. In LB, liquidity is aggregated vertically via each bin and in Uniswap V3, liquidity is aggregated horizontally. The main benefit of vertical aggregation is that it allows for liquidity to be **fungible**.
 
 <p align="center">
-  <img src="../../static/img/market_aggregation.png" alt="Comparison of Uniswap V3 vs LB liquidity aggregation" width="800px" />
+  <img src="/img/market_aggregation.png" alt="Comparison of Uniswap V3 vs LB liquidity aggregation" width="800px" />
 </p>
 
 ## Liquidity Tokens
@@ -68,5 +68,5 @@ When a bin has liquidity, its slot will contain a 1, otherwise it contains a 0. 
 Since we always know which bin is the active bin, using a tree structure allows us to find the next bin to its left or right that has liquidity quickly by tracking a path via its parent.
 
 <p align="center">
-  <img src="../../static/img/bin_tree.png" alt="Tree data structure to track bin liquidity" width="800px" />
+  <img src="/img/bin_tree.png" alt="Tree data structure to track bin liquidity" width="800px" />
 </p>
