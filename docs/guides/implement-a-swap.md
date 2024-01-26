@@ -49,13 +49,11 @@ When the desired output amount is specified:
 ```js
 const amountIn = u256.from(u64(10**6));
 
-USDC.approve(router._origin, amountIn);
+USDC.increaseAllowance(router._origin, amountIn);
 
-const tokenPath: IERC20[] = new IERC20[](2);
-tokenPath[0] = USDC;
-tokenPath[1] = USDT;
-const pairBinSteps: u64[] = new u64[](1); // pairBinSteps[i] refers to the bin step for the market (x, y) where tokenPath[i] = x and tokenPath[i+1] = y
-pairBinSteps[0] = 1;
+const tokenPath: IERC20[] = [USDC, USDT];
+const pairBinSteps: u64[] = [1]; // pairBinSteps[i] refers to the bin step for the market (x, y) where tokenPath[i] = x and tokenPath[i+1] = y
+
 
 const amountOut = router.getSwapOut(pair, amountIn, true).amountOut;
 const amountOutWithSlippage: u256 = u256.div(u256.mul(amountOut, u256.from(99)), u256.from(100)) // We allow for 1% slippage
@@ -67,11 +65,8 @@ const amountOutReal: u256 = router.swapExactTokensForTokens(amountIn, amountOutW
 ```js
 const amountIn = u256.from(u64(10**18));
 
-const tokenPath: IERC20[] = new IERC20[](2);
-tokenPath[0] = WMAS;
-tokenPath[1] = USDT;
-const pairBinSteps: u64[] = new u64[](1);
-pairBinSteps[0] = 25;
+const tokenPath: IERC20[] = [WMAS, USDT];
+const pairBinSteps: u64[] = [25]; 
 
 const amountOut = router.getSwapOut(pairWMAS, amountIn, false).amountOut;
 const amountOutWithSlippage = u256.div(u256.mul(amountOut, u256.from(99)), u256.from(100)) // We allow for 1% slippage
@@ -84,17 +79,10 @@ const amountOutReal: u256 = router.swapExactMASForTokens(amountIn, amountOutWith
 const amountOut = u256.from(u64(10**6));
 const amountInMax = u256.from(u64(11**6));
 
-USDT.approve(router._origin, amountInMax);
+USDT.increaseAllowance(router._origin, amountInMax);
 
-const tokenPath: IERC20[] = new IERC20[](3);
-const pairBinSteps: u64[] = new u64[](2);
-
-tokenPath[0] = USDT;
-tokenPath[1] = WMAS;
-tokenPath[2] = USDC;
-
-pairBinSteps[0] = 20;
-pairBinSteps[1] = 20;
+const tokenPath: IERC20[] = [USDT, WMAS, USDC];
+const pairBinSteps: u64[] = [25, 20];
 
 // We define amountInMax as an arbitrary amount of 11e6 here
 const amountsIn: u256 = router.swapTokensForExactTokens(amountOut, amountInMax, pairBinSteps, tokenPath, receiverAddress, Context.timestamp());

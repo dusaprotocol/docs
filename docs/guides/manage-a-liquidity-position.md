@@ -125,18 +125,9 @@ const amountYmin = u256.mul(u256.from(99), u256.from(u64(10 ** 6))); // We allow
 const activeIdDesired: u64 = 2**23; // We get the ID from price using getIdFromPrice()
 const idSlippage: u64 = 5;
 
-const deltaIds = new i64[](3);
-deltaIds[0] = -1;
-deltaIds[1] = 0;
-deltaIds[2] = 1;
-const distributionX = new u256[](3);
-distributionX[0] = u256.Zero;
-distributionX[1] = u256.div(PRECISION, u256.from(2));
-distributionX[2] = u256.div(PRECISION, u256.from(2));
-const distributionY = new u256[](3);
-distributionY[0] = u256.div(u256.mul(u256.from(2), PRECISION), u256.from(3));
-distributionY[1] = u256.div(PRECISION, u256.from(3));
-distributionY[2] = u256.Zero;
+const deltaIds: i64[] = [-1, 0, 1];
+const distributionX: u256[] = [u256.Zero, u256.div(PRECISION, u256.from(2)), u256.div(PRECISION, u256.from(2))];
+const distributionY: u256[] = [u256.div(u256.mul(u256.from(2), PRECISION), u256.from(3)), u256.div(PRECISION, u256.from(3)), u256.Zero];
 
 
 const liquidityParameters = new LiquidityParameters(
@@ -156,8 +147,8 @@ const liquidityParameters = new LiquidityParameters(
     Context.timestamp()
 );
 
-USDC.approve(router._origin, amountX);
-USDT.approve(router._origin, amountY);
+USDC.increaseAllowance(router._origin, amountX);
+USDT.increaseAllowance(router._origin, amountY);
 
 const AddLiquidityReturn = router.addLiquidity(liquidityParameters);
 const liquidityMinted: u256[] = AddLiquidityReturn.liquidityMinted;
@@ -216,32 +207,30 @@ Here are some pointer for using these functions:
 const numberOfBinsToWithdraw: i32 = 3;
 const binStep: u32 = 25;
 
-const amounts = new u256[](numberOfBinsToWithdraw);
-const ids = new u64[](numberOfBinsToWithdraw);
-ids[0] = 8388608;
-ids[1] = 8388611;
-ids[2] = 8388605;
-let totalXbalanceWithdrawn = u256.Zero;
+let amounts: u256[] = [u256.Zero, u256.Zero, u256.Zero];
+const ids: u64[] = [8388605, 8388608, 8388611];
+
+let totalXBalanceWithdrawn = u256.Zero;
 let totalYBalanceWithdrawn = u256.Zero;
 
 // To figure out amountXMin and amountYMin, we calculate how much X and Y underlying we have as liquidity
 for (let i = 0; i < numberOfBinsToWithdraw; i++) {
     const LBTokenAmount: u256 = pair.balanceOf(receiverAddress, ids[i]);
     amounts[i] = LBTokenAmount;
-    const bin = pair.getBin(u24(ids[i]));
+    const bin = pair.getBin(u32(ids[i]));
 
-    totalXbalanceWithdrawn = u256.add(totalXbalanceWithdrawn, u256.div(u256.mul(LBTokenAmount, bin.reserveX), pair.totalSupply(ids[i])));
+    totalXBalanceWithdrawn = u256.add(totalXBalanceWithdrawn, u256.div(u256.mul(LBTokenAmount, bin.reserveX), pair.totalSupply(ids[i])));
     totalYBalanceWithdrawn = u256.add(totalYBalanceWithdrawn, u256.div(u256.mul(LBTokenAmount, bin.reserveY), pair.totalSupply(ids[i])));
 }
 
-const amountXMin: u256 = u256.div(u256.mul(totalXBalanceWithdrawn), u256.from(99), u256.from(100)); // Allow 1% slippage
-const amountYMin: u256 = u256.div(u256.mul(totalYBalanceWithdrawn), u256.from(99), u256.from(100)); // Allow 1% slippage
+const amountXMin: u256 = u256.div(u256.mul(totalXBalanceWithdrawn, u256.from(99)), u256.from(100)); // Allow 1% slippage
+const amountYMin: u256 = u256.div(u256.mul(totalYBalanceWithdrawn, u256.from(99)), u256.from(100)); // Allow 1% slippage
 
-pair.setApprovalForAll(router._origin, true);
+pair.setApprovalForAll(true, router._origin);
 
 const returnAmounts = router.removeLiquidity(
-    USDC,
-    WMAS,
+    USDC._origin,
+    WMAS._origin,
     binStep,
     amountXMin,
     amountYMin,
