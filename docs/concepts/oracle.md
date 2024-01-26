@@ -28,7 +28,7 @@ Samples are updated at the end of each swap.
 A new sample is created if enough time has passed since the creation of the previous sample as defined by the variable `oracleSampleLifeTime`. To be specific, given a new swap, if the time since creation of sample $i$ has exceeded `oracleSampleLifeTime`, then we create sample $i+1$. Otherwise, we update the cumulative values in sample $i$.
 
 <p align="center">
-  <img src="/static/img/sample_array.png" alt="Chart showing a sample being replaced" width="500px" />
+  <img src="/img/sample_array.png" alt="Chart showing a sample being replaced" width="500px" />
 </p>
 
 ## Time-Weighted Average Values
