@@ -62,8 +62,6 @@ getIdFromPrice(1.0020019, 2)
 >>> 8388618
 ```
 
-** Process exited - Return Code: 0 **
-Press Enter to exit terminal
 For second example, let's take [`MAS`/`USDC`](https://beta.dusa.io/pools/AS12Emra1SrLsFgYdFRQXBjsksWummAs8zG14iFytS73bZBjbVY5v/AS1sKBEGsqtm8vQhQzi7KJ4YhyaKTSkhJrLkRc7mQtPqme3VcFHm/20) pair which has a `binStep` of 20. To choose price equal to 5.008 USDC / MAS we need to adjust it
 
 $$
