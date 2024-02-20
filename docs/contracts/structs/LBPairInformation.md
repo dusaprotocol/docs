@@ -33,7 +33,7 @@
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `binStep` | `u32` | `0` | The bin step of the LBPair |
-| `pair` | [`IPair`](IPair.md) | `undefined` | The address of the LBPair |
+| `pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | The address of the LBPair |
 | `createdByOwner` | `bool` | `false` | Whether the LBPair was created by the owner or the factory |
 | `ignoredForRouting` | `bool` | `false` | Whether the LBPair is ignored for routing or not. An ignored pair will not be explored during routes finding |
 
@@ -85,7 +85,7 @@ ___
 
 ### pair
 
-• **pair**: [`IPair`](IPair.md)
+• **pair**: [`IPair`](../interfaces/IPair.md)
 
 The address of the LBPair
 

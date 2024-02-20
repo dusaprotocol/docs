@@ -34,7 +34,7 @@ you must always use a *unique storage prefix* for different collections to avoid
 
 - **`PersistentMap`**
 
-  ↳ [`Oracle`](Oracle.md)
+  ↳ [`Oracle`](../structs/Oracle.md)
 
 ## Table of contents
 

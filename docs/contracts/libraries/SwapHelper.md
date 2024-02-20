@@ -34,8 +34,8 @@ Returns the swap amounts in the current bin
 
 | Name | Type |
 | :------ | :------ |
-| `_bin` | [`Bin`](Bin.md) |
-| `_fp` | [`FeeParameters`](FeeParameters.md) |
+| `_bin` | [`Bin`](../structs/Bin.md) |
+| `_fp` | [`FeeParameters`](../structs/FeeParameters.md) |
 | `_activeId` | `u64` |
 | `_swapForY` | `bool` |
 | `_amountIn` | `u256` |
@@ -62,7 +62,7 @@ Simulate a swap in
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `_pair` | [`IPair`](IPair.md) | `undefined` | - |
+| `_pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | - |
 | `_amountOut` | `u256` | `undefined` | The amount of token to receive |
 | `_swapForY` | `bool` | `undefined` | Whether you swap X for Y (true), or Y for X (false) |
 | `isQuote` | `bool` | `false` | - |
@@ -89,7 +89,7 @@ Simulate a swap out
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `_pair` | [`IPair`](IPair.md) | `undefined` | - |
+| `_pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | - |
 | `_amountIn` | `u256` | `undefined` | The amount of token sent |
 | `_swapForY` | `bool` | `undefined` | Whether you swap X for Y (true), or Y for X (false) |
 | `isQuote` | `bool` | `false` | Whether this is a quote or not (will throw or return an error) |

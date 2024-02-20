@@ -1,4 +1,4 @@
-# @dusalabs/core
+# Index
 
 ## Table of contents
 
@@ -15,7 +15,7 @@
 - [BitMath](./libraries/BitMath.md)
 - [Math512Bits](./libraries/Math512Bits.md)
 - [PersistentMap](./libraries/PersistentMap.md)
-- [ReentrancyGuardUpgradeable](./libraries/ReentrancyGuardUpgradeable.md)
+- [ReentrancyGuardUpgradeable](./libraries/ReentrancyGuardUpgradeable)
 - [SafeMath](./libraries/SafeMath.md)
 - [SafeMath256](./libraries/SafeMath256.md)
 - [SafeMathU8](./libraries/SafeMathU8.md)

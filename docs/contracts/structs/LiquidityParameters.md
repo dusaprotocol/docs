@@ -42,8 +42,8 @@
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `tokenX` | [`IERC20`](IERC20.md) | `undefined` | The address of token X |
-| `tokenY` | [`IERC20`](IERC20.md) | `undefined` | The address of token Y |
+| `tokenX` | [`IERC20`](../interfaces/IERC20.md) | `undefined` | The address of token X |
+| `tokenY` | [`IERC20`](../interfaces/IERC20.md) | `undefined` | The address of token Y |
 | `binStep` | `u64` | `0` | The bin step of the pair |
 | `amountX` | `u256` | `u256.Zero` | The amount to send of token X |
 | `amountY` | `u256` | `u256.Zero` | The amount to send of token Y |
@@ -213,7 +213,7 @@ ___
 
 ### tokenX
 
-• **tokenX**: [`IERC20`](IERC20.md)
+• **tokenX**: [`IERC20`](../interfaces/IERC20.md)
 
 The address of token X
 
@@ -225,7 +225,7 @@ ___
 
 ### tokenY
 
-• **tokenY**: [`IERC20`](IERC20.md)
+• **tokenY**: [`IERC20`](../interfaces/IERC20.md)
 
 The address of token Y
 
