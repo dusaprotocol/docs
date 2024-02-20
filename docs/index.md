@@ -7,10 +7,6 @@ slug: /
 
 # Introduction
 
-:::info
-Dusa Protocol is a work in progress. The information in this document is subject to change.
-:::
-
 Dusa Protocol is based on the Liquidity Book architecture, a novel, highly-capital efficient Automated Market Maker (AMM) protocol. Its features include:
 - **Zero Slippage:** Traders can swap tokens with zero slippage within bins. 
 - **Surge Pricing:** Liquidity Providers earn additional dynamic fees during high market volatility. 
