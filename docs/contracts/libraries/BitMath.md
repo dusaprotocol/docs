@@ -19,13 +19,17 @@
 
 ### constructor
 
-• **new BitMath**()
+• **new BitMath**(): [`BitMath`](BitMath.md)
+
+#### Returns
+
+[`BitMath`](BitMath.md)
 
 ## Methods
 
 ### closestBit
 
-▸ `Static` **closestBit**(`_integer`, `_bit`, `_rightSide`): `Result`<`u8`\>
+▸ **closestBit**(`_integer`, `_bit`, `_rightSide`): `Result`<`u8`\>
 
 Returns the closest non-zero bit of `integer` to the right (of left) of the `bit` bits that is not `bit`
 
@@ -33,7 +37,7 @@ Returns the closest non-zero bit of `integer` to the right (of left) of the `bit
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `_integer` | `u128` | The integer as a u128 |
+| `_integer` | `u256` | The integer as a u256 |
 | `_bit` | `u8` | The bit index |
 | `_rightSide` | `bool` | Whether we're searching in the right side of the tree (true) or the left side (false) |
 
@@ -45,13 +49,13 @@ The index of the closest non-zero bit.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:14](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/BitMath.ts#L14)
+[assembly/libraries/BitMath.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L14)
 
 ___
 
 ### closestBitLeft
 
-▸ `Static` **closestBitLeft**(`x`, `bit`): `Result`<`u8`\>
+▸ **closestBitLeft**(`x`, `bit`): `Result`<`u8`\>
 
 Returns the index of the closest bit on the left of x that is non null
 
@@ -59,8 +63,8 @@ Returns the index of the closest bit on the left of x that is non null
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The value as a u128 |
-| `bit` | `u8` | The index of the bit to start searching at |
+| `x` | `u256` | The value as a u256 |
+| `bit` | `i32` | The index of the bit to start searching at |
 
 #### Returns
 
@@ -70,13 +74,13 @@ The index of the closest non null bit on the left of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:40](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/BitMath.ts#L40)
+[assembly/libraries/BitMath.ts:41](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L41)
 
 ___
 
 ### closestBitRight
 
-▸ `Static` **closestBitRight**(`x`, `bit`): `Result`<`u8`\>
+▸ **closestBitRight**(`x`, `bit`): `Result`<`u8`\>
 
 Returns the index of the closest bit on the right of x that is non null
 
@@ -84,8 +88,8 @@ Returns the index of the closest bit on the right of x that is non null
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The value as a u128 |
-| `bit` | `u8` | The index of the bit to start searching at |
+| `x` | `u256` | The value as a u256 |
+| `bit` | `i32` | The index of the bit to start searching at |
 
 #### Returns
 
@@ -95,13 +99,13 @@ The index of the closest non null bit on the right of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:26](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/BitMath.ts#L26)
+[assembly/libraries/BitMath.ts:26](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L26)
 
 ___
 
 ### leastSignificantBit
 
-▸ `Static` **leastSignificantBit**(`x`): `u8`
+▸ **leastSignificantBit**(`x`): `u8`
 
 Returns the index of the least significant bit of x
 
@@ -109,7 +113,7 @@ Returns the index of the least significant bit of x
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The value as a u128 |
+| `x` | `u256` | The value as a u256 |
 
 #### Returns
 
@@ -119,13 +123,13 @@ The index of the least significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:98](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/BitMath.ts#L98)
+[assembly/libraries/BitMath.ts:96](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L96)
 
 ___
 
 ### mostSignificantBit
 
-▸ `Static` **mostSignificantBit**(`x`): `u8`
+▸ **mostSignificantBit**(`x`): `u8`
 
 Returns the index of the most significant bit of x
 
@@ -133,7 +137,7 @@ Returns the index of the most significant bit of x
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The value as a u128 |
+| `x` | `u256` | The value as a u256 |
 
 #### Returns
 
@@ -143,13 +147,13 @@ The index of the most significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:53](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/BitMath.ts#L53)
+[assembly/libraries/BitMath.ts:54](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L54)
 
 ___
 
 ### significantBit
 
-▸ `Static` **significantBit**(`_integer`, `_isMostSignificant`): `u8`
+▸ **significantBit**(`_integer`, `_isMostSignificant`): `u8`
 
 Returns the most (or least) significant bit of `_integer`
 
@@ -157,7 +161,7 @@ Returns the most (or least) significant bit of `_integer`
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `_integer` | `u128` | The integer |
+| `_integer` | `u256` | The integer |
 | `_isMostSignificant` | `bool` | Whether we want the most (true) or the least (false) significant bit |
 
 #### Returns
@@ -168,4 +172,4 @@ The index of the most (or least) significant bit
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:140](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/BitMath.ts#L140)
+[assembly/libraries/BitMath.ts:139](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L139)

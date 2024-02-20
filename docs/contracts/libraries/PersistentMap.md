@@ -28,7 +28,13 @@ you must always use a *unique storage prefix* for different collections to avoid
 | Name | Description |
 | :------ | :------ |
 | `K` | The generic type parameter `K` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
-| `V` | The generic type parameter `V` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). |
+| `V` | The generic type parameter `V` can be any [valid AssemblyScript type](https://docs.assemblyscript.org/basics/types). MISC: Original code from Near (https://github.com/near/near-sdk-as/blob/master/sdk-core/assembly/collections/persistentMap.ts) |
+
+## Hierarchy
+
+- **`PersistentMap`**
+
+  ↳ [`Oracle`](Oracle.md)
 
 ## Table of contents
 
@@ -57,7 +63,7 @@ you must always use a *unique storage prefix* for different collections to avoid
 
 ### constructor
 
-• **new PersistentMap**<`K`, `V`\>(`prefix`)
+• **new PersistentMap**<`K`, `V`\>(`prefix`): [`PersistentMap`](PersistentMap.md)<`K`, `V`\>
 
 Creates or restores a persistent map with a given storage prefix.
 Always use a unique storage prefix for different collections.
@@ -65,7 +71,7 @@ Always use a unique storage prefix for different collections.
 Example
 
 ```ts
-let map = new PersistentMap<string, string>("m") // note the prefix must be unique (per NEAR account)
+let map = new PersistentMap<string, string>("m") // note the prefix must be unique (per MASSA account)
 ```
 
 #### Type parameters
@@ -81,9 +87,13 @@ let map = new PersistentMap<string, string>("m") // note the prefix must be uniq
 | :------ | :------ | :------ |
 | `prefix` | `string` | A prefix to use for every key of this map. |
 
+#### Returns
+
+[`PersistentMap`](PersistentMap.md)<`K`, `V`\>
+
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:59](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L59)
+[assembly/libraries/PersistentMap.ts:65](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L65)
 
 ## Properties
 
@@ -93,7 +103,7 @@ let map = new PersistentMap<string, string>("m") // note the prefix must be uniq
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:45](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L45)
+[assembly/libraries/PersistentMap.ts:51](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L51)
 
 ___
 
@@ -103,7 +113,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:46](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L46)
+[assembly/libraries/PersistentMap.ts:52](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L52)
 
 ## Methods
 
@@ -119,7 +129,7 @@ Decreases the internal map size counter
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:138](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L138)
+[assembly/libraries/PersistentMap.ts:144](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L144)
 
 ___
 
@@ -141,13 +151,13 @@ Increases the internal map size counter
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:129](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L129)
+[assembly/libraries/PersistentMap.ts:135](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L135)
 
 ___
 
 ### \_key
 
-▸ `Private` **_key**(`key`): `StaticArray`<`u8`\>
+▸ **_key**(`key`): `StaticArray`<`u8`\>
 
 #### Parameters
 
@@ -163,7 +173,7 @@ An internal string key for a given key of type K.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:68](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L68)
+[assembly/libraries/PersistentMap.ts:74](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L74)
 
 ___
 
@@ -195,7 +205,7 @@ True if the given key present in the map.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:88](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L88)
+[assembly/libraries/PersistentMap.ts:94](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L94)
 
 ___
 
@@ -226,7 +236,7 @@ Removes value and the key from the map.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:120](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L120)
+[assembly/libraries/PersistentMap.ts:126](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L126)
 
 ___
 
@@ -262,7 +272,7 @@ Value for the given key or the default value.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:162](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L162)
+[assembly/libraries/PersistentMap.ts:168](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L168)
 
 ___
 
@@ -297,7 +307,7 @@ Value for the given key or the default value.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:218](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L218)
+[assembly/libraries/PersistentMap.ts:230](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L230)
 
 ___
 
@@ -326,7 +336,7 @@ Sets the new value for the given key.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:257](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L257)
+[assembly/libraries/PersistentMap.ts:273](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L273)
 
 ___
 
@@ -336,6 +346,12 @@ ___
 
 Returns the map size
 
+#### Returns
+
+`usize`
+
+the map size
+
 **`Example`**
 
 ```ts
@@ -344,12 +360,6 @@ let map = new PersistentMap<string, string> ("m")
 map.size()
 ```
 
-#### Returns
-
-`usize`
-
-the map size
-
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:103](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L103)
+[assembly/libraries/PersistentMap.ts:109](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L109)

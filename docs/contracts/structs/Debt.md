@@ -1,5 +1,17 @@
 # Debt
 
+**`Dev`**
+
+Structure to store the debts of users
+
+**`Param`**
+
+The tokenX's debt
+
+**`Param`**
+
+The tokenY's debt
+
 ## Implements
 
 - `Serializable`
@@ -24,38 +36,42 @@
 
 ### constructor
 
-• **new Debt**(`debtX?`, `debtY?`)
+• **new Debt**(`debtX?`, `debtY?`): [`Debt`](Debt.md)
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `debtX` | `u64` | `0` |
-| `debtY` | `u64` | `0` |
+| `debtX` | `u256` | `u256.Zero` |
+| `debtY` | `u256` | `u256.Zero` |
+
+#### Returns
+
+[`Debt`](Debt.md)
 
 #### Defined in
 
-[assembly/structs/Debt.ts:4](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Debt.ts#L4)
+[assembly/structs/Debt.ts:10](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L10)
 
 ## Properties
 
 ### debtX
 
-• **debtX**: `u64` = `0`
+• **debtX**: `u256` = `u256.Zero`
 
 #### Defined in
 
-[assembly/structs/Debt.ts:4](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Debt.ts#L4)
+[assembly/structs/Debt.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L11)
 
 ___
 
 ### debtY
 
-• **debtY**: `u64` = `0`
+• **debtY**: `u256` = `u256.Zero`
 
 #### Defined in
 
-[assembly/structs/Debt.ts:4](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Debt.ts#L4)
+[assembly/structs/Debt.ts:12](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L12)
 
 ## Methods
 
@@ -80,7 +96,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:10](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Debt.ts#L10)
+[assembly/structs/Debt.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L19)
 
 ___
 
@@ -98,4 +114,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:6](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Debt.ts#L6)
+[assembly/structs/Debt.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L15)

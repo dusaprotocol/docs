@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[assembly/contracts/Quoter.ts:14](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Quoter.ts#L14)
+[assembly/contracts/Quoter.ts:25](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Quoter.ts#L25)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Quoter.ts:28](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Quoter.ts#L28)
+[assembly/contracts/Quoter.ts:37](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Quoter.ts#L37)
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Quoter.ts:35](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Quoter.ts#L35)
+[assembly/contracts/Quoter.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Quoter.ts#L46)

@@ -18,13 +18,17 @@
 
 ### constructor
 
-• **new Math512Bits**()
+• **new Math512Bits**(): [`Math512Bits`](Math512Bits.md)
+
+#### Returns
+
+[`Math512Bits`](Math512Bits.md)
 
 ## Methods
 
 ### mulDivRoundDown
 
-▸ `Static` **mulDivRoundDown**(`x`, `y`, `denominator`): `u64`
+▸ **mulDivRoundDown**(`x`, `y`, `denominator`): `u256`
 
 Calculates floor(x*y÷denominator) with full precision
 The result will be rounded down
@@ -33,7 +37,7 @@ Credit to Remco Bloemen under MIT license https://xn--2-umb.com/21/muldiv
 
 Requirements:
 - The denominator cannot be zero
-- The result must fit within u64
+- The result must fit within u256
 
 Caveats:
 - This function does not work with fixed-point numbers
@@ -42,25 +46,25 @@ Caveats:
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The multiplicand as an u64 |
-| `y` | `u128` | The multiplier as an u64 |
-| `denominator` | `u128` | The divisor as an u64 |
+| `x` | `u256` | The multiplicand as an u256 |
+| `y` | `u256` | The multiplier as an u256 |
+| `denominator` | `u256` | The divisor as an u256 |
 
 #### Returns
 
-`u64`
+`u256`
 
-The result as an u64
+The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:29](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/Math512Bits.ts#L29)
+[assembly/libraries/Math512Bits.ts:29](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L29)
 
 ___
 
 ### mulShiftRoundDown
 
-▸ `Static` **mulShiftRoundDown**(`x`, `y`, `offset`): `u64`
+▸ **mulShiftRoundDown**(`x`, `y`, `offset`): `u256`
 
 Calculates x * y >> offset with full precision
 The result will be rounded down
@@ -68,8 +72,8 @@ The result will be rounded down
 Credit to Remco Bloemen under MIT license https://xn--2-umb.com/21/muldiv
 
 Requirements:
-- The offset needs to be strictly lower than 128
-- The result must fit within u64
+- The offset needs to be strictly lower than 256
+- The result must fit within u256
 
 Caveats:
 - This function does not work with fixed-point numbers
@@ -78,25 +82,25 @@ Caveats:
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The multiplicand as an u64 |
-| `y` | `u128` | The multiplier as an u64 |
-| `offset` | `i32` | The offset, can't be greater than 128 |
+| `x` | `u256` | The multiplicand as an u256 |
+| `y` | `u256` | The multiplier as an u256 |
+| `offset` | `i32` | The offset, can't be greater than 255 |
 
 #### Returns
 
-`u64`
+`u256`
 
-The result as an u64
+The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:86](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/Math512Bits.ts#L86)
+[assembly/libraries/Math512Bits.ts:86](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L86)
 
 ___
 
 ### mulShiftRoundUp
 
-▸ `Static` **mulShiftRoundUp**(`x`, `y`, `offset`): `u64`
+▸ **mulShiftRoundUp**(`x`, `y`, `offset`): `u256`
 
 Calculates x * y >> offset with full precision
 The result will be rounded up
@@ -105,7 +109,7 @@ Credit to Remco Bloemen under MIT license https://xn--2-umb.com/21/muldiv
 
 Requirements:
 - The offset needs to be strictly lower than 128
-- The result must fit within u64
+- The result must fit within u256
 
 Caveats:
 - This function does not work with fixed-point numbers
@@ -114,25 +118,25 @@ Caveats:
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The multiplicand as an u64 |
-| `y` | `u128` | The multiplier as an u64 |
+| `x` | `u256` | The multiplicand as an u256 |
+| `y` | `u256` | The multiplier as an u256 |
 | `offset` | `i32` | The offset, can't be greater than 128 |
 
 #### Returns
 
-`u64`
+`u256`
 
-The result as an u64
+The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:149](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/Math512Bits.ts#L149)
+[assembly/libraries/Math512Bits.ts:150](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L150)
 
 ___
 
 ### shiftDivRoundDown
 
-▸ `Static` **shiftDivRoundDown**(`x`, `offset`, `denominator`): `u64`
+▸ **shiftDivRoundDown**(`x`, `offset`, `denominator`): `u256`
 
 Calculates x << offset / y with full precision
 The result will be rounded down
@@ -140,8 +144,8 @@ The result will be rounded down
 Credit to Remco Bloemen under MIT license https://xn--2-umb.com/21/muldiv
 
 Requirements:
-- The offset needs to be strictly lower than 128
-- The result must fit within u64
+- The offset needs to be strictly lower than 256
+- The result must fit within u256
 
 Caveats:
 - This function does not work with fixed-point numbers
@@ -150,25 +154,25 @@ Caveats:
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The multiplicand as an u128 |
+| `x` | `u256` | The multiplicand as an u256 |
 | `offset` | `i32` | The number of bit to shift x |
-| `denominator` | `u128` | The divisor as an u64 |
+| `denominator` | `u256` | The divisor as an u256 |
 
 #### Returns
 
-`u64`
+`u256`
 
-The result as an u64
+The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:53](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/Math512Bits.ts#L53)
+[assembly/libraries/Math512Bits.ts:53](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L53)
 
 ___
 
 ### shiftDivRoundUp
 
-▸ `Static` **shiftDivRoundUp**(`x`, `offset`, `denominator`): `u64`
+▸ **shiftDivRoundUp**(`x`, `offset`, `denominator`): `u256`
 
 Calculates x << offset / y with full precision
 The result will be rounded up
@@ -177,7 +181,7 @@ Credit to Remco Bloemen under MIT license https://xn--2-umb.com/21/muldiv
 
 Requirements:
 - The offset needs to be strictly lower than 128
-- The result must fit within u64
+- The result must fit within u256
 
 Caveats:
 - This function does not work with fixed-point numbers
@@ -186,16 +190,16 @@ Caveats:
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x` | `u128` | The multiplicand as an u64 |
+| `x` | `u256` | The multiplicand as an u256 |
 | `offset` | `i32` | The number of bit to shift x |
-| `denominator` | `u128` | The divisor as an u64 |
+| `denominator` | `u256` | The divisor as an u256 |
 
 #### Returns
 
-`u64`
+`u256`
 
-The result as an u64
+The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:124](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/Math512Bits.ts#L124)
+[assembly/libraries/Math512Bits.ts:124](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L124)

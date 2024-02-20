@@ -28,60 +28,68 @@
 
 ### constructor
 
-• **new Bin**(`reserveX?`, `reserveY?`, `accTokenXPerShare?`, `accTokenYPerShare?`)
+• **new Bin**(`reserveX?`, `reserveY?`, `accTokenXPerShare?`, `accTokenYPerShare?`): [`Bin`](Bin.md)
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `reserveX` | `u64` | `0` |
-| `reserveY` | `u64` | `0` |
-| `accTokenXPerShare` | `u64` | `0` |
-| `accTokenYPerShare` | `u64` | `0` |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `reserveX` | `u256` | `u256.Zero` | The current reserve of tokenX of the bin |
+| `reserveY` | `u256` | `u256.Zero` | The current reserve of tokenY of the bin |
+| `accTokenXPerShare` | `u256` | `u256.Zero` | - |
+| `accTokenYPerShare` | `u256` | `u256.Zero` | - |
+
+#### Returns
+
+[`Bin`](Bin.md)
 
 #### Defined in
 
-[assembly/structs/Bin.ts:7](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L7)
+[assembly/structs/Bin.ts:12](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L12)
 
 ## Properties
 
 ### accTokenXPerShare
 
-• **accTokenXPerShare**: `u64` = `0`
+• **accTokenXPerShare**: `u256` = `u256.Zero`
 
 #### Defined in
 
-[assembly/structs/Bin.ts:10](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L10)
+[assembly/structs/Bin.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L15)
 
 ___
 
 ### accTokenYPerShare
 
-• **accTokenYPerShare**: `u64` = `0`
+• **accTokenYPerShare**: `u256` = `u256.Zero`
 
 #### Defined in
 
-[assembly/structs/Bin.ts:11](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L11)
+[assembly/structs/Bin.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L16)
 
 ___
 
 ### reserveX
 
-• **reserveX**: `u64` = `0`
+• **reserveX**: `u256` = `u256.Zero`
+
+The current reserve of tokenX of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:8](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L8)
+[assembly/structs/Bin.ts:13](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L13)
 
 ___
 
 ### reserveY
 
-• **reserveY**: `u64` = `0`
+• **reserveY**: `u256` = `u256.Zero`
+
+The current reserve of tokenY of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:9](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L9)
+[assembly/structs/Bin.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L14)
 
 ## Methods
 
@@ -106,7 +114,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Bin.ts:83](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L83)
+[assembly/structs/Bin.ts:96](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L96)
 
 ___
 
@@ -124,7 +132,7 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Bin.ts:74](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L74)
+[assembly/structs/Bin.ts:87](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L87)
 
 ___
 
@@ -141,7 +149,7 @@ Update the fees of the pair and accumulated token per share of the bin
 | `pair` | [`PairInformation`](PairInformation.md) | - |
 | `fees` | [`FeesDistribution`](FeesDistribution.md) | The fees amounts added to the pairFees |
 | `swapForY` | `bool` | whether the token sent was Y (true) or X (false) |
-| `totalSupply` | `u64` | The total supply of the token id |
+| `totalSupply` | `u256` | The total supply of the token id |
 
 #### Returns
 
@@ -149,7 +157,7 @@ Update the fees of the pair and accumulated token per share of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:22](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L22)
+[assembly/structs/Bin.ts:27](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L27)
 
 ___
 
@@ -165,8 +173,8 @@ Update reserves
 | :------ | :------ | :------ |
 | `pair` | [`PairInformation`](PairInformation.md) | The pair information |
 | `swapForY` | `bool` | whether the token sent was Y (true) or X (false) |
-| `amountInToBin` | `u64` | The amount of token that is added to the bin without fees |
-| `amountOutOfBin` | `u64` | The amount of token that is removed from the bin |
+| `amountInToBin` | `u256` | The amount of token that is added to the bin without fees |
+| `amountOutOfBin` | `u256` | The amount of token that is removed from the bin |
 
 #### Returns
 
@@ -174,4 +182,4 @@ Update reserves
 
 #### Defined in
 
-[assembly/structs/Bin.ts:47](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Bin.ts#L47)
+[assembly/structs/Bin.ts:60](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Bin.ts#L60)

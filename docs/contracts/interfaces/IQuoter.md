@@ -16,13 +16,12 @@
 - [findBestPathFromAmountIn](IQuoter.md#findbestpathfromamountin)
 - [findBestPathFromAmountOut](IQuoter.md#findbestpathfromamountout)
 - [init](IQuoter.md#init)
-- [router](IQuoter.md#router)
 
 ## Constructors
 
 ### constructor
 
-• **new IQuoter**(`_origin`)
+• **new IQuoter**(`_origin`): [`IQuoter`](IQuoter.md)
 
 #### Parameters
 
@@ -30,9 +29,13 @@
 | :------ | :------ |
 | `_origin` | `Address` |
 
+#### Returns
+
+[`IQuoter`](IQuoter.md)
+
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IQuoter.ts#L9)
+[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L9)
 
 ## Properties
 
@@ -42,7 +45,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IQuoter.ts#L9)
+[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L9)
 
 ## Methods
 
@@ -56,7 +59,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:33](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IQuoter.ts#L33)
+[assembly/interfaces/IQuoter.ts:28](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L28)
 
 ___
 
@@ -69,7 +72,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `route` | `Address`[] |
-| `amountIn` | `u64` |
+| `amountIn` | `u256` |
 
 #### Returns
 
@@ -77,7 +80,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:16](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IQuoter.ts#L16)
+[assembly/interfaces/IQuoter.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L16)
 
 ___
 
@@ -90,7 +93,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `route` | `Address`[] |
-| `amountOut` | `u64` |
+| `amountOut` | `u256` |
 
 #### Returns
 
@@ -98,19 +101,18 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:22](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IQuoter.ts#L22)
+[assembly/interfaces/IQuoter.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L22)
 
 ___
 
 ### init
 
-▸ **init**(`router`, `factory`): `void`
+▸ **init**(`factory`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `router` | `Address` |
 | `factory` | `Address` |
 
 #### Returns
@@ -119,18 +121,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:11](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IQuoter.ts#L11)
-
-___
-
-### router
-
-▸ **router**(): [`IRouter`](IRouter.md)
-
-#### Returns
-
-[`IRouter`](IRouter.md)
-
-#### Defined in
-
-[assembly/interfaces/IQuoter.ts:28](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IQuoter.ts#L28)
+[assembly/interfaces/IQuoter.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L11)

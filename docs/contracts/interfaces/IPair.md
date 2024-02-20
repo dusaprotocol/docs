@@ -46,7 +46,7 @@
 
 ### constructor
 
-• **new IPair**(`at`)
+• **new IPair**(`at`): [`IPair`](IPair.md)
 
 Wraps a smart contract exposing standard token FFI.
 
@@ -56,9 +56,13 @@ Wraps a smart contract exposing standard token FFI.
 | :------ | :------ | :------ |
 | `at` | `Address` | Address of the smart contract. |
 
+#### Returns
+
+[`IPair`](IPair.md)
+
 #### Defined in
 
-[assembly/interfaces/IPair.ts:29](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L29)
+[assembly/interfaces/IPair.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L31)
 
 ## Properties
 
@@ -68,13 +72,13 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:22](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L22)
+[assembly/interfaces/IPair.ts:24](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L24)
 
 ## Methods
 
 ### balanceOf
 
-▸ **balanceOf**(`_account`, `_id`): `u64`
+▸ **balanceOf**(`_account`, `_id`): `u256`
 
 #### Parameters
 
@@ -85,17 +89,17 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:194](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L194)
+[assembly/interfaces/IPair.ts:201](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L201)
 
 ___
 
 ### balanceOfBatch
 
-▸ **balanceOfBatch**(`_accounts`, `_ids`): `u64`[]
+▸ **balanceOfBatch**(`_accounts`, `_ids`): `u256`[]
 
 #### Parameters
 
@@ -106,11 +110,11 @@ ___
 
 #### Returns
 
-`u64`[]
+`u256`[]
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:204](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L204)
+[assembly/interfaces/IPair.ts:211](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L211)
 
 ___
 
@@ -123,7 +127,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `_ids` | `u64`[] |
-| `_amounts` | `u64`[] |
+| `_amounts` | `u256`[] |
 | `_to` | `Address` |
 
 #### Returns
@@ -132,7 +136,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:127](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L127)
+[assembly/interfaces/IPair.ts:129](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L129)
 
 ___
 
@@ -153,27 +157,27 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:254](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L254)
+[assembly/interfaces/IPair.ts:261](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L261)
 
 ___
 
 ### feeParameters
 
-▸ **feeParameters**(): [`FeeParameters`](../structs/FeeParameters.md)
+▸ **feeParameters**(): [`FeeParameters`](FeeParameters.md)
 
 #### Returns
 
-[`FeeParameters`](../structs/FeeParameters.md)
+[`FeeParameters`](FeeParameters.md)
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:66](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L66)
+[assembly/interfaces/IPair.ts:68](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L68)
 
 ___
 
 ### findFirstNonEmptyBinId
 
-▸ **findFirstNonEmptyBinId**(`id`, `sentTokenY`): `u32`
+▸ **findFirstNonEmptyBinId**(`id`, `sentTokenY`): `Result`<`u32`\>
 
 #### Parameters
 
@@ -184,25 +188,24 @@ ___
 
 #### Returns
 
-`u32`
+`Result`<`u32`\>
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:156](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L156)
+[assembly/interfaces/IPair.ts:158](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L158)
 
 ___
 
 ### flashLoan
 
-▸ **flashLoan**(`token`, `amount`, `data?`): `void`
+▸ **flashLoan**(`token`, `amount`): `void`
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `token` | [`IERC20`](IERC20.md) | `undefined` |
-| `amount` | `u64` | `undefined` |
-| `data` | `StaticArray`<`u8`\> | `[]` |
+| Name | Type |
+| :------ | :------ |
+| `token` | [`IERC20`](IERC20.md) |
+| `amount` | `u256` |
 
 #### Returns
 
@@ -210,7 +213,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:133](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L133)
+[assembly/interfaces/IPair.ts:135](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L135)
 
 ___
 
@@ -224,13 +227,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:175](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L175)
+[assembly/interfaces/IPair.ts:182](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L182)
 
 ___
 
 ### getBin
 
-▸ **getBin**(`_id`): [`Bin`](../structs/Bin.md)
+▸ **getBin**(`_id`): [`Bin`](Bin.md)
 
 #### Parameters
 
@@ -240,11 +243,11 @@ ___
 
 #### Returns
 
-[`Bin`](../structs/Bin.md)
+[`Bin`](Bin.md)
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:71](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L71)
+[assembly/interfaces/IPair.ts:73](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L73)
 
 ___
 
@@ -258,21 +261,21 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:166](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L166)
+[assembly/interfaces/IPair.ts:173](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L173)
 
 ___
 
 ### getOracleParameters
 
-▸ **getOracleParameters**(): [`OracleParameters`](../structs/OracleParameters.md)
+▸ **getOracleParameters**(): [`OracleParameters`](OracleParameters.md)
 
 #### Returns
 
-[`OracleParameters`](../structs/OracleParameters.md)
+[`OracleParameters`](OracleParameters.md)
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:260](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L260)
+[assembly/interfaces/IPair.ts:267](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L267)
 
 ___
 
@@ -292,21 +295,21 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:265](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L265)
+[assembly/interfaces/IPair.ts:272](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L272)
 
 ___
 
 ### getPairInformation
 
-▸ **getPairInformation**(): [`PairInformation`](../structs/PairInformation.md)
+▸ **getPairInformation**(): [`PairInformation`](PairInformation.md)
 
 #### Returns
 
-[`PairInformation`](../structs/PairInformation.md)
+[`PairInformation`](PairInformation.md)
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:146](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L146)
+[assembly/interfaces/IPair.ts:148](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L148)
 
 ___
 
@@ -320,7 +323,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:138](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L138)
+[assembly/interfaces/IPair.ts:140](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L140)
 
 ___
 
@@ -334,7 +337,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:142](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L142)
+[assembly/interfaces/IPair.ts:144](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L144)
 
 ___
 
@@ -354,7 +357,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:151](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L151)
+[assembly/interfaces/IPair.ts:153](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L153)
 
 ___
 
@@ -374,7 +377,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:276](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L276)
+[assembly/interfaces/IPair.ts:283](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L283)
 
 ___
 
@@ -392,7 +395,7 @@ Calls the constructor
 | `tokenX` | `Address` |
 | `tokenY` | `Address` |
 | `activeId` | `u32` |
-| `preset` | [`Preset`](../structs/Preset.md) |
+| `preset` | [`Preset`](Preset.md) |
 
 #### Returns
 
@@ -400,7 +403,7 @@ Calls the constructor
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:38](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L38)
+[assembly/interfaces/IPair.ts:40](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L40)
 
 ___
 
@@ -421,7 +424,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:210](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L210)
+[assembly/interfaces/IPair.ts:217](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L217)
 
 ___
 
@@ -441,8 +444,8 @@ Any excess amount of token will be sent to the `to` address. The lengths of the 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `_ids` | `u64`[] | The ids of the bins where the liquidity will be added. It will mint LB tokens for each of these bins. |
-| `_distributionX` | `u64`[] | The percentage of token X to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
-| `_distributionY` | `u64`[] | The percentage of token Y to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
+| `_distributionX` | `u256`[] | The percentage of token X to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
+| `_distributionY` | `u256`[] | The percentage of token Y to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
 | `_to` | `Address` | The address that will receive the LB tokens and the excess amount of tokens. |
 
 #### Returns
@@ -451,7 +454,7 @@ Any excess amount of token will be sent to the `to` address. The lengths of the 
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:108](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L108)
+[assembly/interfaces/IPair.ts:110](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L110)
 
 ___
 
@@ -465,7 +468,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:179](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L179)
+[assembly/interfaces/IPair.ts:186](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L186)
 
 ___
 
@@ -486,7 +489,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:248](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L248)
+[assembly/interfaces/IPair.ts:255](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L255)
 
 ___
 
@@ -501,7 +504,7 @@ ___
 | `_from` | `Address` |
 | `_to` | `Address` |
 | `_ids` | `u64`[] |
-| `_amounts` | `u64`[] |
+| `_amounts` | `u256`[] |
 
 #### Returns
 
@@ -509,7 +512,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:238](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L238)
+[assembly/interfaces/IPair.ts:245](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L245)
 
 ___
 
@@ -524,7 +527,7 @@ ___
 | `_from` | `Address` |
 | `_to` | `Address` |
 | `_id` | `u64` |
-| `amount` | `u64` |
+| `amount` | `u256` |
 
 #### Returns
 
@@ -532,7 +535,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:229](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L229)
+[assembly/interfaces/IPair.ts:236](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L236)
 
 ___
 
@@ -553,7 +556,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:220](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L220)
+[assembly/interfaces/IPair.ts:227](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L227)
 
 ___
 
@@ -565,7 +568,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `fp` | [`FeeParameters`](../structs/FeeParameters.md) |
+| `fp` | [`FeeParameters`](FeeParameters.md) |
 
 #### Returns
 
@@ -573,13 +576,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:170](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L170)
+[assembly/interfaces/IPair.ts:177](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L177)
 
 ___
 
 ### swap
 
-▸ **swap**(`swapForY`, `to`): `u64`
+▸ **swap**(`swapForY`, `to`): `u256`
 
 Swap tokens iterating over the bins until the entire amount is swapped.
 Will swap token X for token Y if `_swapForY` is true, and token Y for token X if `_swapForY` is false.
@@ -597,11 +600,11 @@ that will also perform safety checks.
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:88](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L88)
+[assembly/interfaces/IPair.ts:90](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L90)
 
 ___
 
@@ -615,13 +618,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:184](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L184)
+[assembly/interfaces/IPair.ts:191](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L191)
 
 ___
 
 ### totalSupply
 
-▸ **totalSupply**(`_id`): `u64`
+▸ **totalSupply**(`_id`): `u256`
 
 #### Parameters
 
@@ -631,8 +634,8 @@ ___
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:189](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IPair.ts#L189)
+[assembly/interfaces/IPair.ts:196](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IPair.ts#L196)

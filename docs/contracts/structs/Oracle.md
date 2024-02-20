@@ -23,6 +23,12 @@ IMPORTANT NOTES:
 (2) Since all data stored on the blockchain is kept in a single key-value store under the contract account,
 you must always use a *unique storage prefix* for different collections to avoid data collision.
 
+## Hierarchy
+
+- [`PersistentMap`](../libraries/PersistentMap.md)<`u64`, [`Sample`](Sample.md)\>
+
+  ↳ **`Oracle`**
+
 ## Table of contents
 
 ### Constructors
@@ -49,7 +55,7 @@ you must always use a *unique storage prefix* for different collections to avoid
 
 ### constructor
 
-• **new Oracle**(`prefix`)
+• **new Oracle**(`prefix`): [`Oracle`](Oracle.md)
 
 Creates or restores a persistent map with a given storage prefix.
 Always use a unique storage prefix for different collections.
@@ -57,7 +63,7 @@ Always use a unique storage prefix for different collections.
 Example
 
 ```ts
-let map = new PersistentMap<string, string>("m") // note the prefix must be unique (per NEAR account)
+let map = new PersistentMap<string, string>("m") // note the prefix must be unique (per MASSA account)
 ```
 
 #### Parameters
@@ -66,13 +72,17 @@ let map = new PersistentMap<string, string>("m") // note the prefix must be uniq
 | :------ | :------ | :------ |
 | `prefix` | `string` | A prefix to use for every key of this map. |
 
+#### Returns
+
+[`Oracle`](Oracle.md)
+
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[constructor](../libraries/PersistentMap.md#constructor)
+[PersistentMap](PersistentMap.md).[constructor](PersistentMap.md#constructor)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:59](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L59)
+[assembly/libraries/PersistentMap.ts:65](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L65)
 
 ## Methods
 
@@ -88,11 +98,11 @@ Decreases the internal map size counter
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[_decreaseSize](../libraries/PersistentMap.md#_decreasesize)
+[PersistentMap](PersistentMap.md).[_decreaseSize](PersistentMap.md#_decreasesize)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:138](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L138)
+[assembly/libraries/PersistentMap.ts:144](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L144)
 
 ___
 
@@ -114,11 +124,11 @@ Increases the internal map size counter
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[_increaseSize](../libraries/PersistentMap.md#_increasesize)
+[PersistentMap](PersistentMap.md).[_increaseSize](PersistentMap.md#_increasesize)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:129](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L129)
+[assembly/libraries/PersistentMap.ts:135](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L135)
 
 ___
 
@@ -128,18 +138,28 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x` | `u64` |
-| `n` | `u64` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `u64` | The value |
+| `n` | `u64` | The modulo value |
 
 #### Returns
 
 `u64`
 
+result The result
+
+**`Notice`**
+
+Internal function to do positive (x - 1) % n
+
+**`Dev`**
+
+This function is used to get the previous index of the oracle
+
 #### Defined in
 
-[assembly/structs/Oracle.ts:163](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Oracle.ts#L163)
+[assembly/structs/Oracle.ts:207](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Oracle.ts#L207)
 
 ___
 
@@ -149,19 +169,32 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_index` | `u64` |
-| `_activeSize` | `u64` |
-| `_lookUpTimestamp` | `u64` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_index` | `u64` | The current index of the oracle |
+| `_activeSize` | `u64` | The size of the oracle (without empty data) |
+| `_lookUpTimestamp` | `u64` | The looked up timestamp |
 
 #### Returns
 
 [`Sample`](Sample.md)[]
 
+Sample[] The last sample with a timestamp lower than the lookUpTimestamp and the first sample with a timestamp greater than the lookUpTimestamp
+
+**`Notice`**
+
+Binary search on oracle samples and return the 2 samples (as bytes32) that surrounds the `lookUpTimestamp`
+
+**`Dev`**
+
+The oracle needs to be in increasing order `{_index + 1, _index + 2 ..., _index + _activeSize} % _activeSize`.
+The sample that aren't initialized yet will be skipped as _activeSize only contains the samples that are initialized.
+This function works only if `timestamp(_oracle[_index + 1 % _activeSize] <= _lookUpTimestamp <= timestamp(_oracle[_index]`.
+The edge cases needs to be handled before
+
 #### Defined in
 
-[assembly/structs/Oracle.ts:132](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Oracle.ts#L132)
+[assembly/structs/Oracle.ts:169](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Oracle.ts#L169)
 
 ___
 
@@ -193,11 +226,11 @@ True if the given key present in the map.
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[contains](../libraries/PersistentMap.md#contains)
+[PersistentMap](PersistentMap.md).[contains](PersistentMap.md#contains)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:88](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L88)
+[assembly/libraries/PersistentMap.ts:94](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L94)
 
 ___
 
@@ -228,11 +261,11 @@ Removes value and the key from the map.
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[delete](../libraries/PersistentMap.md#delete)
+[PersistentMap](PersistentMap.md).[delete](PersistentMap.md#delete)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:120](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L120)
+[assembly/libraries/PersistentMap.ts:126](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L126)
 
 ___
 
@@ -268,11 +301,11 @@ Value for the given key or the default value.
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[get](../libraries/PersistentMap.md#get)
+[PersistentMap](PersistentMap.md).[get](PersistentMap.md#get)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:162](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L162)
+[assembly/libraries/PersistentMap.ts:168](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L168)
 
 ___
 
@@ -282,19 +315,29 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_activeSize` | `u64` |
-| `_activeId` | `u64` |
-| `_lookUpTimestamp` | `u64` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_activeSize` | `u64` | The size of the oracle (without empty data) |
+| `_activeId` | `u64` | The active index of the oracle |
+| `_lookUpTimestamp` | `u64` | The looked up date |
 
 #### Returns
 
 `GetSampleAtReturn`
 
+GetSampleAtReturn: timestamp, cumulativeId, cumulativeVolatilityAccumulated, cumulativeBinCrossed
+
+**`Notice`**
+
+View function to get the oracle's sample at `_ago` seconds
+
+**`Dev`**
+
+Return a linearized sample, the weighted average of 2 neighboring samples
+
 #### Defined in
 
-[assembly/structs/Oracle.ts:12](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Oracle.ts#L12)
+[assembly/structs/Oracle.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Oracle.ts#L22)
 
 ___
 
@@ -329,11 +372,11 @@ Value for the given key or the default value.
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[getSome](../libraries/PersistentMap.md#getsome)
+[PersistentMap](PersistentMap.md).[getSome](PersistentMap.md#getsome)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:218](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L218)
+[assembly/libraries/PersistentMap.ts:230](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L230)
 
 ___
 
@@ -343,17 +386,21 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_id` | `u64` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_id` | `u64` | The index to initialize |
 
 #### Returns
 
 `void`
 
+**`Notice`**
+
+Initialize the sample
+
 #### Defined in
 
-[assembly/structs/Oracle.ts:128](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Oracle.ts#L128)
+[assembly/structs/Oracle.ts:154](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Oracle.ts#L154)
 
 ___
 
@@ -382,11 +429,11 @@ Sets the new value for the given key.
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[set](../libraries/PersistentMap.md#set)
+[PersistentMap](PersistentMap.md).[set](PersistentMap.md#set)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:257](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L257)
+[assembly/libraries/PersistentMap.ts:273](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L273)
 
 ___
 
@@ -396,6 +443,12 @@ ___
 
 Returns the map size
 
+#### Returns
+
+`usize`
+
+the map size
+
 **`Example`**
 
 ```ts
@@ -404,19 +457,13 @@ let map = new PersistentMap<string, string> ("m")
 map.size()
 ```
 
-#### Returns
-
-`usize`
-
-the map size
-
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[size](../libraries/PersistentMap.md#size)
+[PersistentMap](PersistentMap.md).[size](PersistentMap.md#size)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:103](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/PersistentMap.ts#L103)
+[assembly/libraries/PersistentMap.ts:109](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L109)
 
 ___
 
@@ -426,20 +473,26 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_size` | `u64` |
-| `_sampleLifetime` | `u64` |
-| `_lastTimestamp` | `u64` |
-| `_lastIndex` | `u64` |
-| `_activeId` | `u64` |
-| `_volatilityAccumulated` | `u64` |
-| `_binCrossed` | `u64` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_size` | `u64` | The size of the oracle (last ids can be empty) |
+| `_sampleLifetime` | `u64` | The lifetime of a sample, it accumulates information for up to this timestamp |
+| `_lastTimestamp` | `u64` | The timestamp of the creation of the oracle's latest sample |
+| `_lastIndex` | `u64` | The index of the oracle's latest sample |
+| `_activeId` | `u64` | The active index of the pair during the latest swap |
+| `_volatilityAccumulated` | `u64` | The volatility accumulated of the pair during the latest swap |
+| `_binCrossed` | `u64` | The bin crossed during the latest swap |
 
 #### Returns
 
 `u64`
 
+updatedIndex The oracle updated index, it is either the same as before, or the next one
+
+**`Notice`**
+
+Function to update a sample
+
 #### Defined in
 
-[assembly/structs/Oracle.ts:103](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/Oracle.ts#L103)
+[assembly/structs/Oracle.ts:125](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Oracle.ts#L125)

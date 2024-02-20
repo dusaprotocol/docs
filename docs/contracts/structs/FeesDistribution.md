@@ -25,42 +25,46 @@
 
 ### constructor
 
-• **new FeesDistribution**(`total?`, `protocol?`)
+• **new FeesDistribution**(`total?`, `protocol?`): [`FeesDistribution`](FeesDistribution.md)
 
 #### Parameters
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `total` | `u64` | `0` | The total amount of fees |
-| `protocol` | `u64` | `0` | The amount of fees reserved for protocol |
+| `total` | `u256` | `u256.Zero` | The total amount of fees |
+| `protocol` | `u256` | `u256.Zero` | The amount of fees reserved for protocol |
+
+#### Returns
+
+[`FeesDistribution`](FeesDistribution.md)
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:10](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/FeesDistribution.ts#L10)
+[assembly/structs/FeesDistribution.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L11)
 
 ## Properties
 
 ### protocol
 
-• **protocol**: `u64` = `0`
+• **protocol**: `u256` = `u256.Zero`
 
 The amount of fees reserved for protocol
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:10](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/FeesDistribution.ts#L10)
+[assembly/structs/FeesDistribution.ts:13](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L13)
 
 ___
 
 ### total
 
-• **total**: `u64` = `0`
+• **total**: `u256` = `u256.Zero`
 
 The total amount of fees
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:10](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/FeesDistribution.ts#L10)
+[assembly/structs/FeesDistribution.ts:12](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L12)
 
 ## Methods
 
@@ -85,13 +89,13 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:34](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/FeesDistribution.ts#L34)
+[assembly/structs/FeesDistribution.ts:37](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L37)
 
 ___
 
 ### getTokenPerShare
 
-▸ **getTokenPerShare**(`totalSupply`): `u64`
+▸ **getTokenPerShare**(`totalSupply`): `u256`
 
 Calculate the tokenPerShare when fees are added
 
@@ -99,15 +103,15 @@ Calculate the tokenPerShare when fees are added
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `totalSupply` | `u64` | the total supply of a specific bin |
+| `totalSupply` | `u256` | the total supply of a specific bin |
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:17](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/FeesDistribution.ts#L17)
+[assembly/structs/FeesDistribution.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L21)
 
 ___
 
@@ -125,4 +129,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:30](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/FeesDistribution.ts#L30)
+[assembly/structs/FeesDistribution.ts:33](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L33)

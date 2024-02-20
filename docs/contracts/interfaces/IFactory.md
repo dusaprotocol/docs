@@ -18,6 +18,7 @@
 - [getAvailableLBPairBinSteps](IFactory.md#getavailablelbpairbinsteps)
 - [getLBPairInformation](IFactory.md#getlbpairinformation)
 - [getOwner](IFactory.md#getowner)
+- [getPreset](IFactory.md#getpreset)
 - [init](IFactory.md#init)
 - [setPreset](IFactory.md#setpreset)
 
@@ -25,7 +26,7 @@
 
 ### constructor
 
-• **new IFactory**(`at`)
+• **new IFactory**(`at`): [`IFactory`](IFactory.md)
 
 Wraps a smart contract exposing standard token FFI.
 
@@ -35,9 +36,13 @@ Wraps a smart contract exposing standard token FFI.
 | :------ | :------ | :------ |
 | `at` | `Address` | Address of the smart contract. |
 
+#### Returns
+
+[`IFactory`](IFactory.md)
+
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:19](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L19)
+[assembly/interfaces/IFactory.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L21)
 
 ## Properties
 
@@ -47,7 +52,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:12](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L12)
+[assembly/interfaces/IFactory.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L14)
 
 ## Methods
 
@@ -67,7 +72,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:111](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L111)
+[assembly/interfaces/IFactory.ts:113](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L113)
 
 ___
 
@@ -90,13 +95,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:72](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L72)
+[assembly/interfaces/IFactory.ts:74](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L74)
 
 ___
 
 ### getAllLBPairs
 
-▸ **getAllLBPairs**(`_tokenX`, `_tokenY`): [`LBPairInformation`](../structs/LBPairInformation.md)[]
+▸ **getAllLBPairs**(`_tokenX`, `_tokenY`): [`LBPairInformation`](LBPairInformation.md)[]
 
 #### Parameters
 
@@ -107,11 +112,11 @@ ___
 
 #### Returns
 
-[`LBPairInformation`](../structs/LBPairInformation.md)[]
+[`LBPairInformation`](LBPairInformation.md)[]
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:44](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L44)
+[assembly/interfaces/IFactory.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L46)
 
 ___
 
@@ -132,13 +137,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:116](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L116)
+[assembly/interfaces/IFactory.ts:118](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L118)
 
 ___
 
 ### getLBPairInformation
 
-▸ **getLBPairInformation**(`_tokenA`, `_tokenB`, `_binStep`): [`LBPairInformation`](../structs/LBPairInformation.md)
+▸ **getLBPairInformation**(`_tokenA`, `_tokenB`, `_binStep`): [`LBPairInformation`](LBPairInformation.md)
 
 #### Parameters
 
@@ -150,11 +155,11 @@ ___
 
 #### Returns
 
-[`LBPairInformation`](../structs/LBPairInformation.md)
+[`LBPairInformation`](LBPairInformation.md)
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:34](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L34)
+[assembly/interfaces/IFactory.ts:36](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L36)
 
 ___
 
@@ -168,7 +173,27 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:122](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L122)
+[assembly/interfaces/IFactory.ts:124](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L124)
+
+___
+
+### getPreset
+
+▸ **getPreset**(`binstep`): [`Preset`](Preset.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `binstep` | `u32` |
+
+#### Returns
+
+[`Preset`](Preset.md)
+
+#### Defined in
+
+[assembly/interfaces/IFactory.ts:128](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L128)
 
 ___
 
@@ -183,7 +208,7 @@ Initialize the factory. This function must be called before any other function.
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `_feeRecipient` | `Address` | `undefined` | The address of the fee recipient |
-| `_flashLoanFee` | `u64` | `0` | The value of the fee for flash loan |
+| `_flashLoanFee` | `u256` | `u256.Zero` | The value of the fee for flash loan |
 
 #### Returns
 
@@ -191,7 +216,7 @@ Initialize the factory. This function must be called before any other function.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:29](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L29)
+[assembly/interfaces/IFactory.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L31)
 
 ___
 
@@ -219,4 +244,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:87](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IFactory.ts#L87)
+[assembly/interfaces/IFactory.ts:89](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L89)

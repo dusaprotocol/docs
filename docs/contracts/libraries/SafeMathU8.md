@@ -15,13 +15,17 @@
 
 ### constructor
 
-• **new SafeMathU8**()
+• **new SafeMathU8**(): [`SafeMathU8`](SafeMathU8.md)
+
+#### Returns
+
+[`SafeMathU8`](SafeMathU8.md)
 
 ## Methods
 
 ### add
 
-▸ `Static` **add**(`a`, `b`): `u8`
+▸ **add**(`a`, `b`): `u8`
 
 #### Parameters
 
@@ -39,13 +43,13 @@ reverting on overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:83](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/SafeMath.ts#L83)
+[assembly/libraries/SafeMath.ts:85](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SafeMath.ts#L85)
 
 ___
 
 ### sub
 
-▸ `Static` **sub**(`a`, `b`): `u8`
+▸ **sub**(`a`, `b`): `u8`
 
 #### Parameters
 
@@ -63,4 +67,4 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:97](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/SafeMath.ts#L97)
+[assembly/libraries/SafeMath.ts:99](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SafeMath.ts#L99)

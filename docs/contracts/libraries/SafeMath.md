@@ -18,13 +18,17 @@
 
 ### constructor
 
-• **new SafeMath**()
+• **new SafeMath**(): [`SafeMath`](SafeMath.md)
+
+#### Returns
+
+[`SafeMath`](SafeMath.md)
 
 ## Methods
 
 ### add
 
-▸ `Static` **add**(`a`, `b`): `u64`
+▸ **add**(`a`, `b`): `u64`
 
 #### Parameters
 
@@ -42,13 +46,13 @@ reverting on overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:9](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/SafeMath.ts#L9)
+[assembly/libraries/SafeMath.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SafeMath.ts#L11)
 
 ___
 
 ### div
 
-▸ `Static` **div**(`a`, `b`): `u64`
+▸ **div**(`a`, `b`): `u64`
 
 #### Parameters
 
@@ -66,13 +70,13 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:55](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/SafeMath.ts#L55)
+[assembly/libraries/SafeMath.ts:57](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SafeMath.ts#L57)
 
 ___
 
 ### mod
 
-▸ `Static` **mod**(`a`, `b`): `u64`
+▸ **mod**(`a`, `b`): `u64`
 
 #### Parameters
 
@@ -90,13 +94,13 @@ Reverts with custom message when dividing by zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:69](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/SafeMath.ts#L69)
+[assembly/libraries/SafeMath.ts:71](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SafeMath.ts#L71)
 
 ___
 
 ### mul
 
-▸ `Static` **mul**(`a`, `b`): `u64`
+▸ **mul**(`a`, `b`): `u64`
 
 #### Parameters
 
@@ -114,13 +118,13 @@ overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:37](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/SafeMath.ts#L37)
+[assembly/libraries/SafeMath.ts:39](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SafeMath.ts#L39)
 
 ___
 
 ### sub
 
-▸ `Static` **sub**(`a`, `b`): `u64`
+▸ **sub**(`a`, `b`): `u64`
 
 #### Parameters
 
@@ -138,4 +142,4 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:23](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/SafeMath.ts#L23)
+[assembly/libraries/SafeMath.ts:25](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SafeMath.ts#L25)

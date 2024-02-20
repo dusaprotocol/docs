@@ -32,15 +32,15 @@
 
 ### constructor
 
-• **new PairInformation**(`activeId?`, `reserveX?`, `reserveY?`, `feesX?`, `feesY?`, `oracleSampleLifetime?`, `oracleSize?`, `oracleActiveSize?`, `oracleLastTimestamp?`, `oracleId?`)
+• **new PairInformation**(`activeId?`, `reserveX?`, `reserveY?`, `feesX?`, `feesY?`, `oracleSampleLifetime?`, `oracleSize?`, `oracleActiveSize?`, `oracleLastTimestamp?`, `oracleId?`): [`PairInformation`](PairInformation.md)
 
 #### Parameters
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `activeId` | `u32` | `0` | The current id used for swaps, this is also linked with the price |
-| `reserveX` | `u64` | `0` | The sum of amounts of tokenX across all bins |
-| `reserveY` | `u64` | `0` | The sum of amounts of tokenY across all bins |
+| `reserveX` | `u256` | `u256.Zero` | The sum of amounts of tokenX across all bins |
+| `reserveY` | `u256` | `u256.Zero` | The sum of amounts of tokenY across all bins |
 | `feesX` | [`FeesDistribution`](FeesDistribution.md) | `undefined` | The current amount of fees to distribute in tokenX (total, protocol) |
 | `feesY` | [`FeesDistribution`](FeesDistribution.md) | `undefined` | The current amount of fees to distribute in tokenY (total, protocol) |
 | `oracleSampleLifetime` | `u32` | `0` | - |
@@ -49,9 +49,13 @@
 | `oracleLastTimestamp` | `u64` | `0` | - |
 | `oracleId` | `u32` | `0` | - |
 
+#### Returns
+
+[`PairInformation`](PairInformation.md)
+
 #### Defined in
 
-[assembly/structs/PairInformation.ts:13](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L13)
+[assembly/structs/PairInformation.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L14)
 
 ## Properties
 
@@ -63,7 +67,7 @@ The current id used for swaps, this is also linked with the price
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:14](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L14)
+[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L15)
 
 ___
 
@@ -75,7 +79,7 @@ The current amount of fees to distribute in tokenX (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L17)
+[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L18)
 
 ___
 
@@ -87,7 +91,7 @@ The current amount of fees to distribute in tokenY (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L18)
+[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L19)
 
 ___
 
@@ -97,7 +101,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L21)
+[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L22)
 
 ___
 
@@ -107,7 +111,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L23)
+[assembly/structs/PairInformation.ts:24](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L24)
 
 ___
 
@@ -117,7 +121,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L22)
+[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L23)
 
 ___
 
@@ -127,7 +131,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L19)
+[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L20)
 
 ___
 
@@ -137,31 +141,31 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L20)
+[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L21)
 
 ___
 
 ### reserveX
 
-• **reserveX**: `u64` = `0`
+• **reserveX**: `u256` = `u256.Zero`
 
 The sum of amounts of tokenX across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L15)
+[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L16)
 
 ___
 
 ### reserveY
 
-• **reserveY**: `u64` = `0`
+• **reserveY**: `u256` = `u256.Zero`
 
 The sum of amounts of tokenY across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L16)
+[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L17)
 
 ## Methods
 
@@ -186,7 +190,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:45](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L45)
+[assembly/structs/PairInformation.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L46)
 
 ___
 
@@ -204,4 +208,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:30](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/structs/PairInformation.ts#L30)
+[assembly/structs/PairInformation.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L31)

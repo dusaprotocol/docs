@@ -31,7 +31,7 @@
 
 ### constructor
 
-• **new IRouter**(`at`)
+• **new IRouter**(`at`): [`IRouter`](IRouter.md)
 
 Wraps a smart contract exposing standard token FFI.
 
@@ -41,9 +41,13 @@ Wraps a smart contract exposing standard token FFI.
 | :------ | :------ | :------ |
 | `at` | `Address` | Address of the smart contract. |
 
+#### Returns
+
+[`IRouter`](IRouter.md)
+
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:20](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L20)
+[assembly/interfaces/IRouter.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L22)
 
 ## Properties
 
@@ -53,7 +57,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:13](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L13)
+[assembly/interfaces/IRouter.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L15)
 
 ## Methods
 
@@ -68,15 +72,17 @@ This function is compliant with fee on transfer tokens
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `liquidityParameters` | [`LiquidityParameters`](../structs/LiquidityParameters.md) | The liquidity parameters |
+| `liquidityParameters` | [`LiquidityParameters`](LiquidityParameters.md) | The liquidity parameters |
 
 #### Returns
 
 `AddLiquidity`
 
+- The amount of tokens minted and the ids of the deposits
+
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:67](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L67)
+[assembly/interfaces/IRouter.ts:70](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L70)
 
 ___
 
@@ -91,16 +97,18 @@ This function is compliant with fee on transfer tokens
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `liquidityParameters` | [`LiquidityParameters`](../structs/LiquidityParameters.md) | The liquidity parameters |
-| `amount` | `u64` | The amount of MAS to deposit |
+| `liquidityParameters` | [`LiquidityParameters`](LiquidityParameters.md) | The liquidity parameters |
+| `amount` | `u256` | The amount of MAS to deposit |
 
 #### Returns
 
 `AddLiquidity`
 
+- The amount of tokens minted and the ids of the deposits
+
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:84](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L84)
+[assembly/interfaces/IRouter.ts:87](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L87)
 
 ___
 
@@ -108,7 +116,7 @@ ___
 
 ▸ **createLBPair**(`tokenX`, `tokenY`, `activeId`, `binStep`): `Address`
 
-Create a liquidity book Pair for _tokenX and _tokenY using the factory
+Create a liquidity bin LBPair for _tokenX and _tokenY using the factory
 
 #### Parameters
 
@@ -123,11 +131,11 @@ Create a liquidity book Pair for _tokenX and _tokenY using the factory
 
 `Address`
 
-- The address of the newly created Pair
+- The address of the newly created LBPair
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:46](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L46)
+[assembly/interfaces/IRouter.ts:48](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L48)
 
 ___
 
@@ -140,7 +148,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `_pair` | [`IPair`](IPair.md) |
-| `_amountOut` | `u64` |
+| `_amountOut` | `u256` |
 | `_swapForY` | `bool` |
 
 #### Returns
@@ -149,7 +157,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:347](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L347)
+[assembly/interfaces/IRouter.ts:360](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L360)
 
 ___
 
@@ -162,7 +170,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `_pair` | [`IPair`](IPair.md) |
-| `_amountIn` | `u64` |
+| `_amountIn` | `u256` |
 | `_swapForY` | `bool` |
 
 #### Returns
@@ -171,7 +179,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:356](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L356)
+[assembly/interfaces/IRouter.ts:369](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L369)
 
 ___
 
@@ -194,13 +202,13 @@ Calls the constructor.
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:30](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L30)
+[assembly/interfaces/IRouter.ts:32](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L32)
 
 ___
 
 ### removeLiquidity
 
-▸ **removeLiquidity**(`tokenX`, `tokenY`, `binStep`, `amountXMin`, `amountYMin`, `ids`, `amounts`, `to`, `deadline`): `u64`[]
+▸ **removeLiquidity**(`tokenX`, `tokenY`, `binStep`, `amountXMin`, `amountYMin`, `ids`, `amounts`, `to`, `deadline`): `Amounts`
 
 Remove liquidity while performing safety checks
 This function is compliant with fee on transfer tokens
@@ -211,27 +219,29 @@ This function is compliant with fee on transfer tokens
 | :------ | :------ | :------ |
 | `tokenX` | `Address` | The address of token X |
 | `tokenY` | `Address` | The address of token Y |
-| `binStep` | `u32` | The bin step of the Pair |
-| `amountXMin` | `u64` | The min amount to receive of token X |
-| `amountYMin` | `u64` | The min amount to receive of token Y |
+| `binStep` | `u32` | The bin step of the LBPair |
+| `amountXMin` | `u256` | The min amount to receive of token X |
+| `amountYMin` | `u256` | The min amount to receive of token Y |
 | `ids` | `u64`[] | The list of ids to burn |
-| `amounts` | `u64`[] | The list of amounts to burn of each id in `ids` |
+| `amounts` | `u256`[] | The list of amounts to burn of each id in `ids` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
 
 #### Returns
 
-`u64`[]
+`Amounts`
+
+- The amount of tokens received
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:110](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L110)
+[assembly/interfaces/IRouter.ts:116](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L116)
 
 ___
 
 ### removeLiquidityMAS
 
-▸ **removeLiquidityMAS**(`token`, `binStep`, `amountTokenMin`, `amountMasMin`, `ids`, `amounts`, `to`, `deadline`): `u64`[]
+▸ **removeLiquidityMAS**(`token`, `binStep`, `amountTokenMin`, `amountMasMin`, `ids`, `amounts`, `to`, `deadline`): `Amounts`
 
 Remove liquidity with MAS while performing safety checks
 This function is compliant with fee on transfer tokens
@@ -241,27 +251,27 @@ This function is compliant with fee on transfer tokens
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `token` | `Address` | The address of token |
-| `binStep` | `u32` | The bin step of the Pair |
-| `amountTokenMin` | `u64` | The min amount to receive of token |
-| `amountMasMin` | `u64` | The min amount to receive of MAS |
+| `binStep` | `u32` | The bin step of the LBPair |
+| `amountTokenMin` | `u256` | The min amount to receive of token |
+| `amountMasMin` | `u256` | The min amount to receive of MAS |
 | `ids` | `u64`[] | The list of ids to burn |
-| `amounts` | `u64`[] | The list of amounts to burn of each id in `ids` |
+| `amounts` | `u256`[] | The list of amounts to burn of each id in `ids` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
 
 #### Returns
 
-`u64`[]
+`Amounts`
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:150](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L150)
+[assembly/interfaces/IRouter.ts:154](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L154)
 
 ___
 
 ### swapExactMASForTokens
 
-▸ **swapExactMASForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u64`
+▸ **swapExactMASForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u256`
 
 Swaps exact MAS for tokens while performing safety checks
 
@@ -269,8 +279,8 @@ Swaps exact MAS for tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `amountIn` | `u64` | The amount of MAS to send |
-| `amountOutMin` | `u64` | The min amount of token to receive |
+| `amountIn` | `u256` | The amount of MAS to send |
+| `amountOutMin` | `u256` | The min amount of token to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs (0: V1, other values will use V2) |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
@@ -278,17 +288,17 @@ Swaps exact MAS for tokens while performing safety checks
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:243](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L243)
+[assembly/interfaces/IRouter.ts:245](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L245)
 
 ___
 
 ### swapExactTokensForMAS
 
-▸ **swapExactTokensForMAS**(`amountIn`, `amountOutMinMAS`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u64`
+▸ **swapExactTokensForMAS**(`amountIn`, `amountOutMinMAS`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u256`
 
 Swaps exact tokens for MAS while performing safety checks
 
@@ -296,8 +306,8 @@ Swaps exact tokens for MAS while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `amountIn` | `u64` | The amount of tokens to send |
-| `amountOutMinMAS` | `u64` | The min amount of MAS to receive |
+| `amountIn` | `u256` | The amount of tokens to send |
+| `amountOutMinMAS` | `u256` | The min amount of MAS to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs (0: V1, other values will use V2) |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
@@ -305,17 +315,17 @@ Swaps exact tokens for MAS while performing safety checks
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:214](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L214)
+[assembly/interfaces/IRouter.ts:216](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L216)
 
 ___
 
 ### swapExactTokensForTokens
 
-▸ **swapExactTokensForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u64`
+▸ **swapExactTokensForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u256`
 
 Swaps exact tokens for tokens while performing safety checks
 
@@ -323,8 +333,8 @@ Swaps exact tokens for tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `amountIn` | `u64` | The amount of tokens to send |
-| `amountOutMin` | `u64` | The min amount of tokens to receive |
+| `amountIn` | `u256` | The amount of tokens to send |
+| `amountOutMin` | `u256` | The min amount of tokens to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs (0: V1, other values will use V2) |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
@@ -332,17 +342,17 @@ Swaps exact tokens for tokens while performing safety checks
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:185](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L185)
+[assembly/interfaces/IRouter.ts:187](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L187)
 
 ___
 
 ### swapMASForExactTokens
 
-▸ **swapMASForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u64`
+▸ **swapMASForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u256`
 
 Swaps MAS for exact tokens while performing safety checks
 
@@ -350,8 +360,8 @@ Swaps MAS for exact tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `amountOut` | `u64` | The amount of token to receive |
-| `amountInMax` | `u64` | The max amount of token to send |
+| `amountOut` | `u256` | The amount of token to receive |
+| `amountInMax` | `u256` | The max amount of token to send |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs (0: V1, other values will use V2) |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
@@ -359,17 +369,19 @@ Swaps MAS for exact tokens while performing safety checks
 
 #### Returns
 
-`u64`
+`u256`
+
+- The amount of MAS sent
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:329](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L329)
+[assembly/interfaces/IRouter.ts:337](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L337)
 
 ___
 
 ### swapTokensForExactMAS
 
-▸ **swapTokensForExactMAS**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u64`
+▸ **swapTokensForExactMAS**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u256`
 
 Swaps tokens for exact MAS while performing safety checks
 
@@ -377,8 +389,8 @@ Swaps tokens for exact MAS while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `amountOut` | `u64` | The amount of MAS to receive |
-| `amountInMax` | `u64` | The max amount of token to send |
+| `amountOut` | `u256` | The amount of MAS to receive |
+| `amountInMax` | `u256` | The max amount of token to send |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs (0: V1, other values will use V2) |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
@@ -386,17 +398,17 @@ Swaps tokens for exact MAS while performing safety checks
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:300](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L300)
+[assembly/interfaces/IRouter.ts:307](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L307)
 
 ___
 
 ### swapTokensForExactTokens
 
-▸ **swapTokensForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u64`
+▸ **swapTokensForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`): `u256`
 
 Swaps tokens for exact tokens while performing safety checks
 
@@ -404,8 +416,8 @@ Swaps tokens for exact tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `amountOut` | `u64` | The amount of token to receive |
-| `amountInMax` | `u64` | The max amount of token to send |
+| `amountOut` | `u256` | The amount of token to receive |
+| `amountInMax` | `u256` | The max amount of token to send |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs (0: V1, other values will use V2) |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
@@ -413,8 +425,8 @@ Swaps tokens for exact tokens while performing safety checks
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:271](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IRouter.ts#L271)
+[assembly/interfaces/IRouter.ts:278](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IRouter.ts#L278)

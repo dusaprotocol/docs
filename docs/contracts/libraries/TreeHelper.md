@@ -24,13 +24,17 @@
 
 ### constructor
 
-• **new TreeHelper**()
+• **new TreeHelper**(): [`TreeHelper`](TreeHelper.md)
+
+#### Returns
+
+[`TreeHelper`](TreeHelper.md)
 
 ## Methods
 
 ### \_getBottomId
 
-▸ `Static` **_getBottomId**(`_branchId`, `_leafId`): `u32`
+▸ **_getBottomId**(`_branchId`, `_leafId`): `u32`
 
 Private pure function to return the bottom id
 
@@ -49,13 +53,13 @@ The bottom branchId
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:27](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L27)
+[assembly/libraries/TreeHelper.ts:29](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L29)
 
 ___
 
 ### \_getIdsFromAbove
 
-▸ `Static` **_getIdsFromAbove**(`_id`): `GetIdsFromAboveReturn`
+▸ **_getIdsFromAbove**(`_id`): `GetIdsFromAboveReturn`
 
 Private pure function to return the ids from above
 
@@ -75,13 +79,13 @@ The leaf id from above
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:17](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L17)
+[assembly/libraries/TreeHelper.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L19)
 
 ___
 
 ### addToTree
 
-▸ `Static` **addToTree**(`_id`): `void`
+▸ **addToTree**(`_id`): `void`
 
 #### Parameters
 
@@ -95,13 +99,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:33](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L33)
+[assembly/libraries/TreeHelper.ts:35](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L35)
 
 ___
 
 ### findFirstBin
 
-▸ `Static` **findFirstBin**(`_binId`, `_rightSide`): `u32`
+▸ **findFirstBin**(`_binId`, `_rightSide`): `Result`<`u32`\>
 
 Returns the first id that is non zero, corresponding to a bin with liquidity in it
 
@@ -114,33 +118,33 @@ Returns the first id that is non zero, corresponding to a bin with liquidity in 
 
 #### Returns
 
-`u32`
+`Result`<`u32`\>
 
-The closest non zero bit
+The closest non zero bit on the right (or left) side of the tree
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:81](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L81)
+[assembly/libraries/TreeHelper.ts:85](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L85)
 
 ___
 
 ### level0
 
-▸ `Static` **level0**(): `u128`
+▸ **level0**(): `u256`
 
 #### Returns
 
-`u128`
+`u256`
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:137](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L137)
+[assembly/libraries/TreeHelper.ts:145](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L145)
 
 ___
 
 ### level1
 
-▸ `Static` **level1**(`index`): `u128`
+▸ **level1**(`index`): `u256`
 
 #### Parameters
 
@@ -150,17 +154,17 @@ ___
 
 #### Returns
 
-`u128`
+`u256`
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:141](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L141)
+[assembly/libraries/TreeHelper.ts:148](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L148)
 
 ___
 
 ### level2
 
-▸ `Static` **level2**(`index`): `u128`
+▸ **level2**(`index`): `u256`
 
 #### Parameters
 
@@ -170,17 +174,17 @@ ___
 
 #### Returns
 
-`u128`
+`u256`
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:145](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L145)
+[assembly/libraries/TreeHelper.ts:151](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L151)
 
 ___
 
 ### removeFromTree
 
-▸ `Static` **removeFromTree**(`_id`): `void`
+▸ **removeFromTree**(`_id`): `void`
 
 #### Parameters
 
@@ -194,19 +198,19 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:50](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L50)
+[assembly/libraries/TreeHelper.ts:53](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L53)
 
 ___
 
 ### setLevel0
 
-▸ `Static` **setLevel0**(`value`): `void`
+▸ **setLevel0**(`value`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value` | `u128` |
+| `value` | `u256` |
 
 #### Returns
 
@@ -214,20 +218,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:149](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L149)
+[assembly/libraries/TreeHelper.ts:154](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L154)
 
 ___
 
 ### setLevel1
 
-▸ `Static` **setLevel1**(`index`, `value`): `void`
+▸ **setLevel1**(`index`, `value`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `index` | `i32` |
-| `value` | `u128` |
+| `value` | `u256` |
 
 #### Returns
 
@@ -235,20 +239,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:152](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L152)
+[assembly/libraries/TreeHelper.ts:157](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L157)
 
 ___
 
 ### setLevel2
 
-▸ `Static` **setLevel2**(`index`, `value`): `void`
+▸ **setLevel2**(`index`, `value`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `index` | `i32` |
-| `value` | `u128` |
+| `value` | `u256` |
 
 #### Returns
 
@@ -256,4 +260,4 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:155](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/libraries/TreeHelper.ts#L155)
+[assembly/libraries/TreeHelper.ts:160](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L160)

@@ -40,7 +40,7 @@
 
 ### constructor
 
-• **new IERC20**(`origin?`)
+• **new IERC20**(`origin?`): [`IERC20`](IERC20.md)
 
 #### Parameters
 
@@ -48,13 +48,17 @@
 | :------ | :------ |
 | `origin` | `Address` |
 
+#### Returns
+
+[`IERC20`](IERC20.md)
+
 #### Overrides
 
 TokenWrapper.constructor
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:12](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L12)
+[assembly/interfaces/IERC20.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L14)
 
 ## Properties
 
@@ -68,13 +72,13 @@ TokenWrapper.\_origin
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:19
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:20
 
 ## Methods
 
 ### allowance
 
-▸ **allowance**(`ownerAccount`, `spenderAccount`): `u64`
+▸ **allowance**(`ownerAccount`, `spenderAccount`): `u256`
 
 Returns the allowance set on the owner's account for the spender.
 
@@ -87,7 +91,7 @@ Returns the allowance set on the owner's account for the spender.
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Inherited from
 
@@ -95,13 +99,13 @@ TokenWrapper.allowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:100
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:96
 
 ___
 
 ### balanceOf
 
-▸ **balanceOf**(`account`): `u64`
+▸ **balanceOf**(`account`): `u256`
 
 Returns the balance of an account.
 
@@ -113,7 +117,7 @@ Returns the balance of an account.
 
 #### Returns
 
-`u64`
+`u256`
 
 #### Inherited from
 
@@ -121,7 +125,7 @@ TokenWrapper.balanceOf
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:73
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:74
 
 ___
 
@@ -135,7 +139,7 @@ Burn nbTokens on the caller address
 
 | Name | Type |
 | :------ | :------ |
-| `nbTokens` | `u64` |
+| `nbTokens` | `u256` |
 
 #### Returns
 
@@ -147,7 +151,7 @@ TokenWrapper.burn
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:188
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:184
 
 ___
 
@@ -161,7 +165,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:21](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L21)
+[assembly/interfaces/IERC20.ts:23](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L23)
 
 ___
 
@@ -179,7 +183,7 @@ This function can only be called by the owner.
 | Name | Type |
 | :------ | :------ |
 | `spenderAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens` | `u256` |
 
 #### Returns
 
@@ -191,7 +195,7 @@ TokenWrapper.decreaseAllowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:138
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:134
 
 ___
 
@@ -216,7 +220,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:44](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L44)
+[assembly/interfaces/IERC20.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L46)
 
 ___
 
@@ -236,7 +240,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:54](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L54)
+[assembly/interfaces/IERC20.ts:56](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L56)
 
 ___
 
@@ -254,7 +258,7 @@ This function can only be called by the owner.
 | Name | Type |
 | :------ | :------ |
 | `spenderAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens` | `u256` |
 
 #### Returns
 
@@ -266,7 +270,7 @@ TokenWrapper.increaseAllowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:120
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:116
 
 ___
 
@@ -281,7 +285,7 @@ ___
 | `name` | `string` |
 | `symbol` | `string` |
 | `decimals` | `u8` |
-| `supply` | `u64` |
+| `supply` | `u256` |
 
 #### Returns
 
@@ -289,7 +293,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:16](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L16)
+[assembly/interfaces/IERC20.ts:18](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L18)
 
 ___
 
@@ -304,7 +308,7 @@ Mint an amount of nbTokens tokens from to the toAccount address .
 | Name | Type |
 | :------ | :------ |
 | `toAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens` | `u256` |
 
 #### Returns
 
@@ -316,7 +320,7 @@ TokenWrapper.mint
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:179
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:175
 
 ___
 
@@ -338,7 +342,7 @@ TokenWrapper.name
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:45
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:46
 
 ___
 
@@ -358,13 +362,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:50](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L50)
+[assembly/interfaces/IERC20.ts:52](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L52)
 
 ___
 
 ### received
 
-▸ **received**(`reserve`, `fees`): `u64`
+▸ **received**(`reserve`, `fees`): `u256`
 
 Returns the amount of token received by the pair
 
@@ -372,18 +376,18 @@ Returns the amount of token received by the pair
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `reserve` | `u64` | The total reserve of token |
-| `fees` | `u64` | The total fees of token |
+| `reserve` | `u256` | The total reserve of token |
+| `fees` | `u256` | The total fees of token |
 
 #### Returns
 
-`u64`
+`u256`
 
 - The amount received by the pair
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:34](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L34)
+[assembly/interfaces/IERC20.ts:36](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L36)
 
 ___
 
@@ -401,7 +405,7 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:40](https://github.com/dusaprotocol/v2.1/blob/ec71883/assembly/interfaces/IERC20.ts#L40)
+[assembly/interfaces/IERC20.ts:42](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L42)
 
 ___
 
@@ -423,13 +427,13 @@ TokenWrapper.symbol
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:53
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:54
 
 ___
 
 ### totalSupply
 
-▸ **totalSupply**(): `u64`
+▸ **totalSupply**(): `u256`
 
 Returns the total token supply.
 
@@ -437,7 +441,7 @@ The number of tokens that were initially minted.
 
 #### Returns
 
-`u64`
+`u256`
 
 number of minted tokens.
 
@@ -447,7 +451,7 @@ TokenWrapper.totalSupply
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:64
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:65
 
 ___
 
@@ -462,7 +466,7 @@ Transfers tokens from the caller's account to the recipient's account.
 | Name | Type |
 | :------ | :------ |
 | `toAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens` | `u256` |
 
 #### Returns
 
@@ -474,7 +478,7 @@ TokenWrapper.transfer
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:85
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:86
 
 ___
 
@@ -496,7 +500,7 @@ This function is atomic:
 | :------ | :------ |
 | `ownerAccount` | `Address` |
 | `recipientAccount` | `Address` |
-| `nbTokens` | `u64` |
+| `nbTokens` | `u256` |
 
 #### Returns
 
@@ -508,7 +512,7 @@ TokenWrapper.transferFrom
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:160
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:156
 
 ___
 
@@ -529,4 +533,4 @@ TokenWrapper.version
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:36
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:37

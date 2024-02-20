@@ -38,6 +38,8 @@
 
 ▸ **balanceOf**(`bs`): `StaticArray`<`u8`\>
 
+Returns the amount of tokens of type `id` owned by `_account`
+
 #### Parameters
 
 | Name | Type |
@@ -48,9 +50,11 @@
 
 `StaticArray`<`u8`\>
 
+The amount of tokens of type `id` owned by `_account`
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:993](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L993)
+[assembly/contracts/Pair.ts:1322](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1322)
 
 ___
 
@@ -58,6 +62,8 @@ ___
 
 ▸ **balanceOfBatch**(`bs`): `StaticArray`<`u8`\>
 
+Return the balance of multiple (account/id) pairs
+
 #### Parameters
 
 | Name | Type |
@@ -68,9 +74,11 @@ ___
 
 `StaticArray`<`u8`\>
 
+batchBalances The balance for each (account, id) pair
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:1006](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L1006)
+[assembly/contracts/Pair.ts:1337](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1337)
 
 ___
 
@@ -97,7 +105,7 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:446](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L446)
+[assembly/contracts/Pair.ts:574](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L574)
 
 ___
 
@@ -119,7 +127,7 @@ Collect the fees accumulated by a user.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:543](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L543)
+[assembly/contracts/Pair.ts:660](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L660)
 
 ___
 
@@ -142,7 +150,7 @@ The protocol fees are not set to zero to save gas by not resetting the storage s
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:599](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L599)
+[assembly/contracts/Pair.ts:733](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L733)
 
 ___
 
@@ -152,23 +160,29 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
 
 `void`
 
+**`Notice`**
+
+Constructor
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:64](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L64)
+[assembly/contracts/Pair.ts:91](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L91)
 
 ___
 
 ### findFirstNonEmptyBinId
 
 ▸ **findFirstNonEmptyBinId**(`bs`): `StaticArray`<`u8`\>
+
+View function to get the first bin that isn't empty, will not be `_id` itself
 
 #### Parameters
 
@@ -182,13 +196,13 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:943](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L943)
+[assembly/contracts/Pair.ts:965](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L965)
 
 ___
 
 ### flashLoan
 
-▸ **flashLoan**(`bs`): `StaticArray`<`u8`\>
+▸ **flashLoan**(`bs`): `void`
 
 Perform a flashloan on one of the tokens of the pair. The flashloan will call the `_receiver` contract
 to perform the desired operations. The `_receiver` contract is expected to transfer the `amount + fee` of the
@@ -202,11 +216,11 @@ token to this contract.
 
 #### Returns
 
-`StaticArray`<`u8`\>
+`void`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:198](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L198)
+[assembly/contracts/Pair.ts:248](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L248)
 
 ___
 
@@ -226,15 +240,23 @@ Force the decaying of the references for volatility and index
 
 `void`
 
+**`Dev`**
+
+Only callable by the factory
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:932](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L932)
+[assembly/contracts/Pair.ts:945](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L945)
 
 ___
 
 ### getBin
 
 ▸ **getBin**(`bs`): `StaticArray`<`u8`\>
+
+Get the reserves of tokens for every bin. This is the amount
+of tokenY if `id < _pairInformation.activeId`; of tokenX if `id > _pairInformation.activeId`
+and a mix of both if `id == _pairInformation.activeId`
 
 #### Parameters
 
@@ -248,7 +270,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:720](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L720)
+[assembly/contracts/Pair.ts:1045](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1045)
 
 ___
 
@@ -268,6 +290,7 @@ View function to get the total fees and the protocol fees of each tokens
 
 `StaticArray`<`u8`\>
 
+staticArray<u8\> containing :
  -feesX.total The total fees of tokenX
  -feesY.total The total fees of tokenY
  -feesX.protocol The protocol fees of tokenX
@@ -275,7 +298,7 @@ View function to get the total fees and the protocol fees of each tokens
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:745](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L745)
+[assembly/contracts/Pair.ts:1077](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1077)
 
 ___
 
@@ -283,6 +306,8 @@ ___
 
 ▸ **getOracleParameters**(`_`): `StaticArray`<`u8`\>
 
+View function to get the oracle parameters
+
 #### Parameters
 
 | Name | Type |
@@ -295,7 +320,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:790](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L790)
+[assembly/contracts/Pair.ts:1155](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1155)
 
 ___
 
@@ -303,6 +328,8 @@ ___
 
 ▸ **getOracleSampleFrom**(`bs`): `StaticArray`<`u8`\>
 
+View function to get the oracle's sample at `_timeDelta` seconds
+
 #### Parameters
 
 | Name | Type |
@@ -313,15 +340,22 @@ ___
 
 `StaticArray`<`u8`\>
 
+**`Dev`**
+
+Return a linearized sample, the weighted average of 2 neighboring samples
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:798](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L798)
+[assembly/contracts/Pair.ts:1171](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1171)
 
 ___
 
 ### getPairInformation
 
 ▸ **getPairInformation**(`_`): `StaticArray`<`u8`\>
+
+Get the pair information that is used to track reserves, active ids,
+fees and oracle parameters
 
 #### Parameters
 
@@ -335,13 +369,15 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:698](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L698)
+[assembly/contracts/Pair.ts:1009](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1009)
 
 ___
 
 ### getUserBins
 
 ▸ **getUserBins**(`bs`): `StaticArray`<`u8`\>
+
+Get the deposited bins of an account
 
 #### Parameters
 
@@ -355,13 +391,16 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:679](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L679)
+[assembly/contracts/Pair.ts:985](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L985)
 
 ___
 
 ### increaseOracleLength
 
 ▸ **increaseOracleLength**(`bs`): `void`
+
+Increases the length of the oracle to the given `_newLength` by adding empty samples to the end of the oracle.
+The samples are however initialized to reduce the gas cost of the updates during a swap.
 
 #### Parameters
 
@@ -375,13 +414,15 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:827](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L827)
+[assembly/contracts/Pair.ts:820](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L820)
 
 ___
 
 ### isApprovedForAll
 
 ▸ **isApprovedForAll**(`bs`): `StaticArray`<`u8`\>
+
+Returns true if `spender` is approved to transfer `_account`'s tokens
 
 #### Parameters
 
@@ -393,9 +434,11 @@ ___
 
 `StaticArray`<`u8`\>
 
+True if `spender` is approved to transfer `_account`'s tokens
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:1027](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L1027)
+[assembly/contracts/Pair.ts:1361](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1361)
 
 ___
 
@@ -421,7 +464,7 @@ router that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:270](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L270)
+[assembly/contracts/Pair.ts:341](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L341)
 
 ___
 
@@ -439,9 +482,11 @@ ___
 
 `StaticArray`<`u8`\>
 
+The name of the token
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:969](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L969)
+[assembly/contracts/Pair.ts:1292](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1292)
 
 ___
 
@@ -449,11 +494,14 @@ ___
 
 ▸ **pendingFees**(`bs`): `StaticArray`<`u8`\>
 
+View function to get the pending fees of a user
+The array must be strictly increasing to ensure uniqueness
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
 
@@ -461,73 +509,15 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:643](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L643)
+[assembly/contracts/Pair.ts:784](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L784)
 
 ___
 
 ### safeBatchTransferFrom
 
-▸ **safeBatchTransferFrom**(`bs`): `StaticArray`<`u8`\>
+▸ **safeBatchTransferFrom**(`bs`): `void`
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> |
-
-#### Returns
-
-`StaticArray`<`u8`\>
-
-#### Defined in
-
-[assembly/contracts/Pair.ts:1081](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L1081)
-
-___
-
-### safeTransferFrom
-
-▸ **safeTransferFrom**(`bs`): `StaticArray`<`u8`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> |
-
-#### Returns
-
-`StaticArray`<`u8`\>
-
-#### Defined in
-
-[assembly/contracts/Pair.ts:1055](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L1055)
-
-___
-
-### setApprovalForAll
-
-▸ **setApprovalForAll**(`bs`): `StaticArray`<`u8`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> |
-
-#### Returns
-
-`StaticArray`<`u8`\>
-
-#### Defined in
-
-[assembly/contracts/Pair.ts:1039](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L1039)
-
-___
-
-### setFeesParameters
-
-▸ **setFeesParameters**(`bs`): `void`
+Batch transfers `_amount` tokens of type `_id` from `_from` to `_to`
 
 #### Parameters
 
@@ -541,7 +531,79 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:868](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L868)
+[assembly/contracts/Pair.ts:1425](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1425)
+
+___
+
+### safeTransferFrom
+
+▸ **safeTransferFrom**(`bs`): `void`
+
+Transfers `_amount` token of type `_id` from `_from` to `_to`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[assembly/contracts/Pair.ts:1391](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1391)
+
+___
+
+### setApprovalForAll
+
+▸ **setApprovalForAll**(`bs`): `void`
+
+Grants or revokes permission to `spender` to transfer the caller's tokens, according to `approved`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[assembly/contracts/Pair.ts:1375](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1375)
+
+___
+
+### setFeesParameters
+
+▸ **setFeesParameters**(`bs`): `void`
+
+Set the fees parameters
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+**`Dev`**
+
+Needs to be called by the factory that will validate the values
+The bin step will not change
+Only callable by the factory
+
+#### Defined in
+
+[assembly/contracts/Pair.ts:1239](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1239)
 
 ___
 
@@ -568,7 +630,7 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:100](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L100)
+[assembly/contracts/Pair.ts:133](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L133)
 
 ___
 
@@ -586,9 +648,11 @@ ___
 
 `StaticArray`<`u8`\>
 
+The symbol of the token
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:973](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L973)
+[assembly/contracts/Pair.ts:1299](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1299)
 
 ___
 
@@ -596,16 +660,22 @@ ___
 
 ▸ **totalSupply**(`bs`): `StaticArray`<`u8`\>
 
+Returns the total supply of token of type `id`
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> | the token id (serialized) |
 
 #### Returns
 
 `StaticArray`<`u8`\>
 
+**`Dev`**
+
+This is the amount of token of type `id` minted minus the amount burned
+
 #### Defined in
 
-[assembly/contracts/Pair.ts:981](https://github.com/dusaprotocol/v2.1/blob/0058e1c/assembly/contracts/Pair.ts#L981)
+[assembly/contracts/Pair.ts:1308](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1308)
