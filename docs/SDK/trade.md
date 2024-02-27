@@ -159,6 +159,9 @@ const params = bestTrade.swapCallParameters(swapOptions);
 // init router contract
 const router = new IRouter(LB_ROUTER_ADDRESS[CHAIN_ID], client);
 
+// increase allowance for the router (unneeded if inputToken is MAS)
+const approveTxId = await new IERC20(inputToken.address, client).approve(router, amountIn);
+
 // execute swap
 const txId = await router.swap(params);
 console.log("txId", txId);
