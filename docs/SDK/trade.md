@@ -157,10 +157,10 @@ const params = bestTrade.swapCallParameters(swapOptions);
 
 ```ts
 // init router contract
-const router = new IRouter(LB_ROUTER_ADDRESS[chainId], client);
+const router = new IRouter(LB_ROUTER_ADDRESS[CHAIN_ID], client);
 
 // execute swap
-const txId = await router[params.methodName](params);
+const txId = await router.swap(params);
 console.log("txId", txId);
 
 // await transaction confirmation and log output events
