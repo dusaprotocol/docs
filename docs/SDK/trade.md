@@ -167,8 +167,8 @@ const txId = await router.swap(params);
 console.log("txId", txId);
 
 // await transaction confirmation and log output events
-const status = await client.smartContracts().awaitRequiredOperationStatus(txId, EOperationStatus.FINAL);
-if (status !== EOperationStatus.FINAL) throw new Error("Transaction failed");
+const status = await client.smartContracts().awaitRequiredOperationStatus(txId, EOperationStatus.FINAL_SUCCESS);
+if (status !== EOperationStatus.FINAL_SUCCESS) throw new Error("Transaction failed");
 await client
   .smartContracts()
   .getFilteredScOutputEvents({
