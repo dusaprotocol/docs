@@ -49,7 +49,7 @@ The index of the closest non-zero bit.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L14)
+[assembly/libraries/BitMath.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L14)
 
 ___
 
@@ -74,7 +74,7 @@ The index of the closest non null bit on the left of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:41](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L41)
+[assembly/libraries/BitMath.ts:41](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L41)
 
 ___
 
@@ -99,7 +99,7 @@ The index of the closest non null bit on the right of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:26](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L26)
+[assembly/libraries/BitMath.ts:26](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L26)
 
 ___
 
@@ -123,7 +123,7 @@ The index of the least significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:96](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L96)
+[assembly/libraries/BitMath.ts:96](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L96)
 
 ___
 
@@ -147,7 +147,7 @@ The index of the most significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:54](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L54)
+[assembly/libraries/BitMath.ts:54](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L54)
 
 ___
 
@@ -172,4 +172,4 @@ The index of the most (or least) significant bit
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:139](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BitMath.ts#L139)
+[assembly/libraries/BitMath.ts:139](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L139)

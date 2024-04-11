@@ -53,7 +53,7 @@ The bottom branchId
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:29](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L29)
+[assembly/libraries/TreeHelper.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L29)
 
 ___
 
@@ -79,7 +79,7 @@ The leaf id from above
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L19)
+[assembly/libraries/TreeHelper.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L19)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:35](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L35)
+[assembly/libraries/TreeHelper.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L35)
 
 ___
 
@@ -124,7 +124,7 @@ The closest non zero bit on the right (or left) side of the tree
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:85](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L85)
+[assembly/libraries/TreeHelper.ts:85](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L85)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:145](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L145)
+[assembly/libraries/TreeHelper.ts:145](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L145)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:148](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L148)
+[assembly/libraries/TreeHelper.ts:148](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L148)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:151](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L151)
+[assembly/libraries/TreeHelper.ts:151](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L151)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:53](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L53)
+[assembly/libraries/TreeHelper.ts:53](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L53)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:154](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L154)
+[assembly/libraries/TreeHelper.ts:154](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L154)
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:157](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L157)
+[assembly/libraries/TreeHelper.ts:157](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L157)
 
 ___
 
@@ -260,4 +260,4 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:160](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/TreeHelper.ts#L160)
+[assembly/libraries/TreeHelper.ts:160](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L160)

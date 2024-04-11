@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L22)
+[assembly/structs/MintInfo.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L22)
 
 ## Properties
 
@@ -73,7 +73,7 @@ Fees X currently generated
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:27](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L27)
+[assembly/structs/MintInfo.ts:27](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L27)
 
 ___
 
@@ -85,7 +85,7 @@ Fees Y currently generated
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:28](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L28)
+[assembly/structs/MintInfo.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L28)
 
 ___
 
@@ -97,7 +97,7 @@ The amount of token X deposited in the current bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:32](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L32)
+[assembly/structs/MintInfo.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L32)
 
 ___
 
@@ -109,7 +109,7 @@ The amount of token X that have been actually added to the pair
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:25](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L25)
+[assembly/structs/MintInfo.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L25)
 
 ___
 
@@ -121,7 +121,7 @@ The amount of token X sent
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:23](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L23)
+[assembly/structs/MintInfo.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L23)
 
 ___
 
@@ -133,7 +133,7 @@ The amount of token Y deposited in the current bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:33](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L33)
+[assembly/structs/MintInfo.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L33)
 
 ___
 
@@ -145,7 +145,7 @@ The amount of token Y that have been actually added to the pair
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:26](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L26)
+[assembly/structs/MintInfo.ts:26](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L26)
 
 ___
 
@@ -157,7 +157,7 @@ The amount of token Y sent
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:24](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L24)
+[assembly/structs/MintInfo.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L24)
 
 ___
 
@@ -169,7 +169,7 @@ Distribution of token X for the current working bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:34](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L34)
+[assembly/structs/MintInfo.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L34)
 
 ___
 
@@ -181,7 +181,7 @@ Distribution of token Y for the current working bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:35](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L35)
+[assembly/structs/MintInfo.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L35)
 
 ___
 
@@ -193,7 +193,7 @@ Id of the current working bin when looping on the distribution array
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L31)
+[assembly/structs/MintInfo.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L31)
 
 ___
 
@@ -205,7 +205,7 @@ Total distribution of token X. Should be 1e18 (100%) or 0 (0%)
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:29](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L29)
+[assembly/structs/MintInfo.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L29)
 
 ___
 
@@ -217,7 +217,7 @@ Total distribution of token Y. Should be 1e18 (100%) or 0 (0%)
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:30](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L30)
+[assembly/structs/MintInfo.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L30)
 
 ## Methods
 
@@ -242,7 +242,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:60](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L60)
+[assembly/structs/MintInfo.ts:60](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L60)
 
 ___
 
@@ -260,4 +260,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:42](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/MintInfo.ts#L42)
+[assembly/structs/MintInfo.ts:42](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/MintInfo.ts#L42)

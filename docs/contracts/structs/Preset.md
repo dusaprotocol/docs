@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[assembly/structs/Preset.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L16)
+[assembly/structs/Preset.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L16)
 
 ## Properties
 
@@ -65,7 +65,7 @@ The base factor
 
 #### Defined in
 
-[assembly/structs/Preset.ts:18](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L18)
+[assembly/structs/Preset.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L18)
 
 ___
 
@@ -77,7 +77,7 @@ The bin step
 
 #### Defined in
 
-[assembly/structs/Preset.ts:17](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L17)
+[assembly/structs/Preset.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L17)
 
 ___
 
@@ -89,7 +89,7 @@ The decay period, where the fees are halved
 
 #### Defined in
 
-[assembly/structs/Preset.ts:20](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L20)
+[assembly/structs/Preset.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L20)
 
 ___
 
@@ -101,7 +101,7 @@ The filter period, where the fees stays constant
 
 #### Defined in
 
-[assembly/structs/Preset.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L19)
+[assembly/structs/Preset.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L19)
 
 ___
 
@@ -113,7 +113,7 @@ The max value of volatility accumulated
 
 #### Defined in
 
-[assembly/structs/Preset.ts:24](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L24)
+[assembly/structs/Preset.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L24)
 
 ___
 
@@ -125,7 +125,7 @@ The share of fees sent to protocol
 
 #### Defined in
 
-[assembly/structs/Preset.ts:23](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L23)
+[assembly/structs/Preset.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L23)
 
 ___
 
@@ -137,7 +137,7 @@ The reduction factor, used to calculate the reduction of the accumulator
 
 #### Defined in
 
-[assembly/structs/Preset.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L21)
+[assembly/structs/Preset.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L21)
 
 ___
 
@@ -149,7 +149,7 @@ The value of volatility accumulated
 
 #### Defined in
 
-[assembly/structs/Preset.ts:25](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L25)
+[assembly/structs/Preset.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L25)
 
 ___
 
@@ -161,7 +161,7 @@ The variable fee control, used to control the variable fee, can be 0 to disable 
 
 #### Defined in
 
-[assembly/structs/Preset.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L22)
+[assembly/structs/Preset.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L22)
 
 ## Methods
 
@@ -186,7 +186,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Preset.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L46)
+[assembly/structs/Preset.ts:46](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L46)
 
 ___
 
@@ -204,4 +204,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Preset.ts:32](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Preset.ts#L32)
+[assembly/structs/Preset.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Preset.ts#L32)

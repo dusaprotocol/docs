@@ -24,6 +24,7 @@
 - [mint](Pair.md#mint)
 - [name](Pair.md#name)
 - [pendingFees](Pair.md#pendingfees)
+- [receiveCoins](Pair.md#receivecoins)
 - [safeBatchTransferFrom](Pair.md#safebatchtransferfrom)
 - [safeTransferFrom](Pair.md#safetransferfrom)
 - [setApprovalForAll](Pair.md#setapprovalforall)
@@ -54,7 +55,7 @@ The amount of tokens of type `id` owned by `_account`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1322](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1322)
+[assembly/contracts/Pair.ts:1371](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1371)
 
 ___
 
@@ -78,7 +79,7 @@ batchBalances The balance for each (account, id) pair
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1337](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1337)
+[assembly/contracts/Pair.ts:1386](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1386)
 
 ___
 
@@ -105,7 +106,7 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:574](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L574)
+[assembly/contracts/Pair.ts:605](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L605)
 
 ___
 
@@ -127,7 +128,7 @@ Collect the fees accumulated by a user.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:660](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L660)
+[assembly/contracts/Pair.ts:697](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L697)
 
 ___
 
@@ -150,7 +151,7 @@ The protocol fees are not set to zero to save gas by not resetting the storage s
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:733](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L733)
+[assembly/contracts/Pair.ts:776](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L776)
 
 ___
 
@@ -174,7 +175,7 @@ Constructor
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:91](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L91)
+[assembly/contracts/Pair.ts:96](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L96)
 
 ___
 
@@ -196,7 +197,7 @@ View function to get the first bin that isn't empty, will not be `_id` itself
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:965](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L965)
+[assembly/contracts/Pair.ts:1014](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1014)
 
 ___
 
@@ -220,7 +221,7 @@ token to this contract.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:248](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L248)
+[assembly/contracts/Pair.ts:268](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L268)
 
 ___
 
@@ -246,7 +247,7 @@ Only callable by the factory
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:945](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L945)
+[assembly/contracts/Pair.ts:994](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L994)
 
 ___
 
@@ -270,7 +271,7 @@ and a mix of both if `id == _pairInformation.activeId`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1045](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1045)
+[assembly/contracts/Pair.ts:1094](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1094)
 
 ___
 
@@ -290,7 +291,7 @@ View function to get the total fees and the protocol fees of each tokens
 
 `StaticArray`<`u8`\>
 
-staticArray<u8\> containing :
+staticArray<u8> containing :
  -feesX.total The total fees of tokenX
  -feesY.total The total fees of tokenY
  -feesX.protocol The protocol fees of tokenX
@@ -298,7 +299,7 @@ staticArray<u8\> containing :
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1077](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1077)
+[assembly/contracts/Pair.ts:1126](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1126)
 
 ___
 
@@ -320,7 +321,7 @@ View function to get the oracle parameters
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1155](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1155)
+[assembly/contracts/Pair.ts:1204](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1204)
 
 ___
 
@@ -346,7 +347,7 @@ Return a linearized sample, the weighted average of 2 neighboring samples
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1171](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1171)
+[assembly/contracts/Pair.ts:1220](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1220)
 
 ___
 
@@ -369,7 +370,7 @@ fees and oracle parameters
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1009](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1009)
+[assembly/contracts/Pair.ts:1058](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1058)
 
 ___
 
@@ -391,7 +392,7 @@ Get the deposited bins of an account
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:985](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L985)
+[assembly/contracts/Pair.ts:1034](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1034)
 
 ___
 
@@ -414,7 +415,7 @@ The samples are however initialized to reduce the gas cost of the updates during
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:820](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L820)
+[assembly/contracts/Pair.ts:867](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L867)
 
 ___
 
@@ -438,7 +439,7 @@ True if `spender` is approved to transfer `_account`'s tokens
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1361](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1361)
+[assembly/contracts/Pair.ts:1410](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1410)
 
 ___
 
@@ -464,7 +465,7 @@ router that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:341](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L341)
+[assembly/contracts/Pair.ts:366](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L366)
 
 ___
 
@@ -486,7 +487,7 @@ The name of the token
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1292](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1292)
+[assembly/contracts/Pair.ts:1341](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1341)
 
 ___
 
@@ -509,7 +510,31 @@ The array must be strictly increasing to ensure uniqueness
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:784](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L784)
+[assembly/contracts/Pair.ts:831](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L831)
+
+___
+
+### receiveCoins
+
+▸ **receiveCoins**(`_`): `void`
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_` | `StaticArray`<`u8`\> | unused |
+
+#### Returns
+
+`void`
+
+**`Notice`**
+
+Function used by an SC to receive Massa coins
+
+#### Defined in
+
+[assembly/contracts/Pair.ts:1747](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1747)
 
 ___
 
@@ -531,7 +556,7 @@ Batch transfers `_amount` tokens of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1425](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1425)
+[assembly/contracts/Pair.ts:1475](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1475)
 
 ___
 
@@ -553,7 +578,7 @@ Transfers `_amount` token of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1391](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1391)
+[assembly/contracts/Pair.ts:1445](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1445)
 
 ___
 
@@ -575,7 +600,7 @@ Grants or revokes permission to `spender` to transfer the caller's tokens, accor
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1375](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1375)
+[assembly/contracts/Pair.ts:1424](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1424)
 
 ___
 
@@ -603,7 +628,7 @@ Only callable by the factory
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1239](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1239)
+[assembly/contracts/Pair.ts:1288](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1288)
 
 ___
 
@@ -630,7 +655,7 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:133](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L133)
+[assembly/contracts/Pair.ts:149](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L149)
 
 ___
 
@@ -652,7 +677,7 @@ The symbol of the token
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1299](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1299)
+[assembly/contracts/Pair.ts:1348](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1348)
 
 ___
 
@@ -678,4 +703,4 @@ This is the amount of token of type `id` minted minus the amount burned
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1308](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/contracts/Pair.ts#L1308)
+[assembly/contracts/Pair.ts:1357](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Pair.ts#L1357)

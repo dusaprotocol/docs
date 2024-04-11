@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L11)
+[assembly/structs/FeesDistribution.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/FeesDistribution.ts#L11)
 
 ## Properties
 
@@ -52,7 +52,7 @@ The amount of fees reserved for protocol
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:13](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L13)
+[assembly/structs/FeesDistribution.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/FeesDistribution.ts#L13)
 
 ___
 
@@ -64,7 +64,7 @@ The total amount of fees
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:12](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L12)
+[assembly/structs/FeesDistribution.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/FeesDistribution.ts#L12)
 
 ## Methods
 
@@ -89,7 +89,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:37](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L37)
+[assembly/structs/FeesDistribution.ts:37](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/FeesDistribution.ts#L37)
 
 ___
 
@@ -111,7 +111,7 @@ Calculate the tokenPerShare when fees are added
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L21)
+[assembly/structs/FeesDistribution.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/FeesDistribution.ts#L21)
 
 ___
 
@@ -129,4 +129,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:33](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/FeesDistribution.ts#L33)
+[assembly/structs/FeesDistribution.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/FeesDistribution.ts#L33)

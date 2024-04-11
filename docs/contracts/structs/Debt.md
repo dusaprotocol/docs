@@ -51,7 +51,7 @@ The tokenY's debt
 
 #### Defined in
 
-[assembly/structs/Debt.ts:10](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L10)
+[assembly/structs/Debt.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L10)
 
 ## Properties
 
@@ -61,7 +61,7 @@ The tokenY's debt
 
 #### Defined in
 
-[assembly/structs/Debt.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L11)
+[assembly/structs/Debt.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L11)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/Debt.ts:12](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L12)
+[assembly/structs/Debt.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L12)
 
 ## Methods
 
@@ -96,7 +96,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L19)
+[assembly/structs/Debt.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L19)
 
 ___
 
@@ -114,4 +114,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Debt.ts#L15)
+[assembly/structs/Debt.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L15)

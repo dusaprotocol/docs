@@ -49,6 +49,8 @@
 ### Variables
 
 - [BASIS\_POINT\_MAX](#basis_point_max)
+- [DELIMITER](#delimiter)
+- [EVENT\_DELIMITER](#event_delimiter)
 - [ID\_ONE](#id_one)
 - [MAX\_BIN\_STEP](#max_bin_step)
 - [MAX\_FEE](#max_fee)
@@ -64,7 +66,9 @@
 
 - [\_sortTokens](#_sorttokens)
 - [createEvent](#createevent)
+- [createKey](#createkey)
 - [spreadLiqudity](#spreadliqudity)
+- [transferRemaining](#transferremaining)
 - [u256ToString](#u256tostring)
 
 ## Variables
@@ -75,7 +79,27 @@
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:5](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L5)
+[assembly/libraries/Constants.ts:5](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L5)
+
+___
+
+### DELIMITER
+
+• `Const` **DELIMITER**: ``":"``
+
+#### Defined in
+
+[assembly/libraries/Utils.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L15)
+
+___
+
+### EVENT\_DELIMITER
+
+• `Const` **EVENT\_DELIMITER**: ``";?!"``
+
+#### Defined in
+
+[assembly/libraries/Utils.ts:100](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L100)
 
 ___
 
@@ -85,7 +109,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:4](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L4)
+[assembly/libraries/Constants.ts:4](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L4)
 
 ___
 
@@ -95,7 +119,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:10](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L10)
+[assembly/libraries/Constants.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L10)
 
 ___
 
@@ -105,7 +129,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:12](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L12)
+[assembly/libraries/Constants.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L12)
 
 ___
 
@@ -115,7 +139,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L11)
+[assembly/libraries/Constants.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L11)
 
 ___
 
@@ -125,7 +149,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:9](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L9)
+[assembly/libraries/Constants.ts:9](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L9)
 
 ___
 
@@ -135,7 +159,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:7](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L7)
+[assembly/libraries/Constants.ts:7](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L7)
 
 ___
 
@@ -145,7 +169,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:6](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L6)
+[assembly/libraries/Constants.ts:6](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L6)
 
 ___
 
@@ -155,7 +179,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:3](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L3)
+[assembly/libraries/Constants.ts:3](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L3)
 
 ___
 
@@ -165,7 +189,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:8](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Constants.ts#L8)
+[assembly/libraries/Constants.ts:8](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Constants.ts#L8)
 
 ___
 
@@ -175,7 +199,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:17](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/PersistentMap.ts#L17)
+[assembly/libraries/PersistentMap.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L17)
 
 ## Functions
 
@@ -202,7 +226,7 @@ Private view function to sort 2 tokens in ascending order
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:20](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Utils.ts#L20)
+[assembly/libraries/Utils.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L33)
 
 ___
 
@@ -212,9 +236,42 @@ ___
 
 #### Parameters
 
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `key` | `string` | the string event key. |
+| `args` | `string`[] | the string array arguments. |
+
+#### Returns
+
+`string`
+
+the stringified event.
+
+**`Notice`**
+
+Overrides Massa default createEvent function (use a custom delimiter to avoid collisions)
+
+Constructs a pretty formatted event with given key and arguments.
+
+**`Remarks`**
+
+The result is meant to be used with the generateEvent function.
+It is useful to generate events from an array.
+
+#### Defined in
+
+[assembly/libraries/Utils.ts:117](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L117)
+
+___
+
+### createKey
+
+▸ **createKey**(`args`): `string`
+
+#### Parameters
+
 | Name | Type |
 | :------ | :------ |
-| `key` | `string` |
 | `args` | `string`[] |
 
 #### Returns
@@ -223,7 +280,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:87](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Utils.ts#L87)
+[assembly/libraries/Utils.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L16)
 
 ___
 
@@ -247,7 +304,34 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:40](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Utils.ts#L40)
+[assembly/libraries/Utils.ts:53](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L53)
+
+___
+
+### transferRemaining
+
+▸ **transferRemaining**(`balanceInit`, `balanceFinal`, `sent`, `to`): `void`
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `balanceInit` | `u64` | Initial balance of the SC (transferred coins + balance of the SC) |
+| `balanceFinal` | `u64` | Balance of the SC at the end of the call |
+| `sent` | `u64` | Number of coins sent to the SC |
+| `to` | `Address` | Caller of the function to transfer the remaining coins to |
+
+#### Returns
+
+`void`
+
+**`Notice`**
+
+Function to transfer remaining Massa coins to a recipient at the end of a call
+
+#### Defined in
+
+[assembly/libraries/Utils.ts:136](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L136)
 
 ___
 
@@ -275,4 +359,4 @@ u256.toString() is too expensive in as-bignum so we use this instead
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:95](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Utils.ts#L95)
+[assembly/libraries/Utils.ts:125](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Utils.ts#L125)

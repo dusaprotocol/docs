@@ -1,5 +1,11 @@
 # IERC20
 
+## Hierarchy
+
+- `TokenWrapper`
+
+  ↳ **`IERC20`**
+
 ## Implements
 
 - `Serializable`
@@ -58,7 +64,7 @@ TokenWrapper.constructor
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L14)
+[assembly/interfaces/IERC20.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L20)
 
 ## Properties
 
@@ -72,7 +78,7 @@ TokenWrapper.\_origin
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:20
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:26
 
 ## Methods
 
@@ -99,7 +105,7 @@ TokenWrapper.allowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:96
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:125
 
 ___
 
@@ -125,7 +131,7 @@ TokenWrapper.balanceOf
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:74
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:103
 
 ___
 
@@ -151,7 +157,7 @@ TokenWrapper.burn
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:184
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:213
 
 ___
 
@@ -163,9 +169,13 @@ ___
 
 `u8`
 
+#### Overrides
+
+TokenWrapper.decimals
+
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:23](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L23)
+[assembly/interfaces/IERC20.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L29)
 
 ___
 
@@ -195,7 +205,7 @@ TokenWrapper.decreaseAllowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:134
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:163
 
 ___
 
@@ -220,7 +230,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L46)
+[assembly/interfaces/IERC20.ts:75](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L75)
 
 ___
 
@@ -240,7 +250,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:56](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L56)
+[assembly/interfaces/IERC20.ts:85](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L85)
 
 ___
 
@@ -270,7 +280,7 @@ TokenWrapper.increaseAllowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:116
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:145
 
 ___
 
@@ -291,9 +301,13 @@ ___
 
 `void`
 
+#### Overrides
+
+TokenWrapper.init
+
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:18](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L18)
+[assembly/interfaces/IERC20.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L24)
 
 ___
 
@@ -320,7 +334,7 @@ TokenWrapper.mint
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:175
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:204
 
 ___
 
@@ -342,7 +356,7 @@ TokenWrapper.name
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:46
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:65
 
 ___
 
@@ -362,7 +376,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:52](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L52)
+[assembly/interfaces/IERC20.ts:81](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L81)
 
 ___
 
@@ -387,7 +401,7 @@ Returns the amount of token received by the pair
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:36](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L36)
+[assembly/interfaces/IERC20.ts:42](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L42)
 
 ___
 
@@ -405,7 +419,7 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:42](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IERC20.ts#L42)
+[assembly/interfaces/IERC20.ts:71](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L71)
 
 ___
 
@@ -427,7 +441,7 @@ TokenWrapper.symbol
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:54
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:73
 
 ___
 
@@ -451,15 +465,13 @@ TokenWrapper.totalSupply
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:65
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:94
 
 ___
 
 ### transfer
 
 ▸ **transfer**(`toAccount`, `nbTokens`): `void`
-
-Transfers tokens from the caller's account to the recipient's account.
 
 #### Parameters
 
@@ -472,27 +484,19 @@ Transfers tokens from the caller's account to the recipient's account.
 
 `void`
 
-#### Inherited from
+#### Overrides
 
 TokenWrapper.transfer
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:86
+[assembly/interfaces/IERC20.ts:48](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L48)
 
 ___
 
 ### transferFrom
 
 ▸ **transferFrom**(`ownerAccount`, `recipientAccount`, `nbTokens`): `void`
-
-Transfers token ownership from the owner's account to
-the recipient's account using the spender's allowance.
-
-This function can only be called by the spender.
-This function is atomic:
-- both allowance and transfer are executed if possible;
-- or if allowance or transfer is not possible, both are discarded.
 
 #### Parameters
 
@@ -506,13 +510,13 @@ This function is atomic:
 
 `void`
 
-#### Inherited from
+#### Overrides
 
 TokenWrapper.transferFrom
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:156
+[assembly/interfaces/IERC20.ts:58](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L58)
 
 ___
 
@@ -533,4 +537,4 @@ TokenWrapper.version
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:37
+node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:56

@@ -48,7 +48,7 @@ GetAmountsReturn: amountInToBin (u256), amountOutOfBin (u256), fees (FeesDistrib
 
 #### Defined in
 
-[assembly/libraries/SwapHelper.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SwapHelper.ts#L31)
+[assembly/libraries/SwapHelper.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SwapHelper.ts#L31)
 
 ___
 
@@ -75,7 +75,7 @@ GetSwapInReturn: amountIn, feesIn
 
 #### Defined in
 
-[assembly/libraries/SwapHelper.ts:87](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SwapHelper.ts#L87)
+[assembly/libraries/SwapHelper.ts:87](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SwapHelper.ts#L87)
 
 ___
 
@@ -102,4 +102,4 @@ GetSwapOutReturn: amountOut, feesIn
 
 #### Defined in
 
-[assembly/libraries/SwapHelper.ts:176](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/SwapHelper.ts#L176)
+[assembly/libraries/SwapHelper.ts:176](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SwapHelper.ts#L176)

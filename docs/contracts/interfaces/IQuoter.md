@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L9)
+[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IQuoter.ts#L9)
 
 ## Properties
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L9)
+[assembly/interfaces/IQuoter.ts:9](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IQuoter.ts#L9)
 
 ## Methods
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:28](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L28)
+[assembly/interfaces/IQuoter.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IQuoter.ts#L28)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L16)
+[assembly/interfaces/IQuoter.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IQuoter.ts#L16)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L22)
+[assembly/interfaces/IQuoter.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IQuoter.ts#L22)
 
 ___
 
@@ -121,4 +121,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:11](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IQuoter.ts#L11)
+[assembly/interfaces/IQuoter.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IQuoter.ts#L11)

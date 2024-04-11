@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L14)
+[assembly/structs/OracleParameters.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L14)
 
 ## Properties
 
@@ -61,7 +61,7 @@ The safe max delta time of two samples
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L21)
+[assembly/structs/OracleParameters.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L21)
 
 ___
 
@@ -73,7 +73,7 @@ The min delta time of two samples
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:20](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L20)
+[assembly/structs/OracleParameters.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L20)
 
 ___
 
@@ -85,7 +85,7 @@ The active size of the oracle (no empty data)
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:17](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L17)
+[assembly/structs/OracleParameters.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L17)
 
 ___
 
@@ -97,7 +97,7 @@ The index of the oracle's latest sample
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L19)
+[assembly/structs/OracleParameters.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L19)
 
 ___
 
@@ -109,7 +109,7 @@ The timestamp of the creation of the oracle's latest sample
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:18](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L18)
+[assembly/structs/OracleParameters.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L18)
 
 ___
 
@@ -121,7 +121,7 @@ The lifetime of a sample, it accumulates information for up to this timestamp
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L15)
+[assembly/structs/OracleParameters.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L15)
 
 ___
 
@@ -133,7 +133,7 @@ The size of the oracle (last ids can be empty)
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L16)
+[assembly/structs/OracleParameters.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L16)
 
 ## Methods
 
@@ -158,7 +158,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:40](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L40)
+[assembly/structs/OracleParameters.ts:40](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L40)
 
 ___
 
@@ -176,4 +176,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:28](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/OracleParameters.ts#L28)
+[assembly/structs/OracleParameters.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/OracleParameters.ts#L28)

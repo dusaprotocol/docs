@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[assembly/structs/Sample.ts:13](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L13)
+[assembly/structs/Sample.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L13)
 
 ## Properties
 
@@ -56,7 +56,7 @@ The weighted average cumulative bin crossed
 
 #### Defined in
 
-[assembly/structs/Sample.ts:17](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L17)
+[assembly/structs/Sample.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L17)
 
 ___
 
@@ -68,7 +68,7 @@ The weighted average cumulative id
 
 #### Defined in
 
-[assembly/structs/Sample.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L15)
+[assembly/structs/Sample.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L15)
 
 ___
 
@@ -80,7 +80,7 @@ The weighted average cumulative volatility accumulated
 
 #### Defined in
 
-[assembly/structs/Sample.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L16)
+[assembly/structs/Sample.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L16)
 
 ___
 
@@ -92,7 +92,7 @@ The timestamp of the sample
 
 #### Defined in
 
-[assembly/structs/Sample.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L14)
+[assembly/structs/Sample.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L14)
 
 ## Methods
 
@@ -117,7 +117,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Sample.ts:66](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L66)
+[assembly/structs/Sample.ts:66](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L66)
 
 ___
 
@@ -135,7 +135,7 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Sample.ts:57](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L57)
+[assembly/structs/Sample.ts:57](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L57)
 
 ___
 
@@ -163,4 +163,4 @@ Function to update a sample
 
 #### Defined in
 
-[assembly/structs/Sample.ts:27](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/Sample.ts#L27)
+[assembly/structs/Sample.ts:27](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L27)

@@ -63,7 +63,7 @@
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:24](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L24)
+[assembly/structs/LiquidityParameters.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L24)
 
 ## Properties
 
@@ -75,7 +75,7 @@ The active id that user wants to add liquidity from
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:32](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L32)
+[assembly/structs/LiquidityParameters.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L32)
 
 ___
 
@@ -87,7 +87,7 @@ The amount to send of token X
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:28](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L28)
+[assembly/structs/LiquidityParameters.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L28)
 
 ___
 
@@ -99,7 +99,7 @@ The min amount of token X added to liquidity
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:30](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L30)
+[assembly/structs/LiquidityParameters.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L30)
 
 ___
 
@@ -111,7 +111,7 @@ The amount to send of token Y
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:29](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L29)
+[assembly/structs/LiquidityParameters.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L29)
 
 ___
 
@@ -123,7 +123,7 @@ The min amount of token Y added to liquidity
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L31)
+[assembly/structs/LiquidityParameters.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L31)
 
 ___
 
@@ -135,7 +135,7 @@ The bin step of the pair
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:27](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L27)
+[assembly/structs/LiquidityParameters.ts:27](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L27)
 
 ___
 
@@ -147,7 +147,7 @@ The deadline of the tx
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:38](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L38)
+[assembly/structs/LiquidityParameters.ts:38](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L38)
 
 ___
 
@@ -159,7 +159,7 @@ The list of delta ids to add liquidity (`deltaId = activeId - desiredId`)
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:34](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L34)
+[assembly/structs/LiquidityParameters.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L34)
 
 ___
 
@@ -171,7 +171,7 @@ The distribution of tokenX with sum(distributionX) = 1e18 (100%) or 0 (0%)
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:35](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L35)
+[assembly/structs/LiquidityParameters.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L35)
 
 ___
 
@@ -183,7 +183,7 @@ The distribution of tokenY with sum(distributionY) = 1e18 (100%) or 0 (0%)
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:36](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L36)
+[assembly/structs/LiquidityParameters.ts:36](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L36)
 
 ___
 
@@ -195,7 +195,7 @@ The number of id that are allowed to slip
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:33](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L33)
+[assembly/structs/LiquidityParameters.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L33)
 
 ___
 
@@ -207,7 +207,7 @@ The address of the recipient
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:37](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L37)
+[assembly/structs/LiquidityParameters.ts:37](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L37)
 
 ___
 
@@ -219,7 +219,7 @@ The address of token X
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:25](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L25)
+[assembly/structs/LiquidityParameters.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L25)
 
 ___
 
@@ -231,7 +231,7 @@ The address of token Y
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:26](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L26)
+[assembly/structs/LiquidityParameters.ts:26](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L26)
 
 ## Methods
 
@@ -256,7 +256,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:64](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L64)
+[assembly/structs/LiquidityParameters.ts:64](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L64)
 
 ___
 
@@ -274,4 +274,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/LiquidityParameters.ts:45](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/LiquidityParameters.ts#L45)
+[assembly/structs/LiquidityParameters.ts:45](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/LiquidityParameters.ts#L45)

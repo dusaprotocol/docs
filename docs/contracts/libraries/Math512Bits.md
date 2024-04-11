@@ -58,7 +58,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:29](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L29)
+[assembly/libraries/Math512Bits.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L29)
 
 ___
 
@@ -94,7 +94,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:86](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L86)
+[assembly/libraries/Math512Bits.ts:86](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L86)
 
 ___
 
@@ -130,7 +130,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:150](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L150)
+[assembly/libraries/Math512Bits.ts:150](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L150)
 
 ___
 
@@ -166,7 +166,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:53](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L53)
+[assembly/libraries/Math512Bits.ts:53](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L53)
 
 ___
 
@@ -202,4 +202,4 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:124](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/Math512Bits.ts#L124)
+[assembly/libraries/Math512Bits.ts:124](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L124)

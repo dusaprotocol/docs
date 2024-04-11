@@ -55,7 +55,7 @@
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L14)
+[assembly/structs/PairInformation.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L14)
 
 ## Properties
 
@@ -67,7 +67,7 @@ The current id used for swaps, this is also linked with the price
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L15)
+[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L15)
 
 ___
 
@@ -79,7 +79,7 @@ The current amount of fees to distribute in tokenX (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L18)
+[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L18)
 
 ___
 
@@ -91,7 +91,7 @@ The current amount of fees to distribute in tokenY (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L19)
+[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L19)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L22)
+[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L22)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:24](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L24)
+[assembly/structs/PairInformation.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L24)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L23)
+[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L23)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L20)
+[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L20)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L21)
+[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L21)
 
 ___
 
@@ -153,7 +153,7 @@ The sum of amounts of tokenX across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L16)
+[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L16)
 
 ___
 
@@ -165,7 +165,7 @@ The sum of amounts of tokenY across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L17)
+[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L17)
 
 ## Methods
 
@@ -190,7 +190,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L46)
+[assembly/structs/PairInformation.ts:46](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L46)
 
 ___
 
@@ -208,4 +208,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/structs/PairInformation.ts#L31)
+[assembly/structs/PairInformation.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L31)

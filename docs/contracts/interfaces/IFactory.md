@@ -42,7 +42,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:21](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L21)
+[assembly/interfaces/IFactory.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L21)
 
 ## Properties
 
@@ -52,7 +52,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:14](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L14)
+[assembly/interfaces/IFactory.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L14)
 
 ## Methods
 
@@ -72,30 +72,37 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:113](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L113)
+[assembly/interfaces/IFactory.ts:123](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L123)
 
 ___
 
 ### createLBPair
 
-▸ **createLBPair**(`_tokenA`, `_tokenB`, `_activeId`, `_binStep`): `Address`
+▸ **createLBPair**(`_tokenA`, `_tokenB`, `_activeId`, `_binStep`, `_masToSend`): `Address`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_activeId` | `u32` |
-| `_binStep` | `u32` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_tokenA` | `Address` | address of the first token |
+| `_tokenB` | `Address` | address of the second token |
+| `_activeId` | `u32` | active id disired |
+| `_binStep` | `u32` | bin step disired |
+| `_masToSend` | `u64` | Massa to send for storage |
 
 #### Returns
 
 `Address`
 
+the address of the new LBPair
+
+**`Dev`**
+
+Create a new LBPair
+
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:74](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L74)
+[assembly/interfaces/IFactory.ts:83](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L83)
 
 ___
 
@@ -112,11 +119,11 @@ ___
 
 #### Returns
 
-[`LBPairInformation`]../structs/(LBPairInformation.md)[]
+[`LBPairInformation`](../structs/LBPairInformation.md)[]
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:46](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L46)
+[assembly/interfaces/IFactory.ts:46](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L46)
 
 ___
 
@@ -137,7 +144,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:118](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L118)
+[assembly/interfaces/IFactory.ts:128](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L128)
 
 ___
 
@@ -159,7 +166,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:36](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L36)
+[assembly/interfaces/IFactory.ts:36](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L36)
 
 ___
 
@@ -173,7 +180,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:124](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L124)
+[assembly/interfaces/IFactory.ts:134](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L134)
 
 ___
 
@@ -193,7 +200,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:128](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L128)
+[assembly/interfaces/IFactory.ts:138](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L138)
 
 ___
 
@@ -216,7 +223,7 @@ Initialize the factory. This function must be called before any other function.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:31](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L31)
+[assembly/interfaces/IFactory.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L31)
 
 ___
 
@@ -244,4 +251,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:89](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/interfaces/IFactory.ts#L89)
+[assembly/interfaces/IFactory.ts:99](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFactory.ts#L99)

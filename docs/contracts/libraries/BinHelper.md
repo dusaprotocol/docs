@@ -44,7 +44,7 @@ The (1+bp) value as a 128.128-decimal fixed-point number
 
 #### Defined in
 
-[assembly/libraries/BinHelper.ts:37](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BinHelper.ts#L37)
+[assembly/libraries/BinHelper.ts:37](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BinHelper.ts#L37)
 
 ___
 
@@ -69,7 +69,7 @@ The price corresponding to this id, as a 128.128-binary fixed-point number
 
 #### Defined in
 
-[assembly/libraries/BinHelper.ts:25](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BinHelper.ts#L25)
+[assembly/libraries/BinHelper.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BinHelper.ts#L25)
 
 ___
 
@@ -95,4 +95,4 @@ The result of `x^y`
 
 #### Defined in
 
-[assembly/libraries/BinHelper.ts:59](https://github.com/dusaprotocol/v2.1/blob/34784b1/assembly/libraries/BinHelper.ts#L59)
+[assembly/libraries/BinHelper.ts:59](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BinHelper.ts#L59)
