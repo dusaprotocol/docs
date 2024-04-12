@@ -291,11 +291,11 @@ View function to get the total fees and the protocol fees of each tokens
 
 `StaticArray`<`u8`\>
 
-staticArray<u8> containing :
- -feesX.total The total fees of tokenX
- -feesY.total The total fees of tokenY
- -feesX.protocol The protocol fees of tokenX
- -feesY.protocol The protocol fees of tokenY
+staticArray<u8\> containing :
+ - feesX.total The total fees of tokenX
+ - feesY.total The total fees of tokenY
+ - feesX.protocol The protocol fees of tokenX
+ - feesY.protocol The protocol fees of tokenY
 
 #### Defined in
 
