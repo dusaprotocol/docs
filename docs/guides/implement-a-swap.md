@@ -57,20 +57,23 @@ const pairBinSteps: u64[] = [1]; // pairBinSteps[i] refers to the bin step for t
 
 const amountOut = router.getSwapOut(pair, amountIn, true).amountOut;
 const amountOutWithSlippage: u256 = u256.div(u256.mul(amountOut, u256.from(99)), u256.from(100)) // We allow for 1% slippage
-const amountOutReal: u256 = router.swapExactTokensForTokens(amountIn, amountOutWithSlippage, pairBinSteps, tokenPath, receiverAddress, Context.timestamp());
+const masToSend: u64 = 10**8; // send 0.1 MAS for storage fee, surplus will be send back at the end of the tx
+const amountOutReal: u256 = router.swapExactTokensForTokens(amountIn, amountOutWithSlippage, pairBinSteps, tokenPath, receiverAddress, Context.timestamp(), masToSend);
 ```
 
 #### 2. Swap 1 MAS for USDT using `swapExactMASForTokens` with no intermediate swap paths:
 
 ```js
-const amountIn = u256.from(u64(10**18));
+let amountIn = u256.from(u64(10**9));
 
 const tokenPath: IERC20[] = [WMAS, USDT];
 const pairBinSteps: u64[] = [25]; 
 
 const amountOut = router.getSwapOut(pairWMAS, amountIn, false).amountOut;
 const amountOutWithSlippage = u256.div(u256.mul(amountOut, u256.from(99)), u256.from(100)) // We allow for 1% slippage
-const amountOutReal: u256 = router.swapExactMASForTokens(amountIn, amountOutWithSlippage, pairBinSteps, tokenPath, receiverAddress, Context.timestamp());
+const masToSend: u64 = 10**8; // send 0.1 MAS for storage fee, surplus will be send back at the end of the tx
+amountIn += masToSend; // amountIn is the amount to swap & the storage Fee
+const amountOutReal: u256 = router.swapExactMASForTokens(amountIn, amountOutWithSlippage, pairBinSteps, tokenPath, receiverAddress, Context.timestamp(), masToSend);
 ```
 
 #### 3. Swap USDT to get 10 USDC output using `swapTokensForExactTokens` that routes through WMAS.
@@ -83,7 +86,8 @@ USDT.increaseAllowance(router._origin, amountInMax);
 
 const tokenPath: IERC20[] = [USDT, WMAS, USDC];
 const pairBinSteps: u64[] = [25, 20];
+const masToSend: u64 = 10**8; // send 0.1 MAS for storage fee, surplus will be send back at the end of the tx
 
 // We define amountInMax as an arbitrary amount of 11e6 here
-const amountsIn: u256 = router.swapTokensForExactTokens(amountOut, amountInMax, pairBinSteps, tokenPath, receiverAddress, Context.timestamp());
+const amountsIn: u256 = router.swapTokensForExactTokens(amountOut, amountInMax, pairBinSteps, tokenPath, receiverAddress, Context.timestamp(), masToSend);
 ```

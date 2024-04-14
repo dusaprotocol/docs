@@ -29,6 +29,7 @@ function createLBPair(
     tokenY: Address,
     activeId: u32,
     binStep: u32,
+    masToSend: u64
   ): Address {};
 ```
 
@@ -37,6 +38,8 @@ The pair creator sets the initial price via the `activeId` argument.
 It is important to note that there can be multiple markets of the same pair, but only differing in their bin step.
 
 Pools are therefore uniquely identified by the tuple `(tokenX, tokenY, binStep)`.
+
+`masToSend` is used to transfer Mas for storage fee, the surplus will be send back at the end of the tx.
 
 After pair creation tokens can be added to any desired bin provided that:
 
@@ -49,9 +52,9 @@ After pair creation tokens can be added to any desired bin provided that:
 To add liquidity, the `LiquidityParameters` class is as input:
 
 ```js
-function addLiquidity(liquidityParameters: LiquidityParameters): AddLiquidity {};
+function addLiquidity(liquidityParameters: LiquidityParameters, masToSend: u64): AddLiquidity {};
 
-function addLiquidityMAS(liquidityParameters: LiquidityParameters): AddLiquidity {};
+function addLiquidityMAS(liquidityParameters: LiquidityParameters, masToSend: u64): AddLiquidity {};
 
 ```
 
@@ -149,8 +152,9 @@ const liquidityParameters = new LiquidityParameters(
 
 USDC.increaseAllowance(router._origin, amountX);
 USDT.increaseAllowance(router._origin, amountY);
+const masToSend: u64 = 10**9; // send 1 MAS for storage fee, surplus will be send back at the end of the tx
 
-const AddLiquidityReturn = router.addLiquidity(liquidityParameters);
+const AddLiquidityReturn = router.addLiquidity(liquidityParameters, masToSend);
 const liquidityMinted: u256[] = AddLiquidityReturn.liquidityMinted;
 const depositIds: u64[] = AddLiquidityReturn.depositIds;
 
@@ -181,6 +185,7 @@ function removeLiquidity(
     amounts: Array<u256>, // LBToken amount that should be removed
     to: Address, // Receiver address
     deadline: u64, // Block timestamp cannot be lower than deadline
+    masToSend: u64, // Mas to send for storage fee, the surplus will be send back at the end of the tx
   ): Amounts {};
 
 function removeLiquidityMAS(
@@ -192,6 +197,7 @@ function removeLiquidityMAS(
     amounts: Array<u256>,
     to: Address,
     deadline: u64,
+    masToSend: u64,
   ): Amounts {};
 ```
 
@@ -225,6 +231,7 @@ for (let i = 0; i < numberOfBinsToWithdraw; i++) {
 
 const amountXMin: u256 = u256.div(u256.mul(totalXBalanceWithdrawn, u256.from(99)), u256.from(100)); // Allow 1% slippage
 const amountYMin: u256 = u256.div(u256.mul(totalYBalanceWithdrawn, u256.from(99)), u256.from(100)); // Allow 1% slippage
+const masToSend: u64 = 10**9; // send 1 MAS for storage fee, surplus will be send back at the end of the tx
 
 pair.setApprovalForAll(true, router._origin);
 
@@ -237,7 +244,8 @@ const returnAmounts = router.removeLiquidity(
     ids,
     amounts,
     receiverAddress,
-    Context.timestamp()
+    Context.timestamp(),
+    masToSend
 );
 const amountXWithdrawn = returnAmounts.amountX;
 const amountYWithdrawn = returnAmounts.amountY;
