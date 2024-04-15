@@ -10,7 +10,7 @@ sidebar_label: Rebalancing your position
 - Your risks
 
 ## The Active Bin and how to earn fees
-The main aim for any Liquidity Provider is to earn fees captured by the trading activity that occurs in a Liquidity Pool. To earn fees using the Liquidity Book, your liquidity must be within range. If your liquidity is in range, you will see the 'active bin' which is visualized on the UI as being split by two colors, see the image below for further clarity on how the 'active bin' will appear on the UI.
+The main aim for any Liquidity Provider is to earn fees captured by the trading activity that occurs in a Liquidity Pool. To earn fees using the Liquidity Book, your liquidity must be within range. If your liquidity is in range, you will see the active bin which is visualized on the UI as being split by two colors, see the image below for further clarity on how the active bin will appear on the UI.
 
 <p align="center">
   <img src="/img/earnFee.png" alt="How to earn fees" width="500px" />
@@ -18,8 +18,8 @@ The main aim for any Liquidity Provider is to earn fees captured by the trading 
 
 To enhance your earning potential, you are expected to manage your liquidity keeping it balanced and within range. Liquidity Shapes and the strategies you deploy and how you go about managing your liquidity, are all key to how you earn fees. In this article, we'll explore what to do if your liquidity is Out of position
 
-## Your Liquidity is 'Out of position'
-When the price of the assets in the liquidity pool moves, this may cause your liquidity position to become 'out of position'. Your liquidity is always fixed when you deposit it into a Liquidity Book Pool. When your Liquidity is out of position this means that the price of the underlying assets in the Liquidity Pool has moved outside of your chosen range.
+## Your Liquidity is Out of position
+When the price of the assets in the liquidity pool moves, this may cause your liquidity position to become out of position. Your liquidity is always fixed when you deposit it into a Liquidity Book Pool. When your Liquidity is out of position this means that the price of the underlying assets in the Liquidity Pool has moved outside of your chosen range.
 In the example below, you can see that the position is all green, indicating that the price of MAS has moved outside of the range. The UI will indicate when this happens to your own position. You will either see your Liquidity all green or purple, depending on the price change.
 This means you are no longer earning fees and you now have some decisions to make for your next steps which are discussed further below.
 
@@ -55,7 +55,7 @@ Pros:
 - Maintain exposure to MAS if you believe the uptrend will continue.
 
 Cons:
-- Incurs transaction costs, which can be significant on networks like Ethereum.
+- Incurs transaction costs
 - If the price quickly reverts back to the original range, you might miss out on fees and incur additional costs to move back.
 
 3. Withdraw and Hold (Exiting the Pool):
