@@ -10,7 +10,7 @@ sidebar_label: Liquidity Shapes
 - The types of Shapes and Strategies
 - Your Risks
 
-# Liquidity Shapes and Strategies
+## Liquidity Shapes and Strategies
 The Liquidity Book AMM opens up new yield opportunities for your liquidity. The innovative design of the Liquidity Book means that, as a liquidity provider, you can achieve maximum capital efficiency through unparalleled levels of flexibility and customization when deploying your liquidity.
 Deploying and managing liquidity using the Liquidity Book offers you endless possibilities. Just take a look at the video below to see some of the options available to you.
 
