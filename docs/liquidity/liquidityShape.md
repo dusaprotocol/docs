@@ -39,7 +39,7 @@ To enhance your earning potential, you are expected to manage your liquidity, ke
 
 ## Learn more about the unique shapes and strategies
 The guide below is split between Basic and Advanced strategies.
-Basic strategies: The most suited for users who are just getting familiar with concentrated liquidity, is the Liquidity Book and its bin architecture. They can be deployed in one click using Trader Joe’s interface and don’t require any advanced knowledge.
+Basic strategies: The most suited for users who are just getting familiar with concentrated liquidity, is the Liquidity Book and its bin architecture. They can be deployed in one click using Dusa’s interface and don’t require any advanced knowledge.
 Advanced strategies: Combine two or more basic shapes to achieve even more granular control over liquidity. They are more difficult to deploy and carry greater risks but can yield better rewards.
 Single-side strategies: By deploying just one side of the market, you can execute entry/exit to a specific token on the other side of the market. Utilizing the different shapes available will further enhance your efficiency in how you enter/exit a token.
 Below is an example of the different types of shapes and ranges you can deploy
