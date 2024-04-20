@@ -15,8 +15,8 @@ sidebar_label: Reward Program
 - Partners can also utilize the program as an efficient way to distribute emissions
 
 ## What is the Rewards Program?
-The LB Rewards program offers additional token rewards, such as Massa, to incentivize Liquidity Providers to provide liquidity. To qualify for these extra rewards, Liquidity Providers need their liquidity to generate fees. The program is a competitive incentive scheme to encourage efficient liquidity management.
-By adding a competitive element to liquidity incentivization, the program fosters a player-versus-player (PvP) approach as Makers compete to capture the most trading fees, thereby enhancing the efficiency of the rewarded Liquidity Pools.
+The LB Rewards program offers additional token rewards, such as Massa, to incentivize Liquidity Providers to provide liquidity. To qualify for these extra rewards, Liquidity Providers need their liquidity to generate fees. The program is a incentive scheme to encourage efficient liquidity management.
+Now, Makers compete to capture the most trading fees, thereby enhancing the efficiency of the rewarded Liquidity Pools.
 
 ## Detailed overview of the LB rewards program
 ### How to Earn Rewards
