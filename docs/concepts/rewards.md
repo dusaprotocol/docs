@@ -92,3 +92,6 @@ This feature tracks the top Liquidity Providers based on total fees earned. The 
 <p align="center">
   <img src="/img/leaderboard.png" alt="Incentives leaderboard" width="500px" />
 </p>
+
+### Disclaimer
+The following citizens/residents are strictly prohibited from interacting with the Dusa Protocol, in this sense, any address that participates in the Dusa Liquidity Incentive program by claiming $Mas Tokens or $Dusa Tokens hereby declares that it is not from and/or does not currently reside in any of the following countries United States of America, Canada, Iran, Cuba, North Korea, Syria, Myanmar (Burma), the Crimea, Donetsk or Luhansk regions, or any other country or region subject to comprehensive country-wide or region-wide economic sanctions by the United States (collectively, the "Restricted Areas");
