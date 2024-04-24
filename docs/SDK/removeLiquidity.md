@@ -68,7 +68,8 @@ const router = LB_ROUTER_ADDRESS[CHAIN_ID];
 const pair = new PairV2(USDC, WMAS);
 const binStep = 20;
 const lbPair = await pair.fetchLBPair(binStep, client, CHAIN_ID);
-const lbPairData = await new ILBPair(lbPair.LBPair, client).getReservesAndId();
+const pairAddress = lbPair.LBPair;
+const lbPairData = await new ILBPair(pairAddress, client).getReservesAndId();
 const activeBinId = lbPairData.activeId;
 ```
 
@@ -98,6 +99,9 @@ if (!approved) {
 ## 5. Set removeLiquidity parameters
 
 ```ts
+const currentTimeInMs = new Date().getTime();
+const deadline = currentTimeInMs + 3_600_000;
+
 const removeLiquidityInput = pair.calculateAmountsToRemove(
   userPositionIds,
   activeBinId,

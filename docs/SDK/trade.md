@@ -138,8 +138,8 @@ console.log(`Fee: ${feeAmountIn.toSignificant(6)} ${feeAmountIn.token.symbol}`);
 const userSlippageTolerance = new Percent(BigInt(50), BigInt(10000)); // 0.5%
 
 // set deadline for the transaction
-const currenTimeInMs = new Date().getTime();
-const deadline = currenTimeInMs + 3_600_000; // 1 hour
+const currentTimeInMs = new Date().getTime();
+const deadline = currentTimeInMs + 3_600_000; // 1 hour
 
 // set swap options
 const swapOptions = {

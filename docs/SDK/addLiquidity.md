@@ -74,15 +74,15 @@ const typedValueWMAS = "5";
 const tokenAmountUSDC = new TokenAmount(USDC, parseUnits(typedValueUSDC, USDC.decimals));
 const tokenAmountWMAS = new TokenAmount(WMAS, parseUnits(typedValueWMAS, WMAS.decimals));
 
-// set amount slipage tolerance
+// set amount slippage tolerance
 const allowedAmountSlippage = 50; // in bips, 0.5% in this case
 
 // set price slippage tolerance
 const allowedPriceSlippage = 50; // in bips, 0.5% in this case
 
 // set deadline for the transaction
-const currenTimeInMs = new Date().getTime();
-const deadline = currenTimeInMs + 3_600_000;
+const currentTimeInMs = new Date().getTime();
+const deadline = currentTimeInMs + 3_600_000;
 ```
 
 ## 4. Get the LBPair's active bin
