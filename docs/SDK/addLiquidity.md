@@ -12,6 +12,7 @@ This guide shows how to add liquidity into a pool using the SDK and massa-web3. 
 ```ts
 import {
   ChainId,
+  EventDecoder,
   IERC20,
   IRouter,
   LB_ROUTER_ADDRESS,
@@ -143,6 +144,6 @@ await client
     r.forEach(({data}) => {
       if (data.startsWith("DEPOSITED_TO_BIN:")) console.log(EventDecoder.decodeLiquidity(data));
       else console.log(data);
-    });
+    })
   );
 ```

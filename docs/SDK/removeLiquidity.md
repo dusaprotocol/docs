@@ -12,6 +12,7 @@ This guide shows how to remove liquidity from a pool using the SDK and massa-web
 ```ts
 import {
   ChainId,
+  EventDecoder,
   IRouter,
   LB_ROUTER_ADDRESS,
   PairV2,
@@ -103,6 +104,9 @@ if (!approved) {
 const currentTimeInMs = new Date().getTime();
 const deadline = currentTimeInMs + 3_600_000;
 
+// set amount slippage tolerance
+const allowedAmountSlippage = 50; // in bips, 0.5% in this case
+
 const removeLiquidityInput = pair.calculateAmountsToRemove(
   userPositionIds,
   activeBinId,
@@ -149,6 +153,6 @@ await client
     r.forEach(({data}) => {
       if (data.startsWith("WITHDRAWN_FROM_BIN:")) console.log(EventDecoder.decodeLiquidity(data));
       else console.log(data);
-    });
+    })
   );
 ```
