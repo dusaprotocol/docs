@@ -12,6 +12,8 @@ This guide demonstrates how to execute a swap. In this example, we will be swapp
 ```ts
 import {
   ChainId,
+  EventDecoder,
+  IERC20,
   IRouter,
   LB_ROUTER_ADDRESS,
   PairV2,
@@ -159,8 +161,8 @@ const params = bestTrade.swapCallParameters(swapOptions);
 // init router contract
 const router = new IRouter(LB_ROUTER_ADDRESS[CHAIN_ID], client);
 
-// increase allowance for the router (unneeded if inputToken is MAS)
-const approveTxId = await new IERC20(inputToken.address, client).approve(router, amountIn);
+// increase allowance for the router (not needed if inputToken is MAS)
+const approveTxId = await new IERC20(inputToken.address, client).approve(router.address, amountIn);
 
 // execute swap
 const txId = await router.swap(params);
@@ -168,7 +170,7 @@ console.log("txId", txId);
 
 // await transaction confirmation and log output events
 const status = await client.smartContracts().awaitRequiredOperationStatus(txId, EOperationStatus.FINAL_SUCCESS);
-if (status !== EOperationStatus.FINAL_SUCCESS) throw new Error("Transaction failed");
+if (status !== EOperationStatus.FINAL_SUCCESS) throw new Error("Something went wrong");
 await client
   .smartContracts()
   .getFilteredScOutputEvents({
@@ -179,5 +181,10 @@ await client
     is_final: null,
     original_operation_id: txId,
   })
-  .then((r) => r.forEach((e) => console.log(e.data)));
+  .then((r) => 
+    r.forEach(({data}) => {
+      if (data.startsWith("SWAP:")) console.log(EventDecoder.decodeSwap(data));
+      else console.log(data);
+    });
+  );
 ```

@@ -24,6 +24,7 @@ import {
   BUILDNET_CHAIN_ID,
   ClientFactory,
   DefaultProviderUrls,
+  EOperationStatus,
   ProviderType,
   WalletClient,
 } from "@massalabs/massa-web3";
@@ -130,4 +131,24 @@ const params = pair.liquidityCallParameters({
 ```ts
 const txId = await new IRouter(router, client).remove(params);
 console.log("txId", txId);
+
+// await transaction confirmation and log output events
+const status = await client.smartContracts().awaitRequiredOperationStatus(txId, EOperationStatus.FINAL_SUCCESS);
+if (status !== EOperationStatus.FINAL_SUCCESS) throw new Error("Something went wrong");
+await client
+  .smartContracts()
+  .getFilteredScOutputEvents({
+    emitter_address: null,
+    start: null,
+    end: null,
+    original_caller_address: null,
+    is_final: null,
+    original_operation_id: txId,
+  })
+  .then((r) => 
+    r.forEach(({data}) => {
+      if (data.startsWith("WITHDRAWN_FROM_BIN:")) console.log(EventDecoder.decodeLiquidity(data));
+      else console.log(data);
+    });
+  );
 ```
