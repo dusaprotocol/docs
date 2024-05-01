@@ -45,6 +45,14 @@ Follow the five easy steps below to add Liquidity, or scroll down for a detailed
   <img src="/img/deployShape.png" alt="Deploy your shape" width="500px" />
 </p>
 
+## Batch Liquidity Deployment
+
+Deploy Liquidity over ANY range you desire, select your liquidity shape and enter the price range that you want to deploy Liquidity over. Next, select 'Add Liquidity' for each Batch transaction to deploy your Liquidity over the desired range. Using Batch Liquidity Deployment, you can deploy liquidity over a wide range, enabling a more passive approach to Liquidity Provisioning.
+
+<p align="center">
+  <img src="/img/batch.png" alt="Batch liquidity" width="500px" />
+</p>
+
 ## Removing Liquidity
 There are Four options to remove Liquidity
 - Remove both Tokens from the Pool

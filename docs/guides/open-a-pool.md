@@ -37,3 +37,9 @@ The initial active price is the price at which the pool will start. It is import
 ## Finalizing the Pool
 
 After setting up the pool, you will need to execute the transaction to open it.
+
+The pool will be available in your portfolio and you can import it to your pools. Share it to others people so that they can have it too!
+
+<p align="center">
+  <img src="/img/import_pool.png" alt="Import pools" width="500px" />
+</p>
