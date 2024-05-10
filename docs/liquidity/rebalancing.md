@@ -36,7 +36,7 @@ The market shifts and the price of MAS rises to $0.15 due to a bullish trend, mo
 
 ### Decisions to consider:
 
-1. Do Nothing (Passive Management):
+**1. Do Nothing (Passive Management):**
 You could choose to do nothing, leaving your liquidity out of range.
 
 Pros:
@@ -47,7 +47,7 @@ Cons:
 - You won't earn fees when the price is out of your selected range.
 - If the price continues to rise, your position will increasingly consist of more USDC and less MAS, which may not be optimal if you believe MAS’s price will keep rising.
 
-2. Reposition Liquidity (Active Management):
+**2. Reposition Liquidity (Active Management):**
 You might decide to move your liquidity to a higher range, say $0.14 to $0.2. To do this must withdraw your liquidity and re-deposit it. When doing that you may need to swap into the other token to deploy with both tokens, or you can redeposit at a new range, with a single side of the market, and wait for a retracement.
 
 Pros:
@@ -58,7 +58,7 @@ Cons:
 - Incurs transaction costs
 - If the price quickly reverts back to the original range, you might miss out on fees and incur additional costs to move back.
 
-3. Withdraw and Hold (Exiting the Pool):
+**3. Withdraw and Hold (Exiting the Pool):**
 Another option is to withdraw your liquidity entirely and either hold the assets or reallocate them elsewhere.
 
 Pros:
@@ -69,7 +69,7 @@ Cons:
 - No longer earning trading fees from this liquidity pool.
 - May incur transaction fees and a taxable event upon withdrawal.
 
-4. Add More Liquidity (Doubling Down):
+**4. Add More Liquidity (Doubling Down):**
 If you have additional capital, you could choose to add more liquidity at higher price ranges without touching your original position.
 
 Pros:
