@@ -1,6 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-require('dotenv').config();
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
@@ -100,11 +99,13 @@ const config = {
           },
         ],
         // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+      }, 
       algolia: {
-        apiKey: process.env.ALGOLIA_API_KEY,
-        indexName: process.env.ALGOLIA_INDEX_NAME,
-        appId: process.env.ALGOLIA_APP_ID,
+        appId: 'QZ5IN28A6L',
+        apiKey: '68a7b7608bcace6593206954a0de0f98',
+        indexName: 'dusa docs',
+        contextualSearch: true,
+        searchParameters: {},
       },
       prism: {
         theme: lightCodeTheme,
