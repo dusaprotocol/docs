@@ -101,11 +101,11 @@ const config = {
         ],
         // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      // algolia: {
-      //   apiKey: process.env.ALGOLIA_API_KEY,
-      //   indexName: process.env.ALGOLIA_INDEX_NAME,
-      //   appId: process.env.ALGOLIA_APP_ID,
-      // },
+      algolia: {
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        appId: process.env.ALGOLIA_APP_ID,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
