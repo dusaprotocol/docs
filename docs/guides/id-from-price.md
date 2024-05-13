@@ -55,7 +55,7 @@ def getIdFromPrice(price: float, binStep: int) -> int:
 
 ### Example
 
-Here is an example to illustrate the conversion function with the [`USDC`/`USDT`](https://beta.dusa.io/pools/AS1217cAveD2H5rkuytUoiMEL1sg8BXwp966daPRoaoxmV8zv7Bdv/AS1sKBEGsqtm8vQhQzi7KJ4YhyaKTSkhJrLkRc7mQtPqme3VcFHm/2) pair which has a `binStep` of 2. We choose here a price equal to 1.0020019, as both tokens have 6 decimals.
+Here is an example to illustrate the conversion function with the [`USDC`/`DAI`](https://beta.dusa.io/pools/AS1217cAveD2H5rkuytUoiMEL1sg8BXwp966daPRoaoxmV8zv7Bdv/AS1sKBEGsqtm8vQhQzi7KJ4YhyaKTSkhJrLkRc7mQtPqme3VcFHm/2) pair which has a `binStep` of 2. We choose here a price equal to 1.0020019, as both tokens have 6 decimals.
 
 ```python
 getIdFromPrice(1.0020019, 2)

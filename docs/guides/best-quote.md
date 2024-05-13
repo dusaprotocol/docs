@@ -47,10 +47,10 @@ class Quote {
 ```
 ### Code Example
 
-In this example, we want to swap 10 USDC to USDT. A possible route is to go through the WMAS route in between:
+In this example, we want to swap 10 USDC to DAI. A possible route is to go through the WMAS route in between:
 
 ```js
-const tokenPath: address[] = [USDC, WMAS, USDT];
+const tokenPath: address[] = [USDC, WMAS, DAI];
 
 const amountIn = u256.from(u64(10 * 10**6));
 
@@ -67,9 +67,9 @@ function findBestPathFromAmountOut(route: Address[], amountOut: u256): Quote {}
 
 ### Code Example
 
-In this example, we want to own 10 USDC and we would like to know how many USDT is required to perform the if we want to go through the WMAS route:
+In this example, we want to own 10 USDC and we would like to know how many DAI is required to perform the if we want to go through the WMAS route:
 ```js
-const tokenPath: address[] = [USDC, WMAS, USDT];
+const tokenPath: address[] = [USDC, WMAS, DAI];
 
 const amountOut = u256.from(u64(10 * 10**6));
 

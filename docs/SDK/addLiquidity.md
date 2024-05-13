@@ -116,7 +116,7 @@ const params = pair.liquidityCallParameters({
 });
 ```
 
-## 6. Execute contractd call
+## 6. Execute contract call
 
 ```ts
 // increase allowance for the router
