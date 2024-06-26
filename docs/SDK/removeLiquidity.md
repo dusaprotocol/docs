@@ -113,7 +113,7 @@ const removeLiquidityInput = pair.calculateAmountsToRemove(
   bins,
   totalSupplies,
   nonZeroAmounts.map(String),
-  new Percent(BigInt(allowedAmountSlippage))
+  new Percent(BigInt(allowedAmountSlippage), 1000n)
 );
 
 const params = pair.liquidityCallParameters({
@@ -149,8 +149,8 @@ await client
     is_final: null,
     original_operation_id: txId,
   })
-  .then((r) => 
-    r.forEach(({data}) => {
+  .then((r) =>
+    r.forEach(({ data }) => {
       if (data.startsWith("WITHDRAWN_FROM_BIN:")) console.log(EventDecoder.decodeLiquidity(data));
       else console.log(data);
     })

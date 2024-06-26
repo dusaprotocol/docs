@@ -103,8 +103,8 @@ const addLiquidityInput = pair.addLiquidityParameters(
   binStep,
   tokenAmountUSDC,
   tokenAmountWMAS,
-  new Percent(BigInt(allowedAmountSlippage)),
-  new Percent(BigInt(allowedPriceSlippage)),
+  new Percent(BigInt(allowedAmountSlippage), 1000n),
+  new Percent(BigInt(allowedPriceSlippage), 1000n),
   LiquidityDistribution.SPOT
 );
 
@@ -140,8 +140,8 @@ await client
     is_final: null,
     original_operation_id: txId,
   })
-  .then((r) => 
-    r.forEach(({data}) => {
+  .then((r) =>
+    r.forEach(({ data }) => {
       if (data.startsWith("DEPOSITED_TO_BIN:")) console.log(EventDecoder.decodeLiquidity(data));
       else console.log(data);
     })
