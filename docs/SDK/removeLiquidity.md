@@ -113,7 +113,7 @@ const removeLiquidityInput = pair.calculateAmountsToRemove(
   bins,
   totalSupplies,
   nonZeroAmounts.map(String),
-  new Percent(BigInt(allowedAmountSlippage), 1000n)
+  new Percent(BigInt(allowedAmountSlippage), 10_000n)
 );
 
 const params = pair.liquidityCallParameters({
