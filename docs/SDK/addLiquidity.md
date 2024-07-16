@@ -99,13 +99,15 @@ const lbPairData = await new ILBPair(lbPair.LBPair, client).getReservesAndId();
 ## 5. Get addLiquidity parameters
 
 ```ts
-const addLiquidityInput = pair.addLiquidityParameters(
+const addLiquidityInput = await pair.addLiquidityParameters(
+  lbPair.LBPair,
   binStep,
   tokenAmountUSDC,
   tokenAmountWMAS,
-  new Percent(BigInt(allowedAmountSlippage)),
-  new Percent(BigInt(allowedPriceSlippage)),
-  LiquidityDistribution.SPOT
+  new Percent(BigInt(allowedAmountSlippage), 10_000n),
+  new Percent(BigInt(allowedPriceSlippage), 10_000n),
+  LiquidityDistribution.SPOT,
+  client
 );
 
 const params = pair.liquidityCallParameters({
@@ -116,7 +118,7 @@ const params = pair.liquidityCallParameters({
 });
 ```
 
-## 6. Execute contractd call
+## 6. Execute contract call
 
 ```ts
 // increase allowance for the router
@@ -140,8 +142,8 @@ await client
     is_final: null,
     original_operation_id: txId,
   })
-  .then((r) => 
-    r.forEach(({data}) => {
+  .then((r) =>
+    r.forEach(({ data }) => {
       if (data.startsWith("DEPOSITED_TO_BIN:")) console.log(EventDecoder.decodeLiquidity(data));
       else console.log(data);
     })

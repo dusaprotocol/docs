@@ -71,14 +71,15 @@ const pair = new PairV2(USDC, WMAS);
 const binStep = 20;
 const lbPair = await pair.fetchLBPair(binStep, client, CHAIN_ID);
 const pairAddress = lbPair.LBPair;
-const lbPairData = await new ILBPair(pairAddress, client).getReservesAndId();
+const pairContract = new ILBPair(pairAddress, client);
+const lbPairData = await pairContract.getReservesAndId();
+const tokens = await pairContract.getTokens()
 const activeBinId = lbPairData.activeId;
 ```
 
 ### Liquidity positions
 
 ```ts
-const pairContract = new ILBPair(pairAddress, client);
 const userPositionIds = await pairContract.getUserBinIds(address);
 const addressArray = Array.from({ length: userPositionIds.length }, () => address);
 const bins = await pairContract.getBins(userPositionIds);
@@ -113,7 +114,7 @@ const removeLiquidityInput = pair.calculateAmountsToRemove(
   bins,
   totalSupplies,
   nonZeroAmounts.map(String),
-  new Percent(BigInt(allowedAmountSlippage))
+  new Percent(BigInt(allowedAmountSlippage), 10_000n)
 );
 
 const params = pair.liquidityCallParameters({
@@ -122,8 +123,8 @@ const params = pair.liquidityCallParameters({
   amount1Min: removeLiquidityInput.amountYMin,
   ids: userPositionIds,
   amounts: nonZeroAmounts,
-  token0: USDC.address,
-  token1: WMAS.address,
+  token0: tokens[0],
+  token1: tokens[1],
   binStep,
   to: address,
   deadline,
@@ -149,8 +150,8 @@ await client
     is_final: null,
     original_operation_id: txId,
   })
-  .then((r) => 
-    r.forEach(({data}) => {
+  .then((r) =>
+    r.forEach(({ data }) => {
       if (data.startsWith("WITHDRAWN_FROM_BIN:")) console.log(EventDecoder.decodeLiquidity(data));
       else console.log(data);
     })

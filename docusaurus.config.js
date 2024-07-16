@@ -99,6 +99,13 @@ const config = {
           },
         ],
         // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      }, 
+      algolia: {
+        appId: 'QZ5IN28A6L',
+        apiKey: '68a7b7608bcace6593206954a0de0f98',
+        indexName: 'dusa docs',
+        contextualSearch: true,
+        searchParameters: {},
       },
       prism: {
         theme: lightCodeTheme,
