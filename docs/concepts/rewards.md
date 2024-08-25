@@ -32,6 +32,8 @@ MakerScores are calculated independently off-chain for each rewarded market over
 
 ## How do you qualify for rewards?
 TLDR: You must accrue trading fees during each epoch. The more fees you accrue and the higher your score relative to other Makers, the more rewards you will earn.
+Since the recent vote of the community, to qualify for rewards in the MAS-USDC & WETH-MAS pools, LP positions must have more than 10 bins, and 20% max of the position should be in the active bin.
+We reserve the right to withhold incentives from addresses that attempt to circumvent these criteria.
 
 ### MakerScore Breakdown: MakerFees
 TLDR: By accruing fees, you will increase your MakerFee score and thereby if you accrue more Fees versus other Liquidity Providers, you will rank higher and unlock more rewards.
@@ -60,6 +62,7 @@ Partner rewards may also be used to incentivize liquidity in LB markets. The LB 
 
 ### Reward Claiming
 LP rewards will be calculated off-chain and distributed by a smart contract, users will be able to claim their rewards directly from the UI on the DEX in a similar process to collecting farm rewards. Any rewards distributed will vest over a specified duration, typically this will be the same duration that the epoch ran over. EG If the epoch was 1 week, the rewards will vest over 1 week. Maker scoring and rewards calculations will be completed off-chain but will be published for community review.
+The reward are claimable for a period of 4 weeks after their emition
 
 
 ### Streak Mechanism:
