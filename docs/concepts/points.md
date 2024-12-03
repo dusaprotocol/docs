@@ -24,6 +24,8 @@ This is the foundation upon which the point system is calculated. It's based on:
 - Liquidity Providing : fees generated, streak score.
 - Trading activities : swap fees, volume.
 
+Farming points by sybils or by doing volume in a bin where you control most of the volume or any other means will result in a ban.
+
 ## Indirect actions
 
 Those actions will be a coefficient applied to the based points.

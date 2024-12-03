@@ -33,7 +33,7 @@ MakerScores are calculated independently off-chain for each rewarded market over
 ## How do you qualify for rewards?
 TLDR: You must accrue trading fees during each epoch. The more fees you accrue and the higher your score relative to other Makers, the more rewards you will earn.
 Since the recent vote of the community, to qualify for rewards in the MAS-USDC & WETH-MAS pools, LP positions must have more than 10 bins, and 20% max of the position should be in the active bin.
-We reserve the right to withhold incentives from addresses that attempt to circumvent these criteria.
+We reserve the right to withhold incentives from addresses that attempt to circumvent these criteria. Farming rewards  by sybils or by doing volume in a bin where you control most of the volume or any other means will also result in a ban.
 
 ### MakerScore Breakdown: MakerFees
 TLDR: By accruing fees, you will increase your MakerFee score and thereby if you accrue more Fees versus other Liquidity Providers, you will rank higher and unlock more rewards.
