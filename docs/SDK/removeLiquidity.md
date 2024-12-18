@@ -12,44 +12,41 @@ This guide shows how to remove liquidity from a pool using the SDK and massa-web
 ```ts
 import {
   ChainId,
-  EventDecoder,
+  IERC20,
   IRouter,
   LB_ROUTER_ADDRESS,
+  LiquidityDistribution,
   PairV2,
+  TokenAmount,
   WMAS as _WMAS,
   USDC as _USDC,
-  ILBPair,
+  parseUnits,
   Percent,
-} from "@dusalabs/sdk";
-import {
-  BUILDNET_CHAIN_ID,
-  ClientFactory,
-  DefaultProviderUrls,
-  EOperationStatus,
-  ProviderType,
-  WalletClient,
-} from "@massalabs/massa-web3";
+  ILBPair
+} from '@dusalabs/sdk'
+import { Account, Web3Provider } from '@massalabs/massa-web3'
 ```
 
 ## 2. Declare required constants
 
 ```ts
-const BUILDNET_URL = DefaultProviderUrls.BUILDNET;
-const privateKey = process.env.PRIVATE_KEY;
-if (!privateKey) throw new Error("Missing PRIVATE_KEY in .env file");
-const account = await WalletClient.getAccountFromSecretKey(privateKey);
-const address = account.address;
-if (!address) throw new Error("Missing address in account");
-const client = await ClientFactory.createCustomClient(
-  [
-    { url: BUILDNET_URL, type: ProviderType.PUBLIC },
-    { url: BUILDNET_URL, type: ProviderType.PRIVATE },
-  ],
-  BUILDNET_CHAIN_ID,
-  true,
-  account
-);
-const CHAIN_ID = ChainId.BUILDNET;
+const logEvents = (client: Web3Provider, txId: string): void => {
+  client
+    .getEvents({ operationId: txId })
+    .then((r) => r.forEach((e) => console.log(e.data)))
+}
+
+const createClient = async (baseAccount: Account, mainnet = false) =>
+  mainnet
+    ? Web3Provider.mainnet(baseAccount)
+    : Web3Provider.buildnet(baseAccount)
+
+const privateKey = process.env.PRIVATE_KEY
+if (!privateKey) throw new Error('Missing PRIVATE_KEY in .env file')
+const account = await Account.fromPrivateKey(privateKey)
+if (!account.address) throw new Error('Missing address in account')
+const client = await createClient(account)
+const CHAIN_ID = ChainId.BUILDNET
 ```
 
 Note that in your project, you most likely will not hardcode the private key at any time. You would be using libraries like [wallet-provider](https://github.com/massalabs/wallet-provider) to connect to a wallet, sign messages, interact with contracts, and get the above constants.
@@ -138,8 +135,7 @@ const txId = await new IRouter(router, client).remove(params);
 console.log("txId", txId);
 
 // await transaction confirmation and log output events
-const status = await client.smartContracts().awaitRequiredOperationStatus(txId, EOperationStatus.FINAL_SUCCESS);
-if (status !== EOperationStatus.FINAL_SUCCESS) throw new Error("Something went wrong");
+await txId.waitSpeculativeExecution()
 await client
   .smartContracts()
   .getFilteredScOutputEvents({

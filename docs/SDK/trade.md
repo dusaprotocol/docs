@@ -12,48 +12,43 @@ This guide demonstrates how to execute a swap. In this example, we will be swapp
 ```ts
 import {
   ChainId,
-  EventDecoder,
   IERC20,
   IRouter,
   LB_ROUTER_ADDRESS,
-  PairV2,
   Percent,
-  RouteV2,
-  Token,
   TokenAmount,
-  TradeV2,
+  DAI as _DAI,
   USDC as _USDC,
   WETH as _WETH,
   WMAS as _WMAS,
   parseUnits,
-} from "@dusalabs/sdk";
-import {
-  BUILDNET_CHAIN_ID,
-  ClientFactory,
-  EOperationStatus,
-  DefaultProviderUrls,
-  ProviderType,
-  WalletClient,
-} from "@massalabs/massa-web3";
+  QuoterHelper
+} from '@dusalabs/sdk'
+import { Account, Web3Provider } from '@massalabs/massa-web3'
 ```
 
 ## 2. Declare required constants
 
 ```ts
-const BUILDNET_URL = DefaultProviderUrls.BUILDNET;
-const CHAIN_ID = ChainId.BUILDNET;
-const privateKey = "{WALLET_PRIVATE_KEY}";
-const account = await WalletClient.getAccountFromSecretKey(privateKey);
-if (!account.address) throw new Error("Missing address in account");
-const client = await ClientFactory.createCustomClient(
-  [
-    { url: BUILDNET_URL, type: ProviderType.PUBLIC },
-    { url: BUILDNET_URL, type: ProviderType.PRIVATE },
-  ],
-  BUILDNET_CHAIN_ID,
-  true,
-  account
-);
+const logEvents = (client: Web3Provider, txId: string): void => {
+  client
+    .getEvents({ operationId: txId })
+    .then((r) => r.forEach((e) => console.log(e.data)))
+}
+
+const createClient = async (baseAccount: Account, mainnet = false) =>
+  mainnet
+    ? Web3Provider.mainnet(baseAccount)
+    : Web3Provider.buildnet(baseAccount)
+
+const privateKey = process.env.PRIVATE_KEY
+if (!privateKey) throw new Error('Missing PRIVATE_KEY in .env file')
+const account = await Account.fromPrivateKey(privateKey)
+if (!account.address) throw new Error('Missing address in account')
+const client = await createClient(account)
+
+const CHAIN_ID = ChainId.BUILDNET
+const router = LB_ROUTER_ADDRESS[CHAIN_ID]
 ```
 
 Note that in your project, you most likely will not hardcode the private key at any time. You would be using libraries like [wallet-provider](https://github.com/massalabs/wallet-provider) to connect to a wallet, sign messages, interact with contracts, and get the above constants.
@@ -63,19 +58,16 @@ Note that in your project, you most likely will not hardcode the private key at 
 const WMAS = _WMAS[CHAIN_ID];
 const USDC = _USDC[CHAIN_ID];
 const WETH = _WETH[CHAIN_ID];
-
-// declare bases used to generate trade routes
-const BASES = [WMAS, USDC, WETH];
 ```
 
 ## 3. Declare user inputs and initialize `TokenAmount`
 
 ```ts
 // the input token in the trade
-const inputToken = USDC;
+const inputToken = WMAS;
 
 // the output token in the trade
-const outputToken = WMAS;
+const outputToken = WETH;
 
 // specify whether user gave an exact inputToken or outputToken value for the trade
 const isExactIn = true;
@@ -88,37 +80,27 @@ const typedValueInParsed = parseUnits(typedValueIn, inputToken.decimals).toStrin
 
 // wrap into TokenAmount
 const amountIn = new TokenAmount(inputToken, typedValueInParsed);
+
+const maxHops = 3
 ```
 
-## 4. Use PairV2 and RouteV2 functions to generate all possible routes
+## 4. Get the best trade
 
 ```ts
-// get all [Token, Token] combinations
-const allTokenPairs = PairV2.createAllTokenPairs(inputToken, outputToken, BASES);
+const isNativeIn = true;   // set to 'true' if swapping from MAS; otherwise, 'false'
+const isNativeOut = false; // set to 'true' if swapping to MAS; otherwise, 'false'
 
-// init PairV2 instances for the [Token, Token] pairs
-const allPairs = PairV2.initPairs(allTokenPairs);
-
-// generates all possible routes to consider
-const allRoutes = RouteV2.createAllRoutes(
-  allPairs,
-  inputToken,
-  outputToken,
-  2 // maxHops
-);
-```
-
-## 5. Generate TradeV2 instances and get the best trade
-
-```ts
-const isMasIn = false; // set to 'true' if swapping from MAS; otherwise, 'false'
-const isMasOut = true; // set to 'true' if swapping to MAS; otherwise, 'false'
-
-// generates all possible TradeV2 instances
-const trades = await TradeV2.getTradesExactIn(allRoutes, amountIn, outputToken, isMasIn, isMasOut, client, CHAIN_ID);
-
-// chooses the best trade
-const bestTrade = TradeV2.chooseBestTrade(trades, isExactIn);
+const bestTrade = await QuoterHelper.findBestPath(
+    inputToken,
+    isNativeIn,
+    outputToken,
+    isNativeOut,
+    amountIn,
+    isExactIn,
+    maxHops,
+    client,
+    CHAIN_ID
+  )
 ```
 
 ## 6. Check trade information
@@ -126,6 +108,8 @@ const bestTrade = TradeV2.chooseBestTrade(trades, isExactIn);
 ```ts
 // print useful information about the trade, such as the quote, executionPrice, fees, etc
 console.log(bestTrade.toLog());
+
+if (!bestTrade || !executeSwap) return
 
 // get trade fee information
 const { totalFeePct, feeAmountIn } = bestTrade.getTradeFee();
@@ -137,40 +121,37 @@ console.log(`Fee: ${feeAmountIn.toSignificant(6)} ${feeAmountIn.token.symbol}`);
 
 ```ts
 // set slippage tolerance
-const userSlippageTolerance = new Percent(BigInt(50), BigInt(10000)); // 0.5%
-
-// set deadline for the transaction
-const currentTimeInMs = new Date().getTime();
-const deadline = currentTimeInMs + 3_600_000; // 1 hour
-
-// set swap options
-const swapOptions = {
-  recipient: account.address,
-  allowedSlippage: userSlippageTolerance,
-  deadline,
-  feeOnTransfer: false, // or true
-};
+const userSlippageTolerance = new Percent(1n, 100n); // 1%
 
 // generate swap method and parameters for contract call
-const params = bestTrade.swapCallParameters(swapOptions);
+const params = bestTrade.swapCallParameters({
+    ttl: 1000 * 60 * 10, // 10 minutes
+    recipient: account.address.toString(),
+    allowedSlippage: userSlippageTolerance
+  })
 ```
 
 ## 8. Execute trade using massa-web3
 
 ```ts
-// init router contract
-const router = new IRouter(LB_ROUTER_ADDRESS[CHAIN_ID], client);
-
 // increase allowance for the router (not needed if inputToken is MAS)
-const approveTxId = await new IERC20(inputToken.address, client).approve(router.address, amountIn);
+const txIdAllowance = await new IERC20(inputToken.address, client).approve(
+  router,
+  bestTrade.inputAmount.raw
+)
+
+if (txIdAllowance) {
+  console.log('txIdAllowance', txIdAllowance)
+  await txIdAllowance.waitSpeculativeExecution()
+  logEvents(client, txIdAllowance.id)
+}
 
 // execute swap
-const txId = await router.swap(params);
-console.log("txId", txId);
+const txId = await new IRouter(router, client).swap(params)
+console.log('txId', txId.id)
 
-// await transaction confirmation and log output events
-const status = await client.smartContracts().awaitRequiredOperationStatus(txId, EOperationStatus.FINAL_SUCCESS);
-if (status !== EOperationStatus.FINAL_SUCCESS) throw new Error("Something went wrong");
+// await tx confirmation and log events
+await txId.waitSpeculativeExecution()
 await client
   .smartContracts()
   .getFilteredScOutputEvents({
