@@ -1,3 +1,8 @@
+---
+sidebar_position: 6
+sidebar_label: Jelly
+---
+
 # Jelly Token ($JELLY)
 
 ## TLDR
