@@ -32,8 +32,12 @@ Limit orders do not expire automatically and must be manually canceled if no lon
 
 To add a limit order, users must first approve the token spending allowance to the contract, then call the `addLimitOrder` method, specifying the order type as `0` (selling tokenY) or `1` (selling tokenX), along with the token amount. Executing this call mints a one-sided liquidity position at the specified bin.
 
-Limit orders execute automatically when the price within the liquidity pool moves entirely past or crosses through the order’s bin price. Each swap triggers the Limit Order Hooks, checking bin IDs to determine order execution. Once executed, the liquidity position is burned, and resulting tokens are held by the Limit Order contract.
+Limit orders execute automatically when the price within the liquidity pool moves entirely past or crosses through the order’s bin price. Each swap triggers the Limit Order Hooks, checking bin IDs to determine order execution. Once executed, the liquidity position is burned, and the resulting tokens are held by the Limit Order contract.
+
+Existing orders can be increased in value by calling `editLimitOrder`. If the order hasn't been executed, it will add to the previous limit order; if it has and has not been claimed, it will claim the previous order and replace it with the new amount. The orderId will be the same.
 
 After order execution, users must call the `claim` method to retrieve their tokens. There is no expiration period for claims, and tokens remain secure in the contract indefinitely.
 
 Users can manually cancel open limit orders at any time by calling the `cancelOrder` method. Note that if the pool price resides within the limit order's bin at cancellation time, the user receives tokens partially in both assets due to partial order execution.
+
+Orders can be placed in native coins or tokens. If the input is in native coin, the function to create the order would be `addLimitOrderMas`, to edit it `editLimitOrderMas` and to cancel it `cancelOrderMas`. If the output is in native coin, the claim method is `claimMas`. It is possible to still use the `cancelOrder` and `claim` methods, the difference is that wrapped tokens will be received instead of native coins (WMAS instead of MAS).
