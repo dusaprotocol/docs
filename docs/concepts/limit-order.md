@@ -34,7 +34,7 @@ To add a limit order, users must first approve the token spending allowance to t
 
 Limit orders execute automatically when the price within the liquidity pool moves entirely past or crosses through the order’s bin price. Each swap triggers the Limit Order Hooks, checking bin IDs to determine order execution. Once executed, the liquidity position is burned, and the resulting tokens are held by the Limit Order contract.
 
-Existing orders can be increased in value by calling `editLimitOrder`. If the order hasn't been executed, it will add to the previous limit order; if it has and has not been claimed, it will claim the previous order and replace it with the new amount. The orderId will be the same.
+Existing orders can be increased in value by calling `editLimitOrder`. The previous limit order should bot be already executed, it will add the amount wanted to the previous order. The orderId will be the same.
 
 After order execution, users must call the `claimOrder` method to retrieve their tokens. There is no expiration period for claims, and tokens remain secure in the contract indefinitely.
 
