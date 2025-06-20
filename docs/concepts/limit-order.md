@@ -1,4 +1,5 @@
 ---
+sidebar_class_name: hidden
 sidebar_position: 9
 sidebar_label: Limit Order
 ---

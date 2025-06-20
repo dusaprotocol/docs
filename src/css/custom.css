@@ -37,3 +37,7 @@ html[data-theme="light"] {
 .navbar {
   background-color: transparent;
 }
+
+.hidden {
+  display: none !important;
+  }

@@ -25,3 +25,4 @@
 | Contract |                   Mainnet                    |                 Buildnet                    |
 | :------: | :------------------------------------------: | :-----------------------------------------: |
 |   Multicall    | `AS1FJrNBtZ5oXK9y6Wcmiio5AV6rR2UopqqdQWhBH4Fss9JNMySm` | `AS1yphCWi7gychZWYPpqrKDiGb6ZacRoji8YYMLHtQ2TSuuQFqLC` |
+|   DCA    | `AS1KoegDzwkFiWgv6rKKZHckiwbgSEiXh7hfXsGPb4neJTGKoWCv` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
