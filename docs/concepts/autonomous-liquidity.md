@@ -1,5 +1,6 @@
 ---
-sidebar_position: 12
+sidebar_class_name: hidden
+sidebar_position: 13
 sidebar_label: Autonomous Liquidity
 ---
 
