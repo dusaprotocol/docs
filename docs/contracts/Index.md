@@ -14,8 +14,8 @@
 
 - [BinHelper](./libraries/BinHelper.md)
 - [BitMath](./libraries/BitMath.md)
-- [DusaV0Library](classes/DusaV0Library)
-- [Hooks](classes/Hooks)
+- [DusaV0Library](./libraries/DusaV0Library)
+- [Hooks](./libraries/Hooks)
 - [Math512Bits](./libraries/Math512Bits.md)
 - [PersistentMap](./libraries/PersistentMap.md)
 - [ReentrancyGuardUpgradeable](./libraries/ReentrancyGuardUpgradeable)
@@ -30,12 +30,12 @@
 - [IERC20](./interfaces/IERC20.md)
 - [IFactory](./interfaces/IFactory.md)
 - [IFlashLoanCallback](./interfaces/IFlashLoanCallback.md)
-- [IHooks](classes/IHooks)
+- [IHooks](./interfaces/IHooks)
 - [IPair](./interfaces/IPair.md)
 - [IQuoter](./interfaces/IQuoter.md)
 - [IRouter](./interfaces/IRouter.md)
-- [IV0Factory](classes/IV0Factory)
-- [IV0Pair](classes/IV0Pair)
+- [IV0Factory](./interfaces/IV0Factory)
+- [IV0Pair](./interfaces/IV0Pair)
 
 ### Structs
 
@@ -51,7 +51,7 @@
 - [PairInformation](./structs/PairInformation.md)
 - [Preset](./structs/Preset.md)
 - [Sample](./structs/Sample.md)
-- [HooksParameters](classes/HooksParameters)
+- [HooksParameters](./structs/HooksParameters)
 
 ### Variables
 
@@ -874,7 +874,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `hooksParameters` | [`HooksParameters`](classes/HooksParameters) |
+| `hooksParameters` | [`HooksParameters`](./structs/HooksParameters) |
 
 #### Returns
 
