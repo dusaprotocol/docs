@@ -26,7 +26,7 @@
 
 ### \_getBPValue
 
-▸ **_getBPValue**(`_binStep`): `u256`
+▸ **_getBPValue**(`bp`): `u256`
 
 Returns the (1 + bp) value as a 128.128-decimal fixed-point number
 
@@ -34,7 +34,7 @@ Returns the (1 + bp) value as a 128.128-decimal fixed-point number
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `_binStep` | `u64` | The bp value in [1; 100] (referring to 0.01% to 1%) |
+| `bp` | `u16` | The bp value in [1; 100] (referring to 0.01% to 1%) |
 
 #### Returns
 
@@ -44,7 +44,7 @@ The (1+bp) value as a 128.128-decimal fixed-point number
 
 #### Defined in
 
-[assembly/libraries/BinHelper.ts:37](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BinHelper.ts#L37)
+[assembly/libraries/BinHelper.ts:50](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BinHelper.ts#L50)
 
 ___
 
@@ -59,7 +59,7 @@ Returns the price corresponding to the given ID, as a 128.128-binary fixed-point
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `u64` | the id |
-| `binStep` | `u64` | the bin step |
+| `binStep` | `u16` | the bin step |
 
 #### Returns
 
@@ -69,7 +69,7 @@ The price corresponding to this id, as a 128.128-binary fixed-point number
 
 #### Defined in
 
-[assembly/libraries/BinHelper.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BinHelper.ts#L25)
+[assembly/libraries/BinHelper.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BinHelper.ts#L39)
 
 ___
 
@@ -95,4 +95,4 @@ The result of `x^y`
 
 #### Defined in
 
-[assembly/libraries/BinHelper.ts:59](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BinHelper.ts#L59)
+[assembly/libraries/BinHelper.ts:63](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BinHelper.ts#L63)

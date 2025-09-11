@@ -43,7 +43,7 @@ reverting on overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:85](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SafeMath.ts#L85)
+[assembly/libraries/SafeMath.ts:86](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L86)
 
 ___
 
@@ -67,4 +67,4 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:99](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SafeMath.ts#L99)
+[assembly/libraries/SafeMath.ts:100](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L100)

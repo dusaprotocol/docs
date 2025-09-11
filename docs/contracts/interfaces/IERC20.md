@@ -2,7 +2,7 @@
 
 ## Hierarchy
 
-- `TokenWrapper`
+- `MRC20Wrapper`
 
   ↳ **`IERC20`**
 
@@ -60,11 +60,11 @@
 
 #### Overrides
 
-TokenWrapper.constructor
+MRC20Wrapper.constructor
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L20)
+[assembly/interfaces/IERC20.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L21)
 
 ## Properties
 
@@ -74,11 +74,11 @@ TokenWrapper.constructor
 
 #### Inherited from
 
-TokenWrapper.\_origin
+MRC20Wrapper.\_origin
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:26
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:26
 
 ## Methods
 
@@ -101,11 +101,11 @@ Returns the allowance set on the owner's account for the spender.
 
 #### Inherited from
 
-TokenWrapper.allowance
+MRC20Wrapper.allowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:125
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:138
 
 ___
 
@@ -127,11 +127,11 @@ Returns the balance of an account.
 
 #### Inherited from
 
-TokenWrapper.balanceOf
+MRC20Wrapper.balanceOf
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:103
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:110
 
 ___
 
@@ -140,6 +140,8 @@ ___
 ▸ **burn**(`nbTokens`): `void`
 
 Burn nbTokens on the caller address
+
+Coins is left to zero as this function does not need storage entry creation.
 
 #### Parameters
 
@@ -153,11 +155,11 @@ Burn nbTokens on the caller address
 
 #### Inherited from
 
-TokenWrapper.burn
+MRC20Wrapper.burn
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:213
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:236
 
 ___
 
@@ -171,11 +173,11 @@ ___
 
 #### Overrides
 
-TokenWrapper.decimals
+MRC20Wrapper.decimals
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L29)
+[assembly/interfaces/IERC20.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L25)
 
 ___
 
@@ -187,6 +189,7 @@ Decreases the allowance of the spender on the owner's account
 by the given amount.
 
 This function can only be called by the owner.
+Coins is left to zero as this function does not need storage entry creation.
 
 #### Parameters
 
@@ -201,11 +204,11 @@ This function can only be called by the owner.
 
 #### Inherited from
 
-TokenWrapper.decreaseAllowance
+MRC20Wrapper.decreaseAllowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:163
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:182
 
 ___
 
@@ -230,7 +233,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:75](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L75)
+[assembly/interfaces/IERC20.ts:72](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L72)
 
 ___
 
@@ -250,13 +253,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:85](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L85)
+[assembly/interfaces/IERC20.ts:82](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L82)
 
 ___
 
 ### increaseAllowance
 
-▸ **increaseAllowance**(`spenderAccount`, `nbTokens`): `void`
+▸ **increaseAllowance**(`spenderAccount`, `nbTokens`, `coins?`): `void`
 
 Increases the allowance of the spender on the owner's account
 by the given amount.
@@ -265,10 +268,11 @@ This function can only be called by the owner.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `spenderAccount` | `Address` |
-| `nbTokens` | `u256` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `spenderAccount` | `Address` | `undefined` |
+| `nbTokens` | `u256` | `undefined` |
+| `coins` | `u64` | `0` |
 
 #### Returns
 
@@ -276,53 +280,29 @@ This function can only be called by the owner.
 
 #### Inherited from
 
-TokenWrapper.increaseAllowance
+MRC20Wrapper.increaseAllowance
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:145
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:159
 
 ___
 
 ### init
 
-▸ **init**(`name`, `symbol`, `decimals`, `supply`): `void`
+▸ **init**(`name`, `symbol`, `decimals`, `supply`, `coins?`): `void`
+
+Initializes the smart contract.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `symbol` | `string` |
-| `decimals` | `u8` |
-| `supply` | `u256` |
-
-#### Returns
-
-`void`
-
-#### Overrides
-
-TokenWrapper.init
-
-#### Defined in
-
-[assembly/interfaces/IERC20.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L24)
-
-___
-
-### mint
-
-▸ **mint**(`toAccount`, `nbTokens`): `void`
-
-Mint an amount of nbTokens tokens from to the toAccount address .
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `toAccount` | `Address` |
-| `nbTokens` | `u256` |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `name` | `string` | `undefined` | Name of the token. |
+| `symbol` | `string` | `undefined` | Symbol of the token. |
+| `decimals` | `u8` | `undefined` | Number of decimals of the token. |
+| `supply` | `u256` | `undefined` | Initial supply of the token. |
+| `coins` | `u64` | `0` | Number of coins to send to the smart contract. |
 
 #### Returns
 
@@ -330,11 +310,39 @@ Mint an amount of nbTokens tokens from to the toAccount address .
 
 #### Inherited from
 
-TokenWrapper.mint
+MRC20Wrapper.init
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:204
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:46
+
+___
+
+### mint
+
+▸ **mint**(`toAccount`, `nbTokens`, `coins?`): `void`
+
+Mint an amount of nbTokens tokens from to the toAccount address .
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `toAccount` | `Address` | `undefined` |
+| `nbTokens` | `u256` | `undefined` |
+| `coins` | `u64` | `0` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+MRC20Wrapper.mint
+
+#### Defined in
+
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:225
 
 ___
 
@@ -352,11 +360,11 @@ name of the token.
 
 #### Inherited from
 
-TokenWrapper.name
+MRC20Wrapper.name
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:65
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:72
 
 ___
 
@@ -376,7 +384,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:81](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L81)
+[assembly/interfaces/IERC20.ts:78](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L78)
 
 ___
 
@@ -401,7 +409,7 @@ Returns the amount of token received by the pair
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:42](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L42)
+[assembly/interfaces/IERC20.ts:38](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L38)
 
 ___
 
@@ -419,7 +427,7 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:71](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L71)
+[assembly/interfaces/IERC20.ts:68](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L68)
 
 ___
 
@@ -437,11 +445,11 @@ token symbol.
 
 #### Inherited from
 
-TokenWrapper.symbol
+MRC20Wrapper.symbol
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:73
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:80
 
 ___
 
@@ -461,24 +469,25 @@ number of minted tokens.
 
 #### Inherited from
 
-TokenWrapper.totalSupply
+MRC20Wrapper.totalSupply
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:94
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:101
 
 ___
 
 ### transfer
 
-▸ **transfer**(`toAccount`, `nbTokens`): `void`
+▸ **transfer**(`toAccount`, `nbTokens`, `coins?`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `toAccount` | `Address` |
-| `nbTokens` | `u256` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `toAccount` | `Address` | `undefined` |
+| `nbTokens` | `u256` | `undefined` |
+| `coins` | `u64` | `0` |
 
 #### Returns
 
@@ -486,25 +495,26 @@ ___
 
 #### Overrides
 
-TokenWrapper.transfer
+MRC20Wrapper.transfer
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:48](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L48)
+[assembly/interfaces/IERC20.ts:44](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L44)
 
 ___
 
 ### transferFrom
 
-▸ **transferFrom**(`ownerAccount`, `recipientAccount`, `nbTokens`): `void`
+▸ **transferFrom**(`ownerAccount`, `recipientAccount`, `nbTokens`, `coins?`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `ownerAccount` | `Address` |
-| `recipientAccount` | `Address` |
-| `nbTokens` | `u256` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `ownerAccount` | `Address` | `undefined` |
+| `recipientAccount` | `Address` | `undefined` |
+| `nbTokens` | `u256` | `undefined` |
+| `coins` | `u64` | `0` |
 
 #### Returns
 
@@ -512,11 +522,11 @@ ___
 
 #### Overrides
 
-TokenWrapper.transferFrom
+MRC20Wrapper.transferFrom
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:58](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IERC20.ts#L58)
+[assembly/interfaces/IERC20.ts:54](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L54)
 
 ___
 
@@ -533,8 +543,8 @@ This versioning is following the best practices defined in https://semver.org/.
 
 #### Inherited from
 
-TokenWrapper.version
+MRC20Wrapper.version
 
 #### Defined in
 
-node_modules/@massalabs/sc-standards/assembly/contracts/FT/wrapper.ts:56
+node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:63

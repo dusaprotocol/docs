@@ -34,9 +34,9 @@
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `timestamp` | `u64` | `0` | The timestamp of the sample |
-| `cumulativeId` | `u256` | `u256.Zero` | The weighted average cumulative id |
-| `cumulativeVolatilityAccumulated` | `u256` | `u256.Zero` | The weighted average cumulative volatility accumulated |
-| `cumulativeBinCrossed` | `u256` | `u256.Zero` | The weighted average cumulative bin crossed |
+| `cumulativeId` | `u256` | `ZERO` | The weighted average cumulative id |
+| `cumulativeVolatilityAccumulated` | `u256` | `ZERO` | The weighted average cumulative volatility accumulated |
+| `cumulativeBinCrossed` | `u256` | `ZERO` | The weighted average cumulative bin crossed |
 
 #### Returns
 
@@ -44,43 +44,43 @@
 
 #### Defined in
 
-[assembly/structs/Sample.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L13)
+[assembly/structs/Sample.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L14)
 
 ## Properties
 
 ### cumulativeBinCrossed
 
-• **cumulativeBinCrossed**: `u256` = `u256.Zero`
+• **cumulativeBinCrossed**: `u256` = `ZERO`
 
 The weighted average cumulative bin crossed
 
 #### Defined in
 
-[assembly/structs/Sample.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L17)
+[assembly/structs/Sample.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L18)
 
 ___
 
 ### cumulativeId
 
-• **cumulativeId**: `u256` = `u256.Zero`
+• **cumulativeId**: `u256` = `ZERO`
 
 The weighted average cumulative id
 
 #### Defined in
 
-[assembly/structs/Sample.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L15)
+[assembly/structs/Sample.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L16)
 
 ___
 
 ### cumulativeVolatilityAccumulated
 
-• **cumulativeVolatilityAccumulated**: `u256` = `u256.Zero`
+• **cumulativeVolatilityAccumulated**: `u256` = `ZERO`
 
 The weighted average cumulative volatility accumulated
 
 #### Defined in
 
-[assembly/structs/Sample.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L16)
+[assembly/structs/Sample.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L17)
 
 ___
 
@@ -92,7 +92,7 @@ The timestamp of the sample
 
 #### Defined in
 
-[assembly/structs/Sample.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L14)
+[assembly/structs/Sample.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L15)
 
 ## Methods
 
@@ -117,7 +117,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Sample.ts:66](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L66)
+[assembly/structs/Sample.ts:67](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L67)
 
 ___
 
@@ -135,7 +135,7 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Sample.ts:57](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L57)
+[assembly/structs/Sample.ts:58](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L58)
 
 ___
 
@@ -163,4 +163,4 @@ Function to update a sample
 
 #### Defined in
 
-[assembly/structs/Sample.ts:27](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Sample.ts#L27)
+[assembly/structs/Sample.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Sample.ts#L28)

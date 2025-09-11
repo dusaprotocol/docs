@@ -34,7 +34,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFlashLoanCallback.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFlashLoanCallback.ts#L14)
+[assembly/interfaces/IFlashLoanCallback.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFlashLoanCallback.ts#L14)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFlashLoanCallback.ts:7](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFlashLoanCallback.ts#L7)
+[assembly/interfaces/IFlashLoanCallback.ts:7](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFlashLoanCallback.ts#L7)
 
 ## Methods
 
@@ -67,4 +67,4 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFlashLoanCallback.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IFlashLoanCallback.ts#L18)
+[assembly/interfaces/IFlashLoanCallback.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFlashLoanCallback.ts#L18)

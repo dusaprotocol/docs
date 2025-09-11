@@ -49,7 +49,7 @@ The index of the closest non-zero bit.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L14)
+[assembly/libraries/BitMath.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L35)
 
 ___
 
@@ -74,7 +74,7 @@ The index of the closest non null bit on the left of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:41](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L41)
+[assembly/libraries/BitMath.ts:62](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L62)
 
 ___
 
@@ -99,7 +99,7 @@ The index of the closest non null bit on the right of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:26](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L26)
+[assembly/libraries/BitMath.ts:47](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L47)
 
 ___
 
@@ -107,13 +107,13 @@ ___
 
 ▸ **leastSignificantBit**(`x`): `u8`
 
-Returns the index of the least significant bit of x
+Returns the index of the least significant set bit
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `u256` | The value as a u256 |
+| Name | Type |
+| :------ | :------ |
+| `x` | `u256` |
 
 #### Returns
 
@@ -123,7 +123,7 @@ The index of the least significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:96](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L96)
+[assembly/libraries/BitMath.ts:81](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L81)
 
 ___
 
@@ -131,13 +131,13 @@ ___
 
 ▸ **mostSignificantBit**(`x`): `u8`
 
-Returns the index of the most significant bit of x
+Returns the index of the most significant set bit
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `u256` | The value as a u256 |
+| Name | Type |
+| :------ | :------ |
+| `x` | `u256` |
 
 #### Returns
 
@@ -147,22 +147,22 @@ The index of the most significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:54](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L54)
+[assembly/libraries/BitMath.ts:74](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L74)
 
 ___
 
 ### significantBit
 
-▸ **significantBit**(`_integer`, `_isMostSignificant`): `u8`
+▸ **significantBit**(`x`, `most`): `u8`
 
-Returns the most (or least) significant bit of `_integer`
+Returns the most (true) or least (false) significant bit index
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_integer` | `u256` | The integer |
-| `_isMostSignificant` | `bool` | Whether we want the most (true) or the least (false) significant bit |
+| Name | Type |
+| :------ | :------ |
+| `x` | `u256` |
+| `most` | `bool` |
 
 #### Returns
 
@@ -172,4 +172,4 @@ The index of the most (or least) significant bit
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:139](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/BitMath.ts#L139)
+[assembly/libraries/BitMath.ts:90](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L90)

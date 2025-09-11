@@ -39,8 +39,8 @@
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `activeId` | `u32` | `0` | The current id used for swaps, this is also linked with the price |
-| `reserveX` | `u256` | `u256.Zero` | The sum of amounts of tokenX across all bins |
-| `reserveY` | `u256` | `u256.Zero` | The sum of amounts of tokenY across all bins |
+| `reserveX` | `u256` | `ZERO` | The sum of amounts of tokenX across all bins |
+| `reserveY` | `u256` | `ZERO` | The sum of amounts of tokenY across all bins |
 | `feesX` | [`FeesDistribution`](FeesDistribution.md) | `undefined` | The current amount of fees to distribute in tokenX (total, protocol) |
 | `feesY` | [`FeesDistribution`](FeesDistribution.md) | `undefined` | The current amount of fees to distribute in tokenY (total, protocol) |
 | `oracleSampleLifetime` | `u32` | `0` | - |
@@ -55,7 +55,7 @@
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L14)
+[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L15)
 
 ## Properties
 
@@ -67,7 +67,7 @@ The current id used for swaps, this is also linked with the price
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L15)
+[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L16)
 
 ___
 
@@ -79,7 +79,7 @@ The current amount of fees to distribute in tokenX (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L18)
+[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L19)
 
 ___
 
@@ -91,7 +91,7 @@ The current amount of fees to distribute in tokenY (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L19)
+[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L20)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L22)
+[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L23)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L24)
+[assembly/structs/PairInformation.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L25)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L23)
+[assembly/structs/PairInformation.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L24)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L20)
+[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L21)
 
 ___
 
@@ -141,31 +141,31 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L21)
+[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L22)
 
 ___
 
 ### reserveX
 
-• **reserveX**: `u256` = `u256.Zero`
+• **reserveX**: `u256` = `ZERO`
 
 The sum of amounts of tokenX across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L16)
+[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L17)
 
 ___
 
 ### reserveY
 
-• **reserveY**: `u256` = `u256.Zero`
+• **reserveY**: `u256` = `ZERO`
 
 The sum of amounts of tokenY across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L17)
+[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L18)
 
 ## Methods
 
@@ -190,7 +190,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:46](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L46)
+[assembly/structs/PairInformation.ts:47](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L47)
 
 ___
 
@@ -208,4 +208,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/PairInformation.ts#L31)
+[assembly/structs/PairInformation.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L32)

@@ -12,13 +12,7 @@
 - [\_getIdsFromAbove](TreeHelper.md#_getidsfromabove)
 - [addToTree](TreeHelper.md#addtotree)
 - [findFirstBin](TreeHelper.md#findfirstbin)
-- [level0](TreeHelper.md#level0)
-- [level1](TreeHelper.md#level1)
-- [level2](TreeHelper.md#level2)
 - [removeFromTree](TreeHelper.md#removefromtree)
-- [setLevel0](TreeHelper.md#setlevel0)
-- [setLevel1](TreeHelper.md#setlevel1)
-- [setLevel2](TreeHelper.md#setlevel2)
 
 ## Constructors
 
@@ -53,7 +47,7 @@ The bottom branchId
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L29)
+[assembly/libraries/TreeHelper.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L33)
 
 ___
 
@@ -79,7 +73,7 @@ The leaf id from above
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L19)
+[assembly/libraries/TreeHelper.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L23)
 
 ___
 
@@ -91,7 +85,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `_id` | `u64` |
+| `_id` | `u32` |
 
 #### Returns
 
@@ -99,7 +93,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L35)
+[assembly/libraries/TreeHelper.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L39)
 
 ___
 
@@ -124,61 +118,7 @@ The closest non zero bit on the right (or left) side of the tree
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:85](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L85)
-
-___
-
-### level0
-
-▸ **level0**(): `u256`
-
-#### Returns
-
-`u256`
-
-#### Defined in
-
-[assembly/libraries/TreeHelper.ts:145](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L145)
-
-___
-
-### level1
-
-▸ **level1**(`index`): `u256`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `index` | `i32` |
-
-#### Returns
-
-`u256`
-
-#### Defined in
-
-[assembly/libraries/TreeHelper.ts:148](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L148)
-
-___
-
-### level2
-
-▸ **level2**(`index`): `u256`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `index` | `i32` |
-
-#### Returns
-
-`u256`
-
-#### Defined in
-
-[assembly/libraries/TreeHelper.ts:151](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L151)
+[assembly/libraries/TreeHelper.ts:99](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L99)
 
 ___
 
@@ -190,7 +130,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `_id` | `u64` |
+| `_id` | `u32` |
 
 #### Returns
 
@@ -198,66 +138,4 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:53](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L53)
-
-___
-
-### setLevel0
-
-▸ **setLevel0**(`value`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `u256` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[assembly/libraries/TreeHelper.ts:154](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L154)
-
-___
-
-### setLevel1
-
-▸ **setLevel1**(`index`, `value`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `index` | `i32` |
-| `value` | `u256` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[assembly/libraries/TreeHelper.ts:157](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L157)
-
-___
-
-### setLevel2
-
-▸ **setLevel2**(`index`, `value`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `index` | `i32` |
-| `value` | `u256` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[assembly/libraries/TreeHelper.ts:160](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/TreeHelper.ts#L160)
+[assembly/libraries/TreeHelper.ts:60](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L60)

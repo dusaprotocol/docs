@@ -50,7 +50,7 @@ This function is compliant with fee on transfer tokens
 
 #### Defined in
 
-[assembly/contracts/Router.ts:99](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L99)
+[assembly/contracts/Router.ts:116](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L116)
 
 ___
 
@@ -77,7 +77,7 @@ This function is compliant with fee on transfer tokens
 
 #### Defined in
 
-[assembly/contracts/Router.ts:150](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L150)
+[assembly/contracts/Router.ts:168](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L168)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Router.ts:42](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L42)
+[assembly/contracts/Router.ts:51](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L51)
 
 ___
 
@@ -121,7 +121,7 @@ Create a liquidity bin LBPair for _tokenX and _tokenY using the factory
 
 #### Defined in
 
-[assembly/contracts/Router.ts:72](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L72)
+[assembly/contracts/Router.ts:89](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L89)
 
 ___
 
@@ -143,7 +143,7 @@ Simulate a swap in
 
 #### Defined in
 
-[assembly/contracts/Router.ts:1183](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L1183)
+[assembly/contracts/Router.ts:1381](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L1381)
 
 ___
 
@@ -165,7 +165,7 @@ Simulate a swap out
 
 #### Defined in
 
-[assembly/contracts/Router.ts:1198](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L1198)
+[assembly/contracts/Router.ts:1396](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L1396)
 
 ___
 
@@ -189,7 +189,7 @@ Function used by an SC to receive Massa coins
 
 #### Defined in
 
-[assembly/contracts/Router.ts:1300](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L1300)
+[assembly/contracts/Router.ts:1535](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L1535)
 
 ___
 
@@ -216,7 +216,7 @@ This function is compliant with fee on transfer tokens
 
 #### Defined in
 
-[assembly/contracts/Router.ts:235](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L235)
+[assembly/contracts/Router.ts:254](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L254)
 
 ___
 
@@ -243,7 +243,7 @@ This function is compliant with fee on transfer tokens
 
 #### Defined in
 
-[assembly/contracts/Router.ts:302](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L302)
+[assembly/contracts/Router.ts:321](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L321)
 
 ___
 
@@ -257,7 +257,7 @@ Swaps exact MAS for tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOutMin: The minimum amount of token to receive - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp - masToSend: The amount of MAS to send for storage fees |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOutMin: The minimum amount of token to receive - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp - masToSend: The amount of MAS to send for storage fees |
 
 #### Returns
 
@@ -267,7 +267,7 @@ Swaps exact MAS for tokens while performing safety checks
 
 #### Defined in
 
-[assembly/contracts/Router.ts:464](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L464)
+[assembly/contracts/Router.ts:503](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L503)
 
 ___
 
@@ -281,7 +281,7 @@ Swaps exact MAS for tokens while performing safety checks supporting for fee on 
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOutMin: The min amount of token to receive - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp - masToSend: The amount of MAS to send for storage fees |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOutMin: The min amount of token to receive - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp - masToSend: The amount of MAS to send for storage fees |
 
 #### Returns
 
@@ -291,7 +291,7 @@ Swaps exact MAS for tokens while performing safety checks supporting for fee on 
 
 #### Defined in
 
-[assembly/contracts/Router.ts:817](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L817)
+[assembly/contracts/Router.ts:908](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L908)
 
 ___
 
@@ -305,7 +305,7 @@ Swaps exact tokens for MAS while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to swap - amountOutMinMAS: The minimum amount of MAS to receive - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to swap - amountOutMinMAS: The minimum amount of MAS to receive - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
 
 #### Returns
 
@@ -315,7 +315,7 @@ Swaps exact tokens for MAS while performing safety checks
 
 #### Defined in
 
-[assembly/contracts/Router.ts:403](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L403)
+[assembly/contracts/Router.ts:437](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L437)
 
 ___
 
@@ -329,7 +329,7 @@ Swaps exact tokens for MAS while performing safety checks supporting for fee on 
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to send - amountOutMinMAS: The min amount of MAS to receive - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to send - amountOutMinMAS: The min amount of MAS to receive - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
 
 #### Returns
 
@@ -339,7 +339,7 @@ Swaps exact tokens for MAS while performing safety checks supporting for fee on 
 
 #### Defined in
 
-[assembly/contracts/Router.ts:753](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L753)
+[assembly/contracts/Router.ts:835](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L835)
 
 ___
 
@@ -353,7 +353,7 @@ Swap tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to swap - amountOutMin: The minimum amount of token to receive - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to swap - amountOutMin: The minimum amount of token to receive - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
 
 #### Returns
 
@@ -363,7 +363,7 @@ Swap tokens while performing safety checks
 
 #### Defined in
 
-[assembly/contracts/Router.ts:357](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L357)
+[assembly/contracts/Router.ts:382](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L382)
 
 ___
 
@@ -377,7 +377,7 @@ Swaps exact tokens for tokens while performing safety checks supporting for fee 
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to send - amountOutMin: The min amount of token to receive - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountIn: The amount of token to send - amountOutMin: The min amount of token to receive - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
 
 #### Returns
 
@@ -387,7 +387,7 @@ Swaps exact tokens for tokens while performing safety checks supporting for fee 
 
 #### Defined in
 
-[assembly/contracts/Router.ts:698](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L698)
+[assembly/contracts/Router.ts:776](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L776)
 
 ___
 
@@ -401,7 +401,7 @@ Swaps MAS for exact tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOut: The amount of token to receive - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp - masToSend: The amount of MAS to send for storage fees |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOut: The amount of token to receive - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp - masToSend: The amount of MAS to send for storage fees |
 
 #### Returns
 
@@ -411,7 +411,7 @@ Swaps MAS for exact tokens while performing safety checks
 
 #### Defined in
 
-[assembly/contracts/Router.ts:634](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L634)
+[assembly/contracts/Router.ts:702](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L702)
 
 ___
 
@@ -425,7 +425,7 @@ Swaps tokens for exact MAS while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOut: The amount of MAS to receive - amountInMax: The maximum amount of token to send - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOut: The amount of MAS to receive - amountInMax: The maximum amount of token to send - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
 
 #### Returns
 
@@ -435,7 +435,7 @@ Swaps tokens for exact MAS while performing safety checks
 
 #### Defined in
 
-[assembly/contracts/Router.ts:570](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L570)
+[assembly/contracts/Router.ts:627](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L627)
 
 ___
 
@@ -449,7 +449,7 @@ Swaps tokens for exact tokens while performing safety checks
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOut: The amount of token to receive - amountInMax: The maximum amount of token to send - pairBinSteps: The bin steps of the pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
+| `bs` | `StaticArray`<`u8`\> | Byte string containing: - amountOut: The amount of token to receive - amountInMax: The maximum amount of token to send - pairBinSteps: The bin steps of the pairs - isLegacyPools: If the pairs are legacy pairs - tokenPath: The swap path using the bin steps following `_pairBinSteps` - to: The address of the recipient - deadline: The deadline timestamp |
 
 #### Returns
 
@@ -459,7 +459,7 @@ Swaps tokens for exact tokens while performing safety checks
 
 #### Defined in
 
-[assembly/contracts/Router.ts:518](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L518)
+[assembly/contracts/Router.ts:566](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L566)
 
 ___
 
@@ -485,7 +485,7 @@ Only callable by the factory owner
 
 #### Defined in
 
-[assembly/contracts/Router.ts:877](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L877)
+[assembly/contracts/Router.ts:971](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L971)
 
 ___
 
@@ -511,4 +511,4 @@ Only callable by the factory owner
 
 #### Defined in
 
-[assembly/contracts/Router.ts:904](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Router.ts#L904)
+[assembly/contracts/Router.ts:998](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Router.ts#L998)

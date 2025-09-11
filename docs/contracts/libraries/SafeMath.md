@@ -46,7 +46,7 @@ reverting on overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SafeMath.ts#L11)
+[assembly/libraries/SafeMath.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L12)
 
 ___
 
@@ -70,7 +70,7 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:57](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SafeMath.ts#L57)
+[assembly/libraries/SafeMath.ts:58](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L58)
 
 ___
 
@@ -94,7 +94,7 @@ Reverts with custom message when dividing by zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:71](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SafeMath.ts#L71)
+[assembly/libraries/SafeMath.ts:72](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L72)
 
 ___
 
@@ -118,7 +118,7 @@ overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SafeMath.ts#L39)
+[assembly/libraries/SafeMath.ts:40](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L40)
 
 ___
 
@@ -142,4 +142,4 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SafeMath.ts#L25)
+[assembly/libraries/SafeMath.ts:26](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L26)

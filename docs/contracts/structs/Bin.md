@@ -34,10 +34,10 @@
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `reserveX` | `u256` | `u256.Zero` | The current reserve of tokenX of the bin |
-| `reserveY` | `u256` | `u256.Zero` | The current reserve of tokenY of the bin |
-| `accTokenXPerShare` | `u256` | `u256.Zero` | - |
-| `accTokenYPerShare` | `u256` | `u256.Zero` | - |
+| `reserveX` | `u256` | `ZERO` | The current reserve of tokenX of the bin |
+| `reserveY` | `u256` | `ZERO` | The current reserve of tokenY of the bin |
+| `accTokenXPerShare` | `u256` | `ZERO` | - |
+| `accTokenYPerShare` | `u256` | `ZERO` | - |
 
 #### Returns
 
@@ -45,51 +45,51 @@
 
 #### Defined in
 
-[assembly/structs/Bin.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L12)
+[assembly/structs/Bin.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L13)
 
 ## Properties
 
 ### accTokenXPerShare
 
-• **accTokenXPerShare**: `u256` = `u256.Zero`
+• **accTokenXPerShare**: `u256` = `ZERO`
 
 #### Defined in
 
-[assembly/structs/Bin.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L15)
+[assembly/structs/Bin.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L16)
 
 ___
 
 ### accTokenYPerShare
 
-• **accTokenYPerShare**: `u256` = `u256.Zero`
+• **accTokenYPerShare**: `u256` = `ZERO`
 
 #### Defined in
 
-[assembly/structs/Bin.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L16)
+[assembly/structs/Bin.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L17)
 
 ___
 
 ### reserveX
 
-• **reserveX**: `u256` = `u256.Zero`
+• **reserveX**: `u256` = `ZERO`
 
 The current reserve of tokenX of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L13)
+[assembly/structs/Bin.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L14)
 
 ___
 
 ### reserveY
 
-• **reserveY**: `u256` = `u256.Zero`
+• **reserveY**: `u256` = `ZERO`
 
 The current reserve of tokenY of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L14)
+[assembly/structs/Bin.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L15)
 
 ## Methods
 
@@ -114,7 +114,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Bin.ts:96](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L96)
+[assembly/structs/Bin.ts:97](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L97)
 
 ___
 
@@ -132,7 +132,7 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Bin.ts:87](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L87)
+[assembly/structs/Bin.ts:88](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L88)
 
 ___
 
@@ -157,7 +157,7 @@ Update the fees of the pair and accumulated token per share of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:27](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L27)
+[assembly/structs/Bin.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L28)
 
 ___
 
@@ -182,4 +182,4 @@ Update reserves
 
 #### Defined in
 
-[assembly/structs/Bin.ts:60](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Bin.ts#L60)
+[assembly/structs/Bin.ts:61](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L61)

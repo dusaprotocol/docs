@@ -14,14 +14,21 @@
 - [getAvailableLBPairBinSteps](Factory.md#getavailablelbpairbinsteps)
 - [getLBPairInformation](Factory.md#getlbpairinformation)
 - [getPreset](Factory.md#getpreset)
+- [grantRole](Factory.md#grantrole)
+- [hasRole](Factory.md#hasrole)
+- [members](Factory.md#members)
+- [onlyRole](Factory.md#onlyrole)
 - [proposeNewOwner](Factory.md#proposenewowner)
 - [receiveCoins](Factory.md#receivecoins)
+- [removeLBHooksOnPair](Factory.md#removelbhooksonpair)
 - [removePreset](Factory.md#removepreset)
 - [removeQuoteAsset](Factory.md#removequoteasset)
+- [revokeRole](Factory.md#revokerole)
 - [setFactoryLockedState](Factory.md#setfactorylockedstate)
 - [setFeeRecipient](Factory.md#setfeerecipient)
 - [setFeesParametersOnPair](Factory.md#setfeesparametersonpair)
 - [setFlashLoanFee](Factory.md#setflashloanfee)
+- [setLBHooksParametersOnPair](Factory.md#setlbhooksparametersonpair)
 - [setLBPairIgnored](Factory.md#setlbpairignored)
 - [setPreset](Factory.md#setpreset)
 
@@ -45,7 +52,7 @@ Accept the ownership of the contract.
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:753](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L753)
+[assembly/contracts/Factory.ts:855](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L855)
 
 ___
 
@@ -67,7 +74,7 @@ Function to add an asset to the whitelist of quote assets
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:683](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L683)
+[assembly/contracts/Factory.ts:776](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L776)
 
 ___
 
@@ -91,7 +98,7 @@ Constructor
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:89](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L89)
+[assembly/contracts/Factory.ts:95](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L95)
 
 ___
 
@@ -115,7 +122,7 @@ The address of the newly created LBPair
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:351](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L351)
+[assembly/contracts/Factory.ts:360](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L360)
 
 ___
 
@@ -135,7 +142,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:724](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L724)
+[assembly/contracts/Factory.ts:826](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L826)
 
 ___
 
@@ -155,7 +162,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:188](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L188)
+[assembly/contracts/Factory.ts:196](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L196)
 
 ___
 
@@ -177,7 +184,7 @@ View function to return all the LBPair of a pair of tokens
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:236](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L236)
+[assembly/contracts/Factory.ts:244](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L244)
 
 ___
 
@@ -201,7 +208,7 @@ Available bin steps for a pair of tokens
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:210](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L210)
+[assembly/contracts/Factory.ts:218](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L218)
 
 ___
 
@@ -223,7 +230,7 @@ Returns the LBPairInformation if it exists
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:137](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L137)
+[assembly/contracts/Factory.ts:145](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L145)
 
 ___
 
@@ -245,7 +252,99 @@ View function to return the different parameters of the preset
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:171](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L171)
+[assembly/contracts/Factory.ts:179](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L179)
+
+___
+
+### grantRole
+
+▸ **grantRole**(`binaryArgs`): `void`
+
+Set the role for account
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `binaryArgs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:17
+
+___
+
+### hasRole
+
+▸ **hasRole**(`binaryArgs`): `StaticArray`<`u8`\>
+
+Returns true if the account has the role.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `binaryArgs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`StaticArray`<`u8`\>
+
+boolean
+
+#### Defined in
+
+node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:49
+
+___
+
+### members
+
+▸ **members**(`binaryArgs`): `StaticArray`<`u8`\>
+
+get the members for a role
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `binaryArgs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`StaticArray`<`u8`\>
+
+#### Defined in
+
+node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:36
+
+___
+
+### onlyRole
+
+▸ **onlyRole**(`binaryArgs`): `void`
+
+Assert that caller has the role.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `binaryArgs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+boolean
+
+#### Defined in
+
+node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:85
 
 ___
 
@@ -267,7 +366,7 @@ Propose to transfer the ownership of the contract to a new account (`newOwner`).
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:737](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L737)
+[assembly/contracts/Factory.ts:839](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L839)
 
 ___
 
@@ -291,7 +390,35 @@ Function used by an SC to receive Massa coins
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:865](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L865)
+[assembly/contracts/Factory.ts:967](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L967)
+
+___
+
+### removeLBHooksOnPair
+
+▸ **removeLBHooksOnPair**(`bs`): `void`
+
+Function to remove the hooks contract from the pair
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+**`Dev`**
+
+Needs to be called by an address with the HOOKS_MANAGER role
+fail if:
+- The pair doesn't exist
+
+#### Defined in
+
+[assembly/contracts/Factory.ts:667](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L667)
 
 ___
 
@@ -313,7 +440,7 @@ Remove the preset linked to a binStep
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:540](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L540)
+[assembly/contracts/Factory.ts:536](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L536)
 
 ___
 
@@ -335,7 +462,29 @@ Function to remove an asset from the whitelist of quote assets
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:705](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L705)
+[assembly/contracts/Factory.ts:798](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L798)
+
+___
+
+### revokeRole
+
+▸ **revokeRole**(`binaryArgs`): `void`
+
+Revoke role for account. Must be called by the role owner or the contract admin.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `binaryArgs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:66
 
 ___
 
@@ -357,7 +506,7 @@ Function to set the creation restriction of the Factory
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:664](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L664)
+[assembly/contracts/Factory.ts:757](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L757)
 
 ___
 
@@ -379,7 +528,7 @@ Function to set the recipient of the fees. This address needs to be able to rece
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:626](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L626)
+[assembly/contracts/Factory.ts:719](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L719)
 
 ___
 
@@ -401,7 +550,7 @@ Function to set the fee parameter of a LBPair
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:561](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L561)
+[assembly/contracts/Factory.ts:557](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L557)
 
 ___
 
@@ -423,7 +572,36 @@ Function to set the flash loan fee
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:639](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L639)
+[assembly/contracts/Factory.ts:732](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L732)
+
+___
+
+### setLBHooksParametersOnPair
+
+▸ **setLBHooksParametersOnPair**(`bs`): `void`
+
+Function to set the hooks parameters of a pair
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bs` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+**`Dev`**
+
+Needs to be called by an address with the HOOKS_MANAGER role
+fail if:
+- The pair doesn't exist
+- The hooks address is not valid or the hooks flags are all false
+
+#### Defined in
+
+[assembly/contracts/Factory.ts:630](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L630)
 
 ___
 
@@ -431,13 +609,13 @@ ___
 
 ▸ **setLBPairIgnored**(`bs`): `void`
 
-Function to set whether the pair is ignored or not for routing, it will make the pair unusable by the router
+Function to set whether the pair is ignored or not for routing, it will make the pair unusable by the quoter
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | The serialized arguments -_tokenA The address of the first token -_tokenB The address of the second token -_binStep The bin step of the LBPair -Whether to ignore (true) or not (false) the pair for routing |
+| `bs` | `StaticArray`<`u8`\> | The serialized arguments -_tokenA The address of the first token -_tokenB The address of the second token -_binStep The bin step of the LBPair -_ignored: Whether to ignore (true) or not (false) the pair for routing |
 
 #### Returns
 
@@ -445,7 +623,7 @@ Function to set whether the pair is ignored or not for routing, it will make the
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:440](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L440)
+[assembly/contracts/Factory.ts:436](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L436)
 
 ___
 
@@ -467,4 +645,4 @@ Sets the preset parameters of a bin step
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:479](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/contracts/Factory.ts#L479)
+[assembly/contracts/Factory.ts:475](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L475)

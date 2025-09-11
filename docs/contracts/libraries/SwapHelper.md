@@ -26,19 +26,19 @@
 
 ### getAmounts
 
-▸ **getAmounts**(`_bin`, `_fp`, `_activeId`, `_swapForY`, `_amountIn`): `GetAmountsReturn`
+▸ **getAmounts**(`bin`, `fp`, `activeId`, `swapForY`, `amountIn`): `GetAmountsReturn`
 
 Returns the swap amounts in the current bin
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_bin` | [`Bin`](../structs/Bin.md) |
-| `_fp` | [`FeeParameters`](../structs/FeeParameters.md) |
-| `_activeId` | `u64` |
-| `_swapForY` | `bool` |
-| `_amountIn` | `u256` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bin` | [`Bin`](../structs/Bin.md) | The bin information |
+| `fp` | [`FeeParameters`](../structs/FeeParameters.md) | The fee parameters |
+| `activeId` | `u32` | The active id of the pair |
+| `swapForY` | `bool` | Whether you've swapping token X for token Y (true) or token Y for token X (false) |
+| `amountIn` | `u256` | The amount sent by the user |
 
 #### Returns
 
@@ -48,13 +48,13 @@ GetAmountsReturn: amountInToBin (u256), amountOutOfBin (u256), fees (FeesDistrib
 
 #### Defined in
 
-[assembly/libraries/SwapHelper.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SwapHelper.ts#L31)
+[assembly/libraries/SwapHelper.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SwapHelper.ts#L30)
 
 ___
 
 ### getSwapIn
 
-▸ **getSwapIn**(`_pair`, `_amountOut`, `_swapForY`, `isQuote?`): `Result`<`GetSwapInReturn`\>
+▸ **getSwapIn**(`pair`, `amountOut`, `swapForY`, `isQuote?`): `Result`<`GetSwapInReturn`\>
 
 Simulate a swap in
 
@@ -62,9 +62,9 @@ Simulate a swap in
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `_pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | - |
-| `_amountOut` | `u256` | `undefined` | The amount of token to receive |
-| `_swapForY` | `bool` | `undefined` | Whether you swap X for Y (true), or Y for X (false) |
+| `pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | - |
+| `amountOut` | `u256` | `undefined` | The amount of token to receive |
+| `swapForY` | `bool` | `undefined` | Whether you swap X for Y (true), or Y for X (false) |
 | `isQuote` | `bool` | `false` | - |
 
 #### Returns
@@ -75,13 +75,13 @@ GetSwapInReturn: amountIn, feesIn
 
 #### Defined in
 
-[assembly/libraries/SwapHelper.ts:87](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SwapHelper.ts#L87)
+[assembly/libraries/SwapHelper.ts:78](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SwapHelper.ts#L78)
 
 ___
 
 ### getSwapOut
 
-▸ **getSwapOut**(`_pair`, `_amountIn`, `_swapForY`, `isQuote?`): `Result`<`GetSwapOutReturn`\>
+▸ **getSwapOut**(`pair`, `amountIn`, `swapForY`, `isQuote?`): `Result`<`GetSwapOutReturn`\>
 
 Simulate a swap out
 
@@ -89,9 +89,9 @@ Simulate a swap out
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `_pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | - |
-| `_amountIn` | `u256` | `undefined` | The amount of token sent |
-| `_swapForY` | `bool` | `undefined` | Whether you swap X for Y (true), or Y for X (false) |
+| `pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | - |
+| `amountIn` | `u256` | `undefined` | The amount of token sent |
+| `swapForY` | `bool` | `undefined` | Whether you swap X for Y (true), or Y for X (false) |
 | `isQuote` | `bool` | `false` | Whether this is a quote or not (will throw or return an error) |
 
 #### Returns
@@ -102,4 +102,4 @@ GetSwapOutReturn: amountOut, feesIn
 
 #### Defined in
 
-[assembly/libraries/SwapHelper.ts:176](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/SwapHelper.ts#L176)
+[assembly/libraries/SwapHelper.ts:158](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SwapHelper.ts#L158)

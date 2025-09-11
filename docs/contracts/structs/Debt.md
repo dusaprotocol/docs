@@ -42,8 +42,8 @@ The tokenY's debt
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `debtX` | `u256` | `u256.Zero` |
-| `debtY` | `u256` | `u256.Zero` |
+| `debtX` | `u256` | `ZERO` |
+| `debtY` | `u256` | `ZERO` |
 
 #### Returns
 
@@ -51,27 +51,27 @@ The tokenY's debt
 
 #### Defined in
 
-[assembly/structs/Debt.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L10)
+[assembly/structs/Debt.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L11)
 
 ## Properties
 
 ### debtX
 
-• **debtX**: `u256` = `u256.Zero`
+• **debtX**: `u256` = `ZERO`
 
 #### Defined in
 
-[assembly/structs/Debt.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L11)
+[assembly/structs/Debt.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L12)
 
 ___
 
 ### debtY
 
-• **debtY**: `u256` = `u256.Zero`
+• **debtY**: `u256` = `ZERO`
 
 #### Defined in
 
-[assembly/structs/Debt.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L12)
+[assembly/structs/Debt.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L13)
 
 ## Methods
 
@@ -96,7 +96,7 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L19)
+[assembly/structs/Debt.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L20)
 
 ___
 
@@ -114,4 +114,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Debt.ts#L15)
+[assembly/structs/Debt.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L16)

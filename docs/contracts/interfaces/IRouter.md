@@ -50,7 +50,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L22)
+[assembly/interfaces/IRouter.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L22)
 
 ## Properties
 
@@ -60,7 +60,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L15)
+[assembly/interfaces/IRouter.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L15)
 
 ## Methods
 
@@ -86,7 +86,7 @@ This function is compliant with fee on transfer tokens
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:73](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L73)
+[assembly/interfaces/IRouter.ts:82](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L82)
 
 ___
 
@@ -113,7 +113,7 @@ This function is compliant with fee on transfer tokens
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:94](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L94)
+[assembly/interfaces/IRouter.ts:103](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L103)
 
 ___
 
@@ -141,7 +141,7 @@ Create a liquidity bin LBPair for _tokenX and _tokenY using the factory
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:49](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L49)
+[assembly/interfaces/IRouter.ts:58](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L58)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:506](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L506)
+[assembly/interfaces/IRouter.ts:543](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L543)
 
 ___
 
@@ -185,13 +185,13 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:515](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L515)
+[assembly/interfaces/IRouter.ts:552](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L552)
 
 ___
 
 ### init
 
-▸ **init**(`wmas`, `factory`): `void`
+▸ **init**(`wmas`, `factory`, `v0factory`, `legacyfactory`): `void`
 
 Calls the constructor.
 
@@ -201,6 +201,8 @@ Calls the constructor.
 | :------ | :------ | :------ |
 | `wmas` | `Address` | The address of WMAS |
 | `factory` | `Address` | The address of the factory |
+| `v0factory` | `Address` | The address of the V0 factory |
+| `legacyfactory` | `Address` | The address of the legagcy factory |
 
 #### Returns
 
@@ -208,7 +210,7 @@ Calls the constructor.
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L32)
+[assembly/interfaces/IRouter.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L34)
 
 ___
 
@@ -242,7 +244,7 @@ This function is compliant with fee on transfer tokens
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:125](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L125)
+[assembly/interfaces/IRouter.ts:134](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L134)
 
 ___
 
@@ -271,15 +273,17 @@ This function is compliant with fee on transfer tokens
 
 `Amounts`
 
+- The amount of tokens received
+
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:167](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L167)
+[assembly/interfaces/IRouter.ts:177](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L177)
 
 ___
 
 ### swapExactMASForTokens
 
-▸ **swapExactMASForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapExactMASForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps exact MAS for tokens while performing safety checks
 
@@ -290,6 +294,7 @@ Swaps exact MAS for tokens while performing safety checks
 | `amountIn` | `u256` | The amount of MAS to send for swap and storage |
 | `amountOutMin` | `u256` | The min amount of token to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -303,13 +308,13 @@ Swaps exact MAS for tokens while performing safety checks
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:269](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L269)
+[assembly/interfaces/IRouter.ts:286](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L286)
 
 ___
 
 ### swapExactMASForTokensSupportingFeeOnTransferTokens
 
-▸ **swapExactMASForTokensSupportingFeeOnTransferTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapExactMASForTokensSupportingFeeOnTransferTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps exact MAS for tokens while performing safety checks supporting for fee on transfer tokens
 
@@ -320,6 +325,7 @@ Swaps exact MAS for tokens while performing safety checks supporting for fee on 
 | `amountIn` | `u256` | The amount of MAS to send for swap and storage |
 | `amountOutMin` | `u256` | The min amount of token to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -333,13 +339,13 @@ Swaps exact MAS for tokens while performing safety checks supporting for fee on 
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:481](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L481)
+[assembly/interfaces/IRouter.ts:516](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L516)
 
 ___
 
 ### swapExactTokensForMAS
 
-▸ **swapExactTokensForMAS**(`amountIn`, `amountOutMinMAS`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapExactTokensForMAS**(`amountIn`, `amountOutMinMAS`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps exact tokens for MAS while performing safety checks
 
@@ -350,6 +356,7 @@ Swaps exact tokens for MAS while performing safety checks
 | `amountIn` | `u256` | The amount of tokens to send |
 | `amountOutMinMAS` | `u256` | The min amount of MAS to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -363,13 +370,13 @@ Swaps exact tokens for MAS while performing safety checks
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:237](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L237)
+[assembly/interfaces/IRouter.ts:251](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L251)
 
 ___
 
 ### swapExactTokensForMASSupportingFeeOnTransferTokens
 
-▸ **swapExactTokensForMASSupportingFeeOnTransferTokens**(`amountIn`, `amountOutMinMAS`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapExactTokensForMASSupportingFeeOnTransferTokens**(`amountIn`, `amountOutMinMAS`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps exact tokens for MAS while performing safety checks supporting for fee on transfer tokens
 
@@ -380,6 +387,7 @@ Swaps exact tokens for MAS while performing safety checks supporting for fee on 
 | `amountIn` | `u256` | The amount of token to send |
 | `amountOutMinMAS` | `u256` | The min amount of MAS to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -393,13 +401,13 @@ Swaps exact tokens for MAS while performing safety checks supporting for fee on 
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:444](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L444)
+[assembly/interfaces/IRouter.ts:476](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L476)
 
 ___
 
 ### swapExactTokensForTokens
 
-▸ **swapExactTokensForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapExactTokensForTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps exact tokens for tokens while performing safety checks
 
@@ -410,6 +418,7 @@ Swaps exact tokens for tokens while performing safety checks
 | `amountIn` | `u256` | The amount of tokens to send |
 | `amountOutMin` | `u256` | The min amount of tokens to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -423,13 +432,13 @@ Swaps exact tokens for tokens while performing safety checks
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:205](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L205)
+[assembly/interfaces/IRouter.ts:216](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L216)
 
 ___
 
 ### swapExactTokensForTokensSupportingFeeOnTransferTokens
 
-▸ **swapExactTokensForTokensSupportingFeeOnTransferTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapExactTokensForTokensSupportingFeeOnTransferTokens**(`amountIn`, `amountOutMin`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps exact tokens for tokens while performing safety checks supporting for fee on transfer tokens
 
@@ -440,6 +449,7 @@ Swaps exact tokens for tokens while performing safety checks supporting for fee 
 | `amountIn` | `u256` | The amount of token to send |
 | `amountOutMin` | `u256` | The min amount of token to receive |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -453,13 +463,13 @@ Swaps exact tokens for tokens while performing safety checks supporting for fee 
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:407](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L407)
+[assembly/interfaces/IRouter.ts:436](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L436)
 
 ___
 
 ### swapMASForExactTokens
 
-▸ **swapMASForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapMASForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps MAS for exact tokens while performing safety checks
 
@@ -470,6 +480,7 @@ Swaps MAS for exact tokens while performing safety checks
 | `amountOut` | `u256` | The amount of token to receive |
 | `amountInMax` | `u256` | The max amount of Mas to send |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -483,13 +494,13 @@ Swaps MAS for exact tokens while performing safety checks
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:370](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L370)
+[assembly/interfaces/IRouter.ts:396](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L396)
 
 ___
 
 ### swapTokensForExactMAS
 
-▸ **swapTokensForExactMAS**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapTokensForExactMAS**(`amountOut`, `amountInMax`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps tokens for exact MAS while performing safety checks
 
@@ -500,6 +511,7 @@ Swaps tokens for exact MAS while performing safety checks
 | `amountOut` | `u256` | The amount of MAS to receive |
 | `amountInMax` | `u256` | The max amount of token to send |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -513,13 +525,13 @@ Swaps tokens for exact MAS while performing safety checks
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:338](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L338)
+[assembly/interfaces/IRouter.ts:361](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L361)
 
 ___
 
 ### swapTokensForExactTokens
 
-▸ **swapTokensForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
+▸ **swapTokensForExactTokens**(`amountOut`, `amountInMax`, `pairBinSteps`, `isLegacyPools`, `tokenPath`, `to`, `deadline`, `masToSend`): `u256`
 
 Swaps tokens for exact tokens while performing safety checks
 
@@ -530,6 +542,7 @@ Swaps tokens for exact tokens while performing safety checks
 | `amountOut` | `u256` | The amount of token to receive |
 | `amountInMax` | `u256` | The max amount of token to send |
 | `pairBinSteps` | `u64`[] | The bin step of the pairs |
+| `isLegacyPools` | `bool`[] | If the pairs are legacy pairs |
 | `tokenPath` | [`IERC20`](IERC20.md)[] | The swap path using the binSteps following `_pairBinSteps` |
 | `to` | `Address` | The address of the recipient |
 | `deadline` | `u64` | The deadline of the tx |
@@ -543,4 +556,4 @@ Swaps tokens for exact tokens while performing safety checks
 
 #### Defined in
 
-[assembly/interfaces/IRouter.ts:306](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IRouter.ts#L306)
+[assembly/interfaces/IRouter.ts:326](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IRouter.ts#L326)

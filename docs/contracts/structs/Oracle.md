@@ -44,6 +44,7 @@ you must always use a *unique storage prefix* for different collections to avoid
 - [contains](Oracle.md#contains)
 - [delete](Oracle.md#delete)
 - [get](Oracle.md#get)
+- [getOf](Oracle.md#getof)
 - [getSampleAt](Oracle.md#getsampleat)
 - [getSome](Oracle.md#getsome)
 - [initialize](Oracle.md#initialize)
@@ -82,7 +83,7 @@ let map = new PersistentMap<string, string>("m") // note the prefix must be uniq
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:65](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L65)
+[assembly/libraries/PersistentMap.ts:65](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L65)
 
 ## Methods
 
@@ -102,7 +103,7 @@ Decreases the internal map size counter
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:144](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L144)
+[assembly/libraries/PersistentMap.ts:145](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L145)
 
 ___
 
@@ -128,7 +129,7 @@ Increases the internal map size counter
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:135](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L135)
+[assembly/libraries/PersistentMap.ts:136](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L136)
 
 ___
 
@@ -159,7 +160,7 @@ This function is used to get the previous index of the oracle
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:207](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Oracle.ts#L207)
+[assembly/structs/Oracle.ts:207](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L207)
 
 ___
 
@@ -194,13 +195,13 @@ The edge cases needs to be handled before
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:169](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Oracle.ts#L169)
+[assembly/structs/Oracle.ts:169](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L169)
 
 ___
 
 ### contains
 
-▸ **contains**(`key`): `bool`
+▸ **contains**(`key`, `address?`): `bool`
 
 Checks whether the map contains a given key
 
@@ -217,6 +218,7 @@ map.contains("hello")      // true
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | `u64` | Key to check. |
+| `address` | `Address` | Address containing the PersistentMap. |
 
 #### Returns
 
@@ -230,7 +232,7 @@ True if the given key present in the map.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:94](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L94)
+[assembly/libraries/PersistentMap.ts:95](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L95)
 
 ___
 
@@ -265,13 +267,13 @@ Removes value and the key from the map.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:126](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L126)
+[assembly/libraries/PersistentMap.ts:127](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L127)
 
 ___
 
 ### get
 
-▸ **get**(`key`, `defaultValue`): [`Sample`](Sample.md)
+▸ **get**(`key`, `defaultValue`, `address?`): [`Sample`](Sample.md)
 
 Retrieves the related value for a given key, or uses the `defaultValue` if not key is found
 
@@ -292,6 +294,7 @@ assert(notFound == "cruel world")
 | :------ | :------ | :------ |
 | `key` | `u64` | Key of the element. |
 | `defaultValue` | [`Sample`](Sample.md) | The default value if the key is not present. |
+| `address` | `Address` | - |
 
 #### Returns
 
@@ -305,7 +308,48 @@ Value for the given key or the default value.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:168](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L168)
+[assembly/libraries/PersistentMap.ts:169](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L169)
+
+___
+
+### getOf
+
+▸ **getOf**(`address`, `key`, `defaultValue`): [`Sample`](Sample.md)
+
+Retrieves the related value for a given key for a given smart contract, or uses the `defaultValue` if not key is found
+
+```ts
+let map = new PersistentMap<string, string>("m")
+
+map.set("hello", "world")
+let found = map.get("hello")
+let notFound = map.get("goodbye", "cruel world")
+
+assert(found == "world")
+assert(notFound == "cruel world")
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `address` | `Address` | Address containing the PersistentMap. |
+| `key` | `u64` | Key of the element. |
+| `defaultValue` | [`Sample`](Sample.md) | The default value if the key is not present. |
+
+#### Returns
+
+[`Sample`](Sample.md)
+
+Value for the given key or the default value.
+
+#### Inherited from
+
+[PersistentMap](../libraries/PersistentMap.md).[getOf](../libraries/PersistentMap.md#getof)
+
+#### Defined in
+
+[assembly/libraries/PersistentMap.ts:235](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L235)
 
 ___
 
@@ -337,7 +381,7 @@ Return a linearized sample, the weighted average of 2 neighboring samples
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Oracle.ts#L22)
+[assembly/structs/Oracle.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L22)
 
 ___
 
@@ -376,7 +420,7 @@ Value for the given key or the default value.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:230](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L230)
+[assembly/libraries/PersistentMap.ts:256](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L256)
 
 ___
 
@@ -400,7 +444,7 @@ Initialize the sample
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:154](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Oracle.ts#L154)
+[assembly/structs/Oracle.ts:154](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L154)
 
 ___
 
@@ -433,7 +477,7 @@ Sets the new value for the given key.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:273](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L273)
+[assembly/libraries/PersistentMap.ts:299](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L299)
 
 ___
 
@@ -463,7 +507,7 @@ map.size()
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:109](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/PersistentMap.ts#L109)
+[assembly/libraries/PersistentMap.ts:110](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L110)
 
 ___
 
@@ -495,4 +539,4 @@ Function to update a sample
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:125](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/structs/Oracle.ts#L125)
+[assembly/structs/Oracle.ts:125](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L125)

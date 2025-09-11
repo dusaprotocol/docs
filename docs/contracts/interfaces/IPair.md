@@ -22,6 +22,7 @@
 - [forceDecay](IPair.md#forcedecay)
 - [getBin](IPair.md#getbin)
 - [getFactory](IPair.md#getfactory)
+- [getHooksParameters](IPair.md#gethooksparameters)
 - [getOracleParameters](IPair.md#getoracleparameters)
 - [getOracleSampleFrom](IPair.md#getoraclesamplefrom)
 - [getPairInformation](IPair.md#getpairinformation)
@@ -38,6 +39,7 @@
 - [safeTransferFrom](IPair.md#safetransferfrom)
 - [setApprovalForAll](IPair.md#setapprovalforall)
 - [setFeesParameters](IPair.md#setfeesparameters)
+- [setHooksParameters](IPair.md#sethooksparameters)
 - [swap](IPair.md#swap)
 - [symbol](IPair.md#symbol)
 - [totalSupply](IPair.md#totalsupply)
@@ -62,7 +64,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L30)
+[assembly/interfaces/IPair.ts:43](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L43)
 
 ## Properties
 
@@ -72,7 +74,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L23)
+[assembly/interfaces/IPair.ts:36](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L36)
 
 ## Methods
 
@@ -93,7 +95,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:244](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L244)
+[assembly/interfaces/IPair.ts:257](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L257)
 
 ___
 
@@ -114,7 +116,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:254](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L254)
+[assembly/interfaces/IPair.ts:267](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L267)
 
 ___
 
@@ -146,7 +148,7 @@ The lengths of the arrays must be the same.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:160](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L160)
+[assembly/interfaces/IPair.ts:173](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L173)
 
 ___
 
@@ -174,7 +176,7 @@ amountY The amount of token Y collected and sent to `_account`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:342](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L342)
+[assembly/interfaces/IPair.ts:359](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L359)
 
 ___
 
@@ -190,7 +192,7 @@ Get the fees parameters for this pair
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:72](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L72)
+[assembly/interfaces/IPair.ts:85](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L85)
 
 ___
 
@@ -211,7 +213,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:201](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L201)
+[assembly/interfaces/IPair.ts:214](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L214)
 
 ___
 
@@ -239,7 +241,7 @@ The caller is expected to transfer the `amount + fee` of the token to this contr
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:178](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L178)
+[assembly/interfaces/IPair.ts:191](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L191)
 
 ___
 
@@ -253,7 +255,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:225](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L225)
+[assembly/interfaces/IPair.ts:238](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L238)
 
 ___
 
@@ -275,7 +277,7 @@ Get the bin information for a given id
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:83](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L83)
+[assembly/interfaces/IPair.ts:96](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L96)
 
 ___
 
@@ -289,7 +291,27 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:216](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L216)
+[assembly/interfaces/IPair.ts:229](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L229)
+
+___
+
+### getHooksParameters
+
+▸ **getHooksParameters**(): [`HooksParameters`](../structs/HooksParameters)
+
+#### Returns
+
+[`HooksParameters`](../structs/HooksParameters)
+
+The hooks parameters of the Liquidity Book Pair
+
+**`Notice`**
+
+Gets the hooks parameters of the Liquidity Book Pair
+
+#### Defined in
+
+[assembly/interfaces/IPair.ts:385](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L385)
 
 ___
 
@@ -303,7 +325,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:348](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L348)
+[assembly/interfaces/IPair.ts:365](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L365)
 
 ___
 
@@ -323,7 +345,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:353](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L353)
+[assembly/interfaces/IPair.ts:370](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L370)
 
 ___
 
@@ -337,7 +359,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:191](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L191)
+[assembly/interfaces/IPair.ts:204](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L204)
 
 ___
 
@@ -351,7 +373,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:183](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L183)
+[assembly/interfaces/IPair.ts:196](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L196)
 
 ___
 
@@ -365,7 +387,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:187](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L187)
+[assembly/interfaces/IPair.ts:200](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L200)
 
 ___
 
@@ -385,7 +407,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:196](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L196)
+[assembly/interfaces/IPair.ts:209](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L209)
 
 ___
 
@@ -409,7 +431,7 @@ The samples are however initialized to reduce the gas cost of the updates during
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:370](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L370)
+[assembly/interfaces/IPair.ts:396](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L396)
 
 ___
 
@@ -436,7 +458,7 @@ Calls the constructor
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L39)
+[assembly/interfaces/IPair.ts:52](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L52)
 
 ___
 
@@ -457,7 +479,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:261](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L261)
+[assembly/interfaces/IPair.ts:274](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L274)
 
 ___
 
@@ -490,7 +512,7 @@ Any excess amount of token will be sent to the `to` address. The lengths of the 
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:125](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L125)
+[assembly/interfaces/IPair.ts:138](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L138)
 
 ___
 
@@ -504,7 +526,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:229](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L229)
+[assembly/interfaces/IPair.ts:242](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L242)
 
 ___
 
@@ -525,7 +547,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:328](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L328)
+[assembly/interfaces/IPair.ts:345](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L345)
 
 ___
 
@@ -551,7 +573,7 @@ Batch transfers `_amount` tokens of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:317](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L317)
+[assembly/interfaces/IPair.ts:334](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L334)
 
 ___
 
@@ -577,13 +599,13 @@ Transfers `_amount` token of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:294](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L294)
+[assembly/interfaces/IPair.ts:311](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L311)
 
 ___
 
 ### setApprovalForAll
 
-▸ **setApprovalForAll**(`_approved`, `_sender`, `masToSend`): `void`
+▸ **setApprovalForAll**(`_approved`, `_sender`): `void`
 
 Grants or revokes permission to `spender` to transfer the caller's tokens, according to `approved`
 
@@ -593,7 +615,6 @@ Grants or revokes permission to `spender` to transfer the caller's tokens, accor
 | :------ | :------ | :------ |
 | `_approved` | `bool` | The boolean value to grant or revoke permission |
 | `_sender` | `Address` | - |
-| `masToSend` | `u64` | The amount of Massa to send for storage |
 
 #### Returns
 
@@ -601,7 +622,7 @@ Grants or revokes permission to `spender` to transfer the caller's tokens, accor
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:277](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L277)
+[assembly/interfaces/IPair.ts:289](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L289)
 
 ___
 
@@ -621,7 +642,28 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:220](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L220)
+[assembly/interfaces/IPair.ts:233](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L233)
+
+___
+
+### setHooksParameters
+
+▸ **setHooksParameters**(`hooksParameters`, `onHooksSetData`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `hooksParameters` | [`HooksParameters`](../structs/HooksParameters) |
+| `onHooksSetData` | `StaticArray`<`u8`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[assembly/interfaces/IPair.ts:405](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L405)
 
 ___
 
@@ -650,7 +692,7 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:101](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L101)
+[assembly/interfaces/IPair.ts:114](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L114)
 
 ___
 
@@ -664,7 +706,7 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:234](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L234)
+[assembly/interfaces/IPair.ts:247](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L247)
 
 ___
 
@@ -684,4 +726,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:239](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/interfaces/IPair.ts#L239)
+[assembly/interfaces/IPair.ts:252](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L252)

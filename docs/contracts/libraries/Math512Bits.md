@@ -58,7 +58,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L29)
+[assembly/libraries/Math512Bits.ts:40](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Math512Bits.ts#L40)
 
 ___
 
@@ -94,7 +94,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:86](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L86)
+[assembly/libraries/Math512Bits.ts:100](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Math512Bits.ts#L100)
 
 ___
 
@@ -108,7 +108,7 @@ The result will be rounded up
 Credit to Remco Bloemen under MIT license https://xn--2-umb.com/21/muldiv
 
 Requirements:
-- The offset needs to be strictly lower than 128
+- The offset needs to be strictly lower than 256
 - The result must fit within u256
 
 Caveats:
@@ -130,7 +130,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:150](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L150)
+[assembly/libraries/Math512Bits.ts:172](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Math512Bits.ts#L172)
 
 ___
 
@@ -166,7 +166,7 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:53](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L53)
+[assembly/libraries/Math512Bits.ts:71](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Math512Bits.ts#L71)
 
 ___
 
@@ -180,7 +180,7 @@ The result will be rounded up
 Credit to Remco Bloemen under MIT license https://xn--2-umb.com/21/muldiv
 
 Requirements:
-- The offset needs to be strictly lower than 128
+- The offset needs to be strictly lower than 256
 - The result must fit within u256
 
 Caveats:
@@ -202,4 +202,4 @@ The result as an u256
 
 #### Defined in
 
-[assembly/libraries/Math512Bits.ts:124](https://github.com/dusaprotocol/v1-core-confidencial/blob/b44ea92/assembly/libraries/Math512Bits.ts#L124)
+[assembly/libraries/Math512Bits.ts:143](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Math512Bits.ts#L143)
