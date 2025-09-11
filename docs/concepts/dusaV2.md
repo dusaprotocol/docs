@@ -11,7 +11,7 @@ Dusa v2 adopts a **ve(3,3)** design. Liquidity Providers (LPs) earn **$DUSA emis
 
 - **Epoch** = 7 days.
 - **LPs** earn: $DUSA emissions (not swap fees).
-- **Voters (veDUSA)** earn: 100% of epoch trading fees + any incentives for the pools they vote for.
+- **Voters (veDUSA)** earn: 100% of prior-epoch trading fees + any incentives for the pools they vote for.
 - **Votes** determine the **next epoch’s** emission split across pools.
 
 ---
@@ -22,13 +22,13 @@ Dusa v2 adopts a **ve(3,3)** design. Liquidity Providers (LPs) earn **$DUSA emis
 2. **Trade** — During the current epoch, pools accrue trading fees.  
 3. **Distribute (end of epoch)**  
    - **LPs:** Receive the epoch’s $DUSA emissions for their pool(s), pro-rata within each pool.  
-   - **Voters:** Receive **100% of the protocol trading fees from the current epoch** + any **current-epoch incentives** for the pools they voted for.
+   - **Voters:** Receive **100% of the protocol trading fees from the previous epoch** + any **current-epoch incentives** for the pools they voted for.
 
 > **Example timeline**  
 > If you vote in **Epoch N**:  
 > - Your vote sets emission weights for **Epoch N+1**.  
 > - At the end of **Epoch N**, you receive:  
->   - Fees from **Epoch N** (protocol trading fees).  
+>   - Fees from **Epoch N-1** (protocol trading fees).  
 >   - Any incentives posted for **Epoch N** on pools you voted for.
 
 ---
@@ -67,7 +67,7 @@ Lock up to **4 years**. Voting power scales linearly with lock time:
 ## Fees & voter rewards (for veDUSA)
 
 - **100% of protocol trading fees** are paid to **$veDUSA voters** (not LPs), based on how they voted.  
-- Fees distributed at the end of an epoch correspond to the epoch’s trading activity (see timeline above).
+- Fees distributed at the end of an epoch correspond to the **previous epoch’s** trading activity (see timeline above).
 
 ---
 
