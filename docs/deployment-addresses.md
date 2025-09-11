@@ -1,6 +1,14 @@
 # Deployment Addresses
 
-## Core
+## Core V2
+
+| Contract |                   Mainnet                    |                  Buildnet                    |
+| :------: | :------------------------------------------: | :------------------------------------------: |
+| Factory  | `AS127Lxdux4HCUkZL89SrRYR5kq2u8t64Jt3aYj786t6fBF1cZGcu` | `AS12w3vcEYn8VBX1utw1fSmFNbYv9vMvy5n8tqCJjoGz3vaQYEhfp` |
+|  Router  | `AS13crGQybBJx6ys6UADcn2cHQ6VcrK37rRygKHNyVNQriFQt5EG` | `AS1xed5qTFcsWR2Ce7VLaAEHde8bJiTrX8JHM35qkHjmnqH1GFU8` |
+|  Quoter  | `AS1hzZUbjCeFj2LWPdfhmGrU3wTT62i5iTNY2caRATVRjQDbqbEH` | `AS1uQyFAw1Yu6qLKfgKrLTkLsUKts22XbjLd5btEQhfRMCMmJwWx` |
+
+## Core V1
 
 | Contract |                   Mainnet                    |                  Buildnet                    |
 | :------: | :------------------------------------------: | :------------------------------------------: |
@@ -26,3 +34,4 @@
 | :------: | :------------------------------------------: | :-----------------------------------------: |
 |   Multicall    | `AS1FJrNBtZ5oXK9y6Wcmiio5AV6rR2UopqqdQWhBH4Fss9JNMySm` | `AS1yphCWi7gychZWYPpqrKDiGb6ZacRoji8YYMLHtQ2TSuuQFqLC` |
 |   DCA    | `AS1KoegDzwkFiWgv6rKKZHckiwbgSEiXh7hfXsGPb4neJTGKoWCv` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
+|   DCA-V2  | `AS12kJwpTpNdXsAhpHY9FPJ5S75c97c5aKDqmUr2vHRJP95adxJYy` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
