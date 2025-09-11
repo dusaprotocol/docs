@@ -5,7 +5,7 @@ sidebar_label: Dusa v2
 
 # Dusa v2
 
-Dusa v2 adopts a **ve(3,3)** design. Liquidity Providers (LPs) earn **$DUSA emissions**, while voters who lock $DUSA into **$veDUSA** direct where emissions go and receive **100% of protocol trading fees** plus any voter incentives (“bribes”).
+Dusa v2 adopts a **ve(3,3)** design. Liquidity Providers (LPs) earn **$DUSA emissions**, while voters who lock $DUSA into **veDUSA** direct where emissions go and receive **100% of protocol trading fees** plus any voter incentives (“bribes”).
 
 ## TL;DR
 
