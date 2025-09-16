@@ -38,4 +38,4 @@
 |   DCA-V2  | `AS12kJwpTpNdXsAhpHY9FPJ5S75c97c5aKDqmUr2vHRJP95adxJYy` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
 |   veDUSA  | `AS1q76iSMJ8Dj5gVBVK26y11yuFi9eVzUmTzwf5ANgoypMVcNjXj` | `AS1LXretgtJ2Dgr6rbXVZKLufonanX6j3JgutWDeQkyZtfgLgTqu` |
 |   Voter  | `AS1rg37d1cFXrSXbEaKbGPBKRXahshk6VgvwJXjg48MbyuwM1ea6` | `AS1hXM7MsS8kepqgqmaQganVRCAjYTFqBpNDMqp4NBd6YBWXEHA2` |
-|   DAO  | `AS1n97ek9tb5mzYcBaHEvGwgy6UK6jXDzkdcX1xsRc4yaLGxwFKS` | `AS12Tf8RkV7vKgoR8DY4dyETpeCo1nRKhmyfoyiDuP98mK4Ln9GdQ` |
+|   DAO  | `AS1dX2DyCSBRPZU1CTaZbqfnYw9HswrB5rBgJgW14JyB4SfewxoP` | `AS12Tf8RkV7vKgoR8DY4dyETpeCo1nRKhmyfoyiDuP98mK4Ln9GdQ` |
