@@ -5,8 +5,8 @@
 | Contract |                   Mainnet                    |                  Buildnet                    |
 | :------: | :------------------------------------------: | :------------------------------------------: |
 | Factory  | `AS127Lxdux4HCUkZL89SrRYR5kq2u8t64Jt3aYj786t6fBF1cZGcu` | `AS12w3vcEYn8VBX1utw1fSmFNbYv9vMvy5n8tqCJjoGz3vaQYEhfp` |
-|  Router  | `AS13crGQybBJx6ys6UADcn2cHQ6VcrK37rRygKHNyVNQriFQt5EG` | `AS1xed5qTFcsWR2Ce7VLaAEHde8bJiTrX8JHM35qkHjmnqH1GFU8` |
-|  Quoter  | `AS1hzZUbjCeFj2LWPdfhmGrU3wTT62i5iTNY2caRATVRjQDbqbEH` | `AS1uQyFAw1Yu6qLKfgKrLTkLsUKts22XbjLd5btEQhfRMCMmJwWx` |
+|  Router  | `AS1fodax6ZWcmJQ2FDrV5MUsc111WQuWDhFtF1CjbEsvH8CjCz4y` | `AS1xed5qTFcsWR2Ce7VLaAEHde8bJiTrX8JHM35qkHjmnqH1GFU8` |
+|  Quoter  | `AS1d3DvZeqTo3Uq7mfAAUmNggjFXqEfGGpSUv6uTYvikVVW8EybN` | `AS1uQyFAw1Yu6qLKfgKrLTkLsUKts22XbjLd5btEQhfRMCMmJwWx` |
 
 ## Core V1
 
@@ -35,3 +35,6 @@
 |   Multicall    | `AS1FJrNBtZ5oXK9y6Wcmiio5AV6rR2UopqqdQWhBH4Fss9JNMySm` | `AS1yphCWi7gychZWYPpqrKDiGb6ZacRoji8YYMLHtQ2TSuuQFqLC` |
 |   DCA    | `AS1KoegDzwkFiWgv6rKKZHckiwbgSEiXh7hfXsGPb4neJTGKoWCv` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
 |   DCA-V2  | `AS12kJwpTpNdXsAhpHY9FPJ5S75c97c5aKDqmUr2vHRJP95adxJYy` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
+|   veDUSA  | `AS1q76iSMJ8Dj5gVBVK26y11yuFi9eVzUmTzwf5ANgoypMVcNjXj` | `AS1LXretgtJ2Dgr6rbXVZKLufonanX6j3JgutWDeQkyZtfgLgTqu` |
+|   Voter  | `AS1rg37d1cFXrSXbEaKbGPBKRXahshk6VgvwJXjg48MbyuwM1ea6` | `AS1hXM7MsS8kepqgqmaQganVRCAjYTFqBpNDMqp4NBd6YBWXEHA2` |
+|   DAO  | `AS12hboNCU1ELcJkQEg8yg1TvYJXkXBPsQUNV37Abjd5i6Bk5Dezz` | `AS12Tf8RkV7vKgoR8DY4dyETpeCo1nRKhmyfoyiDuP98mK4Ln9GdQ` |
