@@ -33,7 +33,7 @@
 
 | Contract |                   Mainnet                    |                 Buildnet                    |
 | :------: | :------------------------------------------: | :-----------------------------------------: |
-|   Multicall    | `AS1FJrNBtZ5oXK9y6Wcmiio5AV6rR2UopqqdQWhBH4Fss9JNMySm` | `AS1yphCWi7gychZWYPpqrKDiGb6ZacRoji8YYMLHtQ2TSuuQFqLC` |
+|   Multicall    | `AS1yqNTsEqFxofDmuTM2CLwNVeFYz7Ly6aLDdE3AF9R6j5Ec5W9X` | `AS1yphCWi7gychZWYPpqrKDiGb6ZacRoji8YYMLHtQ2TSuuQFqLC` |
 |   DCA    | `AS1KoegDzwkFiWgv6rKKZHckiwbgSEiXh7hfXsGPb4neJTGKoWCv` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
 |   DCA-V2  | `AS12kJwpTpNdXsAhpHY9FPJ5S75c97c5aKDqmUr2vHRJP95adxJYy` | `AS12Sm9oqH2C26fx7v8ZYCwyKs9LmrmRGX2WRJT3aK7KnYtrMhq8n` |
 |   veDUSA  | `AS1q76iSMJ8Dj5gVBVK26y11yuFi9eVzUmTzwf5ANgoypMVcNjXj` | `AS1LXretgtJ2Dgr6rbXVZKLufonanX6j3JgutWDeQkyZtfgLgTqu` |
