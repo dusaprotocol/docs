@@ -35,10 +35,10 @@ Returns the closest non-zero bit of `integer` to the right (of left) of the `bit
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_integer` | `u256` | The integer as a u256 |
-| `_bit` | `u8` | The bit index |
+| Name         | Type   | Description                                                                           |
+| :----------- | :----- | :------------------------------------------------------------------------------------ |
+| `_integer`   | `u256` | The integer as a u256                                                                 |
+| `_bit`       | `u8`   | The bit index                                                                         |
 | `_rightSide` | `bool` | Whether we're searching in the right side of the tree (true) or the left side (false) |
 
 #### Returns
@@ -49,9 +49,9 @@ The index of the closest non-zero bit.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L35)
+[assembly/libraries/BitMath.ts:35](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/BitMath.ts#L35)
 
-___
+---
 
 ### closestBitLeft
 
@@ -61,10 +61,10 @@ Returns the index of the closest bit on the left of x that is non null
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `u256` | The value as a u256 |
-| `bit` | `i32` | The index of the bit to start searching at |
+| Name  | Type   | Description                                |
+| :---- | :----- | :----------------------------------------- |
+| `x`   | `u256` | The value as a u256                        |
+| `bit` | `i32`  | The index of the bit to start searching at |
 
 #### Returns
 
@@ -74,9 +74,9 @@ The index of the closest non null bit on the left of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:62](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L62)
+[assembly/libraries/BitMath.ts:62](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/BitMath.ts#L62)
 
-___
+---
 
 ### closestBitRight
 
@@ -86,10 +86,10 @@ Returns the index of the closest bit on the right of x that is non null
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `u256` | The value as a u256 |
-| `bit` | `i32` | The index of the bit to start searching at |
+| Name  | Type   | Description                                |
+| :---- | :----- | :----------------------------------------- |
+| `x`   | `u256` | The value as a u256                        |
+| `bit` | `i32`  | The index of the bit to start searching at |
 
 #### Returns
 
@@ -99,9 +99,9 @@ The index of the closest non null bit on the right of x.
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:47](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L47)
+[assembly/libraries/BitMath.ts:47](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/BitMath.ts#L47)
 
-___
+---
 
 ### leastSignificantBit
 
@@ -111,9 +111,9 @@ Returns the index of the least significant set bit
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `x`  | `u256` |
 
 #### Returns
 
@@ -123,9 +123,9 @@ The index of the least significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:81](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L81)
+[assembly/libraries/BitMath.ts:81](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/BitMath.ts#L81)
 
-___
+---
 
 ### mostSignificantBit
 
@@ -135,9 +135,9 @@ Returns the index of the most significant set bit
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `x`  | `u256` |
 
 #### Returns
 
@@ -147,9 +147,9 @@ The index of the most significant bit of x
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:74](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L74)
+[assembly/libraries/BitMath.ts:74](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/BitMath.ts#L74)
 
-___
+---
 
 ### significantBit
 
@@ -159,9 +159,9 @@ Returns the most (true) or least (false) significant bit index
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x` | `u256` |
+| Name   | Type   |
+| :----- | :----- |
+| `x`    | `u256` |
 | `most` | `bool` |
 
 #### Returns
@@ -172,4 +172,4 @@ The index of the most (or least) significant bit
 
 #### Defined in
 
-[assembly/libraries/BitMath.ts:90](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/BitMath.ts#L90)
+[assembly/libraries/BitMath.ts:90](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/BitMath.ts#L90)

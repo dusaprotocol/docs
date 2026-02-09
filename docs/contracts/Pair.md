@@ -44,8 +44,8 @@ Returns the amount of tokens of type `id` owned by `_account`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -56,9 +56,9 @@ The amount of tokens of type `id` owned by `_account`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1478](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1478)
+[assembly/contracts/Pair.ts:1478](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1478)
 
-___
+---
 
 ### balanceOfBatch
 
@@ -68,8 +68,8 @@ Return the balance of multiple (account/id) pairs
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -80,9 +80,9 @@ batchBalances The balance for each (account, id) pair
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1493](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1493)
+[assembly/contracts/Pair.ts:1493](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1493)
 
-___
+---
 
 ### burn
 
@@ -97,8 +97,8 @@ that will also perform safety checks.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -107,9 +107,9 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:669](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L669)
+[assembly/contracts/Pair.ts:669](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L669)
 
-___
+---
 
 ### collectFees
 
@@ -119,8 +119,8 @@ Collect the fees accumulated by a user.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -129,9 +129,9 @@ Collect the fees accumulated by a user.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:769](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L769)
+[assembly/contracts/Pair.ts:769](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L769)
 
-___
+---
 
 ### collectProtocolFees
 
@@ -142,9 +142,9 @@ The protocol fees are not set to zero to save gas by not resetting the storage s
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_` | `StaticArray`<`u8`\> |
+| Name | Type                 |
+| :--- | :------------------- |
+| `_`  | `StaticArray`<`u8`\> |
 
 #### Returns
 
@@ -152,9 +152,9 @@ The protocol fees are not set to zero to save gas by not resetting the storage s
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:851](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L851)
+[assembly/contracts/Pair.ts:851](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L851)
 
-___
+---
 
 ### constructor
 
@@ -162,8 +162,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -176,9 +176,9 @@ Constructor
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:106](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L106)
+[assembly/contracts/Pair.ts:106](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L106)
 
-___
+---
 
 ### findFirstNonEmptyBinId
 
@@ -188,8 +188,8 @@ View function to get the first bin that isn't empty, will not be `_id` itself
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -198,9 +198,9 @@ View function to get the first bin that isn't empty, will not be `_id` itself
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1092](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1092)
+[assembly/contracts/Pair.ts:1092](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1092)
 
-___
+---
 
 ### flashLoan
 
@@ -212,8 +212,8 @@ token to this contract.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -222,9 +222,9 @@ token to this contract.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:296](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L296)
+[assembly/contracts/Pair.ts:296](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L296)
 
-___
+---
 
 ### forceDecay
 
@@ -234,9 +234,9 @@ Force the decaying of the references for volatility and index
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_` | `StaticArray`<`u8`\> | unused |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
+| `_`  | `StaticArray`<`u8`\> | unused      |
 
 #### Returns
 
@@ -248,9 +248,9 @@ Only callable by the factory
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1072](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1072)
+[assembly/contracts/Pair.ts:1072](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1072)
 
-___
+---
 
 ### getBin
 
@@ -262,8 +262,8 @@ and a mix of both if `id == _pairInformation.activeId`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -272,9 +272,9 @@ and a mix of both if `id == _pairInformation.activeId`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1172](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1172)
+[assembly/contracts/Pair.ts:1172](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1172)
 
-___
+---
 
 ### getGlobalFees
 
@@ -284,25 +284,26 @@ View function to get the total fees and the protocol fees of each tokens
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_` | `StaticArray`<`u8`\> | unused |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
+| `_`  | `StaticArray`<`u8`\> | unused      |
 
 #### Returns
 
 `StaticArray`<`u8`\>
 
 staticArray<u8\> containing :
- - feesX.total The total fees of tokenX
- - feesY.total The total fees of tokenY
- - feesX.protocol The protocol fees of tokenX
- - feesY.protocol The protocol fees of tokenY
+
+- feesX.total The total fees of tokenX
+- feesY.total The total fees of tokenY
+- feesX.protocol The protocol fees of tokenX
+- feesY.protocol The protocol fees of tokenY
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1204](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1204)
+[assembly/contracts/Pair.ts:1204](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1204)
 
-___
+---
 
 ### getOracleParameters
 
@@ -312,9 +313,9 @@ View function to get the oracle parameters
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_` | `StaticArray`<`u8`\> |
+| Name | Type                 |
+| :--- | :------------------- |
+| `_`  | `StaticArray`<`u8`\> |
 
 #### Returns
 
@@ -322,9 +323,9 @@ View function to get the oracle parameters
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1279](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1279)
+[assembly/contracts/Pair.ts:1279](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1279)
 
-___
+---
 
 ### getOracleSampleFrom
 
@@ -334,8 +335,8 @@ View function to get the oracle's sample at `_timeDelta` seconds
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -348,9 +349,9 @@ Return a linearized sample, the weighted average of 2 neighboring samples
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1295](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1295)
+[assembly/contracts/Pair.ts:1295](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1295)
 
-___
+---
 
 ### getPairInformation
 
@@ -361,9 +362,9 @@ fees and oracle parameters
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_` | `StaticArray`<`u8`\> |
+| Name | Type                 |
+| :--- | :------------------- |
+| `_`  | `StaticArray`<`u8`\> |
 
 #### Returns
 
@@ -371,9 +372,9 @@ fees and oracle parameters
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1136](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1136)
+[assembly/contracts/Pair.ts:1136](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1136)
 
-___
+---
 
 ### getUserBins
 
@@ -383,8 +384,8 @@ Get the deposited bins of an account
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -393,9 +394,9 @@ Get the deposited bins of an account
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1112](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1112)
+[assembly/contracts/Pair.ts:1112](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1112)
 
-___
+---
 
 ### increaseOracleLength
 
@@ -406,8 +407,8 @@ The samples are however initialized to reduce the gas cost of the updates during
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -416,9 +417,9 @@ The samples are however initialized to reduce the gas cost of the updates during
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:946](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L946)
+[assembly/contracts/Pair.ts:946](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L946)
 
-___
+---
 
 ### isApprovedForAll
 
@@ -428,8 +429,8 @@ Returns true if `spender` is approved to transfer `_account`'s tokens
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -440,9 +441,9 @@ True if `spender` is approved to transfer `_account`'s tokens
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1517](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1517)
+[assembly/contracts/Pair.ts:1517](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1517)
 
-___
+---
 
 ### mint
 
@@ -456,8 +457,8 @@ router that will also perform safety checks.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -466,9 +467,9 @@ router that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:405](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L405)
+[assembly/contracts/Pair.ts:405](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L405)
 
-___
+---
 
 ### name
 
@@ -476,9 +477,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_` | `StaticArray`<`u8`\> |
+| Name | Type                 |
+| :--- | :------------------- |
+| `_`  | `StaticArray`<`u8`\> |
 
 #### Returns
 
@@ -488,9 +489,9 @@ The name of the token
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1448](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1448)
+[assembly/contracts/Pair.ts:1448](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1448)
 
-___
+---
 
 ### pendingFees
 
@@ -501,8 +502,8 @@ The array must be strictly increasing to ensure uniqueness
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -511,9 +512,9 @@ The array must be strictly increasing to ensure uniqueness
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:906](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L906)
+[assembly/contracts/Pair.ts:906](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L906)
 
-___
+---
 
 ### receiveCoins
 
@@ -521,9 +522,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_` | `StaticArray`<`u8`\> | unused |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
+| `_`  | `StaticArray`<`u8`\> | unused      |
 
 #### Returns
 
@@ -535,9 +536,9 @@ Function used by an SC to receive Massa coins
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1899](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1899)
+[assembly/contracts/Pair.ts:1899](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1899)
 
-___
+---
 
 ### safeBatchTransferFrom
 
@@ -547,8 +548,8 @@ Batch transfers `_amount` tokens of type `_id` from `_from` to `_to`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -557,9 +558,9 @@ Batch transfers `_amount` tokens of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1580](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1580)
+[assembly/contracts/Pair.ts:1580](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1580)
 
-___
+---
 
 ### safeTransferFrom
 
@@ -569,8 +570,8 @@ Transfers `_amount` token of type `_id` from `_from` to `_to`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -579,9 +580,9 @@ Transfers `_amount` token of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1552](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1552)
+[assembly/contracts/Pair.ts:1552](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1552)
 
-___
+---
 
 ### setApprovalForAll
 
@@ -591,8 +592,8 @@ Grants or revokes permission to `spender` to transfer the caller's tokens, accor
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -601,9 +602,9 @@ Grants or revokes permission to `spender` to transfer the caller's tokens, accor
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1531](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1531)
+[assembly/contracts/Pair.ts:1531](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1531)
 
-___
+---
 
 ### setFeesParameters
 
@@ -613,8 +614,8 @@ Set the fees parameters
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -629,9 +630,9 @@ Only callable by the factory
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1363](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1363)
+[assembly/contracts/Pair.ts:1363](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1363)
 
-___
+---
 
 ### setHooksParameters
 
@@ -639,8 +640,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -657,9 +658,9 @@ Can only be called by the factory
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1396](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1396)
+[assembly/contracts/Pair.ts:1396](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1396)
 
-___
+---
 
 ### swap
 
@@ -674,8 +675,8 @@ that will also perform safety checks.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
 | `bs` | `StaticArray`<`u8`\> | Byte string |
 
 #### Returns
@@ -684,9 +685,9 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:161](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L161)
+[assembly/contracts/Pair.ts:161](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L161)
 
-___
+---
 
 ### symbol
 
@@ -694,9 +695,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_` | `StaticArray`<`u8`\> |
+| Name | Type                 |
+| :--- | :------------------- |
+| `_`  | `StaticArray`<`u8`\> |
 
 #### Returns
 
@@ -706,9 +707,9 @@ The symbol of the token
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1455](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1455)
+[assembly/contracts/Pair.ts:1455](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1455)
 
-___
+---
 
 ### totalSupply
 
@@ -718,8 +719,8 @@ Returns the total supply of token of type `id`
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description               |
+| :--- | :------------------- | :------------------------ |
 | `bs` | `StaticArray`<`u8`\> | the token id (serialized) |
 
 #### Returns
@@ -732,4 +733,4 @@ This is the amount of token of type `id` minted minus the amount burned
 
 #### Defined in
 
-[assembly/contracts/Pair.ts:1464](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Pair.ts#L1464)
+[assembly/contracts/Pair.ts:1464](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Pair.ts#L1464)

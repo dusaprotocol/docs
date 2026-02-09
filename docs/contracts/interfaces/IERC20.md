@@ -50,8 +50,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `origin` | `Address` |
 
 #### Returns
@@ -64,7 +64,7 @@ MRC20Wrapper.constructor
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L21)
+[assembly/interfaces/IERC20.ts:21](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L21)
 
 ## Properties
 
@@ -90,9 +90,9 @@ Returns the allowance set on the owner's account for the spender.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `ownerAccount` | `Address` |
+| Name             | Type      |
+| :--------------- | :-------- |
+| `ownerAccount`   | `Address` |
 | `spenderAccount` | `Address` |
 
 #### Returns
@@ -107,7 +107,7 @@ MRC20Wrapper.allowance
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:138
 
-___
+---
 
 ### balanceOf
 
@@ -117,8 +117,8 @@ Returns the balance of an account.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `account` | `Address` |
 
 #### Returns
@@ -133,7 +133,7 @@ MRC20Wrapper.balanceOf
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:110
 
-___
+---
 
 ### burn
 
@@ -145,8 +145,8 @@ Coins is left to zero as this function does not need storage entry creation.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type   |
+| :--------- | :----- |
 | `nbTokens` | `u256` |
 
 #### Returns
@@ -161,7 +161,7 @@ MRC20Wrapper.burn
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:236
 
-___
+---
 
 ### decimals
 
@@ -177,9 +177,9 @@ MRC20Wrapper.decimals
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L25)
+[assembly/interfaces/IERC20.ts:25](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L25)
 
-___
+---
 
 ### decreaseAllowance
 
@@ -193,10 +193,10 @@ Coins is left to zero as this function does not need storage entry creation.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type      |
+| :--------------- | :-------- |
 | `spenderAccount` | `Address` |
-| `nbTokens` | `u256` |
+| `nbTokens`       | `u256`    |
 
 #### Returns
 
@@ -210,7 +210,7 @@ MRC20Wrapper.decreaseAllowance
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:182
 
-___
+---
 
 ### deserialize
 
@@ -218,10 +218,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -233,9 +233,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:72](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L72)
+[assembly/interfaces/IERC20.ts:72](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L72)
 
-___
+---
 
 ### equals
 
@@ -243,8 +243,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                  |
+| :------ | :-------------------- |
 | `other` | [`IERC20`](IERC20.md) |
 
 #### Returns
@@ -253,9 +253,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:82](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L82)
+[assembly/interfaces/IERC20.ts:82](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L82)
 
-___
+---
 
 ### increaseAllowance
 
@@ -268,11 +268,11 @@ This function can only be called by the owner.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `spenderAccount` | `Address` | `undefined` |
-| `nbTokens` | `u256` | `undefined` |
-| `coins` | `u64` | `0` |
+| Name             | Type      | Default value |
+| :--------------- | :-------- | :------------ |
+| `spenderAccount` | `Address` | `undefined`   |
+| `nbTokens`       | `u256`    | `undefined`   |
+| `coins`          | `u64`     | `0`           |
 
 #### Returns
 
@@ -286,7 +286,7 @@ MRC20Wrapper.increaseAllowance
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:159
 
-___
+---
 
 ### init
 
@@ -296,13 +296,13 @@ Initializes the smart contract.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | Name of the token. |
-| `symbol` | `string` | `undefined` | Symbol of the token. |
-| `decimals` | `u8` | `undefined` | Number of decimals of the token. |
-| `supply` | `u256` | `undefined` | Initial supply of the token. |
-| `coins` | `u64` | `0` | Number of coins to send to the smart contract. |
+| Name       | Type     | Default value | Description                                    |
+| :--------- | :------- | :------------ | :--------------------------------------------- |
+| `name`     | `string` | `undefined`   | Name of the token.                             |
+| `symbol`   | `string` | `undefined`   | Symbol of the token.                           |
+| `decimals` | `u8`     | `undefined`   | Number of decimals of the token.               |
+| `supply`   | `u256`   | `undefined`   | Initial supply of the token.                   |
+| `coins`    | `u64`    | `0`           | Number of coins to send to the smart contract. |
 
 #### Returns
 
@@ -316,7 +316,7 @@ MRC20Wrapper.init
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:46
 
-___
+---
 
 ### mint
 
@@ -326,11 +326,11 @@ Mint an amount of nbTokens tokens from to the toAccount address .
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `toAccount` | `Address` | `undefined` |
-| `nbTokens` | `u256` | `undefined` |
-| `coins` | `u64` | `0` |
+| Name        | Type      | Default value |
+| :---------- | :-------- | :------------ |
+| `toAccount` | `Address` | `undefined`   |
+| `nbTokens`  | `u256`    | `undefined`   |
+| `coins`     | `u64`     | `0`           |
 
 #### Returns
 
@@ -344,7 +344,7 @@ MRC20Wrapper.mint
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:225
 
-___
+---
 
 ### name
 
@@ -366,7 +366,7 @@ MRC20Wrapper.name
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:72
 
-___
+---
 
 ### notEqual
 
@@ -374,8 +374,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                  |
+| :------ | :-------------------- |
 | `other` | [`IERC20`](IERC20.md) |
 
 #### Returns
@@ -384,9 +384,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:78](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L78)
+[assembly/interfaces/IERC20.ts:78](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L78)
 
-___
+---
 
 ### received
 
@@ -396,10 +396,10 @@ Returns the amount of token received by the pair
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type   | Description                |
+| :-------- | :----- | :------------------------- |
 | `reserve` | `u256` | The total reserve of token |
-| `fees` | `u256` | The total fees of token |
+| `fees`    | `u256` | The total fees of token    |
 
 #### Returns
 
@@ -409,9 +409,9 @@ Returns the amount of token received by the pair
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:38](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L38)
+[assembly/interfaces/IERC20.ts:38](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L38)
 
-___
+---
 
 ### serialize
 
@@ -427,9 +427,9 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:68](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L68)
+[assembly/interfaces/IERC20.ts:68](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L68)
 
-___
+---
 
 ### symbol
 
@@ -451,7 +451,7 @@ MRC20Wrapper.symbol
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:80
 
-___
+---
 
 ### totalSupply
 
@@ -475,7 +475,7 @@ MRC20Wrapper.totalSupply
 
 node_modules/@massalabs/sc-standards/assembly/contracts/MRC20/wrapper.ts:101
 
-___
+---
 
 ### transfer
 
@@ -483,11 +483,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `toAccount` | `Address` | `undefined` |
-| `nbTokens` | `u256` | `undefined` |
-| `coins` | `u64` | `0` |
+| Name        | Type      | Default value |
+| :---------- | :-------- | :------------ |
+| `toAccount` | `Address` | `undefined`   |
+| `nbTokens`  | `u256`    | `undefined`   |
+| `coins`     | `u64`     | `0`           |
 
 #### Returns
 
@@ -499,9 +499,9 @@ MRC20Wrapper.transfer
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:44](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L44)
+[assembly/interfaces/IERC20.ts:44](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L44)
 
-___
+---
 
 ### transferFrom
 
@@ -509,12 +509,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `ownerAccount` | `Address` | `undefined` |
-| `recipientAccount` | `Address` | `undefined` |
-| `nbTokens` | `u256` | `undefined` |
-| `coins` | `u64` | `0` |
+| Name               | Type      | Default value |
+| :----------------- | :-------- | :------------ |
+| `ownerAccount`     | `Address` | `undefined`   |
+| `recipientAccount` | `Address` | `undefined`   |
+| `nbTokens`         | `u256`    | `undefined`   |
+| `coins`            | `u64`     | `0`           |
 
 #### Returns
 
@@ -526,9 +526,9 @@ MRC20Wrapper.transferFrom
 
 #### Defined in
 
-[assembly/interfaces/IERC20.ts:54](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IERC20.ts#L54)
+[assembly/interfaces/IERC20.ts:54](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IERC20.ts#L54)
 
-___
+---
 
 ### version
 

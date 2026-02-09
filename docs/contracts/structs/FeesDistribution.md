@@ -29,10 +29,10 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `total` | `u256` | `ZERO` | The total amount of fees |
-| `protocol` | `u256` | `ZERO` | The amount of fees reserved for protocol |
+| Name       | Type   | Default value | Description                              |
+| :--------- | :----- | :------------ | :--------------------------------------- |
+| `total`    | `u256` | `ZERO`        | The total amount of fees                 |
+| `protocol` | `u256` | `ZERO`        | The amount of fees reserved for protocol |
 
 #### Returns
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeesDistribution.ts#L11)
+[assembly/structs/FeesDistribution.ts:11](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeesDistribution.ts#L11)
 
 ## Properties
 
@@ -52,9 +52,9 @@ The amount of fees reserved for protocol
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeesDistribution.ts#L13)
+[assembly/structs/FeesDistribution.ts:13](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeesDistribution.ts#L13)
 
-___
+---
 
 ### total
 
@@ -64,7 +64,7 @@ The total amount of fees
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeesDistribution.ts#L12)
+[assembly/structs/FeesDistribution.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeesDistribution.ts#L12)
 
 ## Methods
 
@@ -74,10 +74,10 @@ The total amount of fees
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -89,9 +89,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:37](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeesDistribution.ts#L37)
+[assembly/structs/FeesDistribution.ts:37](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeesDistribution.ts#L37)
 
-___
+---
 
 ### getTokenPerShare
 
@@ -101,8 +101,8 @@ Calculate the tokenPerShare when fees are added
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type   | Description                        |
+| :------------ | :----- | :--------------------------------- |
 | `totalSupply` | `u256` | the total supply of a specific bin |
 
 #### Returns
@@ -111,9 +111,9 @@ Calculate the tokenPerShare when fees are added
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeesDistribution.ts#L21)
+[assembly/structs/FeesDistribution.ts:21](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeesDistribution.ts#L21)
 
-___
+---
 
 ### serialize
 
@@ -129,4 +129,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/FeesDistribution.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeesDistribution.ts#L33)
+[assembly/structs/FeesDistribution.ts:33](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeesDistribution.ts#L33)

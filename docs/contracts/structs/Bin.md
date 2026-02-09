@@ -32,12 +32,12 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `reserveX` | `u256` | `ZERO` | The current reserve of tokenX of the bin |
-| `reserveY` | `u256` | `ZERO` | The current reserve of tokenY of the bin |
-| `accTokenXPerShare` | `u256` | `ZERO` | - |
-| `accTokenYPerShare` | `u256` | `ZERO` | - |
+| Name                | Type   | Default value | Description                              |
+| :------------------ | :----- | :------------ | :--------------------------------------- |
+| `reserveX`          | `u256` | `ZERO`        | The current reserve of tokenX of the bin |
+| `reserveY`          | `u256` | `ZERO`        | The current reserve of tokenY of the bin |
+| `accTokenXPerShare` | `u256` | `ZERO`        | -                                        |
+| `accTokenYPerShare` | `u256` | `ZERO`        | -                                        |
 
 #### Returns
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[assembly/structs/Bin.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L13)
+[assembly/structs/Bin.ts:13](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L13)
 
 ## Properties
 
@@ -55,9 +55,9 @@
 
 #### Defined in
 
-[assembly/structs/Bin.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L16)
+[assembly/structs/Bin.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L16)
 
-___
+---
 
 ### accTokenYPerShare
 
@@ -65,9 +65,9 @@ ___
 
 #### Defined in
 
-[assembly/structs/Bin.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L17)
+[assembly/structs/Bin.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L17)
 
-___
+---
 
 ### reserveX
 
@@ -77,9 +77,9 @@ The current reserve of tokenX of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L14)
+[assembly/structs/Bin.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L14)
 
-___
+---
 
 ### reserveY
 
@@ -89,7 +89,7 @@ The current reserve of tokenY of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L15)
+[assembly/structs/Bin.ts:15](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L15)
 
 ## Methods
 
@@ -99,10 +99,10 @@ The current reserve of tokenY of the bin
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -114,9 +114,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Bin.ts:97](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L97)
+[assembly/structs/Bin.ts:97](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L97)
 
-___
+---
 
 ### serialize
 
@@ -132,9 +132,9 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Bin.ts:88](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L88)
+[assembly/structs/Bin.ts:88](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L88)
 
-___
+---
 
 ### updateFees
 
@@ -144,12 +144,12 @@ Update the fees of the pair and accumulated token per share of the bin
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pair` | [`PairInformation`](PairInformation.md) | - |
-| `fees` | [`FeesDistribution`](FeesDistribution.md) | The fees amounts added to the pairFees |
-| `swapForY` | `bool` | whether the token sent was Y (true) or X (false) |
-| `totalSupply` | `u256` | The total supply of the token id |
+| Name          | Type                                      | Description                                      |
+| :------------ | :---------------------------------------- | :----------------------------------------------- |
+| `pair`        | [`PairInformation`](PairInformation.md)   | -                                                |
+| `fees`        | [`FeesDistribution`](FeesDistribution.md) | The fees amounts added to the pairFees           |
+| `swapForY`    | `bool`                                    | whether the token sent was Y (true) or X (false) |
+| `totalSupply` | `u256`                                    | The total supply of the token id                 |
 
 #### Returns
 
@@ -157,9 +157,9 @@ Update the fees of the pair and accumulated token per share of the bin
 
 #### Defined in
 
-[assembly/structs/Bin.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L28)
+[assembly/structs/Bin.ts:28](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L28)
 
-___
+---
 
 ### updateReserves
 
@@ -169,12 +169,12 @@ Update reserves
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pair` | [`PairInformation`](PairInformation.md) | The pair information |
-| `swapForY` | `bool` | whether the token sent was Y (true) or X (false) |
-| `amountInToBin` | `u256` | The amount of token that is added to the bin without fees |
-| `amountOutOfBin` | `u256` | The amount of token that is removed from the bin |
+| Name             | Type                                    | Description                                               |
+| :--------------- | :-------------------------------------- | :-------------------------------------------------------- |
+| `pair`           | [`PairInformation`](PairInformation.md) | The pair information                                      |
+| `swapForY`       | `bool`                                  | whether the token sent was Y (true) or X (false)          |
+| `amountInToBin`  | `u256`                                  | The amount of token that is added to the bin without fees |
+| `amountOutOfBin` | `u256`                                  | The amount of token that is removed from the bin          |
 
 #### Returns
 
@@ -182,4 +182,4 @@ Update reserves
 
 #### Defined in
 
-[assembly/structs/Bin.ts:61](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Bin.ts#L61)
+[assembly/structs/Bin.ts:61](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Bin.ts#L61)

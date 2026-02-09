@@ -37,8 +37,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                    |
+| :--- | :-------- | :----------------------------- |
 | `at` | `Address` | Address of the smart contract. |
 
 #### Returns
@@ -47,7 +47,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L16)
+[assembly/interfaces/IHooks.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L16)
 
 ## Properties
 
@@ -57,7 +57,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:9](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L9)
+[assembly/interfaces/IHooks.ts:9](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L9)
 
 ## Methods
 
@@ -67,13 +67,13 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `from` | `Address` |
-| `to` | `Address` |
-| `ids` | `u64`[] |
-| `amounts` | `u256`[] |
+| Name      | Type      |
+| :-------- | :-------- |
+| `sender`  | `Address` |
+| `from`    | `Address` |
+| `to`      | `Address` |
+| `ids`     | `u64`[]   |
+| `amounts` | `u256`[]  |
 
 #### Returns
 
@@ -81,9 +81,9 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:149](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L149)
+[assembly/interfaces/IHooks.ts:149](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L149)
 
-___
+---
 
 ### afterBurn
 
@@ -91,12 +91,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `to` | `Address` |
-| `ids` | `u64`[] |
-| `amountsToBurn` | `u256`[] |
+| Name            | Type      |
+| :-------------- | :-------- |
+| `sender`        | `Address` |
+| `to`            | `Address` |
+| `ids`           | `u64`[]   |
+| `amountsToBurn` | `u256`[]  |
 
 #### Returns
 
@@ -104,9 +104,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:128](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L128)
+[assembly/interfaces/IHooks.ts:128](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L128)
 
-___
+---
 
 ### afterFlashLoan
 
@@ -114,12 +114,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `to` | `Address` |
-| `fees` | `u256` |
-| `feesReceived` | `u256` |
+| Name           | Type      |
+| :------------- | :-------- |
+| `sender`       | `Address` |
+| `to`           | `Address` |
+| `fees`         | `u256`    |
+| `feesReceived` | `u256`    |
 
 #### Returns
 
@@ -127,9 +127,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:72](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L72)
+[assembly/interfaces/IHooks.ts:72](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L72)
 
-___
+---
 
 ### afterMint
 
@@ -137,14 +137,14 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `to` | `Address` |
-| `ids` | `u64`[] |
-| `distributionX` | `u256`[] |
-| `distributionY` | `u256`[] |
-| `amountsIn` | `u256`[] |
+| Name            | Type      |
+| :-------------- | :-------- |
+| `sender`        | `Address` |
+| `to`            | `Address` |
+| `ids`           | `u64`[]   |
+| `distributionX` | `u256`[]  |
+| `distributionY` | `u256`[]  |
+| `amountsIn`     | `u256`[]  |
 
 #### Returns
 
@@ -152,9 +152,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:100](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L100)
+[assembly/interfaces/IHooks.ts:100](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L100)
 
-___
+---
 
 ### afterSwap
 
@@ -162,12 +162,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `to` | `Address` |
-| `swapForY` | `bool` |
-| `amountOut` | `u256` |
+| Name        | Type      |
+| :---------- | :-------- |
+| `sender`    | `Address` |
+| `to`        | `Address` |
+| `swapForY`  | `bool`    |
+| `amountOut` | `u256`    |
 
 #### Returns
 
@@ -175,9 +175,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:57](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L57)
+[assembly/interfaces/IHooks.ts:57](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L57)
 
-___
+---
 
 ### beforeBatchTransferFrom
 
@@ -185,13 +185,13 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `from` | `Address` |
-| `to` | `Address` |
-| `ids` | `u64`[] |
-| `amounts` | `u256`[] |
+| Name      | Type      |
+| :-------- | :-------- |
+| `sender`  | `Address` |
+| `from`    | `Address` |
+| `to`      | `Address` |
+| `ids`     | `u64`[]   |
+| `amounts` | `u256`[]  |
 
 #### Returns
 
@@ -199,9 +199,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:138](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L138)
+[assembly/interfaces/IHooks.ts:138](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L138)
 
-___
+---
 
 ### beforeBurn
 
@@ -209,12 +209,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `to` | `Address` |
-| `ids` | `u64`[] |
-| `amountsToBurn` | `u256`[] |
+| Name            | Type      |
+| :-------------- | :-------- |
+| `sender`        | `Address` |
+| `to`            | `Address` |
+| `ids`           | `u64`[]   |
+| `amountsToBurn` | `u256`[]  |
 
 #### Returns
 
@@ -222,9 +222,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:118](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L118)
+[assembly/interfaces/IHooks.ts:118](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L118)
 
-___
+---
 
 ### beforeFlashLoan
 
@@ -232,11 +232,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `sender` | `Address` |
-| `to` | `Address` |
-| `amount` | `u256` |
+| `to`     | `Address` |
+| `amount` | `u256`    |
 
 #### Returns
 
@@ -244,9 +244,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:67](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L67)
+[assembly/interfaces/IHooks.ts:67](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L67)
 
-___
+---
 
 ### beforeMint
 
@@ -254,14 +254,14 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `to` | `Address` |
-| `ids` | `u64`[] |
-| `distributionX` | `u256`[] |
-| `distributionY` | `u256`[] |
-| `amountsReceived` | `u256`[] |
+| Name              | Type      |
+| :---------------- | :-------- |
+| `sender`          | `Address` |
+| `to`              | `Address` |
+| `ids`             | `u64`[]   |
+| `distributionX`   | `u256`[]  |
+| `distributionY`   | `u256`[]  |
+| `amountsReceived` | `u256`[]  |
 
 #### Returns
 
@@ -269,9 +269,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:82](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L82)
+[assembly/interfaces/IHooks.ts:82](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L82)
 
-___
+---
 
 ### beforeSwap
 
@@ -279,12 +279,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `to` | `Address` |
-| `swapForY` | `bool` |
-| `amountIn` | `u256` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `sender`   | `Address` |
+| `to`       | `Address` |
+| `swapForY` | `bool`    |
+| `amountIn` | `u256`    |
 
 #### Returns
 
@@ -292,9 +292,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:47](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L47)
+[assembly/interfaces/IHooks.ts:47](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L47)
 
-___
+---
 
 ### getPair
 
@@ -306,9 +306,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L30)
+[assembly/interfaces/IHooks.ts:30](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L30)
 
-___
+---
 
 ### init
 
@@ -318,10 +318,10 @@ Calls the constructor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pair` | `Address` | The pair associated to this hook |
-| `masToSend` | `u64` | - |
+| Name        | Type      | Description                      |
+| :---------- | :-------- | :------------------------------- |
+| `pair`      | `Address` | The pair associated to this hook |
+| `masToSend` | `u64`     | -                                |
 
 #### Returns
 
@@ -329,9 +329,9 @@ Calls the constructor
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L25)
+[assembly/interfaces/IHooks.ts:25](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L25)
 
-___
+---
 
 ### isLinked
 
@@ -343,9 +343,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L34)
+[assembly/interfaces/IHooks.ts:34](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L34)
 
-___
+---
 
 ### onHooksSet
 
@@ -353,10 +353,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type                                            |
+| :---------------- | :---------------------------------------------- |
 | `hooksParameters` | [`HooksParameters`](../structs/HooksParameters) |
-| `onHooksSetData` | `StaticArray`<`u8`\> |
+| `onHooksSetData`  | `StaticArray`<`u8`\>                            |
 
 #### Returns
 
@@ -364,4 +364,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IHooks.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IHooks.ts#L39)
+[assembly/interfaces/IHooks.ts:39](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IHooks.ts#L39)

@@ -34,8 +34,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_origin` | `Address` |
 
 #### Returns
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L22)
+[assembly/interfaces/IV0Pair.ts:22](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L22)
 
 ## Properties
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L20)
+[assembly/interfaces/IV0Pair.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L20)
 
 ## Methods
 
@@ -67,8 +67,8 @@ This low-level function should be called from a contract which performs importan
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                                   |
+| :--- | :-------- | :-------------------------------------------- |
 | `to` | `Address` | The address to send the underlying assets to. |
 
 #### Returns
@@ -79,9 +79,9 @@ This low-level function should be called from a contract which performs importan
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:51](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L51)
+[assembly/interfaces/IV0Pair.ts:51](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L51)
 
-___
+---
 
 ### getBlockTimestampLast
 
@@ -93,9 +93,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:88](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L88)
+[assembly/interfaces/IV0Pair.ts:88](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L88)
 
-___
+---
 
 ### getFactory
 
@@ -107,9 +107,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:84](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L84)
+[assembly/interfaces/IV0Pair.ts:84](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L84)
 
-___
+---
 
 ### getPrice0CumulativeLast
 
@@ -121,9 +121,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:94](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L94)
+[assembly/interfaces/IV0Pair.ts:94](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L94)
 
-___
+---
 
 ### getPrice1CumulativeLast
 
@@ -135,9 +135,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:100](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L100)
+[assembly/interfaces/IV0Pair.ts:100](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L100)
 
-___
+---
 
 ### getReserves
 
@@ -149,9 +149,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:106](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L106)
+[assembly/interfaces/IV0Pair.ts:106](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L106)
 
-___
+---
 
 ### init
 
@@ -159,8 +159,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `tokenA` | `Address` |
 | `tokenB` | `Address` |
 
@@ -170,9 +170,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:26](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L26)
+[assembly/interfaces/IV0Pair.ts:26](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L26)
 
-___
+---
 
 ### mint
 
@@ -183,10 +183,10 @@ This low-level function should be called from a contract which performs importan
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `to` | `Address` | The address to mint the liquidity tokens to. |
-| `fee` | `u64` | The fee to be paid for storage. |
+| Name  | Type      | Description                                  |
+| :---- | :-------- | :------------------------------------------- |
+| `to`  | `Address` | The address to mint the liquidity tokens to. |
+| `fee` | `u64`     | The fee to be paid for storage.              |
 
 #### Returns
 
@@ -196,9 +196,9 @@ This low-level function should be called from a contract which performs importan
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L39)
+[assembly/interfaces/IV0Pair.ts:39](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L39)
 
-___
+---
 
 ### skim
 
@@ -206,8 +206,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type      |
+| :--- | :-------- |
 | `to` | `Address` |
 
 #### Returns
@@ -216,9 +216,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:113](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L113)
+[assembly/interfaces/IV0Pair.ts:113](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L113)
 
-___
+---
 
 ### swap
 
@@ -229,12 +229,12 @@ This function should be called from a contract which performs important safety c
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `amount0Out` | `u256` | The amount of token0 to be sent. |
-| `amount1Out` | `u256` | The amount of token1 to be sent. |
-| `to` | `Address` | The address to send the tokens to. |
-| `data` | `StaticArray`<`u8`\> | Additional data to pass to the recipient. |
+| Name         | Type                 | Description                               |
+| :----------- | :------------------- | :---------------------------------------- |
+| `amount0Out` | `u256`               | The amount of token0 to be sent.          |
+| `amount1Out` | `u256`               | The amount of token1 to be sent.          |
+| `to`         | `Address`            | The address to send the tokens to.        |
+| `data`       | `StaticArray`<`u8`\> | Additional data to pass to the recipient. |
 
 #### Returns
 
@@ -242,9 +242,9 @@ This function should be called from a contract which performs important safety c
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:66](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L66)
+[assembly/interfaces/IV0Pair.ts:66](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L66)
 
-___
+---
 
 ### sync
 
@@ -256,9 +256,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:118](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L118)
+[assembly/interfaces/IV0Pair.ts:118](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L118)
 
-___
+---
 
 ### token0
 
@@ -270,9 +270,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:76](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L76)
+[assembly/interfaces/IV0Pair.ts:76](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L76)
 
-___
+---
 
 ### token1
 
@@ -284,4 +284,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Pair.ts:80](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Pair.ts#L80)
+[assembly/interfaces/IV0Pair.ts:80](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Pair.ts#L80)

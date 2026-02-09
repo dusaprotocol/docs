@@ -35,17 +35,17 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `binStep` | `u32` | `0` | The bin step |
-| `baseFactor` | `u32` | `0` | The base factor |
-| `filterPeriod` | `u32` | `0` | The filter period, where the fees stays constant |
-| `decayPeriod` | `u32` | `0` | The decay period, where the fees are halved |
-| `reductionFactor` | `u32` | `0` | The reduction factor, used to calculate the reduction of the accumulator |
-| `variableFeeControl` | `u32` | `0` | The variable fee control, used to control the variable fee, can be 0 to disable them |
-| `protocolShare` | `u32` | `0` | The share of fees sent to protocol |
-| `maxVolatilityAccumulated` | `u32` | `0` | The max value of volatility accumulated |
-| `sampleLifetime` | `u32` | `0` | The value of volatility accumulated |
+| Name                       | Type  | Default value | Description                                                                          |
+| :------------------------- | :---- | :------------ | :----------------------------------------------------------------------------------- |
+| `binStep`                  | `u32` | `0`           | The bin step                                                                         |
+| `baseFactor`               | `u32` | `0`           | The base factor                                                                      |
+| `filterPeriod`             | `u32` | `0`           | The filter period, where the fees stays constant                                     |
+| `decayPeriod`              | `u32` | `0`           | The decay period, where the fees are halved                                          |
+| `reductionFactor`          | `u32` | `0`           | The reduction factor, used to calculate the reduction of the accumulator             |
+| `variableFeeControl`       | `u32` | `0`           | The variable fee control, used to control the variable fee, can be 0 to disable them |
+| `protocolShare`            | `u32` | `0`           | The share of fees sent to protocol                                                   |
+| `maxVolatilityAccumulated` | `u32` | `0`           | The max value of volatility accumulated                                              |
+| `sampleLifetime`           | `u32` | `0`           | The value of volatility accumulated                                                  |
 
 #### Returns
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[assembly/structs/Preset.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L16)
+[assembly/structs/Preset.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L16)
 
 ## Properties
 
@@ -65,9 +65,9 @@ The base factor
 
 #### Defined in
 
-[assembly/structs/Preset.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L18)
+[assembly/structs/Preset.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L18)
 
-___
+---
 
 ### binStep
 
@@ -77,9 +77,9 @@ The bin step
 
 #### Defined in
 
-[assembly/structs/Preset.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L17)
+[assembly/structs/Preset.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L17)
 
-___
+---
 
 ### decayPeriod
 
@@ -89,9 +89,9 @@ The decay period, where the fees are halved
 
 #### Defined in
 
-[assembly/structs/Preset.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L20)
+[assembly/structs/Preset.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L20)
 
-___
+---
 
 ### filterPeriod
 
@@ -101,9 +101,9 @@ The filter period, where the fees stays constant
 
 #### Defined in
 
-[assembly/structs/Preset.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L19)
+[assembly/structs/Preset.ts:19](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L19)
 
-___
+---
 
 ### maxVolatilityAccumulated
 
@@ -113,9 +113,9 @@ The max value of volatility accumulated
 
 #### Defined in
 
-[assembly/structs/Preset.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L24)
+[assembly/structs/Preset.ts:24](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L24)
 
-___
+---
 
 ### protocolShare
 
@@ -125,9 +125,9 @@ The share of fees sent to protocol
 
 #### Defined in
 
-[assembly/structs/Preset.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L23)
+[assembly/structs/Preset.ts:23](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L23)
 
-___
+---
 
 ### reductionFactor
 
@@ -137,9 +137,9 @@ The reduction factor, used to calculate the reduction of the accumulator
 
 #### Defined in
 
-[assembly/structs/Preset.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L21)
+[assembly/structs/Preset.ts:21](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L21)
 
-___
+---
 
 ### sampleLifetime
 
@@ -149,9 +149,9 @@ The value of volatility accumulated
 
 #### Defined in
 
-[assembly/structs/Preset.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L25)
+[assembly/structs/Preset.ts:25](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L25)
 
-___
+---
 
 ### variableFeeControl
 
@@ -161,7 +161,7 @@ The variable fee control, used to control the variable fee, can be 0 to disable 
 
 #### Defined in
 
-[assembly/structs/Preset.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L22)
+[assembly/structs/Preset.ts:22](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L22)
 
 ## Methods
 
@@ -171,10 +171,10 @@ The variable fee control, used to control the variable fee, can be 0 to disable 
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -186,9 +186,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Preset.ts:46](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L46)
+[assembly/structs/Preset.ts:46](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L46)
 
-___
+---
 
 ### serialize
 
@@ -204,4 +204,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Preset.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Preset.ts#L32)
+[assembly/structs/Preset.ts:32](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Preset.ts#L32)

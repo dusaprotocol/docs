@@ -42,9 +42,9 @@ Accept the ownership of the contract.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_` | `StaticArray`<`u8`\> | unused |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
+| `_`  | `StaticArray`<`u8`\> | unused      |
 
 #### Returns
 
@@ -52,9 +52,9 @@ Accept the ownership of the contract.
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:855](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L855)
+[assembly/contracts/Factory.ts:855](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L855)
 
-___
+---
 
 ### addQuoteAsset
 
@@ -64,8 +64,8 @@ Function to add an asset to the whitelist of quote assets
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -74,9 +74,9 @@ Function to add an asset to the whitelist of quote assets
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:776](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L776)
+[assembly/contracts/Factory.ts:776](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L776)
 
-___
+---
 
 ### constructor
 
@@ -84,9 +84,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | The serialized arguments containing: - _feeRecipient The address of the fee recipient - _flashLoanFee The value of the fee for flash loan |
+| Name | Type                 | Description                                                                                                                                 |
+| :--- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| `bs` | `StaticArray`<`u8`\> | The serialized arguments containing: - \_feeRecipient The address of the fee recipient - \_flashLoanFee The value of the fee for flash loan |
 
 #### Returns
 
@@ -98,21 +98,21 @@ Constructor
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:95](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L95)
+[assembly/contracts/Factory.ts:95](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L95)
 
-___
+---
 
 ### createLBPair
 
 ▸ **createLBPair**(`bs`): `StaticArray`<`u8`\>
 
-Create a liquidity bin LBPair for _tokenX and _tokenY
+Create a liquidity bin LBPair for \_tokenX and \_tokenY
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | The serialized arguments -_tokenX The address of the first token -_tokenY The address of the second token -_activeId The id of the active bin -_binStep The bin step of the LBPair |
+| Name | Type                 | Description                                                                                                                                                                            |
+| :--- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bs` | `StaticArray`<`u8`\> | The serialized arguments -\_tokenX The address of the first token -\_tokenY The address of the second token -\_activeId The id of the active bin -\_binStep The bin step of the LBPair |
 
 #### Returns
 
@@ -122,9 +122,9 @@ The address of the newly created LBPair
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:360](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L360)
+[assembly/contracts/Factory.ts:360](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L360)
 
-___
+---
 
 ### forceDecay
 
@@ -132,8 +132,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -142,9 +142,9 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:826](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L826)
+[assembly/contracts/Factory.ts:826](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L826)
 
-___
+---
 
 ### getAllBinSteps
 
@@ -152,9 +152,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_` | `StaticArray`<`u8`\> |
+| Name | Type                 |
+| :--- | :------------------- |
+| `_`  | `StaticArray`<`u8`\> |
 
 #### Returns
 
@@ -162,9 +162,9 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:196](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L196)
+[assembly/contracts/Factory.ts:196](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L196)
 
-___
+---
 
 ### getAllLBPairs
 
@@ -174,8 +174,8 @@ View function to return all the LBPair of a pair of tokens
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -184,9 +184,9 @@ View function to return all the LBPair of a pair of tokens
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:244](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L244)
+[assembly/contracts/Factory.ts:244](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L244)
 
-___
+---
 
 ### getAvailableLBPairBinSteps
 
@@ -196,9 +196,9 @@ View function to return the list of available binStep for a pair of tokens
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | the serialized arguments containing: - _tokenA The address of the first token of the pair - _tokenB The address of the second token of the pair |
+| Name | Type                 | Description                                                                                                                                       |
+| :--- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `bs` | `StaticArray`<`u8`\> | the serialized arguments containing: - \_tokenA The address of the first token of the pair - \_tokenB The address of the second token of the pair |
 
 #### Returns
 
@@ -208,9 +208,9 @@ Available bin steps for a pair of tokens
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:218](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L218)
+[assembly/contracts/Factory.ts:218](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L218)
 
-___
+---
 
 ### getLBPairInformation
 
@@ -220,8 +220,8 @@ Returns the LBPairInformation if it exists
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -230,9 +230,9 @@ Returns the LBPairInformation if it exists
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:145](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L145)
+[assembly/contracts/Factory.ts:145](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L145)
 
-___
+---
 
 ### getPreset
 
@@ -242,8 +242,8 @@ View function to return the different parameters of the preset
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -252,9 +252,9 @@ View function to return the different parameters of the preset
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:179](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L179)
+[assembly/contracts/Factory.ts:179](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L179)
 
-___
+---
 
 ### grantRole
 
@@ -264,8 +264,8 @@ Set the role for account
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type                 |
+| :----------- | :------------------- |
 | `binaryArgs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -276,7 +276,7 @@ Set the role for account
 
 node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:17
 
-___
+---
 
 ### hasRole
 
@@ -286,8 +286,8 @@ Returns true if the account has the role.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type                 |
+| :----------- | :------------------- |
 | `binaryArgs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -300,7 +300,7 @@ boolean
 
 node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:49
 
-___
+---
 
 ### members
 
@@ -310,8 +310,8 @@ get the members for a role
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type                 |
+| :----------- | :------------------- |
 | `binaryArgs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -322,7 +322,7 @@ get the members for a role
 
 node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:36
 
-___
+---
 
 ### onlyRole
 
@@ -332,8 +332,8 @@ Assert that caller has the role.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type                 |
+| :----------- | :------------------- |
 | `binaryArgs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -346,7 +346,7 @@ boolean
 
 node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:85
 
-___
+---
 
 ### proposeNewOwner
 
@@ -356,8 +356,8 @@ Propose to transfer the ownership of the contract to a new account (`newOwner`).
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description                                               |
+| :--- | :------------------- | :-------------------------------------------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments containing the new owner address |
 
 #### Returns
@@ -366,9 +366,9 @@ Propose to transfer the ownership of the contract to a new account (`newOwner`).
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:839](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L839)
+[assembly/contracts/Factory.ts:839](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L839)
 
-___
+---
 
 ### receiveCoins
 
@@ -376,9 +376,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_` | `StaticArray`<`u8`\> | unused |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
+| `_`  | `StaticArray`<`u8`\> | unused      |
 
 #### Returns
 
@@ -390,9 +390,9 @@ Function used by an SC to receive Massa coins
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:967](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L967)
+[assembly/contracts/Factory.ts:967](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L967)
 
-___
+---
 
 ### removeLBHooksOnPair
 
@@ -402,8 +402,8 @@ Function to remove the hooks contract from the pair
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -414,13 +414,14 @@ Function to remove the hooks contract from the pair
 
 Needs to be called by an address with the HOOKS_MANAGER role
 fail if:
+
 - The pair doesn't exist
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:667](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L667)
+[assembly/contracts/Factory.ts:667](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L667)
 
-___
+---
 
 ### removePreset
 
@@ -430,8 +431,8 @@ Remove the preset linked to a binStep
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -440,9 +441,9 @@ Remove the preset linked to a binStep
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:536](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L536)
+[assembly/contracts/Factory.ts:536](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L536)
 
-___
+---
 
 ### removeQuoteAsset
 
@@ -452,8 +453,8 @@ Function to remove an asset from the whitelist of quote assets
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -462,9 +463,9 @@ Function to remove an asset from the whitelist of quote assets
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:798](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L798)
+[assembly/contracts/Factory.ts:798](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L798)
 
-___
+---
 
 ### revokeRole
 
@@ -474,8 +475,8 @@ Revoke role for account. Must be called by the role owner or the contract admin.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type                 |
+| :----------- | :------------------- |
 | `binaryArgs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -486,7 +487,7 @@ Revoke role for account. Must be called by the role owner or the contract admin.
 
 node_modules/@massalabs/sc-standards/assembly/contracts/utils/accessControl.ts:66
 
-___
+---
 
 ### setFactoryLockedState
 
@@ -496,8 +497,8 @@ Function to set the creation restriction of the Factory
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -506,9 +507,9 @@ Function to set the creation restriction of the Factory
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:757](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L757)
+[assembly/contracts/Factory.ts:757](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L757)
 
-___
+---
 
 ### setFeeRecipient
 
@@ -518,8 +519,8 @@ Function to set the recipient of the fees. This address needs to be able to rece
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -528,9 +529,9 @@ Function to set the recipient of the fees. This address needs to be able to rece
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:719](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L719)
+[assembly/contracts/Factory.ts:719](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L719)
 
-___
+---
 
 ### setFeesParametersOnPair
 
@@ -540,8 +541,8 @@ Function to set the fee parameter of a LBPair
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -550,9 +551,9 @@ Function to set the fee parameter of a LBPair
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:557](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L557)
+[assembly/contracts/Factory.ts:557](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L557)
 
-___
+---
 
 ### setFlashLoanFee
 
@@ -562,8 +563,8 @@ Function to set the flash loan fee
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -572,9 +573,9 @@ Function to set the flash loan fee
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:732](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L732)
+[assembly/contracts/Factory.ts:732](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L732)
 
-___
+---
 
 ### setLBHooksParametersOnPair
 
@@ -584,8 +585,8 @@ Function to set the hooks parameters of a pair
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -596,14 +597,15 @@ Function to set the hooks parameters of a pair
 
 Needs to be called by an address with the HOOKS_MANAGER role
 fail if:
+
 - The pair doesn't exist
 - The hooks address is not valid or the hooks flags are all false
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:630](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L630)
+[assembly/contracts/Factory.ts:630](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L630)
 
-___
+---
 
 ### setLBPairIgnored
 
@@ -613,9 +615,9 @@ Function to set whether the pair is ignored or not for routing, it will make the
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `bs` | `StaticArray`<`u8`\> | The serialized arguments -_tokenA The address of the first token -_tokenB The address of the second token -_binStep The bin step of the LBPair -_ignored: Whether to ignore (true) or not (false) the pair for routing |
+| Name | Type                 | Description                                                                                                                                                                                                                |
+| :--- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bs` | `StaticArray`<`u8`\> | The serialized arguments -\_tokenA The address of the first token -\_tokenB The address of the second token -\_binStep The bin step of the LBPair -\_ignored: Whether to ignore (true) or not (false) the pair for routing |
 
 #### Returns
 
@@ -623,9 +625,9 @@ Function to set whether the pair is ignored or not for routing, it will make the
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:436](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L436)
+[assembly/contracts/Factory.ts:436](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L436)
 
-___
+---
 
 ### setPreset
 
@@ -635,8 +637,8 @@ Sets the preset parameters of a bin step
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                 | Description              |
+| :--- | :------------------- | :----------------------- |
 | `bs` | `StaticArray`<`u8`\> | The serialized arguments |
 
 #### Returns
@@ -645,4 +647,4 @@ Sets the preset parameters of a bin step
 
 #### Defined in
 
-[assembly/contracts/Factory.ts:475](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Factory.ts#L475)
+[assembly/contracts/Factory.ts:475](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Factory.ts#L475)

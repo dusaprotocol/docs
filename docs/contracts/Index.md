@@ -55,38 +55,38 @@
 
 ### Variables
 
-- [AFTER\_BURN\_FLAG](#after_burn_flag)
-- [AFTER\_FLASH\_LOAN\_FLAG](#after_flash_loan_flag)
-- [AFTER\_MINT\_FLAG](#after_mint_flag)
-- [AFTER\_SWAP\_FLAG](#after_swap_flag)
-- [AFTER\_TRANSFER\_FLAG](#after_transfer_flag)
-- [BALANCE\_KEY\_PREFIX\_LENGTH](#balance_key_prefix_length)
-- [BASIS\_POINT\_MAX](#basis_point_max)
-- [BEFORE\_BURN\_FLAG](#before_burn_flag)
-- [BEFORE\_FLASH\_LOAN\_FLAG](#before_flash_loan_flag)
-- [BEFORE\_MINT\_FLAG](#before_mint_flag)
-- [BEFORE\_SWAP\_FLAG](#before_swap_flag)
-- [BEFORE\_TRANSFER\_FLAG](#before_transfer_flag)
+- [AFTER_BURN_FLAG](#after_burn_flag)
+- [AFTER_FLASH_LOAN_FLAG](#after_flash_loan_flag)
+- [AFTER_MINT_FLAG](#after_mint_flag)
+- [AFTER_SWAP_FLAG](#after_swap_flag)
+- [AFTER_TRANSFER_FLAG](#after_transfer_flag)
+- [BALANCE_KEY_PREFIX_LENGTH](#balance_key_prefix_length)
+- [BASIS_POINT_MAX](#basis_point_max)
+- [BEFORE_BURN_FLAG](#before_burn_flag)
+- [BEFORE_FLASH_LOAN_FLAG](#before_flash_loan_flag)
+- [BEFORE_MINT_FLAG](#before_mint_flag)
+- [BEFORE_SWAP_FLAG](#before_swap_flag)
+- [BEFORE_TRANSFER_FLAG](#before_transfer_flag)
 - [DELIMITER](#delimiter)
-- [EVENT\_DELIMITER](#event_delimiter)
-- [ID\_ONE](#id_one)
+- [EVENT_DELIMITER](#event_delimiter)
+- [ID_ONE](#id_one)
 - [MAX](#max)
-- [MAX\_BIN\_STEP](#max_bin_step)
-- [MAX\_FEE](#max_fee)
-- [MAX\_PROTOCOL\_SHARE](#max_protocol_share)
-- [MIN\_BIN\_STEP](#min_bin_step)
+- [MAX_BIN_STEP](#max_bin_step)
+- [MAX_FEE](#max_fee)
+- [MAX_PROTOCOL_SHARE](#max_protocol_share)
+- [MIN_BIN_STEP](#min_bin_step)
 - [ONE](#one)
-- [ONE\_COIN](#one_coin)
+- [ONE_COIN](#one_coin)
 - [PRECISION](#precision)
-- [REAL\_ID\_SHIFT](#real_id_shift)
-- [SCALE\_OFFSET](#scale_offset)
-- [STORAGE\_BYTE\_COST](#storage_byte_cost)
-- [STORAGE\_PREFIX\_LENGTH](#storage_prefix_length)
+- [REAL_ID_SHIFT](#real_id_shift)
+- [SCALE_OFFSET](#scale_offset)
+- [STORAGE_BYTE_COST](#storage_byte_cost)
+- [STORAGE_PREFIX_LENGTH](#storage_prefix_length)
 - [THREE](#three)
 - [TWO](#two)
 - [ZERO](#zero)
-- [ZERO\_ADDRESS](#zero_address)
-- [\_KEY\_ELEMENT\_SUFFIX](#_key_element_suffix)
+- [ZERO_ADDRESS](#zero_address)
+- [\_KEY_ELEMENT_SUFFIX](#_key_element_suffix)
 
 ### Functions
 
@@ -126,7 +126,7 @@
 - [LBPair\_\_OnlyStrictlyIncreasingId](#lbpair__onlystrictlyincreasingid)
 - [LBPair\_\_OracleNewSizeTooSmall](#lbpair__oraclenewsizetoosmall)
 - [LBPair\_\_WrongLengths](#lbpair__wronglengths)
-- [LBQuoter\_InvalidLength](#lbquoter_invalidlength)
+- [LBQuoter_InvalidLength](#lbquoter_invalidlength)
 - [LBRouter\_\_AmountSlippageCaught](#lbrouter__amountslippagecaught)
 - [LBRouter\_\_BrokenSwapSafetyCheck](#lbrouter__brokenswapsafetycheck)
 - [LBRouter\_\_DeadlineExceeded](#lbrouter__deadlineexceeded)
@@ -168,155 +168,155 @@
 
 ## Variables
 
-### AFTER\_BURN\_FLAG
+### AFTER_BURN_FLAG
 
-• `Const` **AFTER\_BURN\_FLAG**: `u32`
-
-#### Defined in
-
-[assembly/libraries/Hooks.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L14)
-
-___
-
-### AFTER\_FLASH\_LOAN\_FLAG
-
-• `Const` **AFTER\_FLASH\_LOAN\_FLAG**: `u32`
+• `Const` **AFTER_BURN_FLAG**: `u32`
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L10)
+[assembly/libraries/Hooks.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L14)
 
-___
+---
 
-### AFTER\_MINT\_FLAG
+### AFTER_FLASH_LOAN_FLAG
 
-• `Const` **AFTER\_MINT\_FLAG**: `u32`
-
-#### Defined in
-
-[assembly/libraries/Hooks.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L12)
-
-___
-
-### AFTER\_SWAP\_FLAG
-
-• `Const` **AFTER\_SWAP\_FLAG**: `u32`
+• `Const` **AFTER_FLASH_LOAN_FLAG**: `u32`
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:8](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L8)
+[assembly/libraries/Hooks.ts:10](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L10)
 
-___
+---
 
-### AFTER\_TRANSFER\_FLAG
+### AFTER_MINT_FLAG
 
-• `Const` **AFTER\_TRANSFER\_FLAG**: `u32`
-
-#### Defined in
-
-[assembly/libraries/Hooks.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L16)
-
-___
-
-### BALANCE\_KEY\_PREFIX\_LENGTH
-
-• `Const` **BALANCE\_KEY\_PREFIX\_LENGTH**: ``7``
+• `Const` **AFTER_MINT_FLAG**: `u32`
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:168](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L168)
+[assembly/libraries/Hooks.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L12)
 
-___
+---
 
-### BASIS\_POINT\_MAX
+### AFTER_SWAP_FLAG
 
-• `Const` **BASIS\_POINT\_MAX**: `u16` = `10_000`
-
-#### Defined in
-
-[assembly/libraries/Constants.ts:7](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L7)
-
-___
-
-### BEFORE\_BURN\_FLAG
-
-• `Const` **BEFORE\_BURN\_FLAG**: `u32`
+• `Const` **AFTER_SWAP_FLAG**: `u32`
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L13)
+[assembly/libraries/Hooks.ts:8](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L8)
 
-___
+---
 
-### BEFORE\_FLASH\_LOAN\_FLAG
+### AFTER_TRANSFER_FLAG
 
-• `Const` **BEFORE\_FLASH\_LOAN\_FLAG**: `u32`
-
-#### Defined in
-
-[assembly/libraries/Hooks.ts:9](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L9)
-
-___
-
-### BEFORE\_MINT\_FLAG
-
-• `Const` **BEFORE\_MINT\_FLAG**: `u32`
+• `Const` **AFTER_TRANSFER_FLAG**: `u32`
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L11)
+[assembly/libraries/Hooks.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L16)
 
-___
+---
 
-### BEFORE\_SWAP\_FLAG
+### BALANCE_KEY_PREFIX_LENGTH
 
-• `Const` **BEFORE\_SWAP\_FLAG**: `u32`
-
-#### Defined in
-
-[assembly/libraries/Hooks.ts:7](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L7)
-
-___
-
-### BEFORE\_TRANSFER\_FLAG
-
-• `Const` **BEFORE\_TRANSFER\_FLAG**: `u32`
+• `Const` **BALANCE_KEY_PREFIX_LENGTH**: `7`
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L15)
+[assembly/libraries/Utils.ts:168](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L168)
 
-___
+---
+
+### BASIS_POINT_MAX
+
+• `Const` **BASIS_POINT_MAX**: `u16` = `10_000`
+
+#### Defined in
+
+[assembly/libraries/Constants.ts:7](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L7)
+
+---
+
+### BEFORE_BURN_FLAG
+
+• `Const` **BEFORE_BURN_FLAG**: `u32`
+
+#### Defined in
+
+[assembly/libraries/Hooks.ts:13](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L13)
+
+---
+
+### BEFORE_FLASH_LOAN_FLAG
+
+• `Const` **BEFORE_FLASH_LOAN_FLAG**: `u32`
+
+#### Defined in
+
+[assembly/libraries/Hooks.ts:9](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L9)
+
+---
+
+### BEFORE_MINT_FLAG
+
+• `Const` **BEFORE_MINT_FLAG**: `u32`
+
+#### Defined in
+
+[assembly/libraries/Hooks.ts:11](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L11)
+
+---
+
+### BEFORE_SWAP_FLAG
+
+• `Const` **BEFORE_SWAP_FLAG**: `u32`
+
+#### Defined in
+
+[assembly/libraries/Hooks.ts:7](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L7)
+
+---
+
+### BEFORE_TRANSFER_FLAG
+
+• `Const` **BEFORE_TRANSFER_FLAG**: `u32`
+
+#### Defined in
+
+[assembly/libraries/Hooks.ts:15](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L15)
+
+---
 
 ### DELIMITER
 
-• `Const` **DELIMITER**: ``":"``
+• `Const` **DELIMITER**: `":"`
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L16)
+[assembly/libraries/Utils.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L16)
 
-___
+---
 
-### EVENT\_DELIMITER
+### EVENT_DELIMITER
 
-• `Const` **EVENT\_DELIMITER**: ``";?!"``
-
-#### Defined in
-
-[assembly/libraries/Utils.ts:101](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L101)
-
-___
-
-### ID\_ONE
-
-• `Const` **ID\_ONE**: `u32`
+• `Const` **EVENT_DELIMITER**: `";?!"`
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:6](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L6)
+[assembly/libraries/Utils.ts:101](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L101)
 
-___
+---
+
+### ID_ONE
+
+• `Const` **ID_ONE**: `u32`
+
+#### Defined in
+
+[assembly/libraries/Constants.ts:6](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L6)
+
+---
 
 ### MAX
 
@@ -324,49 +324,49 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L16)
+[assembly/libraries/Constants.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L16)
 
-___
+---
 
-### MAX\_BIN\_STEP
+### MAX_BIN_STEP
 
-• `Const` **MAX\_BIN\_STEP**: ``100``
-
-#### Defined in
-
-[assembly/libraries/Constants.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L12)
-
-___
-
-### MAX\_FEE
-
-• `Const` **MAX\_FEE**: `u64`
+• `Const` **MAX_BIN_STEP**: `100`
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L13)
+[assembly/libraries/Constants.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L12)
 
-___
+---
 
-### MAX\_U128
+### MAX_FEE
 
-• `Const` **MAX\_U128**: `u256`
-
-#### Defined in
-
-[assembly/libraries/Constants.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L20)
-
-___
-
-### MIN\_BIN\_STEP
-
-• `Const` **MIN\_BIN\_STEP**: ``1``
+• `Const` **MAX_FEE**: `u64`
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L11)
+[assembly/libraries/Constants.ts:13](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L13)
 
-___
+---
+
+### MAX_U128
+
+• `Const` **MAX_U128**: `u256`
+
+#### Defined in
+
+[assembly/libraries/Constants.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L20)
+
+---
+
+### MIN_BIN_STEP
+
+• `Const` **MIN_BIN_STEP**: `1`
+
+#### Defined in
+
+[assembly/libraries/Constants.ts:11](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L11)
+
+---
 
 ### ONE
 
@@ -374,19 +374,19 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L14)
+[assembly/libraries/Constants.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L14)
 
-___
+---
 
-### ONE\_COIN
+### ONE_COIN
 
-• `Const` **ONE\_COIN**: `u64`
+• `Const` **ONE_COIN**: `u64`
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:9](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L9)
+[assembly/libraries/Constants.ts:9](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L9)
 
-___
+---
 
 ### PRECISION
 
@@ -394,49 +394,49 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:8](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L8)
+[assembly/libraries/Constants.ts:8](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L8)
 
-___
+---
 
-### REAL\_ID\_SHIFT
+### REAL_ID_SHIFT
 
-• `Const` **REAL\_ID\_SHIFT**: `i64`
-
-#### Defined in
-
-[assembly/libraries/Constants.ts:5](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L5)
-
-___
-
-### SCALE\_OFFSET
-
-• `Const` **SCALE\_OFFSET**: ``128``
+• `Const` **REAL_ID_SHIFT**: `i64`
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L10)
+[assembly/libraries/Constants.ts:5](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L5)
 
-___
+---
 
-### STORAGE\_BYTE\_COST
+### SCALE_OFFSET
 
-• `Const` **STORAGE\_BYTE\_COST**: ``100000``
-
-#### Defined in
-
-[assembly/libraries/Utils.ts:166](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L166)
-
-___
-
-### STORAGE\_PREFIX\_LENGTH
-
-• `Const` **STORAGE\_PREFIX\_LENGTH**: ``4``
+• `Const` **SCALE_OFFSET**: `128`
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:167](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L167)
+[assembly/libraries/Constants.ts:10](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L10)
 
-___
+---
+
+### STORAGE_BYTE_COST
+
+• `Const` **STORAGE_BYTE_COST**: `100000`
+
+#### Defined in
+
+[assembly/libraries/Utils.ts:166](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L166)
+
+---
+
+### STORAGE_PREFIX_LENGTH
+
+• `Const` **STORAGE_PREFIX_LENGTH**: `4`
+
+#### Defined in
+
+[assembly/libraries/Utils.ts:167](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L167)
+
+---
 
 ### THREE
 
@@ -444,9 +444,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L18)
+[assembly/libraries/Constants.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L18)
 
-___
+---
 
 ### TWO
 
@@ -454,9 +454,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L17)
+[assembly/libraries/Constants.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L17)
 
-___
+---
 
 ### ZERO
 
@@ -464,40 +464,40 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Constants.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L15)
+[assembly/libraries/Constants.ts:15](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L15)
 
-___
+---
 
-### ZERO\_ADDRESS
+### ZERO_ADDRESS
 
-• `Const` **ZERO\_ADDRESS**: `Address`
-
-#### Defined in
-
-[assembly/libraries/Constants.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Constants.ts#L19)
-
-___
-
-### \_KEY\_ELEMENT\_SUFFIX
-
-• `Const` **\_KEY\_ELEMENT\_SUFFIX**: ``"::"``
+• `Const` **ZERO_ADDRESS**: `Address`
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L17)
+[assembly/libraries/Constants.ts:19](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Constants.ts#L19)
+
+---
+
+### \_KEY_ELEMENT_SUFFIX
+
+• `Const` **\_KEY_ELEMENT_SUFFIX**: `"::"`
+
+#### Defined in
+
+[assembly/libraries/PersistentMap.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L17)
 
 ## Functions
 
 ### BinHelper\_\_BinStepOverflows
 
-▸ **BinHelper__BinStepOverflows**(`bp`): `string`
+▸ **BinHelper\_\_BinStepOverflows**(`bp`): `string`
 
 BinHelper errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type  |
+| :--- | :---- |
 | `bp` | `u16` |
 
 #### Returns
@@ -506,13 +506,13 @@ BinHelper errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:203](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L203)
+[assembly/libraries/Errors.ts:203](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L203)
 
-___
+---
 
 ### BinHelper\_\_IdOverflows
 
-▸ **BinHelper__IdOverflows**(): `string`
+▸ **BinHelper\_\_IdOverflows**(): `string`
 
 #### Returns
 
@@ -520,18 +520,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:205](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L205)
+[assembly/libraries/Errors.ts:205](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L205)
 
-___
+---
 
 ### LBFactory\_\_BinStepHasNoPreset
 
-▸ **LBFactory__BinStepHasNoPreset**(`binStep`): `string`
+▸ **LBFactory\_\_BinStepHasNoPreset**(`binStep`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type  |
+| :-------- | :---- |
 | `binStep` | `u64` |
 
 #### Returns
@@ -540,20 +540,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:150](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L150)
+[assembly/libraries/Errors.ts:150](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L150)
 
-___
+---
 
 ### LBFactory\_\_BinStepRequirementsBreached
 
-▸ **LBFactory__BinStepRequirementsBreached**(`lowerBound`, `binStep`, `higherBound`): `string`
+▸ **LBFactory\_\_BinStepRequirementsBreached**(`lowerBound`, `binStep`, `higherBound`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `lowerBound` | `u64` |
-| `binStep` | `u32` |
+| Name          | Type  |
+| :------------ | :---- |
+| `lowerBound`  | `u64` |
+| `binStep`     | `u32` |
 | `higherBound` | `u64` |
 
 #### Returns
@@ -562,20 +562,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:134](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L134)
+[assembly/libraries/Errors.ts:134](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L134)
 
-___
+---
 
 ### LBFactory\_\_DecreasingPeriods
 
-▸ **LBFactory__DecreasingPeriods**(`filterPeriod`, `decayPeriod`): `string`
+▸ **LBFactory\_\_DecreasingPeriods**(`filterPeriod`, `decayPeriod`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type  |
+| :------------- | :---- |
 | `filterPeriod` | `u32` |
-| `decayPeriod` | `u32` |
+| `decayPeriod`  | `u32` |
 
 #### Returns
 
@@ -583,13 +583,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:116](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L116)
+[assembly/libraries/Errors.ts:116](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L116)
 
-___
+---
 
 ### LBFactory\_\_FactoryLockIsAlreadyInTheSameState
 
-▸ **LBFactory__FactoryLockIsAlreadyInTheSameState**(): `string`
+▸ **LBFactory\_\_FactoryLockIsAlreadyInTheSameState**(): `string`
 
 #### Returns
 
@@ -597,21 +597,21 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:146](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L146)
+[assembly/libraries/Errors.ts:146](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L146)
 
-___
+---
 
 ### LBFactory\_\_FeesAboveMax
 
-▸ **LBFactory__FeesAboveMax**(`baseFee`, `_maxVariableFee`, `maxFees`): `string`
+▸ **LBFactory\_\_FeesAboveMax**(`baseFee`, `_maxVariableFee`, `maxFees`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `baseFee` | `u64` |
+| Name              | Type  |
+| :---------------- | :---- |
+| `baseFee`         | `u64` |
 | `_maxVariableFee` | `u64` |
-| `maxFees` | `u64` |
+| `maxFees`         | `u64` |
 
 #### Returns
 
@@ -619,19 +619,19 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:124](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L124)
+[assembly/libraries/Errors.ts:124](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L124)
 
-___
+---
 
 ### LBFactory\_\_FlashLoanFeeAboveMax
 
-▸ **LBFactory__FlashLoanFeeAboveMax**(`fees`, `maxFees`): `string`
+▸ **LBFactory\_\_FlashLoanFeeAboveMax**(`fees`, `maxFees`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `fees` | `u64` |
+| Name      | Type  |
+| :-------- | :---- |
+| `fees`    | `u64` |
 | `maxFees` | `u64` |
 
 #### Returns
@@ -640,18 +640,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:130](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L130)
+[assembly/libraries/Errors.ts:130](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L130)
 
-___
+---
 
 ### LBFactory\_\_FunctionIsLockedForUsers
 
-▸ **LBFactory__FunctionIsLockedForUsers**(`user`): `string`
+▸ **LBFactory\_\_FunctionIsLockedForUsers**(`user`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type      |
+| :----- | :-------- |
 | `user` | `Address` |
 
 #### Returns
@@ -660,20 +660,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:144](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L144)
+[assembly/libraries/Errors.ts:144](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L144)
 
-___
+---
 
 ### LBFactory\_\_IdenticalAddresses
 
-▸ **LBFactory__IdenticalAddresses**(`token`): `string`
+▸ **LBFactory\_\_IdenticalAddresses**(`token`): `string`
 
 LBFactory errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `token` | `Address` |
 
 #### Returns
@@ -682,21 +682,21 @@ LBFactory errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:102](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L102)
+[assembly/libraries/Errors.ts:102](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L102)
 
-___
+---
 
 ### LBFactory\_\_LBPairAlreadyExists
 
-▸ **LBFactory__LBPairAlreadyExists**(`tokenX`, `tokenY`, `_binStep`): `string`
+▸ **LBFactory\_\_LBPairAlreadyExists**(`tokenX`, `tokenY`, `_binStep`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tokenX` | `Address` |
-| `tokenY` | `Address` |
-| `_binStep` | `u64` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `tokenX`   | `Address` |
+| `tokenY`   | `Address` |
+| `_binStep` | `u64`     |
 
 #### Returns
 
@@ -704,13 +704,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:110](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L110)
+[assembly/libraries/Errors.ts:110](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L110)
 
-___
+---
 
 ### LBFactory\_\_LBPairIgnoredIsAlreadyInTheSameState
 
-▸ **LBFactory__LBPairIgnoredIsAlreadyInTheSameState**(): `string`
+▸ **LBFactory\_\_LBPairIgnoredIsAlreadyInTheSameState**(): `string`
 
 #### Returns
 
@@ -718,21 +718,21 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:148](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L148)
+[assembly/libraries/Errors.ts:148](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L148)
 
-___
+---
 
 ### LBFactory\_\_LBPairNotCreated
 
-▸ **LBFactory__LBPairNotCreated**(`tokenX`, `tokenY`, `binStep`): `string`
+▸ **LBFactory\_\_LBPairNotCreated**(`tokenX`, `tokenY`, `binStep`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tokenX` | `Address` |
-| `tokenY` | `Address` |
-| `binStep` | `u64` |
+| Name      | Type      |
+| :-------- | :-------- |
+| `tokenX`  | `Address` |
+| `tokenY`  | `Address` |
+| `binStep` | `u64`     |
 
 #### Returns
 
@@ -740,20 +740,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:156](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L156)
+[assembly/libraries/Errors.ts:156](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L156)
 
-___
+---
 
 ### LBFactory\_\_ProtocolShareOverflows
 
-▸ **LBFactory__ProtocolShareOverflows**(`protocolShare`, `max`): `string`
+▸ **LBFactory\_\_ProtocolShareOverflows**(`protocolShare`, `max`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type  |
+| :-------------- | :---- |
 | `protocolShare` | `u32` |
-| `max` | `u64` |
+| `max`           | `u64` |
 
 #### Returns
 
@@ -761,18 +761,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:140](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L140)
+[assembly/libraries/Errors.ts:140](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L140)
 
-___
+---
 
 ### LBFactory\_\_QuoteAssetAlreadyWhitelisted
 
-▸ **LBFactory__QuoteAssetAlreadyWhitelisted**(`quoteAsset`): `string`
+▸ **LBFactory\_\_QuoteAssetAlreadyWhitelisted**(`quoteAsset`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type      |
+| :----------- | :-------- |
 | `quoteAsset` | `Address` |
 
 #### Returns
@@ -781,18 +781,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:107](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L107)
+[assembly/libraries/Errors.ts:107](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L107)
 
-___
+---
 
 ### LBFactory\_\_QuoteAssetNotWhitelisted
 
-▸ **LBFactory__QuoteAssetNotWhitelisted**(`quoteAsset`): `string`
+▸ **LBFactory\_\_QuoteAssetNotWhitelisted**(`quoteAsset`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type      |
+| :----------- | :-------- |
 | `quoteAsset` | `Address` |
 
 #### Returns
@@ -801,20 +801,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:104](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L104)
+[assembly/libraries/Errors.ts:104](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L104)
 
-___
+---
 
 ### LBFactory\_\_ReductionFactorOverflows
 
-▸ **LBFactory__ReductionFactorOverflows**(`reductionFactor`, `max`): `string`
+▸ **LBFactory\_\_ReductionFactorOverflows**(`reductionFactor`, `max`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type  |
+| :---------------- | :---- |
 | `reductionFactor` | `u32` |
-| `max` | `u64` |
+| `max`             | `u64` |
 
 #### Returns
 
@@ -822,18 +822,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:120](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L120)
+[assembly/libraries/Errors.ts:120](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L120)
 
-___
+---
 
 ### LBFactory\_\_SameFeeRecipient
 
-▸ **LBFactory__SameFeeRecipient**(`feeRecipient`): `string`
+▸ **LBFactory\_\_SameFeeRecipient**(`feeRecipient`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type      |
+| :------------- | :-------- |
 | `feeRecipient` | `Address` |
 
 #### Returns
@@ -842,18 +842,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:152](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L152)
+[assembly/libraries/Errors.ts:152](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L152)
 
-___
+---
 
 ### LBFactory\_\_SameFlashLoanFee
 
-▸ **LBFactory__SameFlashLoanFee**(`flashLoanFee`): `string`
+▸ **LBFactory\_\_SameFlashLoanFee**(`flashLoanFee`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type  |
+| :------------- | :---- |
 | `flashLoanFee` | `u64` |
 
 #### Returns
@@ -862,18 +862,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:154](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L154)
+[assembly/libraries/Errors.ts:154](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L154)
 
-___
+---
 
 ### LBFactory\_\_SameHooksParameters
 
-▸ **LBFactory__SameHooksParameters**(`hooksParameters`): `string`
+▸ **LBFactory\_\_SameHooksParameters**(`hooksParameters`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type                                           |
+| :---------------- | :--------------------------------------------- |
 | `hooksParameters` | [`HooksParameters`](./structs/HooksParameters) |
 
 #### Returns
@@ -882,13 +882,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:161](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L161)
+[assembly/libraries/Errors.ts:161](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L161)
 
-___
+---
 
 ### LBPair\_\_AddressZero
 
-▸ **LBPair__AddressZero**(): `string`
+▸ **LBPair\_\_AddressZero**(): `string`
 
 #### Returns
 
@@ -896,13 +896,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:170](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L170)
+[assembly/libraries/Errors.ts:170](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L170)
 
-___
+---
 
 ### LBPair\_\_AddressZeroOrThis
 
-▸ **LBPair__AddressZeroOrThis**(): `string`
+▸ **LBPair\_\_AddressZeroOrThis**(): `string`
 
 #### Returns
 
@@ -910,13 +910,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:171](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L171)
+[assembly/libraries/Errors.ts:171](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L171)
 
-___
+---
 
 ### LBPair\_\_BinStepNotSame
 
-▸ **LBPair__BinStepNotSame**(): `string`
+▸ **LBPair\_\_BinStepNotSame**(): `string`
 
 #### Returns
 
@@ -924,18 +924,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:199](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L199)
+[assembly/libraries/Errors.ts:199](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L199)
 
-___
+---
 
 ### LBPair\_\_CompositionFactorFlawed
 
-▸ **LBPair__CompositionFactorFlawed**(`id`): `string`
+▸ **LBPair\_\_CompositionFactorFlawed**(`id`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type  |
+| :--- | :---- |
 | `id` | `u64` |
 
 #### Returns
@@ -944,13 +944,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:173](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L173)
+[assembly/libraries/Errors.ts:173](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L173)
 
-___
+---
 
 ### LBPair\_\_DistributionsOverflow
 
-▸ **LBPair__DistributionsOverflow**(): `string`
+▸ **LBPair\_\_DistributionsOverflow**(): `string`
 
 #### Returns
 
@@ -958,13 +958,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:183](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L183)
+[assembly/libraries/Errors.ts:183](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L183)
 
-___
+---
 
 ### LBPair\_\_FlashLoanCallbackFailed
 
-▸ **LBPair__FlashLoanCallbackFailed**(): `string`
+▸ **LBPair\_\_FlashLoanCallbackFailed**(): `string`
 
 #### Returns
 
@@ -972,13 +972,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:193](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L193)
+[assembly/libraries/Errors.ts:193](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L193)
 
-___
+---
 
 ### LBPair\_\_FlashLoanInvalidBalance
 
-▸ **LBPair__FlashLoanInvalidBalance**(): `string`
+▸ **LBPair\_\_FlashLoanInvalidBalance**(): `string`
 
 #### Returns
 
@@ -986,13 +986,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:195](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L195)
+[assembly/libraries/Errors.ts:195](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L195)
 
-___
+---
 
 ### LBPair\_\_FlashLoanInvalidToken
 
-▸ **LBPair__FlashLoanInvalidToken**(): `string`
+▸ **LBPair\_\_FlashLoanInvalidToken**(): `string`
 
 #### Returns
 
@@ -1000,13 +1000,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:197](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L197)
+[assembly/libraries/Errors.ts:197](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L197)
 
-___
+---
 
 ### LBPair\_\_InsufficientAmounts
 
-▸ **LBPair__InsufficientAmounts**(): `string`
+▸ **LBPair\_\_InsufficientAmounts**(): `string`
 
 LBPair errors
 
@@ -1016,18 +1016,18 @@ LBPair errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:168](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L168)
+[assembly/libraries/Errors.ts:168](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L168)
 
-___
+---
 
 ### LBPair\_\_InsufficientLiquidityBurned
 
-▸ **LBPair__InsufficientLiquidityBurned**(`id`): `string`
+▸ **LBPair\_\_InsufficientLiquidityBurned**(`id`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type  |
+| :--- | :---- |
 | `id` | `u64` |
 
 #### Returns
@@ -1036,18 +1036,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:177](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L177)
+[assembly/libraries/Errors.ts:177](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L177)
 
-___
+---
 
 ### LBPair\_\_InsufficientLiquidityMinted
 
-▸ **LBPair__InsufficientLiquidityMinted**(`id`): `string`
+▸ **LBPair\_\_InsufficientLiquidityMinted**(`id`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type  |
+| :--- | :---- |
 | `id` | `u64` |
 
 #### Returns
@@ -1056,13 +1056,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:175](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L175)
+[assembly/libraries/Errors.ts:175](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L175)
 
-___
+---
 
 ### LBPair\_\_OnlyFactory
 
-▸ **LBPair__OnlyFactory**(): `string`
+▸ **LBPair\_\_OnlyFactory**(): `string`
 
 #### Returns
 
@@ -1070,20 +1070,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:182](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L182)
+[assembly/libraries/Errors.ts:182](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L182)
 
-___
+---
 
 ### LBPair\_\_OnlyFeeRecipient
 
-▸ **LBPair__OnlyFeeRecipient**(`feeRecipient`, `sender`): `string`
+▸ **LBPair\_\_OnlyFeeRecipient**(`feeRecipient`, `sender`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type      |
+| :------------- | :-------- |
 | `feeRecipient` | `Address` |
-| `sender` | `Address` |
+| `sender`       | `Address` |
 
 #### Returns
 
@@ -1091,13 +1091,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:185](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L185)
+[assembly/libraries/Errors.ts:185](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L185)
 
-___
+---
 
 ### LBPair\_\_OnlyStrictlyIncreasingId
 
-▸ **LBPair__OnlyStrictlyIncreasingId**(): `string`
+▸ **LBPair\_\_OnlyStrictlyIncreasingId**(): `string`
 
 #### Returns
 
@@ -1105,19 +1105,19 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:180](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L180)
+[assembly/libraries/Errors.ts:180](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L180)
 
-___
+---
 
 ### LBPair\_\_OracleNewSizeTooSmall
 
-▸ **LBPair__OracleNewSizeTooSmall**(`newSize`, `oracleSize`): `string`
+▸ **LBPair\_\_OracleNewSizeTooSmall**(`newSize`, `oracleSize`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `newSize` | `u64` |
+| Name         | Type  |
+| :----------- | :---- |
+| `newSize`    | `u64` |
 | `oracleSize` | `u64` |
 
 #### Returns
@@ -1126,13 +1126,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:189](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L189)
+[assembly/libraries/Errors.ts:189](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L189)
 
-___
+---
 
 ### LBPair\_\_WrongLengths
 
-▸ **LBPair__WrongLengths**(): `string`
+▸ **LBPair\_\_WrongLengths**(): `string`
 
 #### Returns
 
@@ -1140,11 +1140,11 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:179](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L179)
+[assembly/libraries/Errors.ts:179](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L179)
 
-___
+---
 
-### LBQuoter\_InvalidLength
+### LBQuoter_InvalidLength
 
 ▸ **LBQuoter_InvalidLength**(): `string`
 
@@ -1156,22 +1156,22 @@ LBQuoter errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:251](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L251)
+[assembly/libraries/Errors.ts:251](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L251)
 
-___
+---
 
 ### LBRouter\_\_AmountSlippageCaught
 
-▸ **LBRouter__AmountSlippageCaught**(`amountXMin`, `amountX`, `amountYMin`, `amountY`): `string`
+▸ **LBRouter\_\_AmountSlippageCaught**(`amountXMin`, `amountX`, `amountYMin`, `amountY`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type   |
+| :----------- | :----- |
 | `amountXMin` | `u256` |
-| `amountX` | `u256` |
+| `amountX`    | `u256` |
 | `amountYMin` | `u256` |
-| `amountY` | `u256` |
+| `amountY`    | `u256` |
 
 #### Returns
 
@@ -1179,13 +1179,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L30)
+[assembly/libraries/Errors.ts:30](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L30)
 
-___
+---
 
 ### LBRouter\_\_BrokenSwapSafetyCheck
 
-▸ **LBRouter__BrokenSwapSafetyCheck**(): `string`
+▸ **LBRouter\_\_BrokenSwapSafetyCheck**(): `string`
 
 #### Returns
 
@@ -1193,19 +1193,19 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L12)
+[assembly/libraries/Errors.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L12)
 
-___
+---
 
 ### LBRouter\_\_DeadlineExceeded
 
-▸ **LBRouter__DeadlineExceeded**(`deadline`, `currentTimestamp`): `string`
+▸ **LBRouter\_\_DeadlineExceeded**(`deadline`, `currentTimestamp`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `deadline` | `u64` |
+| Name               | Type  |
+| :----------------- | :---- |
+| `deadline`         | `u64` |
 | `currentTimestamp` | `u64` |
 
 #### Returns
@@ -1214,19 +1214,19 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:43](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L43)
+[assembly/libraries/Errors.ts:43](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L43)
 
-___
+---
 
 ### LBRouter\_\_IdDesiredOverflows
 
-▸ **LBRouter__IdDesiredOverflows**(`idDesired`, `idSlippage`): `string`
+▸ **LBRouter\_\_IdDesiredOverflows**(`idDesired`, `idSlippage`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `idDesired` | `u64` |
+| Name         | Type  |
+| :----------- | :---- |
+| `idDesired`  | `u64` |
 | `idSlippage` | `u64` |
 
 #### Returns
@@ -1235,18 +1235,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L39)
+[assembly/libraries/Errors.ts:39](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L39)
 
-___
+---
 
 ### LBRouter\_\_IdOverflows
 
-▸ **LBRouter__IdOverflows**(`id`): `string`
+▸ **LBRouter\_\_IdOverflows**(`id`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type  |
+| :--- | :---- |
 | `id` | `i64` |
 
 #### Returns
@@ -1255,21 +1255,21 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L18)
+[assembly/libraries/Errors.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L18)
 
-___
+---
 
 ### LBRouter\_\_IdSlippageCaught
 
-▸ **LBRouter__IdSlippageCaught**(`activeIdDesired`, `idSlippage`, `activeId`): `string`
+▸ **LBRouter\_\_IdSlippageCaught**(`activeIdDesired`, `idSlippage`, `activeId`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type  |
+| :---------------- | :---- |
 | `activeIdDesired` | `u64` |
-| `idSlippage` | `u64` |
-| `activeId` | `u64` |
+| `idSlippage`      | `u64` |
+| `activeId`        | `u64` |
 
 #### Returns
 
@@ -1277,20 +1277,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L24)
+[assembly/libraries/Errors.ts:24](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L24)
 
-___
+---
 
 ### LBRouter\_\_InsufficientAmountOut
 
-▸ **LBRouter__InsufficientAmountOut**(`amountOutMin`, `amountOut`): `string`
+▸ **LBRouter\_\_InsufficientAmountOut**(`amountOutMin`, `amountOut`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type   |
+| :------------- | :----- |
 | `amountOutMin` | `u256` |
-| `amountOut` | `u256` |
+| `amountOut`    | `u256` |
 
 #### Returns
 
@@ -1298,18 +1298,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:47](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L47)
+[assembly/libraries/Errors.ts:47](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L47)
 
-___
+---
 
 ### LBRouter\_\_InvalidTokenPath
 
-▸ **LBRouter__InvalidTokenPath**(`wrongToken`): `string`
+▸ **LBRouter\_\_InvalidTokenPath**(`wrongToken`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type      |
+| :----------- | :-------- |
 | `wrongToken` | `Address` |
 
 #### Returns
@@ -1318,13 +1318,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:61](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L61)
+[assembly/libraries/Errors.ts:61](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L61)
 
-___
+---
 
 ### LBRouter\_\_LengthsMismatch
 
-▸ **LBRouter__LengthsMismatch**(): `string`
+▸ **LBRouter\_\_LengthsMismatch**(): `string`
 
 #### Returns
 
@@ -1332,20 +1332,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L20)
+[assembly/libraries/Errors.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L20)
 
-___
+---
 
 ### LBRouter\_\_MaxAmountInExceeded
 
-▸ **LBRouter__MaxAmountInExceeded**(`amountInMax`, `amountIn`): `string`
+▸ **LBRouter\_\_MaxAmountInExceeded**(`amountInMax`, `amountIn`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type   |
+| :------------ | :----- |
 | `amountInMax` | `u256` |
-| `amountIn` | `u256` |
+| `amountIn`    | `u256` |
 
 #### Returns
 
@@ -1353,13 +1353,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:54](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L54)
+[assembly/libraries/Errors.ts:54](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L54)
 
-___
+---
 
 ### LBRouter\_\_NotFactoryOwner
 
-▸ **LBRouter__NotFactoryOwner**(): `string`
+▸ **LBRouter\_\_NotFactoryOwner**(): `string`
 
 #### Returns
 
@@ -1367,18 +1367,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L14)
+[assembly/libraries/Errors.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L14)
 
-___
+---
 
 ### LBRouter\_\_SwapOverflows
 
-▸ **LBRouter__SwapOverflows**(`id`): `string`
+▸ **LBRouter\_\_SwapOverflows**(`id`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type  |
+| :--- | :---- |
 | `id` | `u64` |
 
 #### Returns
@@ -1387,18 +1387,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L10)
+[assembly/libraries/Errors.ts:10](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L10)
 
-___
+---
 
 ### LBRouter\_\_TooMuchTokensIn
 
-▸ **LBRouter__TooMuchTokensIn**(`excess`): `string`
+▸ **LBRouter\_\_TooMuchTokensIn**(`excess`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type   |
+| :------- | :----- |
 | `excess` | `u256` |
 
 #### Returns
@@ -1407,21 +1407,21 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L16)
+[assembly/libraries/Errors.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L16)
 
-___
+---
 
 ### LBRouter\_\_WrongAmounts
 
-▸ **LBRouter__WrongAmounts**(`amount`, `reserve`): `string`
+▸ **LBRouter\_\_WrongAmounts**(`amount`, `reserve`): `string`
 
 LBRouter errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `amount` | `u256` |
+| Name      | Type   |
+| :-------- | :----- |
+| `amount`  | `u256` |
 | `reserve` | `u256` |
 
 #### Returns
@@ -1430,23 +1430,23 @@ LBRouter errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:8](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L8)
+[assembly/libraries/Errors.ts:8](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L8)
 
-___
+---
 
 ### LBRouter\_\_WrongMasLiquidityParameters
 
-▸ **LBRouter__WrongMasLiquidityParameters**(`tokenX`, `tokenY`, `amountX`, `amountY`, `msgValue`): `string`
+▸ **LBRouter\_\_WrongMasLiquidityParameters**(`tokenX`, `tokenY`, `amountX`, `amountY`, `msgValue`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tokenX` | `Address` |
-| `tokenY` | `Address` |
-| `amountX` | `u256` |
-| `amountY` | `u256` |
-| `msgValue` | `u64` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `tokenX`   | `Address` |
+| `tokenY`   | `Address` |
+| `amountX`  | `u256`    |
+| `amountY`  | `u256`    |
+| `msgValue` | `u64`     |
 
 #### Returns
 
@@ -1454,13 +1454,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:63](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L63)
+[assembly/libraries/Errors.ts:63](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L63)
 
-___
+---
 
 ### LBRouter\_\_WrongTokenOrder
 
-▸ **LBRouter__WrongTokenOrder**(): `string`
+▸ **LBRouter\_\_WrongTokenOrder**(): `string`
 
 #### Returns
 
@@ -1468,21 +1468,21 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L22)
+[assembly/libraries/Errors.ts:22](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L22)
 
-___
+---
 
 ### LBToken\_\_BurnExceedsBalance
 
-▸ **LBToken__BurnExceedsBalance**(`from`, `id`, `amount`): `string`
+▸ **LBToken\_\_BurnExceedsBalance**(`from`, `id`, `amount`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `from` | `Address` |
-| `id` | `u64` |
-| `amount` | `u256` |
+| Name     | Type      |
+| :------- | :-------- |
+| `from`   | `Address` |
+| `id`     | `u64`     |
+| `amount` | `u256`    |
 
 #### Returns
 
@@ -1490,20 +1490,20 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:80](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L80)
+[assembly/libraries/Errors.ts:80](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L80)
 
-___
+---
 
 ### LBToken\_\_LengthMismatch
 
-▸ **LBToken__LengthMismatch**(`accountsLength`, `idsLength`): `string`
+▸ **LBToken\_\_LengthMismatch**(`accountsLength`, `idsLength`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type  |
+| :--------------- | :---- |
 | `accountsLength` | `u64` |
-| `idsLength` | `u64` |
+| `idsLength`      | `u64` |
 
 #### Returns
 
@@ -1511,18 +1511,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:86](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L86)
+[assembly/libraries/Errors.ts:86](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L86)
 
-___
+---
 
 ### LBToken\_\_SelfApproval
 
-▸ **LBToken__SelfApproval**(`owner`): `string`
+▸ **LBToken\_\_SelfApproval**(`owner`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `owner` | `Address` |
 
 #### Returns
@@ -1531,21 +1531,21 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:90](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L90)
+[assembly/libraries/Errors.ts:90](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L90)
 
-___
+---
 
 ### LBToken\_\_SpenderNotApproved
 
-▸ **LBToken__SpenderNotApproved**(`owner`, `spender`): `string`
+▸ **LBToken\_\_SpenderNotApproved**(`owner`, `spender`): `string`
 
 LBToken errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `owner` | `Address` |
+| Name      | Type      |
+| :-------- | :-------- |
+| `owner`   | `Address` |
 | `spender` | `Address` |
 
 #### Returns
@@ -1554,21 +1554,21 @@ LBToken errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:76](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L76)
+[assembly/libraries/Errors.ts:76](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L76)
 
-___
+---
 
 ### LBToken\_\_TransferExceedsBalance
 
-▸ **LBToken__TransferExceedsBalance**(`from`, `id`, `amount`): `string`
+▸ **LBToken\_\_TransferExceedsBalance**(`from`, `id`, `amount`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `from` | `Address` |
-| `id` | `u64` |
-| `amount` | `u256` |
+| Name     | Type      |
+| :------- | :-------- |
+| `from`   | `Address` |
+| `id`     | `u64`     |
+| `amount` | `u256`    |
 
 #### Returns
 
@@ -1576,13 +1576,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:92](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L92)
+[assembly/libraries/Errors.ts:92](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L92)
 
-___
+---
 
 ### LBToken\_\_TransferToSelf
 
-▸ **LBToken__TransferToSelf**(): `string`
+▸ **LBToken\_\_TransferToSelf**(): `string`
 
 #### Returns
 
@@ -1590,22 +1590,22 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:98](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L98)
+[assembly/libraries/Errors.ts:98](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L98)
 
-___
+---
 
 ### Math128x128\_\_PowerUnderflow
 
-▸ **Math128x128__PowerUnderflow**(`x`, `y`): `string`
+▸ **Math128x128\_\_PowerUnderflow**(`x`, `y`): `string`
 
 Math128x128 errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x` | `u256` |
-| `y` | `i64` |
+| Name | Type   |
+| :--- | :----- |
+| `x`  | `u256` |
+| `y`  | `i64`  |
 
 #### Returns
 
@@ -1613,21 +1613,21 @@ Math128x128 errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:209](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L209)
+[assembly/libraries/Errors.ts:209](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L209)
 
-___
+---
 
 ### Math512Bits\_\_MulDivOverflow
 
-▸ **Math512Bits__MulDivOverflow**(`prod1`, `denominator`): `string`
+▸ **Math512Bits\_\_MulDivOverflow**(`prod1`, `denominator`): `string`
 
 Math512Bits errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `prod1` | `u256` |
+| Name          | Type   |
+| :------------ | :----- |
+| `prod1`       | `u256` |
 | `denominator` | `u256` |
 
 #### Returns
@@ -1636,20 +1636,20 @@ Math512Bits errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:214](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L214)
+[assembly/libraries/Errors.ts:214](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L214)
 
-___
+---
 
 ### Math512Bits\_\_MulShiftOverflow
 
-▸ **Math512Bits__MulShiftOverflow**(`prod1`, `offset`): `string`
+▸ **Math512Bits\_\_MulShiftOverflow**(`prod1`, `offset`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `prod1` | `u256` |
-| `offset` | `u64` |
+| Name     | Type   |
+| :------- | :----- |
+| `prod1`  | `u256` |
+| `offset` | `u64`  |
 
 #### Returns
 
@@ -1657,18 +1657,18 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:221](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L221)
+[assembly/libraries/Errors.ts:221](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L221)
 
-___
+---
 
 ### Math512Bits\_\_OffsetOverflows
 
-▸ **Math512Bits__OffsetOverflows**(`offset`): `string`
+▸ **Math512Bits\_\_OffsetOverflows**(`offset`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type  |
+| :------- | :---- |
 | `offset` | `u64` |
 
 #### Returns
@@ -1677,21 +1677,21 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:225](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L225)
+[assembly/libraries/Errors.ts:225](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L225)
 
-___
+---
 
 ### Oracle\_\_LookUpTimestampTooOld
 
-▸ **Oracle__LookUpTimestampTooOld**(`_minTimestamp`, `_lookUpTimestamp`): `string`
+▸ **Oracle\_\_LookUpTimestampTooOld**(`_minTimestamp`, `_lookUpTimestamp`): `string`
 
 Oracle errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_minTimestamp` | `u64` |
+| Name               | Type  |
+| :----------------- | :---- |
+| `_minTimestamp`    | `u64` |
 | `_lookUpTimestamp` | `u64` |
 
 #### Returns
@@ -1700,13 +1700,13 @@ Oracle errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:230](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L230)
+[assembly/libraries/Errors.ts:230](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L230)
 
-___
+---
 
 ### Oracle\_\_NotInitialized
 
-▸ **Oracle__NotInitialized**(): `string`
+▸ **Oracle\_\_NotInitialized**(): `string`
 
 #### Returns
 
@@ -1714,13 +1714,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:235](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L235)
+[assembly/libraries/Errors.ts:235](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L235)
 
-___
+---
 
 ### ReentrancyGuardUpgradeable\_\_AlreadyInitialized
 
-▸ **ReentrancyGuardUpgradeable__AlreadyInitialized**(): `string`
+▸ **ReentrancyGuardUpgradeable\_\_AlreadyInitialized**(): `string`
 
 #### Returns
 
@@ -1728,13 +1728,13 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:241](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L241)
+[assembly/libraries/Errors.ts:241](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L241)
 
-___
+---
 
 ### ReentrancyGuardUpgradeable\_\_ReentrantCall
 
-▸ **ReentrancyGuardUpgradeable__ReentrantCall**(): `string`
+▸ **ReentrancyGuardUpgradeable\_\_ReentrantCall**(): `string`
 
 ReentrancyGuardUpgradeable errors
 
@@ -1744,22 +1744,22 @@ ReentrancyGuardUpgradeable errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:239](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L239)
+[assembly/libraries/Errors.ts:239](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L239)
 
-___
+---
 
 ### Storage\_\_NotEnoughCoinsSent
 
-▸ **Storage__NotEnoughCoinsSent**(`spent`, `sent`): `string`
+▸ **Storage\_\_NotEnoughCoinsSent**(`spent`, `sent`): `string`
 
 Storage errors
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type  |
+| :------ | :---- |
 | `spent` | `u64` |
-| `sent` | `u64` |
+| `sent`  | `u64` |
 
 #### Returns
 
@@ -1767,13 +1767,13 @@ Storage errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:255](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L255)
+[assembly/libraries/Errors.ts:255](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L255)
 
-___
+---
 
 ### TreeMath\_\_ErrorDepthSearch
 
-▸ **TreeMath__ErrorDepthSearch**(): `string`
+▸ **TreeMath\_\_ErrorDepthSearch**(): `string`
 
 TreeMath errors
 
@@ -1783,19 +1783,19 @@ TreeMath errors
 
 #### Defined in
 
-[assembly/libraries/Errors.ts:246](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Errors.ts#L246)
+[assembly/libraries/Errors.ts:246](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Errors.ts#L246)
 
-___
+---
 
 ### \_sortTokens
 
-▸ **_sortTokens**(`_tokenA`, `_tokenB`): `SortTokensReturn`
+▸ **\_sortTokens**(`_tokenA`, `_tokenB`): `SortTokensReturn`
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_tokenA` | `Address` | The first token |
+| Name      | Type      | Description      |
+| :-------- | :-------- | :--------------- |
+| `_tokenA` | `Address` | The first token  |
 | `_tokenB` | `Address` | The second token |
 
 #### Returns
@@ -1810,9 +1810,9 @@ Private view function to sort 2 tokens in ascending order
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L34)
+[assembly/libraries/Utils.ts:34](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L34)
 
-___
+---
 
 ### createEvent
 
@@ -1820,9 +1820,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `string` | the string event key. |
+| Name   | Type       | Description                 |
+| :----- | :--------- | :-------------------------- |
+| `key`  | `string`   | the string event key.       |
 | `args` | `string`[] | the string array arguments. |
 
 #### Returns
@@ -1844,9 +1844,9 @@ It is useful to generate events from an array.
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:118](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L118)
+[assembly/libraries/Utils.ts:118](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L118)
 
-___
+---
 
 ### createKey
 
@@ -1854,8 +1854,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type       |
+| :----- | :--------- |
 | `args` | `string`[] |
 
 #### Returns
@@ -1864,9 +1864,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L17)
+[assembly/libraries/Utils.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L17)
 
-___
+---
 
 ### spreadLiquidity
 
@@ -1874,13 +1874,13 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `amountYIn` | `u256` |
-| `startId` | `u32` |
-| `numbersBins` | `u32` |
-| `gap` | `u32` |
-| `binStep` | `u32` |
+| Name          | Type   |
+| :------------ | :----- |
+| `amountYIn`   | `u256` |
+| `startId`     | `u32`  |
+| `numbersBins` | `u32`  |
+| `gap`         | `u32`  |
+| `binStep`     | `u32`  |
 
 #### Returns
 
@@ -1888,9 +1888,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:54](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L54)
+[assembly/libraries/Utils.ts:54](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L54)
 
-___
+---
 
 ### transferRemaining
 
@@ -1898,12 +1898,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `balanceInit` | `u64` | Initial balance of the SC (transferred coins + balance of the SC) |
-| `balanceFinal` | `u64` | Balance of the SC at the end of the call |
-| `sent` | `u64` | Number of coins sent to the SC |
-| `to` | `Address` | Caller of the function to transfer the remaining coins to |
+| Name           | Type      | Description                                                       |
+| :------------- | :-------- | :---------------------------------------------------------------- |
+| `balanceInit`  | `u64`     | Initial balance of the SC (transferred coins + balance of the SC) |
+| `balanceFinal` | `u64`     | Balance of the SC at the end of the call                          |
+| `sent`         | `u64`     | Number of coins sent to the SC                                    |
+| `to`           | `Address` | Caller of the function to transfer the remaining coins to         |
 
 #### Returns
 
@@ -1915,9 +1915,9 @@ Function to transfer remaining Massa coins to a recipient at the end of a call
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:137](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L137)
+[assembly/libraries/Utils.ts:137](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L137)
 
-___
+---
 
 ### u256ToString
 
@@ -1925,9 +1925,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `u` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `u`  | `u256` |
 
 #### Returns
 
@@ -1943,4 +1943,4 @@ u256.toString() is too expensive in as-bignum so we use this instead
 
 #### Defined in
 
-[assembly/libraries/Utils.ts:126](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Utils.ts#L126)
+[assembly/libraries/Utils.ts:126](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Utils.ts#L126)

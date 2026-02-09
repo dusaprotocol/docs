@@ -27,8 +27,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_origin` | `Address` |
 
 #### Returns
@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L10)
+[assembly/interfaces/IQuoter.ts:10](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L10)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:10](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L10)
+[assembly/interfaces/IQuoter.ts:10](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L10)
 
 ## Methods
 
@@ -61,9 +61,9 @@
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:43](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L43)
+[assembly/interfaces/IQuoter.ts:43](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L43)
 
-___
+---
 
 ### findBestPathFromAmountIn
 
@@ -71,11 +71,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `route` | `Address`[] |
-| `amountIn` | `u256` |
-| `checkLegacy` | `bool` |
+| Name          | Type        |
+| :------------ | :---------- |
+| `route`       | `Address`[] |
+| `amountIn`    | `u256`      |
+| `checkLegacy` | `bool`      |
 
 #### Returns
 
@@ -83,9 +83,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L17)
+[assembly/interfaces/IQuoter.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L17)
 
-___
+---
 
 ### findBestPathFromAmountOut
 
@@ -93,11 +93,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `route` | `Address`[] |
-| `amountOut` | `u256` |
-| `checkLegacy` | `bool` |
+| Name          | Type        |
+| :------------ | :---------- |
+| `route`       | `Address`[] |
+| `amountOut`   | `u256`      |
+| `checkLegacy` | `bool`      |
 
 #### Returns
 
@@ -105,9 +105,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L30)
+[assembly/interfaces/IQuoter.ts:30](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L30)
 
-___
+---
 
 ### init
 
@@ -115,10 +115,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `factory` | `Address` |
-| `v0Factory` | `Address` |
+| Name            | Type      |
+| :-------------- | :-------- |
+| `factory`       | `Address` |
+| `v0Factory`     | `Address` |
 | `legacyFactory` | `Address` |
 
 #### Returns
@@ -127,9 +127,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L12)
+[assembly/interfaces/IQuoter.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L12)
 
-___
+---
 
 ### legacyFactory
 
@@ -141,9 +141,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:53](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L53)
+[assembly/interfaces/IQuoter.ts:53](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L53)
 
-___
+---
 
 ### v0Factory
 
@@ -155,4 +155,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IQuoter.ts:48](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IQuoter.ts#L48)
+[assembly/interfaces/IQuoter.ts:48](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IQuoter.ts#L48)

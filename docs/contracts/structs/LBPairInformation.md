@@ -30,12 +30,12 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `binStep` | `u32` | `0` | The bin step of the LBPair |
-| `pair` | [`IPair`](../interfaces/IPair.md) | `undefined` | The address of the LBPair |
-| `createdByOwner` | `bool` | `false` | Whether the LBPair was created by the owner of the factory |
-| `ignoredForRouting` | `bool` | `false` | Whether the LBPair is ignored for routing or not. An ignored pair will not be explored during routes finding |
+| Name                | Type                              | Default value | Description                                                                                                  |
+| :------------------ | :-------------------------------- | :------------ | :----------------------------------------------------------------------------------------------------------- |
+| `binStep`           | `u32`                             | `0`           | The bin step of the LBPair                                                                                   |
+| `pair`              | [`IPair`](../interfaces/IPair.md) | `undefined`   | The address of the LBPair                                                                                    |
+| `createdByOwner`    | `bool`                            | `false`       | Whether the LBPair was created by the owner of the factory                                                   |
+| `ignoredForRouting` | `bool`                            | `false`       | Whether the LBPair is ignored for routing or not. An ignored pair will not be explored during routes finding |
 
 #### Returns
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[assembly/structs/LBPairInformation.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/LBPairInformation.ts#L13)
+[assembly/structs/LBPairInformation.ts:13](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/LBPairInformation.ts#L13)
 
 ## Properties
 
@@ -55,9 +55,9 @@ The bin step of the LBPair
 
 #### Defined in
 
-[assembly/structs/LBPairInformation.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/LBPairInformation.ts#L14)
+[assembly/structs/LBPairInformation.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/LBPairInformation.ts#L14)
 
-___
+---
 
 ### createdByOwner
 
@@ -67,9 +67,9 @@ Whether the LBPair was created by the owner of the factory
 
 #### Defined in
 
-[assembly/structs/LBPairInformation.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/LBPairInformation.ts#L16)
+[assembly/structs/LBPairInformation.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/LBPairInformation.ts#L16)
 
-___
+---
 
 ### ignoredForRouting
 
@@ -79,9 +79,9 @@ Whether the LBPair is ignored for routing or not. An ignored pair will not be ex
 
 #### Defined in
 
-[assembly/structs/LBPairInformation.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/LBPairInformation.ts#L17)
+[assembly/structs/LBPairInformation.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/LBPairInformation.ts#L17)
 
-___
+---
 
 ### pair
 
@@ -91,7 +91,7 @@ The address of the LBPair
 
 #### Defined in
 
-[assembly/structs/LBPairInformation.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/LBPairInformation.ts#L15)
+[assembly/structs/LBPairInformation.ts:15](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/LBPairInformation.ts#L15)
 
 ## Methods
 
@@ -101,10 +101,10 @@ The address of the LBPair
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -116,9 +116,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/LBPairInformation.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/LBPairInformation.ts#L33)
+[assembly/structs/LBPairInformation.ts:33](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/LBPairInformation.ts#L33)
 
-___
+---
 
 ### serialize
 
@@ -134,4 +134,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/LBPairInformation.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/LBPairInformation.ts#L24)
+[assembly/structs/LBPairInformation.ts:24](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/LBPairInformation.ts#L24)

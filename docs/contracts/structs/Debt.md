@@ -40,10 +40,10 @@ The tokenY's debt
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `debtX` | `u256` | `ZERO` |
-| `debtY` | `u256` | `ZERO` |
+| Name    | Type   | Default value |
+| :------ | :----- | :------------ |
+| `debtX` | `u256` | `ZERO`        |
+| `debtY` | `u256` | `ZERO`        |
 
 #### Returns
 
@@ -51,7 +51,7 @@ The tokenY's debt
 
 #### Defined in
 
-[assembly/structs/Debt.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L11)
+[assembly/structs/Debt.ts:11](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Debt.ts#L11)
 
 ## Properties
 
@@ -61,9 +61,9 @@ The tokenY's debt
 
 #### Defined in
 
-[assembly/structs/Debt.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L12)
+[assembly/structs/Debt.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Debt.ts#L12)
 
-___
+---
 
 ### debtY
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[assembly/structs/Debt.ts:13](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L13)
+[assembly/structs/Debt.ts:13](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Debt.ts#L13)
 
 ## Methods
 
@@ -81,10 +81,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -96,9 +96,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L20)
+[assembly/structs/Debt.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Debt.ts#L20)
 
-___
+---
 
 ### serialize
 
@@ -114,4 +114,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/Debt.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Debt.ts#L16)
+[assembly/structs/Debt.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Debt.ts#L16)

@@ -54,8 +54,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                    |
+| :--- | :-------- | :----------------------------- |
 | `at` | `Address` | Address of the smart contract. |
 
 #### Returns
@@ -64,7 +64,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:43](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L43)
+[assembly/interfaces/IPair.ts:43](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L43)
 
 ## Properties
 
@@ -74,7 +74,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:36](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L36)
+[assembly/interfaces/IPair.ts:36](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L36)
 
 ## Methods
 
@@ -84,10 +84,10 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type      |
+| :--------- | :-------- |
 | `_account` | `Address` |
-| `_id` | `u64` |
+| `_id`      | `u64`     |
 
 #### Returns
 
@@ -95,9 +95,9 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:257](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L257)
+[assembly/interfaces/IPair.ts:257](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L257)
 
-___
+---
 
 ### balanceOfBatch
 
@@ -105,10 +105,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type        |
+| :---------- | :---------- |
 | `_accounts` | `Address`[] |
-| `_ids` | `u64`[] |
+| `_ids`      | `u64`[]     |
 
 #### Returns
 
@@ -116,9 +116,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:267](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L267)
+[assembly/interfaces/IPair.ts:267](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L267)
 
-___
+---
 
 ### burn
 
@@ -133,12 +133,12 @@ The lengths of the arrays must be the same.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_ids` | `u64`[] | The ids of the bins where the liquidity will be removed. It will burn LB tokens for each of these bins. |
-| `_amounts` | `u256`[] | The amount of LB tokens to burn for each bin. |
-| `_to` | `Address` | The address that will receive the tokens. |
-| `masToSend` | `u64` | The amount of Massa to send for storage |
+| Name        | Type      | Description                                                                                             |
+| :---------- | :-------- | :------------------------------------------------------------------------------------------------------ |
+| `_ids`      | `u64`[]   | The ids of the bins where the liquidity will be removed. It will burn LB tokens for each of these bins. |
+| `_amounts`  | `u256`[]  | The amount of LB tokens to burn for each bin.                                                           |
+| `_to`       | `Address` | The address that will receive the tokens.                                                               |
+| `masToSend` | `u64`     | The amount of Massa to send for storage                                                                 |
 
 #### Returns
 
@@ -148,9 +148,9 @@ The lengths of the arrays must be the same.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:173](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L173)
+[assembly/interfaces/IPair.ts:173](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L173)
 
-___
+---
 
 ### collectFees
 
@@ -160,11 +160,11 @@ Collect the fees accumulated by a user.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `account` | `Address` | - |
-| `ids` | `u64`[] | - |
-| `masToSend` | `u64` | The amount of Massa to send for storage |
+| Name        | Type      | Description                             |
+| :---------- | :-------- | :-------------------------------------- |
+| `account`   | `Address` | -                                       |
+| `ids`       | `u64`[]   | -                                       |
+| `masToSend` | `u64`     | The amount of Massa to send for storage |
 
 #### Returns
 
@@ -176,9 +176,9 @@ amountY The amount of token Y collected and sent to `_account`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:359](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L359)
+[assembly/interfaces/IPair.ts:359](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L359)
 
-___
+---
 
 ### feeParameters
 
@@ -192,9 +192,9 @@ Get the fees parameters for this pair
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:85](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L85)
+[assembly/interfaces/IPair.ts:85](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L85)
 
-___
+---
 
 ### findFirstNonEmptyBinId
 
@@ -202,9 +202,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `u32` |
+| Name         | Type   |
+| :----------- | :----- |
+| `id`         | `u32`  |
 | `sentTokenY` | `bool` |
 
 #### Returns
@@ -213,9 +213,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:214](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L214)
+[assembly/interfaces/IPair.ts:214](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L214)
 
-___
+---
 
 ### flashLoan
 
@@ -229,11 +229,11 @@ The caller is expected to transfer the `amount + fee` of the token to this contr
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `token` | [`IERC20`](IERC20.md) | The token to flash loan |
-| `amount` | `u256` | The amount of tokens to flash loan |
-| `masToSend` | `u64` | The amount of Massa to send for storage |
+| Name        | Type                  | Description                             |
+| :---------- | :-------------------- | :-------------------------------------- |
+| `token`     | [`IERC20`](IERC20.md) | The token to flash loan                 |
+| `amount`    | `u256`                | The amount of tokens to flash loan      |
+| `masToSend` | `u64`                 | The amount of Massa to send for storage |
 
 #### Returns
 
@@ -241,9 +241,9 @@ The caller is expected to transfer the `amount + fee` of the token to this contr
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:191](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L191)
+[assembly/interfaces/IPair.ts:191](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L191)
 
-___
+---
 
 ### forceDecay
 
@@ -255,9 +255,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:238](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L238)
+[assembly/interfaces/IPair.ts:238](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L238)
 
-___
+---
 
 ### getBin
 
@@ -267,8 +267,8 @@ Get the bin information for a given id
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type  | Description       |
+| :---- | :---- | :---------------- |
 | `_id` | `u32` | The id of the bin |
 
 #### Returns
@@ -277,9 +277,9 @@ Get the bin information for a given id
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:96](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L96)
+[assembly/interfaces/IPair.ts:96](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L96)
 
-___
+---
 
 ### getFactory
 
@@ -291,9 +291,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:229](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L229)
+[assembly/interfaces/IPair.ts:229](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L229)
 
-___
+---
 
 ### getHooksParameters
 
@@ -311,9 +311,9 @@ Gets the hooks parameters of the Liquidity Book Pair
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:385](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L385)
+[assembly/interfaces/IPair.ts:385](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L385)
 
-___
+---
 
 ### getOracleParameters
 
@@ -325,9 +325,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:365](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L365)
+[assembly/interfaces/IPair.ts:365](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L365)
 
-___
+---
 
 ### getOracleSampleFrom
 
@@ -335,8 +335,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type  |
+| :---------- | :---- |
 | `timeDelta` | `u64` |
 
 #### Returns
@@ -345,9 +345,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:370](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L370)
+[assembly/interfaces/IPair.ts:370](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L370)
 
-___
+---
 
 ### getPairInformation
 
@@ -359,9 +359,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:204](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L204)
+[assembly/interfaces/IPair.ts:204](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L204)
 
-___
+---
 
 ### getTokenX
 
@@ -373,9 +373,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:196](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L196)
+[assembly/interfaces/IPair.ts:196](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L196)
 
-___
+---
 
 ### getTokenY
 
@@ -387,9 +387,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:200](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L200)
+[assembly/interfaces/IPair.ts:200](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L200)
 
-___
+---
 
 ### getUserBins
 
@@ -397,8 +397,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `account` | `Address` |
 
 #### Returns
@@ -407,9 +407,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:209](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L209)
+[assembly/interfaces/IPair.ts:209](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L209)
 
-___
+---
 
 ### increaseOracleLength
 
@@ -420,9 +420,9 @@ The samples are however initialized to reduce the gas cost of the updates during
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newSize` | `u64` | - |
+| Name        | Type  | Description                             |
+| :---------- | :---- | :-------------------------------------- |
+| `newSize`   | `u64` | -                                       |
 | `masToSend` | `u64` | The amount of Massa to send for storage |
 
 #### Returns
@@ -431,9 +431,9 @@ The samples are however initialized to reduce the gas cost of the updates during
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:396](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L396)
+[assembly/interfaces/IPair.ts:396](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L396)
 
-___
+---
 
 ### init
 
@@ -443,14 +443,14 @@ Calls the constructor
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `factory` | `Address` |
-| `tokenX` | `Address` |
-| `tokenY` | `Address` |
-| `activeId` | `u32` |
-| `preset` | [`Preset`](../structs/Preset.md) |
-| `masToSend` | `u64` |
+| Name        | Type                             |
+| :---------- | :------------------------------- |
+| `factory`   | `Address`                        |
+| `tokenX`    | `Address`                        |
+| `tokenY`    | `Address`                        |
+| `activeId`  | `u32`                            |
+| `preset`    | [`Preset`](../structs/Preset.md) |
+| `masToSend` | `u64`                            |
 
 #### Returns
 
@@ -458,9 +458,9 @@ Calls the constructor
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:52](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L52)
+[assembly/interfaces/IPair.ts:52](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L52)
 
-___
+---
 
 ### isApprovedForAll
 
@@ -468,9 +468,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_owner` | `Address` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_owner`   | `Address` |
 | `_spender` | `Address` |
 
 #### Returns
@@ -479,9 +479,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:274](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L274)
+[assembly/interfaces/IPair.ts:274](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L274)
 
-___
+---
 
 ### mint
 
@@ -496,13 +496,13 @@ Any excess amount of token will be sent to the `to` address. The lengths of the 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_ids` | `u64`[] | The ids of the bins where the liquidity will be added. It will mint LB tokens for each of these bins. |
-| `_distributionX` | `u256`[] | The percentage of token X to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
-| `_distributionY` | `u256`[] | The percentage of token Y to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
-| `_to` | `Address` | The address that will receive the LB tokens and the excess amount of tokens. |
-| `masToSend` | `u64` | The amount of Massa to send for storage. |
+| Name             | Type      | Description                                                                                                |
+| :--------------- | :-------- | :--------------------------------------------------------------------------------------------------------- |
+| `_ids`           | `u64`[]   | The ids of the bins where the liquidity will be added. It will mint LB tokens for each of these bins.      |
+| `_distributionX` | `u256`[]  | The percentage of token X to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
+| `_distributionY` | `u256`[]  | The percentage of token Y to add to each bin. The sum of all the values must not exceed 100%, that is 1e9. |
+| `_to`            | `Address` | The address that will receive the LB tokens and the excess amount of tokens.                               |
+| `masToSend`      | `u64`     | The amount of Massa to send for storage.                                                                   |
 
 #### Returns
 
@@ -512,9 +512,9 @@ Any excess amount of token will be sent to the `to` address. The lengths of the 
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:138](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L138)
+[assembly/interfaces/IPair.ts:138](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L138)
 
-___
+---
 
 ### name
 
@@ -526,9 +526,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:242](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L242)
+[assembly/interfaces/IPair.ts:242](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L242)
 
-___
+---
 
 ### pendingFees
 
@@ -536,10 +536,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `account` | `Address` |
-| `ids` | `u64`[] |
+| `ids`     | `u64`[]   |
 
 #### Returns
 
@@ -547,9 +547,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:345](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L345)
+[assembly/interfaces/IPair.ts:345](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L345)
 
-___
+---
 
 ### safeBatchTransferFrom
 
@@ -559,13 +559,13 @@ Batch transfers `_amount` tokens of type `_id` from `_from` to `_to`
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_from` | `Address` | The address of the owner of the tokens |
-| `_to` | `Address` | The address of the recipient |
-| `_ids` | `u64`[] | The list of token ids |
-| `_amounts` | `u256`[] | The list of amounts to send |
-| `masToSend` | `u64` | The amount of Massa to send for storage |
+| Name        | Type      | Description                             |
+| :---------- | :-------- | :-------------------------------------- |
+| `_from`     | `Address` | The address of the owner of the tokens  |
+| `_to`       | `Address` | The address of the recipient            |
+| `_ids`      | `u64`[]   | The list of token ids                   |
+| `_amounts`  | `u256`[]  | The list of amounts to send             |
+| `masToSend` | `u64`     | The amount of Massa to send for storage |
 
 #### Returns
 
@@ -573,9 +573,9 @@ Batch transfers `_amount` tokens of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:334](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L334)
+[assembly/interfaces/IPair.ts:334](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L334)
 
-___
+---
 
 ### safeTransferFrom
 
@@ -585,13 +585,13 @@ Transfers `_amount` token of type `_id` from `_from` to `_to`
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_from` | `Address` | The address of the owner of the token |
-| `_to` | `Address` | The address of the recipient |
-| `_id` | `u64` | The token id |
-| `amount` | `u256` | - |
-| `masToSend` | `u64` | The amount of Massa to send for storage |
+| Name        | Type      | Description                             |
+| :---------- | :-------- | :-------------------------------------- |
+| `_from`     | `Address` | The address of the owner of the token   |
+| `_to`       | `Address` | The address of the recipient            |
+| `_id`       | `u64`     | The token id                            |
+| `amount`    | `u256`    | -                                       |
+| `masToSend` | `u64`     | The amount of Massa to send for storage |
 
 #### Returns
 
@@ -599,9 +599,9 @@ Transfers `_amount` token of type `_id` from `_from` to `_to`
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:311](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L311)
+[assembly/interfaces/IPair.ts:311](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L311)
 
-___
+---
 
 ### setApprovalForAll
 
@@ -611,10 +611,10 @@ Grants or revokes permission to `spender` to transfer the caller's tokens, accor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_approved` | `bool` | The boolean value to grant or revoke permission |
-| `_sender` | `Address` | - |
+| Name        | Type      | Description                                     |
+| :---------- | :-------- | :---------------------------------------------- |
+| `_approved` | `bool`    | The boolean value to grant or revoke permission |
+| `_sender`   | `Address` | -                                               |
 
 #### Returns
 
@@ -622,9 +622,9 @@ Grants or revokes permission to `spender` to transfer the caller's tokens, accor
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:289](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L289)
+[assembly/interfaces/IPair.ts:289](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L289)
 
-___
+---
 
 ### setFeesParameters
 
@@ -632,8 +632,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                                           |
+| :--- | :--------------------------------------------- |
 | `fp` | [`FeeParameters`](../structs/FeeParameters.md) |
 
 #### Returns
@@ -642,9 +642,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:233](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L233)
+[assembly/interfaces/IPair.ts:233](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L233)
 
-___
+---
 
 ### setHooksParameters
 
@@ -652,10 +652,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type                                            |
+| :---------------- | :---------------------------------------------- |
 | `hooksParameters` | [`HooksParameters`](../structs/HooksParameters) |
-| `onHooksSetData` | `StaticArray`<`u8`\> |
+| `onHooksSetData`  | `StaticArray`<`u8`\>                            |
 
 #### Returns
 
@@ -663,9 +663,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:405](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L405)
+[assembly/interfaces/IPair.ts:405](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L405)
 
-___
+---
 
 ### swap
 
@@ -680,11 +680,11 @@ that will also perform safety checks.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `swapForY` | `bool` | Whether you've swapping token X for token Y (true) or token Y for token X (false) |
-| `to` | `Address` | The address to send the tokens to |
-| `masToSend` | `u64` | The amount of Massa to send for storage |
+| Name        | Type      | Description                                                                       |
+| :---------- | :-------- | :-------------------------------------------------------------------------------- |
+| `swapForY`  | `bool`    | Whether you've swapping token X for token Y (true) or token Y for token X (false) |
+| `to`        | `Address` | The address to send the tokens to                                                 |
+| `masToSend` | `u64`     | The amount of Massa to send for storage                                           |
 
 #### Returns
 
@@ -692,9 +692,9 @@ that will also perform safety checks.
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:114](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L114)
+[assembly/interfaces/IPair.ts:114](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L114)
 
-___
+---
 
 ### symbol
 
@@ -706,9 +706,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:247](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L247)
+[assembly/interfaces/IPair.ts:247](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L247)
 
-___
+---
 
 ### totalSupply
 
@@ -716,8 +716,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `_id` | `u64` |
 
 #### Returns
@@ -726,4 +726,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IPair.ts:252](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IPair.ts#L252)
+[assembly/interfaces/IPair.ts:252](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IPair.ts#L252)

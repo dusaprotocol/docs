@@ -24,8 +24,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                    |
+| :--- | :-------- | :----------------------------- |
 | `at` | `Address` | Address of the smart contract. |
 
 #### Returns
@@ -34,7 +34,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFlashLoanCallback.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFlashLoanCallback.ts#L14)
+[assembly/interfaces/IFlashLoanCallback.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFlashLoanCallback.ts#L14)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFlashLoanCallback.ts:7](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFlashLoanCallback.ts#L7)
+[assembly/interfaces/IFlashLoanCallback.ts:7](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFlashLoanCallback.ts#L7)
 
 ## Methods
 
@@ -54,12 +54,12 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sender` | `Address` |
-| `token` | [`IERC20`](IERC20.md) |
-| `amount` | `u256` |
-| `fee` | `u256` |
+| Name     | Type                  |
+| :------- | :-------------------- |
+| `sender` | `Address`             |
+| `token`  | [`IERC20`](IERC20.md) |
+| `amount` | `u256`                |
+| `fee`    | `u256`                |
 
 #### Returns
 
@@ -67,4 +67,4 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFlashLoanCallback.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFlashLoanCallback.ts#L18)
+[assembly/interfaces/IFlashLoanCallback.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFlashLoanCallback.ts#L18)

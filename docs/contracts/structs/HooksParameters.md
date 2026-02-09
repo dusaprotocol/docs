@@ -28,10 +28,10 @@
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `hooks` | `Address` | `undefined` |
-| `flags` | `u32` | `0` |
+| Name    | Type      | Default value |
+| :------ | :-------- | :------------ |
+| `hooks` | `Address` | `undefined`   |
+| `flags` | `u32`     | `0`           |
 
 #### Returns
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L19)
+[assembly/libraries/Hooks.ts:19](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L19)
 
 ## Properties
 
@@ -49,9 +49,9 @@
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L21)
+[assembly/libraries/Hooks.ts:21](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L21)
 
-___
+---
 
 ### hooks
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L20)
+[assembly/libraries/Hooks.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L20)
 
 ## Methods
 
@@ -69,10 +69,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -84,9 +84,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L28)
+[assembly/libraries/Hooks.ts:28](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L28)
 
-___
+---
 
 ### serialize
 
@@ -102,4 +102,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/libraries/Hooks.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/Hooks.ts#L24)
+[assembly/libraries/Hooks.ts:24](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/Hooks.ts#L24)

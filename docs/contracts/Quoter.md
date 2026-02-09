@@ -16,8 +16,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -26,9 +26,9 @@
 
 #### Defined in
 
-[assembly/contracts/Quoter.ts:37](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Quoter.ts#L37)
+[assembly/contracts/Quoter.ts:37](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Quoter.ts#L37)
 
-___
+---
 
 ### findBestPathFromAmountIn
 
@@ -36,8 +36,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -46,9 +46,9 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Quoter.ts:58](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Quoter.ts#L58)
+[assembly/contracts/Quoter.ts:58](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Quoter.ts#L58)
 
-___
+---
 
 ### findBestPathFromAmountOut
 
@@ -56,8 +56,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                 |
+| :--- | :------------------- |
 | `bs` | `StaticArray`<`u8`\> |
 
 #### Returns
@@ -66,4 +66,4 @@ ___
 
 #### Defined in
 
-[assembly/contracts/Quoter.ts:68](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/Quoter.ts#L68)
+[assembly/contracts/Quoter.ts:68](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/Quoter.ts#L68)

@@ -47,20 +47,20 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `binStep` | `u32` | `0` | The bin step |
-| `baseFactor` | `u32` | `0` | The base factor |
-| `filterPeriod` | `u32` | `0` | The filter period, where the fees stays constant |
-| `decayPeriod` | `u32` | `0` | The decay period, where the fees are halved |
-| `reductionFactor` | `u32` | `0` | The reduction factor, used to calculate the reduction of the accumulator |
-| `variableFeeControl` | `u32` | `0` | The variable fee control, used to control the variable fee, can be 0 to disable them |
-| `protocolShare` | `u32` | `0` | The share of fees sent to protocol |
-| `maxVolatilityAccumulated` | `u32` | `0` | The max value of volatility accumulated |
-| `volatilityAccumulated` | `u32` | `0` | The value of volatility accumulated |
-| `volatilityReference` | `u32` | `0` | The value of volatility reference |
-| `indexRef` | `u32` | `0` | The index reference |
-| `time` | `u64` | `undefined` | The last time the accumulator was called |
+| Name                       | Type  | Default value | Description                                                                          |
+| :------------------------- | :---- | :------------ | :----------------------------------------------------------------------------------- |
+| `binStep`                  | `u32` | `0`           | The bin step                                                                         |
+| `baseFactor`               | `u32` | `0`           | The base factor                                                                      |
+| `filterPeriod`             | `u32` | `0`           | The filter period, where the fees stays constant                                     |
+| `decayPeriod`              | `u32` | `0`           | The decay period, where the fees are halved                                          |
+| `reductionFactor`          | `u32` | `0`           | The reduction factor, used to calculate the reduction of the accumulator             |
+| `variableFeeControl`       | `u32` | `0`           | The variable fee control, used to control the variable fee, can be 0 to disable them |
+| `protocolShare`            | `u32` | `0`           | The share of fees sent to protocol                                                   |
+| `maxVolatilityAccumulated` | `u32` | `0`           | The max value of volatility accumulated                                              |
+| `volatilityAccumulated`    | `u32` | `0`           | The value of volatility accumulated                                                  |
+| `volatilityReference`      | `u32` | `0`           | The value of volatility reference                                                    |
+| `indexRef`                 | `u32` | `0`           | The index reference                                                                  |
+| `time`                     | `u64` | `undefined`   | The last time the accumulator was called                                             |
 
 #### Returns
 
@@ -68,7 +68,7 @@
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L30)
+[assembly/structs/FeeParameters.ts:30](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L30)
 
 ## Properties
 
@@ -80,9 +80,9 @@ The base factor
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L32)
+[assembly/structs/FeeParameters.ts:32](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L32)
 
-___
+---
 
 ### binStep
 
@@ -92,9 +92,9 @@ The bin step
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L31)
+[assembly/structs/FeeParameters.ts:31](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L31)
 
-___
+---
 
 ### decayPeriod
 
@@ -104,9 +104,9 @@ The decay period, where the fees are halved
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L34)
+[assembly/structs/FeeParameters.ts:34](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L34)
 
-___
+---
 
 ### filterPeriod
 
@@ -116,9 +116,9 @@ The filter period, where the fees stays constant
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L33)
+[assembly/structs/FeeParameters.ts:33](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L33)
 
-___
+---
 
 ### indexRef
 
@@ -128,9 +128,9 @@ The index reference
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:41](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L41)
+[assembly/structs/FeeParameters.ts:41](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L41)
 
-___
+---
 
 ### maxVolatilityAccumulated
 
@@ -140,9 +140,9 @@ The max value of volatility accumulated
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:38](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L38)
+[assembly/structs/FeeParameters.ts:38](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L38)
 
-___
+---
 
 ### protocolShare
 
@@ -152,9 +152,9 @@ The share of fees sent to protocol
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:37](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L37)
+[assembly/structs/FeeParameters.ts:37](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L37)
 
-___
+---
 
 ### reductionFactor
 
@@ -164,9 +164,9 @@ The reduction factor, used to calculate the reduction of the accumulator
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L35)
+[assembly/structs/FeeParameters.ts:35](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L35)
 
-___
+---
 
 ### time
 
@@ -176,9 +176,9 @@ The last time the accumulator was called
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:42](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L42)
+[assembly/structs/FeeParameters.ts:42](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L42)
 
-___
+---
 
 ### variableFeeControl
 
@@ -188,9 +188,9 @@ The variable fee control, used to control the variable fee, can be 0 to disable 
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:36](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L36)
+[assembly/structs/FeeParameters.ts:36](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L36)
 
-___
+---
 
 ### volatilityAccumulated
 
@@ -200,9 +200,9 @@ The value of volatility accumulated
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L39)
+[assembly/structs/FeeParameters.ts:39](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L39)
 
-___
+---
 
 ### volatilityReference
 
@@ -212,7 +212,7 @@ The value of volatility reference
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:40](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L40)
+[assembly/structs/FeeParameters.ts:40](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L40)
 
 ## Methods
 
@@ -222,10 +222,10 @@ The value of volatility reference
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -237,9 +237,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:214](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L214)
+[assembly/structs/FeeParameters.ts:214](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L214)
 
-___
+---
 
 ### getBaseFee
 
@@ -255,9 +255,9 @@ Returns the base fee added to a swap, with 18 decimals
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:125](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L125)
+[assembly/structs/FeeParameters.ts:125](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L125)
 
-___
+---
 
 ### getFeeAmount
 
@@ -265,8 +265,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type   | Description              |
+| :-------- | :----- | :----------------------- |
 | `_amount` | `u256` | The amount of token sent |
 
 #### Returns
@@ -285,9 +285,9 @@ Rounds amount up, follows `amountWithFees = amount + getFeeAmount(amount)`
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:67](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L67)
+[assembly/structs/FeeParameters.ts:67](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L67)
 
-___
+---
 
 ### getFeeAmountDistribution
 
@@ -297,8 +297,8 @@ Return the fees distribution added to an amount
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type   | Description    |
+| :------ | :----- | :------------- |
 | `_fees` | `u256` | The fee amount |
 
 #### Returns
@@ -307,9 +307,9 @@ Return the fees distribution added to an amount
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:51](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L51)
+[assembly/structs/FeeParameters.ts:51](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L51)
 
-___
+---
 
 ### getFeeAmountForC
 
@@ -317,8 +317,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name              | Type   | Description              |
+| :---------------- | :----- | :----------------------- |
 | `_amountWithFees` | `u256` | The amount of token sent |
 
 #### Returns
@@ -337,9 +337,9 @@ Rounds amount up
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:98](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L98)
+[assembly/structs/FeeParameters.ts:98](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L98)
 
-___
+---
 
 ### getFeeAmountFrom
 
@@ -347,8 +347,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name              | Type   | Description              |
+| :---------------- | :----- | :----------------------- |
 | `_amountWithFees` | `u256` | The amount of token sent |
 
 #### Returns
@@ -367,9 +367,9 @@ Rounds amount up, follows `amount = amountWithFees - getFeeAmountFrom(amountWith
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:82](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L82)
+[assembly/structs/FeeParameters.ts:82](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L82)
 
-___
+---
 
 ### getTotalFee
 
@@ -387,9 +387,9 @@ Return the total fee, i.e. baseFee + variableFee
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:117](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L117)
+[assembly/structs/FeeParameters.ts:117](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L117)
 
-___
+---
 
 ### getVariableFee
 
@@ -405,9 +405,9 @@ Returns the variable fee added to a swap, with 18 decimals
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:135](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L135)
+[assembly/structs/FeeParameters.ts:135](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L135)
 
-___
+---
 
 ### serialize
 
@@ -423,9 +423,9 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:197](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L197)
+[assembly/structs/FeeParameters.ts:197](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L197)
 
-___
+---
 
 ### updateVariableFeeParameters
 
@@ -435,8 +435,8 @@ Update the value of the volatility accumulated
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type  | Description           |
+| :---------- | :---- | :-------------------- |
 | `_activeId` | `u32` | The current active id |
 
 #### Returns
@@ -445,9 +445,9 @@ Update the value of the volatility accumulated
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:157](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L157)
+[assembly/structs/FeeParameters.ts:157](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L157)
 
-___
+---
 
 ### updateVolatilityAccumulated
 
@@ -457,8 +457,8 @@ Update the volatility accumulated
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type  | Description           |
+| :---------- | :---- | :-------------------- |
 | `_activeId` | `u32` | The current active id |
 
 #### Returns
@@ -467,4 +467,4 @@ Update the volatility accumulated
 
 #### Defined in
 
-[assembly/structs/FeeParameters.ts:181](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/FeeParameters.ts#L181)
+[assembly/structs/FeeParameters.ts:181](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/FeeParameters.ts#L181)

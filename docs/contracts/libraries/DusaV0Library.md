@@ -33,10 +33,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `amountOut` | `u256` |
-| `reserveIn` | `u256` |
+| Name         | Type   |
+| :----------- | :----- |
+| `amountOut`  | `u256` |
+| `reserveIn`  | `u256` |
 | `reserveOut` | `u256` |
 
 #### Returns
@@ -45,9 +45,9 @@
 
 #### Defined in
 
-[assembly/libraries/DusaV0Library.ts:51](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/DusaV0Library.ts#L51)
+[assembly/libraries/DusaV0Library.ts:51](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/DusaV0Library.ts#L51)
 
-___
+---
 
 ### getAmountOut
 
@@ -55,10 +55,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `amountIn` | `u256` |
-| `reserveIn` | `u256` |
+| Name         | Type   |
+| :----------- | :----- |
+| `amountIn`   | `u256` |
+| `reserveIn`  | `u256` |
 | `reserveOut` | `u256` |
 
 #### Returns
@@ -67,9 +67,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/DusaV0Library.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/DusaV0Library.ts#L35)
+[assembly/libraries/DusaV0Library.ts:35](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/DusaV0Library.ts#L35)
 
-___
+---
 
 ### getAmountsIn
 
@@ -77,11 +77,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `factory` | [`IV0Factory`](../interfaces/IV0Factory) |
-| `amountOut` | `u256` |
-| `path` | `Address`[] |
+| Name        | Type                                     |
+| :---------- | :--------------------------------------- |
+| `factory`   | [`IV0Factory`](../interfaces/IV0Factory) |
+| `amountOut` | `u256`                                   |
+| `path`      | `Address`[]                              |
 
 #### Returns
 
@@ -89,9 +89,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/DusaV0Library.ts:90](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/DusaV0Library.ts#L90)
+[assembly/libraries/DusaV0Library.ts:90](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/DusaV0Library.ts#L90)
 
-___
+---
 
 ### getAmountsOut
 
@@ -99,11 +99,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `factory` | [`IV0Factory`](../interfaces/IV0Factory) |
-| `amountIn` | `u256` |
-| `path` | `Address`[] |
+| Name       | Type                                     |
+| :--------- | :--------------------------------------- |
+| `factory`  | [`IV0Factory`](../interfaces/IV0Factory) |
+| `amountIn` | `u256`                                   |
+| `path`     | `Address`[]                              |
 
 #### Returns
 
@@ -111,9 +111,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/DusaV0Library.ts:69](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/DusaV0Library.ts#L69)
+[assembly/libraries/DusaV0Library.ts:69](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/DusaV0Library.ts#L69)
 
-___
+---
 
 ### getReserves
 
@@ -121,11 +121,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                     |
+| :-------- | :--------------------------------------- |
 | `factory` | [`IV0Factory`](../interfaces/IV0Factory) |
-| `tokenA` | `Address` |
-| `tokenB` | `Address` |
+| `tokenA`  | `Address`                                |
+| `tokenB`  | `Address`                                |
 
 #### Returns
 
@@ -133,9 +133,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/DusaV0Library.ts:11](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/DusaV0Library.ts#L11)
+[assembly/libraries/DusaV0Library.ts:11](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/DusaV0Library.ts#L11)
 
-___
+---
 
 ### quote
 
@@ -143,9 +143,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `amountA` | `u256` |
+| Name       | Type   |
+| :--------- | :----- |
+| `amountA`  | `u256` |
 | `reserveA` | `u256` |
 | `reserveB` | `u256` |
 
@@ -155,4 +155,4 @@ ___
 
 #### Defined in
 
-[assembly/libraries/DusaV0Library.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/DusaV0Library.ts#L25)
+[assembly/libraries/DusaV0Library.ts:25](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/DusaV0Library.ts#L25)

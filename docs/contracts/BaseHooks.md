@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L12)
+[assembly/contracts/BaseHooks.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L12)
 
 ## Functions
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:164](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L164)
+[assembly/contracts/BaseHooks.ts:164](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L164)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:139](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L139)
+[assembly/contracts/BaseHooks.ts:139](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L139)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:77](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L77)
+[assembly/contracts/BaseHooks.ts:77](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L77)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:107](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L107)
+[assembly/contracts/BaseHooks.ts:107](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L107)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:56](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L56)
+[assembly/contracts/BaseHooks.ts:56](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L56)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:152](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L152)
+[assembly/contracts/BaseHooks.ts:152](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L152)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:126](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L126)
+[assembly/contracts/BaseHooks.ts:126](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L126)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:67](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L67)
+[assembly/contracts/BaseHooks.ts:67](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L67)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:88](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L88)
+[assembly/contracts/BaseHooks.ts:88](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L88)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:45](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L45)
+[assembly/contracts/BaseHooks.ts:45](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L45)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L18)
+[assembly/contracts/BaseHooks.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L18)
 
 ___
 
@@ -269,4 +269,4 @@ ___
 
 #### Defined in
 
-[assembly/contracts/BaseHooks.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/contracts/BaseHooks.ts#L31)
+[assembly/contracts/BaseHooks.ts:31](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/contracts/BaseHooks.ts#L31)

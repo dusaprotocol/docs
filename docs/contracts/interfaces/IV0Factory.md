@@ -26,8 +26,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_origin` | `Address` |
 
 #### Returns
@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IV0Factory.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Factory.ts#L14)
+[assembly/interfaces/IV0Factory.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Factory.ts#L14)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[assembly/interfaces/IV0Factory.ts:12](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Factory.ts#L12)
+[assembly/interfaces/IV0Factory.ts:12](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Factory.ts#L12)
 
 ## Methods
 
@@ -64,9 +64,9 @@ Returns the length of the allPairs array.
 
 #### Defined in
 
-[assembly/interfaces/IV0Factory.ts:42](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Factory.ts#L42)
+[assembly/interfaces/IV0Factory.ts:42](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Factory.ts#L42)
 
-___
+---
 
 ### createPair
 
@@ -76,11 +76,11 @@ Creates a new pair for tokenA and tokenB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_tokenA` | `Address` | - |
-| `_tokenB` | `Address` | - |
-| `amount` | `u64` | The amount of coins to transfer to the pair for storage fee. |
+| Name      | Type      | Description                                                  |
+| :-------- | :-------- | :----------------------------------------------------------- |
+| `_tokenA` | `Address` | -                                                            |
+| `_tokenB` | `Address` | -                                                            |
+| `amount`  | `u64`     | The amount of coins to transfer to the pair for storage fee. |
 
 #### Returns
 
@@ -90,9 +90,9 @@ Creates a new pair for tokenA and tokenB.
 
 #### Defined in
 
-[assembly/interfaces/IV0Factory.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Factory.ts#L31)
+[assembly/interfaces/IV0Factory.ts:31](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Factory.ts#L31)
 
-___
+---
 
 ### feeTo
 
@@ -108,9 +108,9 @@ Returns the feeTo address.
 
 #### Defined in
 
-[assembly/interfaces/IV0Factory.ts:54](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Factory.ts#L54)
+[assembly/interfaces/IV0Factory.ts:54](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Factory.ts#L54)
 
-___
+---
 
 ### getPair
 
@@ -118,8 +118,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `tokenA` | `Address` |
 | `tokenB` | `Address` |
 
@@ -129,9 +129,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Factory.ts:58](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Factory.ts#L58)
+[assembly/interfaces/IV0Factory.ts:58](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Factory.ts#L58)
 
-___
+---
 
 ### init
 
@@ -139,8 +139,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type      |
+| :------------- | :-------- |
 | `_feeToSetter` | `Address` |
 
 #### Returns
@@ -149,4 +149,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IV0Factory.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IV0Factory.ts#L18)
+[assembly/interfaces/IV0Factory.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IV0Factory.ts#L18)

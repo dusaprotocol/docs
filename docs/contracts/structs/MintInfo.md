@@ -39,21 +39,21 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `amountXIn` | `u256` | `ZERO` | The amount of token X sent |
-| `amountYIn` | `u256` | `ZERO` | The amount of token Y sent |
-| `amountXAddedToPair` | `u256` | `ZERO` | The amount of token X that have been actually added to the pair |
-| `amountYAddedToPair` | `u256` | `ZERO` | The amount of token Y that have been actually added to the pair |
-| `activeFeeX` | `u256` | `ZERO` | Fees X currently generated |
-| `activeFeeY` | `u256` | `ZERO` | Fees Y currently generated |
-| `totalDistributionX` | `u256` | `ZERO` | Total distribution of token X. Should be 1e18 (100%) or 0 (0%) |
-| `totalDistributionY` | `u256` | `ZERO` | Total distribution of token Y. Should be 1e18 (100%) or 0 (0%) |
-| `id` | `u32` | `0` | Id of the current working bin when looping on the distribution array |
-| `amountX` | `u256` | `ZERO` | The amount of token X deposited in the current bin |
-| `amountY` | `u256` | `ZERO` | The amount of token Y deposited in the current bin |
-| `distributionX` | `u256` | `ZERO` | Distribution of token X for the current working bin |
-| `distributionY` | `u256` | `ZERO` | Distribution of token Y for the current working bin |
+| Name                 | Type   | Default value | Description                                                          |
+| :------------------- | :----- | :------------ | :------------------------------------------------------------------- |
+| `amountXIn`          | `u256` | `ZERO`        | The amount of token X sent                                           |
+| `amountYIn`          | `u256` | `ZERO`        | The amount of token Y sent                                           |
+| `amountXAddedToPair` | `u256` | `ZERO`        | The amount of token X that have been actually added to the pair      |
+| `amountYAddedToPair` | `u256` | `ZERO`        | The amount of token Y that have been actually added to the pair      |
+| `activeFeeX`         | `u256` | `ZERO`        | Fees X currently generated                                           |
+| `activeFeeY`         | `u256` | `ZERO`        | Fees Y currently generated                                           |
+| `totalDistributionX` | `u256` | `ZERO`        | Total distribution of token X. Should be 1e18 (100%) or 0 (0%)       |
+| `totalDistributionY` | `u256` | `ZERO`        | Total distribution of token Y. Should be 1e18 (100%) or 0 (0%)       |
+| `id`                 | `u32`  | `0`           | Id of the current working bin when looping on the distribution array |
+| `amountX`            | `u256` | `ZERO`        | The amount of token X deposited in the current bin                   |
+| `amountY`            | `u256` | `ZERO`        | The amount of token Y deposited in the current bin                   |
+| `distributionX`      | `u256` | `ZERO`        | Distribution of token X for the current working bin                  |
+| `distributionY`      | `u256` | `ZERO`        | Distribution of token Y for the current working bin                  |
 
 #### Returns
 
@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L23)
+[assembly/structs/MintInfo.ts:23](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L23)
 
 ## Properties
 
@@ -73,9 +73,9 @@ Fees X currently generated
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L28)
+[assembly/structs/MintInfo.ts:28](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L28)
 
-___
+---
 
 ### activeFeeY
 
@@ -85,9 +85,9 @@ Fees Y currently generated
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:29](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L29)
+[assembly/structs/MintInfo.ts:29](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L29)
 
-___
+---
 
 ### amountX
 
@@ -97,9 +97,9 @@ The amount of token X deposited in the current bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L33)
+[assembly/structs/MintInfo.ts:33](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L33)
 
-___
+---
 
 ### amountXAddedToPair
 
@@ -109,9 +109,9 @@ The amount of token X that have been actually added to the pair
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:26](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L26)
+[assembly/structs/MintInfo.ts:26](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L26)
 
-___
+---
 
 ### amountXIn
 
@@ -121,9 +121,9 @@ The amount of token X sent
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L24)
+[assembly/structs/MintInfo.ts:24](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L24)
 
-___
+---
 
 ### amountY
 
@@ -133,9 +133,9 @@ The amount of token Y deposited in the current bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L34)
+[assembly/structs/MintInfo.ts:34](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L34)
 
-___
+---
 
 ### amountYAddedToPair
 
@@ -145,9 +145,9 @@ The amount of token Y that have been actually added to the pair
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:27](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L27)
+[assembly/structs/MintInfo.ts:27](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L27)
 
-___
+---
 
 ### amountYIn
 
@@ -157,9 +157,9 @@ The amount of token Y sent
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L25)
+[assembly/structs/MintInfo.ts:25](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L25)
 
-___
+---
 
 ### distributionX
 
@@ -169,9 +169,9 @@ Distribution of token X for the current working bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:35](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L35)
+[assembly/structs/MintInfo.ts:35](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L35)
 
-___
+---
 
 ### distributionY
 
@@ -181,9 +181,9 @@ Distribution of token Y for the current working bin
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:36](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L36)
+[assembly/structs/MintInfo.ts:36](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L36)
 
-___
+---
 
 ### id
 
@@ -193,9 +193,9 @@ Id of the current working bin when looping on the distribution array
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L32)
+[assembly/structs/MintInfo.ts:32](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L32)
 
-___
+---
 
 ### totalDistributionX
 
@@ -205,9 +205,9 @@ Total distribution of token X. Should be 1e18 (100%) or 0 (0%)
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:30](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L30)
+[assembly/structs/MintInfo.ts:30](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L30)
 
-___
+---
 
 ### totalDistributionY
 
@@ -217,7 +217,7 @@ Total distribution of token Y. Should be 1e18 (100%) or 0 (0%)
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:31](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L31)
+[assembly/structs/MintInfo.ts:31](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L31)
 
 ## Methods
 
@@ -227,10 +227,10 @@ Total distribution of token Y. Should be 1e18 (100%) or 0 (0%)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -242,9 +242,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:61](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L61)
+[assembly/structs/MintInfo.ts:61](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L61)
 
-___
+---
 
 ### serialize
 
@@ -260,4 +260,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/MintInfo.ts:43](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/MintInfo.ts#L43)
+[assembly/structs/MintInfo.ts:43](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/MintInfo.ts#L43)

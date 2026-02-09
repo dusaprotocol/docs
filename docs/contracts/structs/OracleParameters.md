@@ -33,15 +33,15 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `oracleSampleLifetime` | `u32` | `0` | The lifetime of a sample, it accumulates information for up to this timestamp |
-| `oracleSize` | `u32` | `0` | The size of the oracle (last ids can be empty) |
-| `oracleActiveSize` | `u32` | `0` | The active size of the oracle (no empty data) |
-| `oracleLastTimestamp` | `u64` | `0` | The timestamp of the creation of the oracle's latest sample |
-| `oracleId` | `u32` | `0` | The index of the oracle's latest sample |
-| `min` | `u32` | `0` | The min delta time of two samples |
-| `max` | `u32` | `0` | The safe max delta time of two samples |
+| Name                   | Type  | Default value | Description                                                                   |
+| :--------------------- | :---- | :------------ | :---------------------------------------------------------------------------- |
+| `oracleSampleLifetime` | `u32` | `0`           | The lifetime of a sample, it accumulates information for up to this timestamp |
+| `oracleSize`           | `u32` | `0`           | The size of the oracle (last ids can be empty)                                |
+| `oracleActiveSize`     | `u32` | `0`           | The active size of the oracle (no empty data)                                 |
+| `oracleLastTimestamp`  | `u64` | `0`           | The timestamp of the creation of the oracle's latest sample                   |
+| `oracleId`             | `u32` | `0`           | The index of the oracle's latest sample                                       |
+| `min`                  | `u32` | `0`           | The min delta time of two samples                                             |
+| `max`                  | `u32` | `0`           | The safe max delta time of two samples                                        |
 
 #### Returns
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:14](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L14)
+[assembly/structs/OracleParameters.ts:14](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L14)
 
 ## Properties
 
@@ -61,9 +61,9 @@ The safe max delta time of two samples
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L21)
+[assembly/structs/OracleParameters.ts:21](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L21)
 
-___
+---
 
 ### min
 
@@ -73,9 +73,9 @@ The min delta time of two samples
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L20)
+[assembly/structs/OracleParameters.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L20)
 
-___
+---
 
 ### oracleActiveSize
 
@@ -85,9 +85,9 @@ The active size of the oracle (no empty data)
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L17)
+[assembly/structs/OracleParameters.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L17)
 
-___
+---
 
 ### oracleId
 
@@ -97,9 +97,9 @@ The index of the oracle's latest sample
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L19)
+[assembly/structs/OracleParameters.ts:19](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L19)
 
-___
+---
 
 ### oracleLastTimestamp
 
@@ -109,9 +109,9 @@ The timestamp of the creation of the oracle's latest sample
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L18)
+[assembly/structs/OracleParameters.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L18)
 
-___
+---
 
 ### oracleSampleLifetime
 
@@ -121,9 +121,9 @@ The lifetime of a sample, it accumulates information for up to this timestamp
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L15)
+[assembly/structs/OracleParameters.ts:15](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L15)
 
-___
+---
 
 ### oracleSize
 
@@ -133,7 +133,7 @@ The size of the oracle (last ids can be empty)
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L16)
+[assembly/structs/OracleParameters.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L16)
 
 ## Methods
 
@@ -143,10 +143,10 @@ The size of the oracle (last ids can be empty)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -158,9 +158,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:40](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L40)
+[assembly/structs/OracleParameters.ts:40](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L40)
 
-___
+---
 
 ### serialize
 
@@ -176,4 +176,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/OracleParameters.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/OracleParameters.ts#L28)
+[assembly/structs/OracleParameters.ts:28](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/OracleParameters.ts#L28)

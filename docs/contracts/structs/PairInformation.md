@@ -36,18 +36,18 @@
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `activeId` | `u32` | `0` | The current id used for swaps, this is also linked with the price |
-| `reserveX` | `u256` | `ZERO` | The sum of amounts of tokenX across all bins |
-| `reserveY` | `u256` | `ZERO` | The sum of amounts of tokenY across all bins |
-| `feesX` | [`FeesDistribution`](FeesDistribution.md) | `undefined` | The current amount of fees to distribute in tokenX (total, protocol) |
-| `feesY` | [`FeesDistribution`](FeesDistribution.md) | `undefined` | The current amount of fees to distribute in tokenY (total, protocol) |
-| `oracleSampleLifetime` | `u32` | `0` | - |
-| `oracleSize` | `u32` | `0` | - |
-| `oracleActiveSize` | `u32` | `0` | - |
-| `oracleLastTimestamp` | `u64` | `0` | - |
-| `oracleId` | `u32` | `0` | - |
+| Name                   | Type                                      | Default value | Description                                                          |
+| :--------------------- | :---------------------------------------- | :------------ | :------------------------------------------------------------------- |
+| `activeId`             | `u32`                                     | `0`           | The current id used for swaps, this is also linked with the price    |
+| `reserveX`             | `u256`                                    | `ZERO`        | The sum of amounts of tokenX across all bins                         |
+| `reserveY`             | `u256`                                    | `ZERO`        | The sum of amounts of tokenY across all bins                         |
+| `feesX`                | [`FeesDistribution`](FeesDistribution.md) | `undefined`   | The current amount of fees to distribute in tokenX (total, protocol) |
+| `feesY`                | [`FeesDistribution`](FeesDistribution.md) | `undefined`   | The current amount of fees to distribute in tokenY (total, protocol) |
+| `oracleSampleLifetime` | `u32`                                     | `0`           | -                                                                    |
+| `oracleSize`           | `u32`                                     | `0`           | -                                                                    |
+| `oracleActiveSize`     | `u32`                                     | `0`           | -                                                                    |
+| `oracleLastTimestamp`  | `u64`                                     | `0`           | -                                                                    |
+| `oracleId`             | `u32`                                     | `0`           | -                                                                    |
 
 #### Returns
 
@@ -55,7 +55,7 @@
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L15)
+[assembly/structs/PairInformation.ts:15](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L15)
 
 ## Properties
 
@@ -67,9 +67,9 @@ The current id used for swaps, this is also linked with the price
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L16)
+[assembly/structs/PairInformation.ts:16](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L16)
 
-___
+---
 
 ### feesX
 
@@ -79,9 +79,9 @@ The current amount of fees to distribute in tokenX (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L19)
+[assembly/structs/PairInformation.ts:19](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L19)
 
-___
+---
 
 ### feesY
 
@@ -91,9 +91,9 @@ The current amount of fees to distribute in tokenY (total, protocol)
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L20)
+[assembly/structs/PairInformation.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L20)
 
-___
+---
 
 ### oracleActiveSize
 
@@ -101,9 +101,9 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L23)
+[assembly/structs/PairInformation.ts:23](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L23)
 
-___
+---
 
 ### oracleId
 
@@ -111,9 +111,9 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:25](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L25)
+[assembly/structs/PairInformation.ts:25](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L25)
 
-___
+---
 
 ### oracleLastTimestamp
 
@@ -121,9 +121,9 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:24](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L24)
+[assembly/structs/PairInformation.ts:24](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L24)
 
-___
+---
 
 ### oracleSampleLifetime
 
@@ -131,9 +131,9 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L21)
+[assembly/structs/PairInformation.ts:21](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L21)
 
-___
+---
 
 ### oracleSize
 
@@ -141,9 +141,9 @@ ___
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L22)
+[assembly/structs/PairInformation.ts:22](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L22)
 
-___
+---
 
 ### reserveX
 
@@ -153,9 +153,9 @@ The sum of amounts of tokenX across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L17)
+[assembly/structs/PairInformation.ts:17](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L17)
 
-___
+---
 
 ### reserveY
 
@@ -165,7 +165,7 @@ The sum of amounts of tokenY across all bins
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L18)
+[assembly/structs/PairInformation.ts:18](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L18)
 
 ## Methods
 
@@ -175,10 +175,10 @@ The sum of amounts of tokenY across all bins
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `StaticArray`<`u8`\> |
-| `offset` | `i32` |
+| Name     | Type                 |
+| :------- | :------------------- |
+| `data`   | `StaticArray`<`u8`\> |
+| `offset` | `i32`                |
 
 #### Returns
 
@@ -190,9 +190,9 @@ Serializable.deserialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:47](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L47)
+[assembly/structs/PairInformation.ts:47](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L47)
 
-___
+---
 
 ### serialize
 
@@ -208,4 +208,4 @@ Serializable.serialize
 
 #### Defined in
 
-[assembly/structs/PairInformation.ts:32](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/PairInformation.ts#L32)
+[assembly/structs/PairInformation.ts:32](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/PairInformation.ts#L32)

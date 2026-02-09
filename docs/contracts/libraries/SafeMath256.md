@@ -32,10 +32,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u256` |
-| `b` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `a`  | `u256` |
+| `b`  | `u256` |
 
 #### Returns
 
@@ -46,9 +46,9 @@ reverting on overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:116](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L116)
+[assembly/libraries/SafeMath.ts:116](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/SafeMath.ts#L116)
 
-___
+---
 
 ### div
 
@@ -56,10 +56,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u256` |
-| `b` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `a`  | `u256` |
+| `b`  | `u256` |
 
 #### Returns
 
@@ -70,9 +70,9 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:162](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L162)
+[assembly/libraries/SafeMath.ts:162](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/SafeMath.ts#L162)
 
-___
+---
 
 ### mod
 
@@ -80,10 +80,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u256` |
-| `b` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `a`  | `u256` |
+| `b`  | `u256` |
 
 #### Returns
 
@@ -94,9 +94,9 @@ Reverts with custom message when dividing by zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:176](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L176)
+[assembly/libraries/SafeMath.ts:176](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/SafeMath.ts#L176)
 
-___
+---
 
 ### mul
 
@@ -104,10 +104,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u256` |
-| `b` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `a`  | `u256` |
+| `b`  | `u256` |
 
 #### Returns
 
@@ -118,9 +118,9 @@ overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:144](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L144)
+[assembly/libraries/SafeMath.ts:144](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/SafeMath.ts#L144)
 
-___
+---
 
 ### sub
 
@@ -128,10 +128,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `u256` |
-| `b` | `u256` |
+| Name | Type   |
+| :--- | :----- |
+| `a`  | `u256` |
+| `b`  | `u256` |
 
 #### Returns
 
@@ -142,4 +142,4 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:130](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L130)
+[assembly/libraries/SafeMath.ts:130](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/SafeMath.ts#L130)

@@ -44,8 +44,8 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type      | Description                    |
+| :--- | :-------- | :----------------------------- |
 | `at` | `Address` | Address of the smart contract. |
 
 #### Returns
@@ -54,7 +54,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:28](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L28)
+[assembly/interfaces/IFactory.ts:28](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L28)
 
 ## Properties
 
@@ -64,7 +64,7 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:21](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L21)
+[assembly/interfaces/IFactory.ts:21](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L21)
 
 ## Methods
 
@@ -78,9 +78,9 @@ Wraps a smart contract exposing standard token FFI.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:237](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L237)
+[assembly/interfaces/IFactory.ts:237](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L237)
 
-___
+---
 
 ### addQuoteAsset
 
@@ -88,8 +88,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `_asset` | `Address` |
 
 #### Returns
@@ -98,9 +98,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:221](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L221)
+[assembly/interfaces/IFactory.ts:221](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L221)
 
-___
+---
 
 ### createLBPair
 
@@ -108,13 +108,13 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_tokenA` | `Address` | address of the first token |
-| `_tokenB` | `Address` | address of the second token |
-| `_activeId` | `u32` | active id disired |
-| `_binStep` | `u32` | bin step disired |
-| `_masToSend` | `u64` | Massa to send for storage |
+| Name         | Type      | Description                 |
+| :----------- | :-------- | :-------------------------- |
+| `_tokenA`    | `Address` | address of the first token  |
+| `_tokenB`    | `Address` | address of the second token |
+| `_activeId`  | `u32`     | active id disired           |
+| `_binStep`   | `u32`     | bin step disired            |
+| `_masToSend` | `u64`     | Massa to send for storage   |
 
 #### Returns
 
@@ -128,9 +128,9 @@ Create a new LBPair
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:99](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L99)
+[assembly/interfaces/IFactory.ts:99](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L99)
 
-___
+---
 
 ### forceDecay
 
@@ -138,8 +138,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `_pair` | `Address` |
 
 #### Returns
@@ -148,9 +148,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:229](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L229)
+[assembly/interfaces/IFactory.ts:229](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L229)
 
-___
+---
 
 ### getAllLBPairs
 
@@ -158,8 +158,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_tokenX` | `Address` |
 | `_tokenY` | `Address` |
 
@@ -169,9 +169,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:60](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L60)
+[assembly/interfaces/IFactory.ts:60](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L60)
 
-___
+---
 
 ### getAvailableLBPairBinSteps
 
@@ -179,8 +179,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `_tokenA` | `Address` |
 | `_tokenB` | `Address` |
 
@@ -190,9 +190,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:241](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L241)
+[assembly/interfaces/IFactory.ts:241](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L241)
 
-___
+---
 
 ### getLBPairInformation
 
@@ -200,11 +200,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_binStep` | `u64` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_tokenA`  | `Address` |
+| `_tokenB`  | `Address` |
+| `_binStep` | `u64`     |
 
 #### Returns
 
@@ -212,9 +212,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:50](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L50)
+[assembly/interfaces/IFactory.ts:50](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L50)
 
-___
+---
 
 ### getOwner
 
@@ -226,9 +226,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:247](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L247)
+[assembly/interfaces/IFactory.ts:247](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L247)
 
-___
+---
 
 ### getPreset
 
@@ -236,8 +236,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type  |
+| :-------- | :---- |
 | `binstep` | `u32` |
 
 #### Returns
@@ -246,9 +246,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:251](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L251)
+[assembly/interfaces/IFactory.ts:251](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L251)
 
-___
+---
 
 ### init
 
@@ -258,11 +258,11 @@ Initialize the factory. This function must be called before any other function.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `_feeRecipient` | `Address` | `undefined` | The address of the fee recipient |
-| `_quoteAssets` | `Address`[] | `undefined` | - |
-| `_flashLoanFee` | `u256` | `ZERO` | The value of the fee for flash loan |
+| Name            | Type        | Default value | Description                         |
+| :-------------- | :---------- | :------------ | :---------------------------------- |
+| `_feeRecipient` | `Address`   | `undefined`   | The address of the fee recipient    |
+| `_quoteAssets`  | `Address`[] | `undefined`   | -                                   |
+| `_flashLoanFee` | `u256`      | `ZERO`        | The value of the fee for flash loan |
 
 #### Returns
 
@@ -270,9 +270,9 @@ Initialize the factory. This function must be called before any other function.
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:38](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L38)
+[assembly/interfaces/IFactory.ts:38](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L38)
 
-___
+---
 
 ### proposeNewOwner
 
@@ -280,8 +280,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type      |
+| :---------- | :-------- |
 | `_newOwner` | `Address` |
 
 #### Returns
@@ -290,9 +290,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:233](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L233)
+[assembly/interfaces/IFactory.ts:233](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L233)
 
-___
+---
 
 ### removeLBHooksOnPair
 
@@ -300,11 +300,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_binStep` | `u32` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_tokenA`  | `Address` |
+| `_tokenB`  | `Address` |
+| `_binStep` | `u32`     |
 
 #### Returns
 
@@ -312,9 +312,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:199](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L199)
+[assembly/interfaces/IFactory.ts:199](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L199)
 
-___
+---
 
 ### removePreset
 
@@ -322,8 +322,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type  |
+| :--------- | :---- |
 | `_binStep` | `u32` |
 
 #### Returns
@@ -332,9 +332,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:153](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L153)
+[assembly/interfaces/IFactory.ts:153](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L153)
 
-___
+---
 
 ### removeQuoteAsset
 
@@ -342,8 +342,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| :------- | :-------- |
 | `_asset` | `Address` |
 
 #### Returns
@@ -352,9 +352,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:225](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L225)
+[assembly/interfaces/IFactory.ts:225](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L225)
 
-___
+---
 
 ### setFactoryLockedState
 
@@ -362,8 +362,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                  | Type   |
+| :-------------------- | :----- |
 | `_factoryLockedState` | `bool` |
 
 #### Returns
@@ -372,9 +372,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:212](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L212)
+[assembly/interfaces/IFactory.ts:212](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L212)
 
-___
+---
 
 ### setFeeRecipient
 
@@ -382,8 +382,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type      |
+| :-------------- | :-------- |
 | `_feeRecipient` | `Address` |
 
 #### Returns
@@ -392,9 +392,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:204](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L204)
+[assembly/interfaces/IFactory.ts:204](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L204)
 
-___
+---
 
 ### setFeesParametersOnPair
 
@@ -402,18 +402,18 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_binStep` | `u32` |
-| `_baseFactor` | `u32` |
-| `_filterPeriod` | `u32` |
-| `_decayPeriod` | `u32` |
-| `_reductionFactor` | `u32` |
-| `_variableFeeControl` | `u32` |
-| `_protocolShare` | `u32` |
-| `_maxVolatilityAccumulated` | `u32` |
+| Name                        | Type      |
+| :-------------------------- | :-------- |
+| `_tokenA`                   | `Address` |
+| `_tokenB`                   | `Address` |
+| `_binStep`                  | `u32`     |
+| `_baseFactor`               | `u32`     |
+| `_filterPeriod`             | `u32`     |
+| `_decayPeriod`              | `u32`     |
+| `_reductionFactor`          | `u32`     |
+| `_variableFeeControl`       | `u32`     |
+| `_protocolShare`            | `u32`     |
+| `_maxVolatilityAccumulated` | `u32`     |
 
 #### Returns
 
@@ -421,9 +421,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:157](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L157)
+[assembly/interfaces/IFactory.ts:157](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L157)
 
-___
+---
 
 ### setFlashLoanFee
 
@@ -431,8 +431,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type  |
+| :-------------- | :---- |
 | `_flashLoanFee` | `u64` |
 
 #### Returns
@@ -441,9 +441,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:208](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L208)
+[assembly/interfaces/IFactory.ts:208](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L208)
 
-___
+---
 
 ### setLBHooksParametersOnPair
 
@@ -451,13 +451,13 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_binStep` | `u32` |
+| Name               | Type                                            |
+| :----------------- | :---------------------------------------------- |
+| `_tokenA`          | `Address`                                       |
+| `_tokenB`          | `Address`                                       |
+| `_binStep`         | `u32`                                           |
 | `_hooksParameters` | [`HooksParameters`](../structs/HooksParameters) |
-| `_onHooksSetData` | `StaticArray`<`u8`\> |
+| `_onHooksSetData`  | `StaticArray`<`u8`\>                            |
 
 #### Returns
 
@@ -465,9 +465,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:183](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L183)
+[assembly/interfaces/IFactory.ts:183](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L183)
 
-___
+---
 
 ### setLBPairIgnored
 
@@ -475,12 +475,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_tokenA` | `Address` |
-| `_tokenB` | `Address` |
-| `_binStep` | `u32` |
-| `_ignored` | `bool` |
+| Name       | Type      |
+| :--------- | :-------- |
+| `_tokenA`  | `Address` |
+| `_tokenB`  | `Address` |
+| `_binStep` | `u32`     |
+| `_ignored` | `bool`    |
 
 #### Returns
 
@@ -488,9 +488,9 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:115](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L115)
+[assembly/interfaces/IFactory.ts:115](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L115)
 
-___
+---
 
 ### setPreset
 
@@ -498,17 +498,17 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_binStep` | `u32` |
-| `_baseFactor` | `u32` |
-| `_filterPeriod` | `u32` |
-| `_decayPeriod` | `u32` |
-| `_reductionFactor` | `u32` |
-| `_variableFeeControl` | `u32` |
-| `_protocolShare` | `u32` |
+| Name                        | Type  |
+| :-------------------------- | :---- |
+| `_binStep`                  | `u32` |
+| `_baseFactor`               | `u32` |
+| `_filterPeriod`             | `u32` |
+| `_decayPeriod`              | `u32` |
+| `_reductionFactor`          | `u32` |
+| `_variableFeeControl`       | `u32` |
+| `_protocolShare`            | `u32` |
 | `_maxVolatilityAccumulated` | `u32` |
-| `_sampleLifeTime` | `u32` |
+| `_sampleLifeTime`           | `u32` |
 
 #### Returns
 
@@ -516,4 +516,4 @@ ___
 
 #### Defined in
 
-[assembly/interfaces/IFactory.ts:129](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/interfaces/IFactory.ts#L129)
+[assembly/interfaces/IFactory.ts:129](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/interfaces/IFactory.ts#L129)

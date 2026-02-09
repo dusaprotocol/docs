@@ -30,9 +30,9 @@
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `u8` |
-| `b` | `u8` |
+| :--- | :--- |
+| `a`  | `u8` |
+| `b`  | `u8` |
 
 #### Returns
 
@@ -43,9 +43,9 @@ reverting on overflow.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:86](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L86)
+[assembly/libraries/SafeMath.ts:86](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/SafeMath.ts#L86)
 
-___
+---
 
 ### sub
 
@@ -54,9 +54,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `u8` |
-| `b` | `u8` |
+| :--- | :--- |
+| `a`  | `u8` |
+| `b`  | `u8` |
 
 #### Returns
 
@@ -67,4 +67,4 @@ division by zero. The result is rounded towards zero.
 
 #### Defined in
 
-[assembly/libraries/SafeMath.ts:100](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/SafeMath.ts#L100)
+[assembly/libraries/SafeMath.ts:100](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/SafeMath.ts#L100)

@@ -6,14 +6,14 @@ It implements a map -- a persistent unordered map.
 To create a map
 
 ```ts
-let map = new PersistentMap<string, string>("m")  // choose a unique prefix per account
+let map = new PersistentMap<string, string>("m"); // choose a unique prefix per account
 ```
 
 To use the map
 
 ```ts
-map.set(key, value)
-map.get(key)
+map.set(key, value);
+map.get(key);
 ```
 
 IMPORTANT NOTES:
@@ -21,7 +21,7 @@ IMPORTANT NOTES:
 (1) The Map doesn't store keys, so if you need to retrieve them, include keys in the values.
 
 (2) Since all data stored on the blockchain is kept in a single key-value store under the contract account,
-you must always use a *unique storage prefix* for different collections to avoid data collision.
+you must always use a _unique storage prefix_ for different collections to avoid data collision.
 
 ## Hierarchy
 
@@ -64,13 +64,13 @@ Always use a unique storage prefix for different collections.
 Example
 
 ```ts
-let map = new PersistentMap<string, string>("m") // note the prefix must be unique (per MASSA account)
+let map = new PersistentMap<string, string>("m"); // note the prefix must be unique (per MASSA account)
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                                |
+| :------- | :------- | :----------------------------------------- |
 | `prefix` | `string` | A prefix to use for every key of this map. |
 
 #### Returns
@@ -83,13 +83,13 @@ let map = new PersistentMap<string, string>("m") // note the prefix must be uniq
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:65](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L65)
+[assembly/libraries/PersistentMap.ts:65](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L65)
 
 ## Methods
 
 ### \_decreaseSize
 
-▸ **_decreaseSize**(): `void`
+▸ **\_decreaseSize**(): `void`
 
 Decreases the internal map size counter
 
@@ -99,24 +99,24 @@ Decreases the internal map size counter
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[_decreaseSize](../libraries/PersistentMap.md#_decreasesize)
+[PersistentMap](../libraries/PersistentMap.md).[\_decreaseSize](../libraries/PersistentMap.md#_decreasesize)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:145](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L145)
+[assembly/libraries/PersistentMap.ts:145](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L145)
 
-___
+---
 
 ### \_increaseSize
 
-▸ **_increaseSize**(`key`): `void`
+▸ **\_increaseSize**(`key`): `void`
 
 Increases the internal map size counter
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type  | Description    |
+| :---- | :---- | :------------- |
 | `key` | `u64` | Key to remove. |
 
 #### Returns
@@ -125,13 +125,13 @@ Increases the internal map size counter
 
 #### Inherited from
 
-[PersistentMap](../libraries/PersistentMap.md).[_increaseSize](../libraries/PersistentMap.md#_increasesize)
+[PersistentMap](../libraries/PersistentMap.md).[\_increaseSize](../libraries/PersistentMap.md#_increasesize)
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:136](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L136)
+[assembly/libraries/PersistentMap.ts:136](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L136)
 
-___
+---
 
 ### before
 
@@ -139,10 +139,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `u64` | The value |
-| `n` | `u64` | The modulo value |
+| Name | Type  | Description      |
+| :--- | :---- | :--------------- |
+| `x`  | `u64` | The value        |
+| `n`  | `u64` | The modulo value |
 
 #### Returns
 
@@ -160,9 +160,9 @@ This function is used to get the previous index of the oracle
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:207](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L207)
+[assembly/structs/Oracle.ts:207](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Oracle.ts#L207)
 
-___
+---
 
 ### binarySearch
 
@@ -170,11 +170,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_index` | `u64` | The current index of the oracle |
-| `_activeSize` | `u64` | The size of the oracle (without empty data) |
-| `_lookUpTimestamp` | `u64` | The looked up timestamp |
+| Name               | Type  | Description                                 |
+| :----------------- | :---- | :------------------------------------------ |
+| `_index`           | `u64` | The current index of the oracle             |
+| `_activeSize`      | `u64` | The size of the oracle (without empty data) |
+| `_lookUpTimestamp` | `u64` | The looked up timestamp                     |
 
 #### Returns
 
@@ -189,15 +189,15 @@ Binary search on oracle samples and return the 2 samples (as bytes32) that surro
 **`Dev`**
 
 The oracle needs to be in increasing order `{_index + 1, _index + 2 ..., _index + _activeSize} % _activeSize`.
-The sample that aren't initialized yet will be skipped as _activeSize only contains the samples that are initialized.
+The sample that aren't initialized yet will be skipped as \_activeSize only contains the samples that are initialized.
 This function works only if `timestamp(_oracle[_index + 1 % _activeSize] <= _lookUpTimestamp <= timestamp(_oracle[_index]`.
 The edge cases needs to be handled before
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:169](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L169)
+[assembly/structs/Oracle.ts:169](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Oracle.ts#L169)
 
-___
+---
 
 ### contains
 
@@ -206,18 +206,18 @@ ___
 Checks whether the map contains a given key
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.contains("hello")      // false
-map.set("hello", "world")
-map.contains("hello")      // true
+map.contains("hello"); // false
+map.set("hello", "world");
+map.contains("hello"); // true
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `u64` | Key to check. |
+| Name      | Type      | Description                           |
+| :-------- | :-------- | :------------------------------------ |
+| `key`     | `u64`     | Key to check.                         |
 | `address` | `Address` | Address containing the PersistentMap. |
 
 #### Returns
@@ -232,9 +232,9 @@ True if the given key present in the map.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:95](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L95)
+[assembly/libraries/PersistentMap.ts:95](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L95)
 
-___
+---
 
 ### delete
 
@@ -243,18 +243,18 @@ ___
 Removes the given key and related value from the map
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
-map.delete("hello")
+map.set("hello", "world");
+map.delete("hello");
 ```
 
 Removes value and the key from the map.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type  | Description    |
+| :---- | :---- | :------------- |
 | `key` | `u64` | Key to remove. |
 
 #### Returns
@@ -267,9 +267,9 @@ Removes value and the key from the map.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:127](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L127)
+[assembly/libraries/PersistentMap.ts:127](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L127)
 
-___
+---
 
 ### get
 
@@ -278,23 +278,23 @@ ___
 Retrieves the related value for a given key, or uses the `defaultValue` if not key is found
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
-let found = map.get("hello")
-let notFound = map.get("goodbye", "cruel world")
+map.set("hello", "world");
+let found = map.get("hello");
+let notFound = map.get("goodbye", "cruel world");
 
-assert(found == "world")
-assert(notFound == "cruel world")
+assert(found == "world");
+assert(notFound == "cruel world");
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `u64` | Key of the element. |
+| Name           | Type                  | Description                                  |
+| :------------- | :-------------------- | :------------------------------------------- |
+| `key`          | `u64`                 | Key of the element.                          |
 | `defaultValue` | [`Sample`](Sample.md) | The default value if the key is not present. |
-| `address` | `Address` | - |
+| `address`      | `Address`             | -                                            |
 
 #### Returns
 
@@ -308,9 +308,9 @@ Value for the given key or the default value.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:169](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L169)
+[assembly/libraries/PersistentMap.ts:169](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L169)
 
-___
+---
 
 ### getOf
 
@@ -319,22 +319,22 @@ ___
 Retrieves the related value for a given key for a given smart contract, or uses the `defaultValue` if not key is found
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
-let found = map.get("hello")
-let notFound = map.get("goodbye", "cruel world")
+map.set("hello", "world");
+let found = map.get("hello");
+let notFound = map.get("goodbye", "cruel world");
 
-assert(found == "world")
-assert(notFound == "cruel world")
+assert(found == "world");
+assert(notFound == "cruel world");
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `address` | `Address` | Address containing the PersistentMap. |
-| `key` | `u64` | Key of the element. |
+| Name           | Type                  | Description                                  |
+| :------------- | :-------------------- | :------------------------------------------- |
+| `address`      | `Address`             | Address containing the PersistentMap.        |
+| `key`          | `u64`                 | Key of the element.                          |
 | `defaultValue` | [`Sample`](Sample.md) | The default value if the key is not present. |
 
 #### Returns
@@ -349,9 +349,9 @@ Value for the given key or the default value.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:235](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L235)
+[assembly/libraries/PersistentMap.ts:235](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L235)
 
-___
+---
 
 ### getSampleAt
 
@@ -359,11 +359,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_activeSize` | `u64` | The size of the oracle (without empty data) |
-| `_activeId` | `u64` | The active index of the oracle |
-| `_lookUpTimestamp` | `u64` | The looked up date |
+| Name               | Type  | Description                                 |
+| :----------------- | :---- | :------------------------------------------ |
+| `_activeSize`      | `u64` | The size of the oracle (without empty data) |
+| `_activeId`        | `u64` | The active index of the oracle              |
+| `_lookUpTimestamp` | `u64` | The looked up date                          |
 
 #### Returns
 
@@ -381,9 +381,9 @@ Return a linearized sample, the weighted average of 2 neighboring samples
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:22](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L22)
+[assembly/structs/Oracle.ts:22](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Oracle.ts#L22)
 
-___
+---
 
 ### getSome
 
@@ -392,21 +392,21 @@ ___
 Retrieves a related value for a given key or fails assertion with "key not found"
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
-let result = map.getSome("hello")
+map.set("hello", "world");
+let result = map.getSome("hello");
 // map.getSome("goodbye")  // will throw with failed assertion
 
-assert(result == "world")
+assert(result == "world");
 ```
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `key` | `u64` | `undefined` | Key of the element. |
-| `msg` | `string` | `'key not found'` | - |
+| Name  | Type     | Default value     | Description         |
+| :---- | :------- | :---------------- | :------------------ |
+| `key` | `u64`    | `undefined`       | Key of the element. |
+| `msg` | `string` | `'key not found'` | -                   |
 
 #### Returns
 
@@ -420,9 +420,9 @@ Value for the given key or the default value.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:256](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L256)
+[assembly/libraries/PersistentMap.ts:256](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L256)
 
-___
+---
 
 ### initialize
 
@@ -430,8 +430,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type  | Description             |
+| :---- | :---- | :---------------------- |
 | `_id` | `u64` | The index to initialize |
 
 #### Returns
@@ -444,27 +444,27 @@ Initialize the sample
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:154](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L154)
+[assembly/structs/Oracle.ts:154](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Oracle.ts#L154)
 
-___
+---
 
 ### set
 
 ▸ **set**(`key`, `value`): `void`
 
 ```ts
-let map = new PersistentMap<string, string>("m")
+let map = new PersistentMap<string, string>("m");
 
-map.set("hello", "world")
+map.set("hello", "world");
 ```
 
 Sets the new value for the given key.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `u64` | Key of the element. |
+| Name    | Type                  | Description                   |
+| :------ | :-------------------- | :---------------------------- |
+| `key`   | `u64`                 | Key of the element.           |
 | `value` | [`Sample`](Sample.md) | The new value of the element. |
 
 #### Returns
@@ -477,9 +477,9 @@ Sets the new value for the given key.
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:299](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L299)
+[assembly/libraries/PersistentMap.ts:299](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L299)
 
-___
+---
 
 ### size
 
@@ -496,9 +496,9 @@ the map size
 **`Example`**
 
 ```ts
-let map = new PersistentMap<string, string> ("m")
+let map = new PersistentMap<string, string>("m");
 
-map.size()
+map.size();
 ```
 
 #### Inherited from
@@ -507,9 +507,9 @@ map.size()
 
 #### Defined in
 
-[assembly/libraries/PersistentMap.ts:110](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/PersistentMap.ts#L110)
+[assembly/libraries/PersistentMap.ts:110](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/PersistentMap.ts#L110)
 
-___
+---
 
 ### update
 
@@ -517,15 +517,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_size` | `u64` | The size of the oracle (last ids can be empty) |
-| `_sampleLifetime` | `u64` | The lifetime of a sample, it accumulates information for up to this timestamp |
-| `_lastTimestamp` | `u64` | The timestamp of the creation of the oracle's latest sample |
-| `_lastIndex` | `u64` | The index of the oracle's latest sample |
-| `_activeId` | `u64` | The active index of the pair during the latest swap |
-| `_volatilityAccumulated` | `u64` | The volatility accumulated of the pair during the latest swap |
-| `_binCrossed` | `u64` | The bin crossed during the latest swap |
+| Name                     | Type  | Description                                                                   |
+| :----------------------- | :---- | :---------------------------------------------------------------------------- |
+| `_size`                  | `u64` | The size of the oracle (last ids can be empty)                                |
+| `_sampleLifetime`        | `u64` | The lifetime of a sample, it accumulates information for up to this timestamp |
+| `_lastTimestamp`         | `u64` | The timestamp of the creation of the oracle's latest sample                   |
+| `_lastIndex`             | `u64` | The index of the oracle's latest sample                                       |
+| `_activeId`              | `u64` | The active index of the pair during the latest swap                           |
+| `_volatilityAccumulated` | `u64` | The volatility accumulated of the pair during the latest swap                 |
+| `_binCrossed`            | `u64` | The bin crossed during the latest swap                                        |
 
 #### Returns
 
@@ -539,4 +539,4 @@ Function to update a sample
 
 #### Defined in
 
-[assembly/structs/Oracle.ts:125](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/structs/Oracle.ts#L125)
+[assembly/structs/Oracle.ts:125](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/structs/Oracle.ts#L125)

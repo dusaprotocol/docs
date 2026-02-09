@@ -28,16 +28,16 @@
 
 ### \_getBottomId
 
-▸ **_getBottomId**(`_branchId`, `_leafId`): `u32`
+▸ **\_getBottomId**(`_branchId`, `_leafId`): `u32`
 
 Private pure function to return the bottom id
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type  | Description   |
+| :---------- | :---- | :------------ |
 | `_branchId` | `u32` | The branch id |
-| `_leafId` | `u32` | The leaf id |
+| `_leafId`   | `u32` | The leaf id   |
 
 #### Returns
 
@@ -47,20 +47,20 @@ The bottom branchId
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:33](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L33)
+[assembly/libraries/TreeHelper.ts:33](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/TreeHelper.ts#L33)
 
-___
+---
 
 ### \_getIdsFromAbove
 
-▸ **_getIdsFromAbove**(`_id`): `GetIdsFromAboveReturn`
+▸ **\_getIdsFromAbove**(`_id`): `GetIdsFromAboveReturn`
 
 Private pure function to return the ids from above
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type  | Description    |
+| :---- | :---- | :------------- |
 | `_id` | `u32` | The current id |
 
 #### Returns
@@ -73,9 +73,9 @@ The leaf id from above
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:23](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L23)
+[assembly/libraries/TreeHelper.ts:23](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/TreeHelper.ts#L23)
 
-___
+---
 
 ### addToTree
 
@@ -83,8 +83,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `_id` | `u32` |
 
 #### Returns
@@ -93,9 +93,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:39](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L39)
+[assembly/libraries/TreeHelper.ts:39](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/TreeHelper.ts#L39)
 
-___
+---
 
 ### findFirstBin
 
@@ -105,9 +105,9 @@ Returns the first id that is non zero, corresponding to a bin with liquidity in 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_binId` | `u32` | the binId to start searching |
+| Name         | Type   | Description                                                                           |
+| :----------- | :----- | :------------------------------------------------------------------------------------ |
+| `_binId`     | `u32`  | the binId to start searching                                                          |
 | `_rightSide` | `bool` | Whether we're searching in the right side of the tree (true) or the left side (false) |
 
 #### Returns
@@ -118,9 +118,9 @@ The closest non zero bit on the right (or left) side of the tree
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:99](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L99)
+[assembly/libraries/TreeHelper.ts:99](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/TreeHelper.ts#L99)
 
-___
+---
 
 ### removeFromTree
 
@@ -128,8 +128,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `_id` | `u32` |
 
 #### Returns
@@ -138,4 +138,4 @@ ___
 
 #### Defined in
 
-[assembly/libraries/TreeHelper.ts:60](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/TreeHelper.ts#L60)
+[assembly/libraries/TreeHelper.ts:60](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/TreeHelper.ts#L60)

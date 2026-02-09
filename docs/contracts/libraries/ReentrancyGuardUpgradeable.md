@@ -8,7 +8,7 @@
 
 ### Methods
 
-- [\_\_ReentrancyGuard\_init](#__reentrancyguard_init)
+- [\_\_ReentrancyGuard_init](#__reentrancyguard_init)
 - [endNonReentrant](#endnonreentrant)
 - [nonReentrant](#nonreentrant)
 
@@ -24,9 +24,9 @@
 
 ## Methods
 
-### \_\_ReentrancyGuard\_init
+### \_\_ReentrancyGuard_init
 
-▸ **__ReentrancyGuard_init**(): `void`
+▸ **\_\_ReentrancyGuard_init**(): `void`
 
 #### Returns
 
@@ -34,9 +34,9 @@
 
 #### Defined in
 
-[assembly/libraries/ReentrancyGuardUpgradeable.ts:20](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/ReentrancyGuardUpgradeable.ts#L20)
+[assembly/libraries/ReentrancyGuardUpgradeable.ts:20](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/ReentrancyGuardUpgradeable.ts#L20)
 
-___
+---
 
 ### endNonReentrant
 
@@ -48,9 +48,9 @@ ___
 
 #### Defined in
 
-[assembly/libraries/ReentrancyGuardUpgradeable.ts:46](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/ReentrancyGuardUpgradeable.ts#L46)
+[assembly/libraries/ReentrancyGuardUpgradeable.ts:46](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/ReentrancyGuardUpgradeable.ts#L46)
 
-___
+---
 
 ### nonReentrant
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[assembly/libraries/ReentrancyGuardUpgradeable.ts:34](https://github.com/dusaprotocol/v1-core-confidencial/blob/327ce5d/assembly/libraries/ReentrancyGuardUpgradeable.ts#L34)
+[assembly/libraries/ReentrancyGuardUpgradeable.ts:34](https://github.com/dusaprotocol/v1-core/blob/V2/assembly/libraries/ReentrancyGuardUpgradeable.ts#L34)
